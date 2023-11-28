@@ -16,7 +16,7 @@ import { HeaderBar } from "@crstl/components/molecules/bars";
 
 import { CommentsName } from "../orders/components/view/comments/CommentsName";
 import { TimelineDot } from "../orders/components/view/comments/TimelineDot";
-import AddEdiComment from "./AddEdiComments";
+// import AddEdiComment from "./AddEdiComments";
 import { EdiCommentDescription } from "./EdiCommentDescription";
 
 export const EdiCommentsSection = () => {
@@ -93,7 +93,7 @@ export const EdiCommentsSection = () => {
                 }
                 extraContent={CORE_ORDERS_TEXT_CONSTANTS.VIEW.COMMENTS.ADD_INFO}
               />
-              <AddEdiComment
+              {/* <AddEdiComment
                 poId={orderId}
                 organizationId={data?.organizationId || ""}
                 isTeamLoading={isTeamLoading}
@@ -101,7 +101,7 @@ export const EdiCommentsSection = () => {
                   label: item.fullName,
                   value: item.fullName,
                 }))}
-              />
+              /> */}
             </Timeline.Item>
             {comments.map((comment) => {
               return (
