@@ -1,0 +1,20 @@
+import { IThemesSpacing } from "../contract";
+
+const SPACING_CONSTANTS = {
+  SMALL: "8px",
+  MEDIUM: "16px",
+  LARGE: "24px",
+  XL: "48px",
+  XXL: "64px",
+  XXXL: "120px",
+};
+
+const COMMON_SPACING: IThemesSpacing = {
+  ...SPACING_CONSTANTS,
+  TOP: SPACING_CONSTANTS.MEDIUM,
+  LEFT: SPACING_CONSTANTS.SMALL,
+  RIGHT: SPACING_CONSTANTS.SMALL,
+  BOTTOM: SPACING_CONSTANTS.MEDIUM,
+};
+
+export { COMMON_SPACING };

@@ -1,0 +1,110 @@
+{
+  "heading": {
+    "transaction_set_header_ST": {
+      "transaction_set_identifier_code_01": "810",
+      "transaction_set_control_number_02": "0191"
+    },
+    "beginning_segment_for_invoice_BIG": {
+      "date_01": "2022-12-14",
+      "invoice_number_02": "INV2916827",
+      "date_03": "2022-07-05",
+      "purchase_order_number_04": "7248078"
+    },
+    "reference_identification_REF": [
+      {
+        "reference_identification_qualifier_01": "VR",
+        "reference_identification_02": "35519"
+      }
+    ],
+    "name_N1_loop": [
+      {
+        "name_N1": {
+          "entity_identifier_code_01": "ST",
+          "identification_code_qualifier_03": "54",
+          "identification_code_04": "A101"
+        },
+        "address_information_N3": [
+          { "address_information_01": "2600 MORGAN RD" }
+        ],
+        "geographic_location_N4": {
+          "city_name_01": "BESSEMER",
+          "state_or_province_code_02": "AL",
+          "postal_code_03": "35022"
+        }
+      },
+      {
+        "name_N1": {
+          "entity_identifier_code_01": "RE",
+          "name_02": "Neurogum"
+        },
+        "address_information_N3": [
+          {
+            "address_information_01": "3435 Wilshire Blvd 14th Floor"
+          }
+        ]
+      },
+      {
+        "name_N1": {
+          "entity_identifier_code_01": "SF",
+          "name_02": "Neurogum"
+        },
+        "address_information_N3": [
+          {
+            "address_information_01": "7924 Victoria Drive #203"
+          }
+        ]
+      }
+    ],
+    "terms_of_sale_deferred_terms_of_sale_ITD": [
+      {
+        "terms_type_code_01": "01",
+        "terms_basis_date_code_02": "15",
+        "terms_discount_percent_03": "2",
+        "terms_discount_days_due_05": "40",
+        "terms_net_days_07": "41"
+      }
+    ],
+    "date_time_reference_DTM": [
+      {
+        "date_time_qualifier_01": "011",
+        "date_02": "2022-12-14"
+      }
+    ]
+  },
+  "detail": {
+    "baseline_item_data_invoice_IT1_loop": [
+      {
+        "baseline_item_data_invoice_IT1": {
+          "quantity_invoiced_02": "1",
+          "unit_or_basis_for_measurement_code_03": "CA",
+          "unit_price_04": "633.6",
+          "product_service_id_qualifier_06": "UI",
+          "product_service_id_07": "86965700002",
+          "product_service_id_qualifier_08": "PI",
+          "product_service_id_09": "387371"
+        },
+        "item_physical_details_PO4": { "pack_01": "288" }
+      }
+    ]
+  },
+  "summary": {
+    "total_monetary_value_summary_TDS": {
+      "amount_01": 633.6
+    },
+    "invoice_shipment_summary_ISS_loop": [
+      {
+        "invoice_shipment_summary_ISS": {
+          "number_of_units_shipped_01": "1",
+          "unit_or_basis_for_measurement_code_02": "CA"
+        }
+      }
+    ],
+    "transaction_totals_CTT": {
+      "number_of_line_items_01": "1"
+    },
+    "transaction_set_trailer_SE": {
+      "transaction_set_control_number_02": "0191",
+      "number_of_included_segments_01": "18"
+    }
+  }
+}

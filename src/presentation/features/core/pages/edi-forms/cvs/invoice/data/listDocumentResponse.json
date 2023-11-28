@@ -1,0 +1,366 @@
+{
+  "status": 200,
+  "code": "success",
+  "data": {
+    "metadata": {
+      "state": [
+        {
+          "value": "Completed",
+          "updated_at": "2022-06-03T14:28:02.577Z",
+          "updated_by": "auto"
+        },
+        {
+          "value": "Open",
+          "updated_at": "2022-06-03T12:54:59.911Z",
+          "updated_by": "4842e3a8-9a75-43a5-a9b1-01786c36f1c1"
+        },
+        {
+          "value": "New",
+          "updated_at": "2022-06-03T12:40:08.021Z",
+          "updated_by": "auto"
+        }
+      ],
+      "asn_state": [
+        {
+          "value": "Accepted",
+          "updated_at": "2022-06-03T14:11:01.435Z",
+          "updated_by": "auto"
+        },
+        {
+          "value": "Send_Success",
+          "updated_at": "2022-06-03T13:45:01.476Z",
+          "updated_by": "auto"
+        },
+        {
+          "value": "Queued",
+          "updated_at": "2022-06-03T13:44:37.592Z",
+          "updated_by": "4842e3a8-9a75-43a5-a9b1-01786c36f1c1"
+        },
+        {
+          "value": "Draft",
+          "updated_at": "2022-06-03T13:11:23.227Z",
+          "updated_by": "auto"
+        },
+        {
+          "value": "NonExistent",
+          "updated_at": "2022-06-03T12:40:08.021Z",
+          "updated_by": "auto"
+        }
+      ],
+      "invoice_state": [
+        {
+          "value": "Draft",
+          "updated_at": "2022-06-06T10:22:43.694Z",
+          "updated_by": "auto"
+        },
+        {
+          "value": "Accepted",
+          "updated_at": "2022-06-03T14:28:02.577Z",
+          "updated_by": "auto"
+        },
+        {
+          "value": "Send_Success",
+          "updated_at": "2022-06-03T14:21:01.764Z",
+          "updated_by": "auto"
+        },
+        {
+          "value": "Queued",
+          "updated_at": "2022-06-03T14:20:18.107Z",
+          "updated_by": "4842e3a8-9a75-43a5-a9b1-01786c36f1c1"
+        },
+        {
+          "value": "Draft",
+          "updated_at": "2022-06-03T14:15:31.225Z",
+          "updated_by": "auto"
+        },
+        {
+          "value": "NonExistent",
+          "updated_at": "2022-06-03T12:40:08.021Z",
+          "updated_by": "auto"
+        }
+      ],
+      "ext_id": "10000329248-0588",
+      "customer_id": "f59c34e3-7faa-48a3-be43-6d05a41946b9",
+      "integration_id": "3b963981-1059-4323-b0e0-f2f2bb48e32c",
+      "po_id": "10000329248-0588",
+      "document_type": "850",
+      "created_at": "2022-06-03T12:40:08.024Z",
+      "updated_at": "2022-06-06T10:22:43.695Z",
+      "created_by": "auto",
+      "ext_created_at": "20211107T0423",
+      "po_date": "20211107",
+      "trading_partner_name": "Target",
+      "isa06": "6111470100",
+      "isa07": "mutually_defined_ZZ",
+      "isa08": "SPS1993611",
+      "isa13": "000000065",
+      "gs02": "6111470100",
+      "gs03": "SPS1993611",
+      "gs06": "18",
+      "st02": "328054880",
+      "fa_doc_id": "629a01274bbda967a0ba5067",
+      "raw_850_doc_id": "629a01214bbda967a0ba5066",
+      "message_timestamp": "2022-06-03T12:39:43.007Z",
+      "fa_state": [
+        {
+          "value": "FA",
+          "updated_at": "2022-06-03T12:41:01.242Z",
+          "updated_by": "auto"
+        }
+      ]
+    },
+    "file": {
+      "metadata": {
+        "version": 1,
+        "created_at": "2022-06-03T12:40:08.024Z"
+      },
+      "json_edi": {
+        "code": "valid",
+        "output": {
+          "interchanges": [
+            {
+              "interchange_control_header_ISA": {
+                "authorization_information_qualifier_01": "no_authorization_information_present_no_meaningful_information_in_i02_00",
+                "authorization_information_02": "0000000000",
+                "security_information_qualifier_03": "no_security_information_present_no_meaningful_information_in_i04_00",
+                "security_information_04": "0000000000",
+                "interchange_id_qualifier_05": "ucc_edi_communications_id_comm_id_08",
+                "interchange_sender_id_06": "6111470100",
+                "interchange_id_qualifier_07": "mutually_defined_ZZ",
+                "interchange_receiver_id_08": "SPS1993611",
+                "interchange_date_09": "211107",
+                "interchange_time_10": "0423",
+                "interchange_control_standards_identifier_11": "us_edi_community_of_asc_x12_tdcc_and_ucs_U",
+                "interchange_control_version_number_12": "00401",
+                "interchange_control_number_13": "000000065",
+                "acknowledgment_requested_14": "no_acknowledgment_requested_0",
+                "usage_indicator_15": "production_data_P",
+                "component_element_separator_16": ">"
+              },
+              "groups": [
+                {
+                  "functional_group_header_GS": {
+                    "functional_identifier_code_01": "purchase_order_850_PO",
+                    "application_senders_code_02": "6111470100",
+                    "application_receivers_code_03": "SPS1993611",
+                    "date_04": "20211107",
+                    "time_05": "0423",
+                    "group_control_number_06": "18",
+                    "responsible_agency_code_07": "accredited_standards_committee_x12_X",
+                    "version_release_industry_identifier_code_08": "004010"
+                  },
+                  "transaction_sets": [
+                    {
+                      "heading": {
+                        "transaction_set_header_ST": {
+                          "transaction_set_identifier_code_01": "850",
+                          "transaction_set_control_number_02": "328054880"
+                        },
+                        "beginning_segment_for_purchase_order_BEG": {
+                          "transaction_set_purpose_code_01": "original_00",
+                          "purchase_order_type_code_02": "stand_alone_order_SA",
+                          "purchase_order_number_03": "10000329248-0588",
+                          "date_05": "20211107",
+                          "contract_number_06": "D"
+                        },
+                        "reference_identification_REF": [
+                          {
+                            "reference_identification_qualifier_01": "internal_vendor_number_IA",
+                            "reference_identification_02": "1993611",
+                            "description_03": "Neurogum Inc."
+                          },
+                          {
+                            "reference_identification_qualifier_01": "department_number_DP",
+                            "reference_identification_02": "094"
+                          }
+                        ],
+                        "fob_related_instructions_FOB": [
+                          {
+                            "shipment_method_of_payment_01": "defined_by_buyer_and_seller_DF",
+                            "location_qualifier_02": "origin_shipping_point_OR",
+                            "description_03": "FARIBAULT MN"
+                          }
+                        ],
+                        "sales_requirements_CSH": [
+                          {
+                            "sales_requirement_code_01": "no_back_order_N"
+                          }
+                        ],
+                        "terms_of_sale_deferred_terms_of_sale_ITD": [
+                          {
+                            "terms_type_code_01": "basic_01",
+                            "terms_basis_date_code_02": "delivery_date_2",
+                            "terms_discount_percent_03": "2",
+                            "terms_discount_days_due_05": "65"
+                          }
+                        ],
+                        "date_time_reference_DTM": [
+                          {
+                            "date_time_qualifier_01": "ship_not_before_037",
+                            "date_02": "20211115"
+                          },
+                          {
+                            "date_time_qualifier_01": "ship_no_later_038",
+                            "date_02": "20211116"
+                          }
+                        ],
+                        "carrier_details_routing_sequence_transit_time_TD5": [
+                          {
+                            "routing_sequence_code_01": "origin_delivery_carrier_any_mode_B",
+                            "identification_code_qualifier_02": "assigned_by_buyer_or_buyers_agent_92",
+                            "identification_code_03": "USE VRS"
+                          }
+                        ],
+                        "name_N1_loop": [
+                          {
+                            "name_N1": {
+                              "entity_identifier_code_01": "buying_party_purchaser_BY",
+                              "name_02": "TARGET DC 0588",
+                              "identification_code_qualifier_03": "assigned_by_buyer_or_buyers_agent_92",
+                              "identification_code_04": "0588"
+                            },
+                            "address_information_N3": [
+                              {
+                                "address_information_01": "7101 W VAN BUREN"
+                              }
+                            ],
+                            "geographic_location_N4": [
+                              {
+                                "city_name_01": "PHOENIX",
+                                "state_or_province_code_02": "AZ",
+                                "postal_code_03": "85043",
+                                "country_code_04": "US"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "detail": {
+                        "baseline_item_data_PO1_loop": [
+                          {
+                            "baseline_item_data_PO1": {
+                              "assigned_identification_01": "2",
+                              "quantity_ordered_02": "288",
+                              "unit_or_basis_for_measurement_code_03": "each_EA",
+                              "unit_price_04": "2.2",
+                              "basis_of_unit_price_code_05": "wholesale_price_per_each_WE",
+                              "product_service_id_qualifier_06": "buyers_catalog_number_CB",
+                              "product_service_id_07": "094080085",
+                              "product_service_id_qualifier_08": "vendors_style_number_VA",
+                              "product_service_id_09": "NG_EF_MT12",
+                              "product_service_id_qualifier_10": "upc_consumer_package_code_1_5_5_1_UP",
+                              "product_service_id_11": "869657000012",
+                              "product_service_id_qualifier_12": "buyers_item_number_IN",
+                              "product_service_id_13": "80224129"
+                            },
+                            "pricing_information_CTP_loop": [
+                              {
+                                "pricing_information_CTP": {
+                                  "class_of_trade_code_01": "resale_RS",
+                                  "price_identifier_code_02": "resale_RES",
+                                  "unit_price_03": "3.99",
+                                  "multiple_price_quantity_11": "1"
+                                }
+                              }
+                            ],
+                            "product_item_description_PID_loop": [
+                              {
+                                "product_item_description_PID": {
+                                  "item_description_type_01": "free_form_F",
+                                  "product_process_characteristic_code_02": "product_08",
+                                  "description_05": "NeuroGum Peppermint Gum 12pk"
+                                }
+                              }
+                            ],
+                            "item_physical_details_PO4": [
+                              {
+                                "pack_01": "24",
+                                "inner_pack_14": "12"
+                              }
+                            ]
+                          },
+                          {
+                            "baseline_item_data_PO1": {
+                              "assigned_identification_01": "1",
+                              "quantity_ordered_02": "288",
+                              "unit_or_basis_for_measurement_code_03": "each_EA",
+                              "unit_price_04": "2.2",
+                              "basis_of_unit_price_code_05": "wholesale_price_per_each_WE",
+                              "product_service_id_qualifier_06": "buyers_catalog_number_CB",
+                              "product_service_id_07": "094083399",
+                              "product_service_id_qualifier_08": "vendors_style_number_VA",
+                              "product_service_id_09": "NG_EF_CM12",
+                              "product_service_id_qualifier_10": "upc_consumer_package_code_1_5_5_1_UP",
+                              "product_service_id_11": "869657000074",
+                              "product_service_id_qualifier_12": "buyers_item_number_IN",
+                              "product_service_id_13": "80224131"
+                            },
+                            "pricing_information_CTP_loop": [
+                              {
+                                "pricing_information_CTP": {
+                                  "class_of_trade_code_01": "resale_RS",
+                                  "price_identifier_code_02": "resale_RES",
+                                  "unit_price_03": "3.99",
+                                  "multiple_price_quantity_11": "1"
+                                }
+                              }
+                            ],
+                            "product_item_description_PID_loop": [
+                              {
+                                "product_item_description_PID": {
+                                  "item_description_type_01": "free_form_F",
+                                  "product_process_characteristic_code_02": "product_08",
+                                  "description_05": "NeuroGum Cinnamon 12pk"
+                                }
+                              }
+                            ],
+                            "item_physical_details_PO4": [
+                              {
+                                "pack_01": "24",
+                                "inner_pack_14": "12"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "summary": {
+                        "transaction_totals_CTT_loop": [
+                          {
+                            "transaction_totals_CTT": {
+                              "number_of_line_items_01": "2",
+                              "hash_total_02": "576"
+                            }
+                          }
+                        ],
+                        "transaction_set_trailer_SE": {
+                          "number_of_included_segments_01": "23",
+                          "transaction_set_control_number_02": "328054880"
+                        }
+                      },
+                      "set": "850"
+                    }
+                  ],
+                  "functional_group_trailer_GE": {
+                    "number_of_transaction_sets_included_01": "4",
+                    "group_control_number_02": "18"
+                  },
+                  "release": "004010"
+                }
+              ],
+              "interchange_control_trailer_IEA": {
+                "number_of_included_functional_groups_01": "1",
+                "interchange_control_number_02": "000000065"
+              },
+              "delimiters": {
+                "element": "*",
+                "segment": "~",
+                "sub_element": ">"
+              }
+            }
+          ],
+          "__version": "jedi@2.0"
+        }
+      }
+    }
+  }
+}

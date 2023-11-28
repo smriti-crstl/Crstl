@@ -1,0 +1,171 @@
+{
+  "interchanges": [
+    {
+      "interchange_control_header_ISA": {
+        "authorization_information_qualifier_01": "no_authorization_information_present_no_meaningful_information_in_i02_00",
+        "authorization_information_02": "",
+        "security_information_qualifier_03": "no_security_information_present_no_meaningful_information_in_i04_00",
+        "security_information_04": "",
+        "interchange_id_qualifier_05": "mutually_defined_ZZ",
+        "interchange_sender_id_06": "3103184019",
+        "interchange_id_qualifier_07": "mutually_defined_ZZ",
+        "interchange_receiver_id_08": "CVSPROD",
+        "interchange_date_09": "220804",
+        "interchange_time_10": "1836",
+        "interchange_control_standards_identifier_11": "us_edi_community_of_asc_x12_tdcc_and_ucs_U",
+        "interchange_control_version_number_12": "00401",
+        "interchange_control_number_13": "100000590",
+        "acknowledgment_requested_14": "no_acknowledgment_requested_0",
+        "usage_indicator_15": "production_data_P",
+        "component_element_separator_16": "}"
+      },
+      "groups": [
+        {
+          "functional_group_header_GS": {
+            "functional_identifier_code_01": "invoice_information_810819_IN",
+            "application_senders_code_02": "3103184019",
+            "application_receivers_code_03": "CVSPROD",
+            "date_04": "20220804",
+            "time_05": "1836",
+            "group_control_number_06": "1590",
+            "responsible_agency_code_07": "accredited_standards_committee_x12_X",
+            "version_release_industry_identifier_code_08": "004010"
+          },
+          "transaction_sets": [
+            {
+              "heading": {
+                "transaction_set_header_ST": {
+                  "transaction_set_identifier_code_01": "810",
+                  "transaction_set_control_number_02": "1590"
+                },
+                "beginning_segment_for_invoice_BIG": {
+                  "date_01": "20220804",
+                  "invoice_number_02": "Neuro- 1276",
+                  "date_03": "20220606",
+                  "purchase_order_number_04": "9043648"
+                },
+                "reference_identification_REF": [
+                  {
+                    "reference_identification_qualifier_01": "VR",
+                    "reference_identification_02": "35519"
+                  }
+                ],
+                "name_N1_loop": [
+                  {
+                    "name_N1": {
+                      "entity_identifier_code_01": "ship_from_SF",
+                      "name_02": "Neurogum"
+                    },
+                    "address_information_N3": [
+                      {
+                        "address_information_01": "7924 Victoria Drive #203"
+                      }
+                    ]
+                  },
+                  {
+                    "name_N1": {
+                      "entity_identifier_code_01": "ship_to_ST",
+                      "identification_code_qualifier_03": "warehouse_54",
+                      "identification_code_04": "E101"
+                    },
+                    "address_information_N3": [
+                      {
+                        "address_information_01": "700 CVS DRIVE"
+                      }
+                    ],
+                    "geographic_location_N4": {
+                      "city_name_01": "ENNIS",
+                      "state_or_province_code_02": "TX",
+                      "postal_code_03": "75119"
+                    }
+                  },
+                  {
+                    "name_N1": {
+                      "entity_identifier_code_01": "party_to_receive_commercial_invoice_remittance_RE",
+                      "name_02": "Neurogum"
+                    },
+                    "address_information_N3": [
+                      {
+                        "address_information_01": "3435 Wilshire Blvd 14th Floor"
+                      }
+                    ]
+                  }
+                ],
+                "terms_of_sale_deferred_terms_of_sale_ITD": [
+                  {
+                    "terms_type_code_01": "basic_01",
+                    "terms_basis_date_code_02": "receipt_of_goods_15",
+                    "terms_discount_percent_03": "2.0",
+                    "terms_discount_days_due_05": "40",
+                    "terms_net_days_07": "41"
+                  }
+                ],
+                "date_time_reference_DTM": [
+                  {
+                    "date_time_qualifier_01": "shipped_011",
+                    "date_02": "20220803"
+                  }
+                ]
+              },
+              "detail": {
+                "baseline_item_data_invoice_IT1_loop": [
+                  {
+                    "baseline_item_data_invoice_IT1": {
+                      "quantity_invoiced_02": "1.0",
+                      "unit_or_basis_for_measurement_code_03": "case_CA",
+                      "unit_price_04": "633.6",
+                      "product_service_id_qualifier_06": "upc_consumer_package_code_1_5_5_UI",
+                      "product_service_id_07": "86965700002",
+                      "product_service_id_qualifier_08": "purchasers_item_code_PI",
+                      "product_service_id_09": "387371"
+                    },
+                    "item_physical_details_PO4": {
+                      "pack_01": "288"
+                    }
+                  }
+                ]
+              },
+              "summary": {
+                "total_monetary_value_summary_TDS": {
+                  "amount_01": "633.6"
+                },
+                "invoice_shipment_summary_ISS_loop": [
+                  {
+                    "invoice_shipment_summary_ISS": {
+                      "number_of_units_shipped_01": "1.0",
+                      "unit_or_basis_for_measurement_code_02": "case_CA"
+                    }
+                  }
+                ],
+                "transaction_totals_CTT": {
+                  "number_of_line_items_01": "1"
+                },
+                "transaction_set_trailer_SE": {
+                  "number_of_included_segments_01": "18",
+                  "transaction_set_control_number_02": "1590"
+                }
+              },
+              "set": "810"
+            }
+          ],
+          "functional_group_trailer_GE": {
+            "number_of_transaction_sets_included_01": "1",
+            "group_control_number_02": "1590"
+          },
+          "release": "004010"
+        }
+      ],
+      "interchange_control_trailer_IEA": {
+        "number_of_included_functional_groups_01": "1",
+        "interchange_control_number_02": "100000590"
+      },
+      "delimiters": {
+        "element": "*",
+        "segment": "~",
+        "sub_element": "}"
+      }
+    }
+  ],
+  "__version": "jedi@2.0"
+}
+

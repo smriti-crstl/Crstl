@@ -1,0 +1,171 @@
+{
+  "code": "valid",
+  "output": {
+    "interchanges": [
+      {
+        "interchange_control_header_ISA": {
+          "authorization_information_qualifier_01": "no_authorization_information_present_no_meaningful_information_in_i02_00",
+          "authorization_information_02": "",
+          "security_information_qualifier_03": "no_security_information_present_no_meaningful_information_in_i04_00",
+          "security_information_04": "",
+          "interchange_id_qualifier_05": "mutually_defined_ZZ",
+          "interchange_sender_id_06": "SPS1993611",
+          "interchange_id_qualifier_07": "ucc_edi_communications_id_comm_id_08",
+          "interchange_receiver_id_08": "6111470100",
+          "interchange_date_09": "220311",
+          "interchange_time_10": "1639",
+          "interchange_control_standards_identifier_11": "us_edi_community_of_asc_x12_tdcc_and_ucs_U",
+          "interchange_control_version_number_12": "00401",
+          "interchange_control_number_13": "100000067",
+          "acknowledgment_requested_14": "no_acknowledgment_requested_0",
+          "usage_indicator_15": "production_data_P",
+          "component_element_separator_16": ">"
+        },
+        "groups": [
+          {
+            "functional_group_header_GS": {
+              "functional_identifier_code_01": "invoice_information_810819_IN",
+              "application_senders_code_02": "SPS1993611",
+              "application_receivers_code_03": "6111470100",
+              "date_04": "20220311",
+              "time_05": "1639",
+              "group_control_number_06": "1067",
+              "responsible_agency_code_07": "accredited_standards_committee_x12_X",
+              "version_release_industry_identifier_code_08": "004010"
+            },
+            "transaction_sets": [
+              {
+                "heading": {
+                  "transaction_set_header_ST": {
+                    "transaction_set_identifier_code_01": "810",
+                    "transaction_set_control_number_02": "1067"
+                  },
+                  "beginning_segment_for_invoice_BIG": {
+                    "date_01": "20220311",
+                    "invoice_number_02": "NEURO1021",
+                    "purchase_order_number_04": "10000359233-0589"
+                  },
+                  "reference_identification_REF": [
+                    {
+                      "reference_identification_qualifier_01": "internal_vendor_number_IA",
+                      "reference_identification_02": "1993611"
+                    },
+                    {
+                      "reference_identification_qualifier_01": "department_number_DP",
+                      "reference_identification_02": "094"
+                    }
+                  ],
+                  "name_N1_loop": [
+                    {
+                      "name_N1": {
+                        "entity_identifier_code_01": "buying_party_purchaser_BY",
+                        "identification_code_qualifier_03": "assigned_by_buyer_or_buyers_agent_92",
+                        "identification_code_04": "0589"
+                      }
+                    }
+                  ],
+                  "terms_of_sale_deferred_terms_of_sale_ITD": [
+                    {
+                      "terms_type_code_01": "basic_01",
+                      "terms_basis_date_code_02": "delivery_date_2",
+                      "terms_discount_percent_03": "2",
+                      "terms_discount_days_due_05": "65"
+                    }
+                  ],
+                  "date_time_reference_DTM": [
+                    {
+                      "date_time_qualifier_01": "shipped_011",
+                      "date_02": "20220228"
+                    }
+                  ]
+                },
+                "detail": {
+                  "baseline_item_data_invoice_IT1_loop": [
+                    {
+                      "baseline_item_data_invoice_IT1": {
+                        "assigned_identification_01": "1",
+                        "quantity_invoiced_02": "48",
+                        "unit_or_basis_for_measurement_code_03": "each_EA",
+                        "unit_price_04": "13.2",
+                        "product_service_id_qualifier_06": "buyers_catalog_number_CB",
+                        "product_service_id_07": "094080441",
+                        "product_service_id_qualifier_10": "upc_consumer_package_code_1_5_5_1_UP",
+                        "product_service_id_11": "869657000043"
+                      }
+                    },
+                    {
+                      "baseline_item_data_invoice_IT1": {
+                        "assigned_identification_01": "2",
+                        "quantity_invoiced_02": "48",
+                        "unit_or_basis_for_measurement_code_03": "each_EA",
+                        "unit_price_04": "13.2",
+                        "product_service_id_qualifier_06": "buyers_catalog_number_CB",
+                        "product_service_id_07": "094087699",
+                        "product_service_id_qualifier_10": "upc_consumer_package_code_1_5_5_1_UP",
+                        "product_service_id_11": "869657000067"
+                      }
+                    },
+                    {
+                      "baseline_item_data_invoice_IT1": {
+                        "assigned_identification_01": "3",
+                        "quantity_invoiced_02": "48",
+                        "unit_or_basis_for_measurement_code_03": "each_EA",
+                        "unit_price_04": "13.2",
+                        "product_service_id_qualifier_06": "buyers_catalog_number_CB",
+                        "product_service_id_07": "094087689",
+                        "product_service_id_qualifier_10": "upc_consumer_package_code_1_5_5_1_UP",
+                        "product_service_id_11": "850008160004"
+                      }
+                    }
+                  ]
+                },
+                "summary": {
+                  "total_monetary_value_summary_TDS": {
+                    "amount_01": "1900.8"
+                  },
+                  "carrier_detail_CAD": {
+                    "transportation_method_type_code_01": "private_parcel_service_U",
+                    "standard_carrier_alpha_code_04": "FDEG",
+                    "reference_identification_qualifier_07": "carriers_reference_number_pro_invoice_CN",
+                    "reference_identification_08": "270255046304"
+                  },
+                  "invoice_shipment_summary_ISS_loop": [
+                    {
+                      "invoice_shipment_summary_ISS": {
+                        "number_of_units_shipped_01": "144",
+                        "unit_or_basis_for_measurement_code_02": "each_EA"
+                      }
+                    }
+                  ],
+                  "transaction_totals_CTT": {
+                    "number_of_line_items_01": "3"
+                  },
+                  "transaction_set_trailer_SE": {
+                    "number_of_included_segments_01": "15",
+                    "transaction_set_control_number_02": "1067"
+                  }
+                },
+                "set": "810"
+              }
+            ],
+            "functional_group_trailer_GE": {
+              "number_of_transaction_sets_included_01": "1",
+              "group_control_number_02": "1067"
+            },
+            "release": "004010"
+          }
+        ],
+        "interchange_control_trailer_IEA": {
+          "number_of_included_functional_groups_01": "1",
+          "interchange_control_number_02": "100000067"
+        },
+        "delimiters": {
+          "element": "*",
+          "segment": "~",
+          "sub_element": ">"
+        }
+      }
+    ],
+    "__version": "jedi@2.0"
+  }
+}

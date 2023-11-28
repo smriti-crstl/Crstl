@@ -1,0 +1,341 @@
+{
+  "code": "valid",
+  "output": {
+    "interchanges": [
+      {
+        "interchange_control_header_ISA": {
+          "authorization_information_qualifier_01": "no_authorization_information_present_no_meaningful_information_in_i02_00",
+          "authorization_information_02": "",
+          "security_information_qualifier_03": "no_security_information_present_no_meaningful_information_in_i04_00",
+          "security_information_04": "",
+          "interchange_id_qualifier_05": "x121_ccitt_09",
+          "interchange_sender_id_06": "005070479ff",
+          "interchange_id_qualifier_07": "mutually_defined_ZZ",
+          "interchange_receiver_id_08": "X0000X0",
+          "interchange_date_09": "931001",
+          "interchange_time_10": "1020",
+          "interchange_control_standards_identifier_11": "us_edi_community_of_asc_x12_tdcc_and_ucs_U",
+          "interchange_control_version_number_12": "00401",
+          "interchange_control_number_13": "000888608",
+          "acknowledgment_requested_14": "no_acknowledgment_requested_0",
+          "usage_indicator_15": "test_data_T",
+          "component_element_separator_16": "^"
+        },
+        "groups": [
+          {
+            "functional_group_header_GS": {
+              "functional_identifier_code_01": "account_analysis_822_AA",
+              "application_senders_code_02": "G0",
+              "application_receivers_code_03": "7N5M1YH35",
+              "date_04": "20220501",
+              "time_05": "180137",
+              "group_control_number_06": "511702",
+              "responsible_agency_code_07": "transportation_data_coordinating_committee_tdcc_T",
+              "version_release_industry_identifier_code_08": "004010"
+            },
+            "transaction_sets": [
+              {
+                "set": "856",
+                "heading": {
+                  "transaction_set_header_ST": {
+                    "transaction_set_identifier_code_01": "856",
+                    "transaction_set_control_number_02": "409681824"
+                  },
+                  "beginning_segment_for_ship_notice_BSN": {
+                    "transaction_set_purpose_code_01": "original_00",
+                    "shipment_identification_02": "HU72274I8KT2CGN775",
+                    "date_03": "20210629",
+                    "time_04": "070427",
+                    "hierarchical_structure_code_05": "<%= data?.BSN_05_1005 %>",
+                    "transaction_type_code_06": "<%= data?.BSN_06_640 %>"
+                  },
+                  "date_time_reference_DTM": [
+                    {
+                      "date_time_qualifier_01": "cancel_after_001",
+                      "date_02": "20210607"
+                    }
+                  ]
+                },
+                "detail": {
+                  "hierarchical_level_HL_loop": [
+                    {
+                      "hierarchical_level_HL": {
+                        "hierarchical_id_number_01": "24672",
+                        "hierarchical_level_code_03": "service_billing_provider_1"
+                      },
+                      "item_identification_LIN": {
+                        "product_service_id_qualifier_02": "plant_equipment_number_A1",
+                        "product_service_id_03": "Small Concrete Shoes"
+                      },
+                      "item_detail_shipment_SN1": {
+                        "number_of_units_shipped_02": "7105.24",
+                        "unit_or_basis_for_measurement_code_03": "actual_pounds_01"
+                      },
+                      "subline_item_detail_SLN": [
+                        {
+                          "assigned_identification_01": "25GFQ1H8",
+                          "relationship_code_03": "add_A"
+                        }
+                      ],
+                      "purchase_order_reference_PRF": {
+                        "purchase_order_number_01": "740482074"
+                      },
+                      "item_physical_details_PO4": {},
+                      "product_item_description_PID": [
+                        {
+                          "item_description_type_01": "free_form_F",
+                          "agency_qualifier_code_03": "alabama_10",
+                          "product_description_code_04": "0002",
+                          "source_subqualifier_07": "x",
+                          "yes_no_condition_or_response_code_08": "no_N"
+                        }
+                      ],
+                      "measurements_MEA": [
+                        {
+                          "measurement_value_03": "947.31"
+                        }
+                      ],
+                      "paperwork_PWK": [
+                        {
+                          "report_type_code_01": "product_transfer_01"
+                        }
+                      ],
+                      "marking_packaging_loading_PKG": [
+                        {
+                          "agency_qualifier_code_03": "alabama_10",
+                          "packaging_description_code_04": "0004"
+                        }
+                      ],
+                      "carrier_details_quantity_and_weight_TD1": [{}],
+                      "carrier_details_routing_sequence_transit_time_TD5": [
+                        {
+                          "routing_sequence_code_01": "<%= data?.TD5_S_01_133 %>",
+                          "identification_code_qualifier_02": "d_u_n_s_number_dun_bradstreet_1",
+                          "identification_code_03": "3b41388c-3df5-4c8b-ace0-c26f796f1de7",
+                          "transportation_method_type_code_04": "<%= data?.TD5_S_04_91 %>",
+                          "routing_05": "<%= data?.TD5_S_05_387 %>",
+                          "shipment_order_status_code_06": "<%= data?.TD5_S_06_368 %>",
+                          "location_identifier_08": "<%= data?.TD5_S_08_310 %>",
+                          "transit_time_11": "<%= data?.TD5_S_11_733 %>",
+                          "service_level_code_12": "<%= data?.TD5_S_12_284 %>",
+                          "service_level_code_13": "<%= data?.TD5_S_13_284 %>"
+                        }
+                      ],
+                      "carrier_details_equipment_TD3": [{}],
+                      "carrier_details_special_handling_or_hazardous_materials_or_both_TD4": [
+                        {
+                          "special_handling_code_01": "speed_restricted_to_15_miles_per_hour_15"
+                        }
+                      ],
+                      "trailer_shipment_details_TSD": {},
+                      "reference_identification_REF": [
+                        {
+                          "reference_identification_qualifier_01": "american_bankers_assoc_aba_transit_routing_number_including_check_digit_9_digits_01",
+                          "reference_identification_02": "131920"
+                        }
+                      ],
+                      "administrative_communications_contact_PER": [
+                        {
+                          "contact_function_code_01": "review_repricing_contact_1A"
+                        }
+                      ],
+                      "hazardous_identification_information_LH1_loop": [
+                        {
+                          "hazardous_identification_information_LH1": {
+                            "unit_or_basis_for_measurement_code_01": "actual_pounds_01",
+                            "lading_quantity_02": "10"
+                          },
+                          "hazardous_classification_information_LH2": [{}],
+                          "hazardous_material_shipping_name_LH3": [{}],
+                          "freeform_hazardous_material_information_LFH": [
+                            {
+                              "hazardous_material_shipment_information_qualifier_01": "additional_descriptive_information_not_required_by_regulation_but_desired_to_accompany_the_movement_by_the_shipper_ADI",
+                              "hazardous_material_shipment_information_02": "B30"
+                            }
+                          ],
+                          "epa_required_data_LEP": [{}],
+                          "canadian_dangerous_requirements_LH4": {},
+                          "transborder_hazardous_requirements_LHT": [{}],
+                          "hazardous_material_identifying_reference_numbers_LHR": [
+                            {
+                              "reference_identification_qualifier_01": "american_bankers_assoc_aba_transit_routing_number_including_check_digit_9_digits_01",
+                              "reference_identification_02": "996065"
+                            }
+                          ],
+                          "administrative_communications_contact_PER": [
+                            {
+                              "contact_function_code_01": "review_repricing_contact_1A"
+                            }
+                          ],
+                          "empty_equipment_hazardous_material_information_LHE": {
+                            "hazardous_material_shipping_name_01": "Chlorine",
+                            "hazardous_placard_notation_02": "0735cdc0-ca7f-41d6-b43b-0c5679130878",
+                            "reference_identification_qualifier_03": "american_bankers_assoc_aba_transit_routing_number_including_check_digit_9_digits_01",
+                            "reference_identification_04": "416109"
+                          }
+                        }
+                      ],
+                      "load_detail_CLD_loop": [
+                        {
+                          "load_detail_CLD": {
+                            "number_of_loads_01": "10",
+                            "number_of_units_shipped_02": "985.7"
+                          },
+                          "reference_identification_REF": [
+                            {
+                              "reference_identification_qualifier_01": "american_bankers_assoc_aba_transit_routing_number_including_check_digit_9_digits_01",
+                              "reference_identification_02": "584833"
+                            }
+                          ],
+                          "date_or_time_or_period_DTP": {
+                            "date_time_qualifier_01": "cancel_after_001",
+                            "date_time_period_format_qualifier_02": "first_two_digits_of_year_expressed_in_format_ccyy_CC",
+                            "date_time_period_03": "Sun Dec 19 2021"
+                          }
+                        }
+                      ],
+                      "marks_and_numbers_MAN": [
+                        {
+                          "marks_and_numbers_qualifier_01": "line_item_only_L",
+                          "marks_and_numbers_02": "394823"
+                        }
+                      ],
+                      "date_time_reference_DTM": [
+                        {
+                          "date_time_qualifier_01": "cancel_after_001",
+                          "date_02": "20211122"
+                        }
+                      ],
+                      "fob_related_instructions_FOB": {
+                        "shipment_method_of_payment_01": "rule_11_shipment_11"
+                      },
+                      "pallet_information_PAL": {},
+                      "name_N1_loop": [
+                        {
+                          "name_N1": {
+                            "entity_identifier_code_01": "loan_applicant_01",
+                            "name_02": "Íris Sani"
+                          },
+                          "additional_name_information_N2": [
+                            {
+                              "name_01": "Hans-Jürgen Sigurjónsdóttir"
+                            }
+                          ],
+                          "address_information_N3": [
+                            {
+                              "address_information_01": "510 Dariana Junction"
+                            }
+                          ],
+                          "geographic_location_N4": {},
+                          "reference_identification_REF": [
+                            {
+                              "reference_identification_qualifier_01": "american_bankers_assoc_aba_transit_routing_number_including_check_digit_9_digits_01",
+                              "reference_identification_02": "84691"
+                            }
+                          ],
+                          "administrative_communications_contact_PER": [
+                            {
+                              "contact_function_code_01": "review_repricing_contact_1A"
+                            }
+                          ],
+                          "fob_related_instructions_FOB": {
+                            "shipment_method_of_payment_01": "rule_11_shipment_11"
+                          }
+                        }
+                      ],
+                      "destination_quantity_SDQ": [
+                        {
+                          "unit_or_basis_for_measurement_code_01": "actual_pounds_01",
+                          "identification_code_03": "9aee1980-2721-480d-bf3d-9afcda887979",
+                          "quantity_04": "4"
+                        }
+                      ],
+                      "excess_transportation_detail_ETD": {
+                        "excess_transportation_reason_code_01": "schedule_increase_forecast_change_or_special_car_order_A",
+                        "excess_transportation_responsibility_code_02": "customer_plant_receiving_location_A"
+                      },
+                      "currency_CUR": {
+                        "entity_identifier_code_01": "loan_applicant_01",
+                        "currency_code_02": "KWD"
+                      },
+                      "service_promotion_allowance_or_charge_information_SAC_loop": [
+                        {
+                          "service_promotion_allowance_or_charge_information_SAC": {
+                            "allowance_or_charge_indicator_01": "allowance_A",
+                            "service_promotion_allowance_or_charge_code_02": "absolute_minimum_charge_A010"
+                          },
+                          "currency_CUR": {
+                            "entity_identifier_code_01": "loan_applicant_01",
+                            "currency_code_02": "XBA"
+                          }
+                        }
+                      ],
+                      "furnished_goods_and_services_GF": {},
+                      "yes_no_question_YNQ": [
+                        {
+                          "yes_no_condition_or_response_code_02": "no_N"
+                        }
+                      ],
+                      "code_source_information_LM_loop": [
+                        {
+                          "code_source_information_LM": {
+                            "agency_qualifier_code_01": "alabama_10"
+                          },
+                          "industry_code_LQ": [{}]
+                        }
+                      ],
+                      "vessel_identification_V1_loop": [
+                        {
+                          "vessel_identification_V1": {
+                            "vessel_code_01": "605861",
+                            "vessel_code_qualifier_08": "us_bureau_of_census_B"
+                          },
+                          "port_or_terminal_R4": [
+                            {
+                              "port_or_terminal_function_code_01": "final_port_of_discharge_operational_1"
+                            }
+                          ],
+                          "date_time_reference_DTM": [
+                            {
+                              "date_time_qualifier_01": "cancel_after_001",
+                              "date_02": "20210629"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "summary": {
+                  "transaction_totals_CTT": {
+                    "number_of_line_items_01": "10"
+                  },
+                  "transaction_set_trailer_SE": {
+                    "number_of_included_segments_01": "10",
+                    "transaction_set_control_number_02": "615613089"
+                  }
+                }
+              }
+            ],
+            "functional_group_trailer_GE": {
+              "number_of_transaction_sets_included_01": "10",
+              "group_control_number_02": "511702"
+            },
+            "release": "004010"
+          }
+        ],
+        "interchange_control_trailer_IEA": {
+          "number_of_included_functional_groups_01": "1",
+          "interchange_control_number_02": "000888608"
+        },
+        "delimiters": {
+          "element": "*",
+          "segment": "~",
+          "sub_element": "^"
+        }
+      }
+    ],
+    "__version": "jedi@2.0"
+  }
+}
+

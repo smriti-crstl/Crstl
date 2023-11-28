@@ -1,0 +1,32 @@
+{
+  "code": "success",
+  "data": [
+    {
+      "integrationId": "e995e65e-e762-4dcb-ac68-0152e44a620a",
+      "createdAt": "2021-08-27T09:38:36.131Z",
+      "isEnabled": true,
+      "institutionId": "ins_3",
+      "institutionName": "Chase",
+      "needsReAuthorization": false,
+      "createdBy": "Mrinal Sen"
+    },
+    {
+      "integrationId": "2f074044-b2c6-4916-a0b2-d44cd6f24ef1",
+      "createdAt": "2021-09-08T09:33:04.153Z",
+      "isEnabled": true,
+      "institutionId": "ins_127989",
+      "institutionName": "Bank of America",
+      "needsReAuthorization": false,
+      "createdBy": "Mrinal Sen"
+    },
+    {
+      "integrationId": "48462cf6-1461-457b-893a-b1a3551f7abf",
+      "createdAt": "2021-09-27T09:36:29.508Z",
+      "isEnabled": true,
+      "institutionId": "ins_126249",
+      "institutionName": " Rho Business Banking",
+      "needsReAuthorization": false,
+      "createdBy": "Dipti Demo"
+    }
+  ]
+}

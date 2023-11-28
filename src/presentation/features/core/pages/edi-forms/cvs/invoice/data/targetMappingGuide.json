@@ -1,0 +1,1224 @@
+{
+  "created_at": "2022-05-16T12:52:51.473Z",
+  "id": "01G36EVCMHHDABKVA6F3G1J47D",
+  "updated_at": "2022-05-16T12:52:51.473Z",
+  "title": "Mon, May 16, 2022 6:22 PM",
+  "release": "X12-004010",
+  "set": "810",
+  "customizations": {
+    "heading.030_NTE": {
+      "requirement": "optional"
+    },
+    "heading.040_CUR": {
+      "requirement": "not_used"
+    },
+    "heading.050_REF": {
+      "requirement": "optional"
+    },
+    "heading.055_YNQ": {
+      "requirement": "not_used"
+    },
+    "heading.060_PER": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1": {
+      "requirement": "optional"
+    },
+    "heading.070_N1.080_N2": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.090_N3": {
+      "requirement": "optional"
+    },
+    "heading.070_N1.100_N4": {
+      "requirement": "optional"
+    },
+    "heading.070_N1.110_REF": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.120_PER": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.125_DMG": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD": {
+      "requirement": "mandatory"
+    },
+    "heading.140_DTM": {
+      "requirement": "optional"
+    },
+    "heading.150_FOB": {
+      "requirement": "not_used"
+    },
+    "heading.160_PID": {
+      "requirement": "not_used"
+    },
+    "heading.170_MEA": {
+      "requirement": "not_used"
+    },
+    "heading.180_PWK": {
+      "requirement": "not_used"
+    },
+    "heading.190_PKG": {
+      "requirement": "not_used"
+    },
+    "heading.200_L7": {
+      "requirement": "not_used"
+    },
+    "heading.212_BAL": {
+      "requirement": "not_used"
+    },
+    "heading.213_INC": {
+      "requirement": "not_used"
+    },
+    "heading.214_PAM": {
+      "requirement": "not_used"
+    },
+    "heading.220_LM": {
+      "requirement": "not_used"
+    },
+    "heading.240_N9": {
+      "requirement": "optional"
+    },
+    "heading.260_V1": {
+      "requirement": "not_used"
+    },
+    "heading.260_V1.270_R4": {
+      "requirement": "not_used"
+    },
+    "heading.260_V1.280_DTM": {
+      "requirement": "not_used"
+    },
+    "heading.290_FA1": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1": {
+      "requirement": "optional"
+    },
+    "detail.010_IT1.012_CRC": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.015_QTY": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.020_CUR": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.030_IT3": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.040_TXI": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.050_CTP": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.055_PAM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.059_MEA": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID": {
+      "requirement": "optional"
+    },
+    "detail.010_IT1.060_PID.070_MEA": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.080_PWK": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.090_PKG": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.100_PO4": {
+      "requirement": "optional"
+    },
+    "detail.010_IT1.110_ITD": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.120_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.125_YNQ": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.130_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.140_SDQ": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.150_DTM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.160_CAD": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.170_L7": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.175_SR": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.180_SAC": {
+      "requirement": "optional"
+    },
+    "detail.010_IT1.180_SAC.190_TXI": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.205_DTM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.210_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.220_PID": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.230_SAC": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.235_TC2": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.237_TXI": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.250_N2": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.260_N3": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.270_N4": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.280_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.290_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.295_DMG": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.300_LM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.320_V1": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.320_V1.330_R4": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.320_V1.340_DTM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.350_FA1": {
+      "requirement": "not_used"
+    },
+    "summary.020_TXI": {
+      "requirement": "not_used"
+    },
+    "summary.030_CAD": {
+      "requirement": "optional"
+    },
+    "summary.035_AMT": {
+      "requirement": "not_used"
+    },
+    "summary.040_SAC": {
+      "requirement": "optional"
+    },
+    "summary.040_SAC.050_TXI": {
+      "requirement": "not_used"
+    },
+    "summary.060_ISS": {
+      "requirement": "optional"
+    },
+    "summary.060_ISS.065_PID": {
+      "requirement": "not_used"
+    },
+    "summary.070_CTT": {
+      "requirement": "mandatory"
+    },
+    "heading.010_ST.01": {
+      "codes": ["810"]
+    },
+    "heading.020_BIG.01": {
+      "definition": "Date expressed as CCYYMMDD\nInvoice issue Date"
+    },
+    "heading.020_BIG.02": {
+      "definition": "Identifying number assigned by issuer\nNote:  Invoice numbers must not be more than 19 characters long.   Invoice numbers may contain alphas but no special characters.  Alpha characters must be in upper case."
+    },
+    "heading.020_BIG.03": {
+      "definition": "Date expressed as CCYYMMDD\nNot used by Target"
+    },
+    "heading.020_BIG.04": {
+      "definition": "Identifying number for Purchase Order assigned by the orderer/purchaser\nSend the same number here that was received on the 850 PO in element BEG03.\nThe purchase order number will be formatted either as SSSS-PPPPPPP-LLLL (17 characters) or SSSS-PPPPPPP (12 characters).\n\nSSSS = Source code, PPPPPPP = PO number, LLLL = Location ID Code\n\nNew Purchase Order Number Format:\n12345678901-1234"
+    },
+    "heading.020_BIG.07": {
+      "codes": ["DO"]
+    },
+    "heading.020_BIG.08": {
+      "requirement": "not_used"
+    },
+    "heading.020_BIG.09": {
+      "requirement": "not_used"
+    },
+    "heading.020_BIG.10": {
+      "requirement": "not_used"
+    },
+    "heading.030_NTE.01": {
+      "codes": ["CER"]
+    },
+    "heading.050_REF.01": {
+      "codes": ["DP", "IA", "PO"]
+    },
+    "heading.050_REF.02": {
+      "definition": "Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier\nIA = Vendor Number. Vendor number must be 7 digits.  Add leading zeroes to make 7 digits.\nPD = Promotion/Deal Number\nDP = Department\nNote: Department must be 3 digits.  Add leading zero(s) to make 3 digits."
+    },
+    "heading.050_REF.03": {
+      "requirement": "optional"
+    },
+    "heading.050_REF.04": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.070_N1.01": {
+      "codes": ["BS", "BY", "SF", "ST"]
+    },
+    "heading.070_N1.070_N1.03": {
+      "codes": ["91", "92"]
+    },
+    "heading.070_N1.070_N1.04": {
+      "definition": "Code identifying a party or other code\nA list of Target location codes may be found on the Partners Online website. ",
+      "requirement": "not_used"
+    },
+    "heading.070_N1.070_N1.02": {
+      "definition": "Free-form name\nNot used by Target"
+    },
+    "heading.070_N1.070_N1.05": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.070_N1.06": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.100_N4.04": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.100_N4.06": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD.01": {
+      "codes": ["01", "02"]
+    },
+    "heading.130_ITD.02": {
+      "codes": ["2", "3"],
+      "requirement": "optional"
+    },
+    "heading.130_ITD.09": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD.12": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD.14": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD.15": {
+      "requirement": "not_used"
+    },
+    "heading.140_DTM.01": {
+      "codes": ["011"]
+    },
+    "heading.140_DTM.04": {
+      "requirement": "not_used"
+    },
+    "heading.140_DTM.02": {
+      "definition": "Date expressed as CCYYMMDD\nDate Merchandise was shipped."
+    },
+    "heading.240_N9.240_N9.01": {
+      "codes": ["ZZ"]
+    },
+    "heading.240_N9.240_N9.02": {
+      "definition": "Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier\nPACA"
+    },
+    "heading.240_N9.240_N9.06": {
+      "requirement": "not_used"
+    },
+    "heading.240_N9.240_N9.07": {
+      "requirement": "not_used"
+    },
+    "heading.240_N9.240_N9.04": {
+      "requirement": "not_used"
+    },
+    "heading.240_N9.250_MSG.01": {
+      "definition": "Free-form message text\nMSG*The perishable agricultural commodities listed on this \nMSG*invoice are sold subject to the statutory trust authorized \nMSG*by Section 5(c) of the Perishable Agricultural Commodities\nMSG*Act, 1930 (7 U.S.C. 4993(c)).  The seller of these \nMSG*commodities retains a trust claim over these commodities,\nMSG*all inventories of food or other products derived from\nMGS*these commodities, and any receivables or proceeds from\nMSG*the sale of these commodities until full payment is \nMSG*received.\n"
+    },
+    "heading.240_N9.250_MSG.03": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.010_IT1.03": {
+      "codes": ["CA", "EA", "LB"]
+    },
+    "detail.010_IT1.010_IT1.04": {
+      "definition": "Price per unit of product, service, commodity, etc.\nTarget only reads out five places after the decimal point, sending more than 5 places can result in a fatal error."
+    },
+    "detail.010_IT1.010_IT1.06": {
+      "codes": ["CB", "EN", "IN", "UI", "UP"]
+    },
+    "detail.010_IT1.010_IT1.08": {
+      "codes": ["CB", "EN", "IN", "UI", "UP"]
+    },
+    "detail.010_IT1.010_IT1.10": {
+      "codes": ["CB", "EN", "IN", "UI", "UP"]
+    },
+    "detail.010_IT1.060_PID.060_PID.01": {
+      "codes": ["F"]
+    },
+    "detail.010_IT1.060_PID.060_PID.02": {
+      "codes": ["08"]
+    },
+    "detail.010_IT1.060_PID.060_PID.04": {
+      "definition": "A code from an industry code list which provides specific data about a product characteristic\nNot used by Target"
+    },
+    "detail.010_IT1.060_PID.060_PID.06": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID.060_PID.08": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID.060_PID.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID.060_PID.09": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.100_PO4.02": {
+      "definition": "Size of supplier units in pack\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.06": {
+      "definition": "Numeric value of gross weight per pack\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.08": {
+      "definition": "Numeric value of gross volume per pack\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.09": {
+      "definition": "Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.10": {
+      "definition": "Largest horizontal dimension of an object measured when the object is in the upright position\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.11": {
+      "definition": "Shorter measurement of the two horizontal dimensions measured with the object in the upright position\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.12": {
+      "definition": "Vertical dimension of an object measured when the object is in the upright position\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.14": {
+      "definition": "The number of eaches per inner container\nNot used by Target",
+      "requirement": "optional"
+    },
+    "detail.010_IT1.100_PO4.15": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.100_PO4.17": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.100_PO4.18": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.01": {
+      "codes": ["A", "C"]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.02": {
+      "codes": [
+        "B950",
+        "C310",
+        "D170",
+        "D270",
+        "F800",
+        "H000",
+        "H090",
+        "H700",
+        "H750"
+      ]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.03": {
+      "codes": ["VI"]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.12": {
+      "codes": ["02", "06"]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.16": {
+      "requirement": "not_used"
+    },
+    "summary.010_TDS.02": {
+      "definition": "Monetary amount\nTotal amount of merchandise.  If you offer a discount on gross amount before allowances, this field is required.  Otherwise it is not needed."
+    },
+    "summary.010_TDS.01": {
+      "definition": "Monetary amount\nTotal amount of invoice (including charges, less allowances) before terms discount."
+    },
+    "summary.010_TDS.03": {
+      "requirement": "not_used"
+    },
+    "summary.010_TDS.04": {
+      "requirement": "not_used"
+    },
+    "summary.030_CAD.01": {
+      "codes": ["C", "M", "P", "U"]
+    },
+    "summary.030_CAD.02": {
+      "definition": "Prefix or alphabetic part of an equipment unit's identifying number\nNot used by Target",
+      "requirement": "optional"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.05": {
+      "definition": "Monetary amount\nMonetary amount must be 10 cents or greater. Anything less than 10 cents will be rejected and will not feed into Target's application system.  Two decimal places are implied, do not send a decimal point."
+    },
+    "detail.010_IT1.180_SAC.180_SAC.08": {
+      "definition": "Rate expressed in the standard monetary denomination for the currency specified\nNot used by Target"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.09": {
+      "codes": ["EA"]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.10": {
+      "definition": "Numeric value of quantity\nWhen SAC02 = D170, this data element is required and should contain the quantity of free goods.  SAC09 should contain the unit of measure of the free goods."
+    },
+    "detail.010_IT1.180_SAC.180_SAC.11": {
+      "definition": "Numeric value of quantity\nNot used by Target\n"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.14": {
+      "definition": "A unique number identifying available promotion or allowance options when more than one is offered\nNot used by Target"
+    },
+    "summary.030_CAD.07": {
+      "codes": ["BM", "CN"]
+    },
+    "summary.030_CAD.09": {
+      "requirement": "not_used"
+    },
+    "summary.040_SAC.040_SAC.01": {
+      "codes": ["A", "C"]
+    },
+    "summary.040_SAC.040_SAC.02": {
+      "codes": [
+        "B950",
+        "C310",
+        "D170",
+        "D270",
+        "F800",
+        "H000",
+        "H090",
+        "H700",
+        "H750"
+      ]
+    },
+    "summary.040_SAC.040_SAC.03": {
+      "codes": ["VI"]
+    },
+    "summary.040_SAC.040_SAC.04": {
+      "definition": "Agency maintained code identifying the service, promotion, allowance, or charge\nHA\t\tHanger Service"
+    },
+    "summary.040_SAC.040_SAC.05": {
+      "definition": "Monetary amount\nMonetary amount must be 10 cents or greater. Anything less than 10 cents will be rejected and will not feed into Target's application system.  Two decimal places are implied, do not send a decimal point."
+    },
+    "summary.040_SAC.040_SAC.06": {
+      "codes": ["3"]
+    },
+    "summary.040_SAC.040_SAC.12": {
+      "codes": ["02", "06"],
+      "custom_code_definitions": {}
+    },
+    "summary.040_SAC.040_SAC.16": {
+      "requirement": "not_used"
+    },
+    "summary.060_ISS.060_ISS.02": {
+      "codes": ["CA", "CT", "EA", "LB"]
+    },
+    "summary.060_ISS.060_ISS.04": {
+      "codes": ["LB"]
+    },
+    "summary.060_ISS.060_ISS.07": {
+      "requirement": "not_used"
+    },
+    "summary.060_ISS.060_ISS.08": {
+      "requirement": "not_used"
+    },
+    "summary.070_CTT.02": {
+      "requirement": "not_used"
+    },
+    "summary.070_CTT.07": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.070_N1": {
+      "conditions": [
+        {
+          "elements": [2, 3],
+          "type": "R"
+        }
+      ]
+    },
+    "heading.240_N9.240_N9": {
+      "conditions": [
+        {
+          "elements": [2, 3],
+          "type": "R"
+        }
+      ]
+    },
+    "heading.240_N9.240_N9.05": {
+      "requirement": "optional"
+    },
+    "heading.240_N9.250_MSG": {
+      "conditions": []
+    },
+    "heading.240_N9.250_MSG.02": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID.060_PID": {
+      "conditions": [
+        {
+          "elements": [4, 3],
+          "type": "C"
+        },
+        {
+          "elements": [7, 3],
+          "type": "C"
+        },
+        {
+          "elements": [8, 4],
+          "type": "C"
+        },
+        {
+          "elements": [9, 5],
+          "type": "C"
+        },
+        {
+          "elements": [4, 5],
+          "type": "R"
+        }
+      ]
+    },
+    "detail.010_IT1.100_PO4.01": {
+      "requirement": "mandatory"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.06": {
+      "codes": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "Z"]
+    }
+  },
+  "overrides": {
+    "heading.030_NTE": {
+      "requirement": "optional"
+    },
+    "heading.040_CUR": {
+      "requirement": "not_used"
+    },
+    "heading.050_REF": {
+      "requirement": "optional"
+    },
+    "heading.055_YNQ": {
+      "requirement": "not_used"
+    },
+    "heading.060_PER": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1": {
+      "requirement": "optional"
+    },
+    "heading.070_N1.080_N2": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.090_N3": {
+      "requirement": "optional"
+    },
+    "heading.070_N1.100_N4": {
+      "requirement": "optional"
+    },
+    "heading.070_N1.110_REF": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.120_PER": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.125_DMG": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD": {
+      "requirement": "mandatory"
+    },
+    "heading.140_DTM": {
+      "requirement": "optional"
+    },
+    "heading.150_FOB": {
+      "requirement": "not_used"
+    },
+    "heading.160_PID": {
+      "requirement": "not_used"
+    },
+    "heading.170_MEA": {
+      "requirement": "not_used"
+    },
+    "heading.180_PWK": {
+      "requirement": "not_used"
+    },
+    "heading.190_PKG": {
+      "requirement": "not_used"
+    },
+    "heading.200_L7": {
+      "requirement": "not_used"
+    },
+    "heading.212_BAL": {
+      "requirement": "not_used"
+    },
+    "heading.213_INC": {
+      "requirement": "not_used"
+    },
+    "heading.214_PAM": {
+      "requirement": "not_used"
+    },
+    "heading.220_LM": {
+      "requirement": "not_used"
+    },
+    "heading.240_N9": {
+      "requirement": "optional"
+    },
+    "heading.260_V1": {
+      "requirement": "not_used"
+    },
+    "heading.260_V1.270_R4": {
+      "requirement": "not_used"
+    },
+    "heading.260_V1.280_DTM": {
+      "requirement": "not_used"
+    },
+    "heading.290_FA1": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1": {
+      "requirement": "optional"
+    },
+    "detail.010_IT1.012_CRC": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.015_QTY": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.020_CUR": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.030_IT3": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.040_TXI": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.050_CTP": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.055_PAM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.059_MEA": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID": {
+      "requirement": "optional"
+    },
+    "detail.010_IT1.060_PID.070_MEA": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.080_PWK": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.090_PKG": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.100_PO4": {
+      "requirement": "optional"
+    },
+    "detail.010_IT1.110_ITD": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.120_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.125_YNQ": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.130_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.140_SDQ": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.150_DTM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.160_CAD": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.170_L7": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.175_SR": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.180_SAC": {
+      "requirement": "optional"
+    },
+    "detail.010_IT1.180_SAC.190_TXI": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.205_DTM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.210_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.220_PID": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.230_SAC": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.235_TC2": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.200_SLN.237_TXI": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.250_N2": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.260_N3": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.270_N4": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.280_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.290_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.240_N1.295_DMG": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.300_LM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.320_V1": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.320_V1.330_R4": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.320_V1.340_DTM": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.350_FA1": {
+      "requirement": "not_used"
+    },
+    "summary.020_TXI": {
+      "requirement": "not_used"
+    },
+    "summary.030_CAD": {
+      "requirement": "optional"
+    },
+    "summary.035_AMT": {
+      "requirement": "not_used"
+    },
+    "summary.040_SAC": {
+      "requirement": "optional"
+    },
+    "summary.040_SAC.050_TXI": {
+      "requirement": "not_used"
+    },
+    "summary.060_ISS": {
+      "requirement": "optional"
+    },
+    "summary.060_ISS.065_PID": {
+      "requirement": "not_used"
+    },
+    "summary.070_CTT": {
+      "requirement": "mandatory"
+    },
+    "heading.010_ST.01": {
+      "codes": ["810"]
+    },
+    "heading.020_BIG.01": {
+      "definition": "Date expressed as CCYYMMDD\nInvoice issue Date"
+    },
+    "heading.020_BIG.02": {
+      "definition": "Identifying number assigned by issuer\nNote:  Invoice numbers must not be more than 19 characters long.   Invoice numbers may contain alphas but no special characters.  Alpha characters must be in upper case."
+    },
+    "heading.020_BIG.03": {
+      "definition": "Date expressed as CCYYMMDD\nNot used by Target"
+    },
+    "heading.020_BIG.04": {
+      "definition": "Identifying number for Purchase Order assigned by the orderer/purchaser\nSend the same number here that was received on the 850 PO in element BEG03.\nThe purchase order number will be formatted either as SSSS-PPPPPPP-LLLL (17 characters) or SSSS-PPPPPPP (12 characters).\n\nSSSS = Source code, PPPPPPP = PO number, LLLL = Location ID Code\n\nNew Purchase Order Number Format:\n12345678901-1234"
+    },
+    "heading.020_BIG.07": {
+      "codes": ["DO"]
+    },
+    "heading.020_BIG.08": {
+      "requirement": "not_used"
+    },
+    "heading.020_BIG.09": {
+      "requirement": "not_used"
+    },
+    "heading.020_BIG.10": {
+      "requirement": "not_used"
+    },
+    "heading.030_NTE.01": {
+      "codes": ["CER"]
+    },
+    "heading.050_REF.01": {
+      "codes": ["DP", "IA", "PO"]
+    },
+    "heading.050_REF.02": {
+      "definition": "Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier\nIA = Vendor Number. Vendor number must be 7 digits.  Add leading zeroes to make 7 digits.\nPD = Promotion/Deal Number\nDP = Department\nNote: Department must be 3 digits.  Add leading zero(s) to make 3 digits."
+    },
+    "heading.050_REF.03": {
+      "requirement": "optional"
+    },
+    "heading.050_REF.04": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.070_N1.01": {
+      "codes": ["BS", "BY", "SF", "ST"]
+    },
+    "heading.070_N1.070_N1.03": {
+      "codes": ["91", "92"]
+    },
+    "heading.070_N1.070_N1.04": {
+      "definition": "Code identifying a party or other code\nA list of Target location codes may be found on the Partners Online website. ",
+      "requirement": "not_used"
+    },
+    "heading.070_N1.070_N1.02": {
+      "definition": "Free-form name\nNot used by Target"
+    },
+    "heading.070_N1.070_N1.05": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.070_N1.06": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.100_N4.04": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.100_N4.06": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD.01": {
+      "codes": ["01", "02"]
+    },
+    "heading.130_ITD.02": {
+      "codes": ["2", "3"],
+      "requirement": "optional"
+    },
+    "heading.130_ITD.09": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD.12": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD.14": {
+      "requirement": "not_used"
+    },
+    "heading.130_ITD.15": {
+      "requirement": "not_used"
+    },
+    "heading.140_DTM.01": {
+      "codes": ["011"]
+    },
+    "heading.140_DTM.04": {
+      "requirement": "not_used"
+    },
+    "heading.140_DTM.02": {
+      "definition": "Date expressed as CCYYMMDD\nDate Merchandise was shipped."
+    },
+    "heading.240_N9.240_N9.01": {
+      "codes": ["ZZ"]
+    },
+    "heading.240_N9.240_N9.02": {
+      "definition": "Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier\nPACA"
+    },
+    "heading.240_N9.240_N9.06": {
+      "requirement": "not_used"
+    },
+    "heading.240_N9.240_N9.07": {
+      "requirement": "not_used"
+    },
+    "heading.240_N9.240_N9.04": {
+      "requirement": "not_used"
+    },
+    "heading.240_N9.250_MSG.01": {
+      "definition": "Free-form message text\nMSG*The perishable agricultural commodities listed on this \nMSG*invoice are sold subject to the statutory trust authorized \nMSG*by Section 5(c) of the Perishable Agricultural Commodities\nMSG*Act, 1930 (7 U.S.C. 4993(c)).  The seller of these \nMSG*commodities retains a trust claim over these commodities,\nMSG*all inventories of food or other products derived from\nMGS*these commodities, and any receivables or proceeds from\nMSG*the sale of these commodities until full payment is \nMSG*received.\n"
+    },
+    "heading.240_N9.250_MSG.03": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.010_IT1.03": {
+      "codes": ["CA", "EA", "LB"]
+    },
+    "detail.010_IT1.010_IT1.04": {
+      "definition": "Price per unit of product, service, commodity, etc.\nTarget only reads out five places after the decimal point, sending more than 5 places can result in a fatal error."
+    },
+    "detail.010_IT1.010_IT1.06": {
+      "codes": ["CB", "EN", "IN", "UI", "UP"]
+    },
+    "detail.010_IT1.010_IT1.08": {
+      "codes": ["CB", "EN", "IN", "UI", "UP"]
+    },
+    "detail.010_IT1.010_IT1.10": {
+      "codes": ["CB", "EN", "IN", "UI", "UP"]
+    },
+    "detail.010_IT1.060_PID.060_PID.01": {
+      "codes": ["F"]
+    },
+    "detail.010_IT1.060_PID.060_PID.02": {
+      "codes": ["08"]
+    },
+    "detail.010_IT1.060_PID.060_PID.04": {
+      "definition": "A code from an industry code list which provides specific data about a product characteristic\nNot used by Target"
+    },
+    "detail.010_IT1.060_PID.060_PID.06": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID.060_PID.08": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID.060_PID.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID.060_PID.09": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.100_PO4.02": {
+      "definition": "Size of supplier units in pack\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.06": {
+      "definition": "Numeric value of gross weight per pack\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.08": {
+      "definition": "Numeric value of gross volume per pack\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.09": {
+      "definition": "Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.10": {
+      "definition": "Largest horizontal dimension of an object measured when the object is in the upright position\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.11": {
+      "definition": "Shorter measurement of the two horizontal dimensions measured with the object in the upright position\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.12": {
+      "definition": "Vertical dimension of an object measured when the object is in the upright position\nNot used by Target"
+    },
+    "detail.010_IT1.100_PO4.14": {
+      "definition": "The number of eaches per inner container\nNot used by Target",
+      "requirement": "optional"
+    },
+    "detail.010_IT1.100_PO4.15": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.100_PO4.17": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.100_PO4.18": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.01": {
+      "codes": ["A", "C"]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.02": {
+      "codes": [
+        "B950",
+        "C310",
+        "D170",
+        "D270",
+        "F800",
+        "H000",
+        "H090",
+        "H700",
+        "H750"
+      ]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.03": {
+      "codes": ["VI"]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.12": {
+      "codes": ["02", "06"]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.16": {
+      "requirement": "not_used"
+    },
+    "summary.010_TDS.02": {
+      "definition": "Monetary amount\nTotal amount of merchandise.  If you offer a discount on gross amount before allowances, this field is required.  Otherwise it is not needed."
+    },
+    "summary.010_TDS.01": {
+      "definition": "Monetary amount\nTotal amount of invoice (including charges, less allowances) before terms discount."
+    },
+    "summary.010_TDS.03": {
+      "requirement": "not_used"
+    },
+    "summary.010_TDS.04": {
+      "requirement": "not_used"
+    },
+    "summary.030_CAD.01": {
+      "codes": ["C", "M", "P", "U"]
+    },
+    "summary.030_CAD.02": {
+      "definition": "Prefix or alphabetic part of an equipment unit's identifying number\nNot used by Target",
+      "requirement": "optional"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.05": {
+      "definition": "Monetary amount\nMonetary amount must be 10 cents or greater. Anything less than 10 cents will be rejected and will not feed into Target's application system.  Two decimal places are implied, do not send a decimal point."
+    },
+    "detail.010_IT1.180_SAC.180_SAC.08": {
+      "definition": "Rate expressed in the standard monetary denomination for the currency specified\nNot used by Target"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.09": {
+      "codes": ["EA"]
+    },
+    "detail.010_IT1.180_SAC.180_SAC.10": {
+      "definition": "Numeric value of quantity\nWhen SAC02 = D170, this data element is required and should contain the quantity of free goods.  SAC09 should contain the unit of measure of the free goods."
+    },
+    "detail.010_IT1.180_SAC.180_SAC.11": {
+      "definition": "Numeric value of quantity\nNot used by Target\n"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.14": {
+      "definition": "A unique number identifying available promotion or allowance options when more than one is offered\nNot used by Target"
+    },
+    "summary.030_CAD.07": {
+      "codes": ["BM", "CN"]
+    },
+    "summary.030_CAD.09": {
+      "requirement": "not_used"
+    },
+    "summary.040_SAC.040_SAC.01": {
+      "codes": ["A", "C"]
+    },
+    "summary.040_SAC.040_SAC.02": {
+      "codes": [
+        "B950",
+        "C310",
+        "D170",
+        "D270",
+        "F800",
+        "H000",
+        "H090",
+        "H700",
+        "H750"
+      ]
+    },
+    "summary.040_SAC.040_SAC.03": {
+      "codes": ["VI"]
+    },
+    "summary.040_SAC.040_SAC.04": {
+      "definition": "Agency maintained code identifying the service, promotion, allowance, or charge\nHA\t\tHanger Service"
+    },
+    "summary.040_SAC.040_SAC.05": {
+      "definition": "Monetary amount\nMonetary amount must be 10 cents or greater. Anything less than 10 cents will be rejected and will not feed into Target's application system.  Two decimal places are implied, do not send a decimal point."
+    },
+    "summary.040_SAC.040_SAC.06": {
+      "codes": ["3"]
+    },
+    "summary.040_SAC.040_SAC.12": {
+      "codes": ["02", "06"],
+      "custom_code_definitions": {}
+    },
+    "summary.040_SAC.040_SAC.16": {
+      "requirement": "not_used"
+    },
+    "summary.060_ISS.060_ISS.02": {
+      "codes": ["CA", "CT", "EA", "LB"]
+    },
+    "summary.060_ISS.060_ISS.04": {
+      "codes": ["LB"]
+    },
+    "summary.060_ISS.060_ISS.07": {
+      "requirement": "not_used"
+    },
+    "summary.060_ISS.060_ISS.08": {
+      "requirement": "not_used"
+    },
+    "summary.070_CTT.02": {
+      "requirement": "not_used"
+    },
+    "summary.070_CTT.07": {
+      "requirement": "not_used"
+    },
+    "heading.070_N1.070_N1": {
+      "conditions": [
+        {
+          "elements": [2, 3],
+          "type": "R"
+        }
+      ]
+    },
+    "heading.240_N9.240_N9": {
+      "conditions": [
+        {
+          "elements": [2, 3],
+          "type": "R"
+        }
+      ]
+    },
+    "heading.240_N9.240_N9.05": {
+      "requirement": "optional"
+    },
+    "heading.240_N9.250_MSG": {
+      "conditions": []
+    },
+    "heading.240_N9.250_MSG.02": {
+      "requirement": "not_used"
+    },
+    "detail.010_IT1.060_PID.060_PID": {
+      "conditions": [
+        {
+          "elements": [4, 3],
+          "type": "C"
+        },
+        {
+          "elements": [7, 3],
+          "type": "C"
+        },
+        {
+          "elements": [8, 4],
+          "type": "C"
+        },
+        {
+          "elements": [9, 5],
+          "type": "C"
+        },
+        {
+          "elements": [4, 5],
+          "type": "R"
+        }
+      ]
+    },
+    "detail.010_IT1.100_PO4.01": {
+      "requirement": "mandatory"
+    },
+    "detail.010_IT1.180_SAC.180_SAC.06": {
+      "codes": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "Z"]
+    }
+  },
+  "appendix": "",
+  "guide_id": "01G35P03GJ5WVDAK8F3RG4ZNQB"
+}

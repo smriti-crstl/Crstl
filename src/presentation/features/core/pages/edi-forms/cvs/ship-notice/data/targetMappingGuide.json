@@ -1,0 +1,990 @@
+{
+  "created_at": "2022-05-16T12:06:37.795Z",
+  "id": "01G36C6QZ314R0CMZDFH18SXQN",
+  "updated_at": "2022-05-16T12:26:52.293Z",
+  "title": "SB v2 (5/16/22)",
+  "release": "X12-004010",
+  "set": "856",
+  "customizations": {
+    "heading.040_DTM": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.020_LIN": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.030_SN1": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.040_SLN": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.060_PO4": {
+      "conditions": [
+        {
+          "elements": [8, 9],
+          "type": "P"
+        }
+      ],
+      "requirement": "optional"
+    },
+    "detail.010_HL.070_PID": {
+      "conditions": [
+        {
+          "elements": [4, 3],
+          "type": "C"
+        },
+        {
+          "elements": [4, 5],
+          "type": "R"
+        },
+        {
+          "elements": [7, 3],
+          "type": "C"
+        },
+        {
+          "elements": [8, 4],
+          "type": "C"
+        },
+        {
+          "elements": [9, 5],
+          "type": "C"
+        }
+      ],
+      "requirement": "optional"
+    },
+    "detail.010_HL.080_MEA": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.090_PWK": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.100_PKG": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.110_TD1": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.130_TD3": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.140_TD4": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.145_TSD": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.150_REF": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.151_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.153_LH2": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.154_LH3": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.155_LFH": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.156_LEP": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.157_LH4": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.158_LHT": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.159_LHR": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.160_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.161_LHE": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.170_CLD": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.170_CLD.180_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.170_CLD.185_DTP": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.190_MAN": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.200_DTM": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.210_FOB": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.215_PAL": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.220_N1.230_N2": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.240_N3": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.250_N4": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.260_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.270_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.280_FOB": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.290_SDQ": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.300_ETD": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.310_CUR": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.320_SAC": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.320_SAC.325_CUR": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.330_GF": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.335_YNQ": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.340_LM": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.360_V1": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.360_V1.370_R4": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.360_V1.380_DTM": {
+      "requirement": "not_used"
+    },
+    "summary.010_CTT": {
+      "requirement": "mandatory"
+    },
+    "heading.010_ST.01": {
+      "codes": ["856"]
+    },
+    "heading.020_BSN.01": {
+      "codes": ["00", "07"]
+    },
+    "heading.020_BSN.05": {
+      "codes": ["0001", "0002"],
+      "requirement": "mandatory"
+    },
+    "heading.020_BSN.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.010_HL.03": {
+      "codes": ["O", "P", "S", "T", "I"]
+    },
+    "detail.010_HL.010_HL.04": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.020_LIN.02": {
+      "codes": ["CB", "EN", "IN", "UP"]
+    },
+    "detail.010_HL.020_LIN.06": {
+      "codes": ["CB", "EN", "IN", "UP"]
+    },
+    "detail.010_HL.030_SN1.02": {
+      "definition": "Numeric value of units shipped in manufacturer's shipping units for a line item or transaction set\nThe value stated in SN102 is dependent upon the 856 structure (Standard or Pick Pack) and the type of carton identification number being sent in the MAN segment at the Pack level.\n\nPick Pack Structure:\nWhen a SSCC is sent for every carton, the value is equal to the total number of eaches tied to the unique SSCC sent at the corresponding Pack level.  If the unit of measure is cases (CA), then the value is one.\n\nWhen a GTIN-14 (SCC 14 digit) is sent at the Pack level, then the value is equal to the total number of eaches or cases shipped for the line item.  \nDo not repeat Pack/Item loops for each carton shipped that is tied to the GTIN referenced in the Pack level.  \n\nWhen doing MAN segment ranges at the Pack level, then the value is equal to the total number of eaches shipped within the range.\n\nStandard Structure:\nThe value is equal to the total number of eaches or cases shipped for a line item where the respective bar code will report to the parent item level. "
+    },
+    "detail.010_HL.030_SN1.03": {
+      "codes": ["CA", "EA", "LB"]
+    },
+    "detail.010_HL.030_SN1.04": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.030_SN1.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.030_SN1.08": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.02": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.03": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.04": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.05": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.01": {
+      "definition": "Identifying number for Purchase Order assigned by the orderer/purchaser\nIdentifying number sent on 850 Purchase Order in the BEG03 segment.  Send back what was received in the BEG03 segment on 850 Purchase Order."
+    },
+    "detail.010_HL.050_PRF.06": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.15": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.14": {
+      "definition": "The number of eaches per inner container\nIf inner cartons are being sent, this must represent the number of selling units within one inner pack.\nIf the PO414 element is received on the PO, then it is required to be sent back on the 856.",
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.17": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.18": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.070_PID.01": {
+      "codes": ["S"]
+    },
+    "detail.010_HL.070_PID.03": {
+      "codes": ["VI"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.070_PID.04": {
+      "definition": "A code from an industry code list which provides specific data about a product characteristic\nFL\t\tCompliant with Fair Labor Standards Act\nZZ\t\tFLSA Non-Compliance or Not applicable.",
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.070_PID.05": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.070_PID.06": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.070_PID.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.070_PID.08": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.070_PID.09": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.01": {
+      "codes": ["B"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.120_TD5.02": {
+      "codes": ["2"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.120_TD5.04": {
+      "codes": ["A", "C", "M", "U"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.120_TD5.05": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.120_TD5.03": {
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.120_TD5.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.09": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.10": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.14": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.15": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.150_REF.01": {
+      "codes": ["BM", "CN", "MB", "LT"],
+      "definition": "Code qualifying the Reference Identification\nBM\t\tBill of Lading Number\n\tRequired when shipping via motor carrier (TD504 equals \"M\").\nCN\t\tCarrier's Reference Number (PRO/Invoice)\n\tRequired when shipping parcel package shipments (TD504 equals \"U\" or \"A\").\nMB\t\tMaster Bill of Lading\n\tMaster Bill of Lading required for all consolidated shipments (TD504 equals \"C\").\nPlease note: if the Master Bill of Lading (MB) and Bill of Lading (BM) are both sent, Target will only use the Master Bill of Lading (MB) number. \nLT\t\tLot Number\n\tLot number required based on Food Distribution Center Shipments, as these are designated by Target as lot number controlled product."
+    },
+    "detail.010_HL.150_REF.04": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.150_REF.02": {
+      "definition": "Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier\nA unique Bill of Lading (BOL) number for each shipment is required.  When the mode of transportation is for Consolidation, a unique Master BOL # is required for all ship to locations on that shipment."
+    },
+    "detail.010_HL.190_MAN.01": {
+      "codes": ["AA", "GM", "UP", "UC"]
+    },
+    "detail.010_HL.190_MAN.02": {
+      "definition": "Marks and numbers used to identify a shipment or parts of a shipment\nWhen GM is present in the MAN01, the value in this field must be 20 digits."
+    },
+    "detail.010_HL.190_MAN.05": {
+      "definition": "Marks and numbers used to identify a shipment or parts of a shipment\nWhen GM is present in the MAN01, the value in this field must be 20 digits."
+    },
+    "detail.010_HL.200_DTM.01": {
+      "codes": ["011", "067", "036"]
+    },
+    "detail.010_HL.220_N1.220_N1.03": {
+      "codes": ["1", "9", "11", "54", "92"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.220_N1.220_N1.04": {
+      "definition": "Code identifying a party or other code\nThis will be a four digit location number.",
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.220_N1.220_N1.01": {
+      "codes": ["ST", "BY", "MA"]
+    },
+    "detail.010_HL.220_N1.220_N1.05": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.220_N1.220_N1.06": {
+      "codes": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "requirement": "optional"
+    },
+    "summary.010_CTT.01": {
+      "definition": "Total number of line items in the transaction set\nThe number of HL segments present in the transaction set."
+    },
+    "summary.010_CTT.02": {
+      "requirement": "not_used"
+    },
+    "summary.010_CTT.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.020_LIN.04": {
+      "codes": ["CB", "IN", "EN", "UP"]
+    },
+    "detail.010_HL.060_PO4.05": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.06": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.10": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.11": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.12": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.13": {
+      "requirement": "not_used"
+    }
+  },
+  "overrides": {
+    "heading.040_DTM": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.020_LIN": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.030_SN1": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.040_SLN": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.060_PO4": {
+      "conditions": [
+        {
+          "elements": [8, 9],
+          "type": "P"
+        }
+      ],
+      "requirement": "optional"
+    },
+    "detail.010_HL.070_PID": {
+      "conditions": [
+        {
+          "elements": [4, 3],
+          "type": "C"
+        },
+        {
+          "elements": [4, 5],
+          "type": "R"
+        },
+        {
+          "elements": [7, 3],
+          "type": "C"
+        },
+        {
+          "elements": [8, 4],
+          "type": "C"
+        },
+        {
+          "elements": [9, 5],
+          "type": "C"
+        }
+      ],
+      "requirement": "optional"
+    },
+    "detail.010_HL.080_MEA": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.090_PWK": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.100_PKG": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.110_TD1": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.130_TD3": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.140_TD4": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.145_TSD": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.150_REF": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.151_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.153_LH2": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.154_LH3": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.155_LFH": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.156_LEP": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.157_LH4": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.158_LHT": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.159_LHR": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.160_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.152_LH1.161_LHE": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.170_CLD": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.170_CLD.180_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.170_CLD.185_DTP": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.190_MAN": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.200_DTM": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.210_FOB": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.215_PAL": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.220_N1.230_N2": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.240_N3": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.250_N4": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.260_REF": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.270_PER": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.220_N1.280_FOB": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.290_SDQ": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.300_ETD": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.310_CUR": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.320_SAC": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.320_SAC.325_CUR": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.330_GF": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.335_YNQ": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.340_LM": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.360_V1": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.360_V1.370_R4": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.360_V1.380_DTM": {
+      "requirement": "not_used"
+    },
+    "summary.010_CTT": {
+      "requirement": "mandatory"
+    },
+    "heading.010_ST.01": {
+      "codes": ["856"]
+    },
+    "heading.020_BSN.01": {
+      "codes": ["00", "07"]
+    },
+    "heading.020_BSN.05": {
+      "codes": ["0001", "0002"],
+      "requirement": "mandatory"
+    },
+    "heading.020_BSN.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.010_HL.03": {
+      "codes": ["O", "P", "S", "T", "I"]
+    },
+    "detail.010_HL.010_HL.04": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.020_LIN.02": {
+      "codes": ["CB", "EN", "IN", "UP"]
+    },
+    "detail.010_HL.020_LIN.06": {
+      "codes": ["CB", "EN", "IN", "UP"]
+    },
+    "detail.010_HL.030_SN1.02": {
+      "definition": "Numeric value of units shipped in manufacturer's shipping units for a line item or transaction set\nThe value stated in SN102 is dependent upon the 856 structure (Standard or Pick Pack) and the type of carton identification number being sent in the MAN segment at the Pack level.\n\nPick Pack Structure:\nWhen a SSCC is sent for every carton, the value is equal to the total number of eaches tied to the unique SSCC sent at the corresponding Pack level.  If the unit of measure is cases (CA), then the value is one.\n\nWhen a GTIN-14 (SCC 14 digit) is sent at the Pack level, then the value is equal to the total number of eaches or cases shipped for the line item.  \nDo not repeat Pack/Item loops for each carton shipped that is tied to the GTIN referenced in the Pack level.  \n\nWhen doing MAN segment ranges at the Pack level, then the value is equal to the total number of eaches shipped within the range.\n\nStandard Structure:\nThe value is equal to the total number of eaches or cases shipped for a line item where the respective bar code will report to the parent item level. "
+    },
+    "detail.010_HL.030_SN1.03": {
+      "codes": ["CA", "EA", "LB"]
+    },
+    "detail.010_HL.030_SN1.04": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.030_SN1.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.030_SN1.08": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.02": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.03": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.04": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.05": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.01": {
+      "definition": "Identifying number for Purchase Order assigned by the orderer/purchaser\nIdentifying number sent on 850 Purchase Order in the BEG03 segment.  Send back what was received in the BEG03 segment on 850 Purchase Order."
+    },
+    "detail.010_HL.050_PRF.06": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.050_PRF.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.15": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.14": {
+      "definition": "The number of eaches per inner container\nIf inner cartons are being sent, this must represent the number of selling units within one inner pack.\nIf the PO414 element is received on the PO, then it is required to be sent back on the 856.",
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.17": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.18": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.070_PID.01": {
+      "codes": ["S"]
+    },
+    "detail.010_HL.070_PID.03": {
+      "codes": ["VI"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.070_PID.04": {
+      "definition": "A code from an industry code list which provides specific data about a product characteristic\nFL\t\tCompliant with Fair Labor Standards Act\nZZ\t\tFLSA Non-Compliance or Not applicable.",
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.070_PID.05": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.070_PID.06": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.070_PID.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.070_PID.08": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.070_PID.09": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.01": {
+      "codes": ["B"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.120_TD5.02": {
+      "codes": ["2"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.120_TD5.04": {
+      "codes": ["A", "C", "M", "U"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.120_TD5.05": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.120_TD5.03": {
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.120_TD5.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.09": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.10": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.14": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.120_TD5.15": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.150_REF.01": {
+      "codes": ["BM", "CN", "MB", "LT"],
+      "definition": "Code qualifying the Reference Identification\nBM\t\tBill of Lading Number\n\tRequired when shipping via motor carrier (TD504 equals \"M\").\nCN\t\tCarrier's Reference Number (PRO/Invoice)\n\tRequired when shipping parcel package shipments (TD504 equals \"U\" or \"A\").\nMB\t\tMaster Bill of Lading\n\tMaster Bill of Lading required for all consolidated shipments (TD504 equals \"C\").\nPlease note: if the Master Bill of Lading (MB) and Bill of Lading (BM) are both sent, Target will only use the Master Bill of Lading (MB) number. \nLT\t\tLot Number\n\tLot number required based on Food Distribution Center Shipments, as these are designated by Target as lot number controlled product."
+    },
+    "detail.010_HL.150_REF.04": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.150_REF.02": {
+      "definition": "Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier\nA unique Bill of Lading (BOL) number for each shipment is required.  When the mode of transportation is for Consolidation, a unique Master BOL # is required for all ship to locations on that shipment."
+    },
+    "detail.010_HL.190_MAN.01": {
+      "codes": ["AA", "GM", "UP", "UC"]
+    },
+    "detail.010_HL.190_MAN.02": {
+      "definition": "Marks and numbers used to identify a shipment or parts of a shipment\nWhen GM is present in the MAN01, the value in this field must be 20 digits."
+    },
+    "detail.010_HL.190_MAN.05": {
+      "definition": "Marks and numbers used to identify a shipment or parts of a shipment\nWhen GM is present in the MAN01, the value in this field must be 20 digits."
+    },
+    "detail.010_HL.200_DTM.01": {
+      "codes": ["036"]
+    },
+    "detail.010_HL.220_N1.220_N1.03": {
+      "codes": ["92"],
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.220_N1.220_N1.04": {
+      "definition": "Code identifying a party or other code\nThis will be a four digit location number.",
+      "requirement": "mandatory"
+    },
+    "detail.010_HL.220_N1.220_N1.01": {
+      "codes": ["ST", "BY", "SF"]
+    },
+    "detail.010_HL.220_N1.220_N1.05": {
+      "requirement": "optional"
+    },
+    "detail.010_HL.220_N1.220_N1.06": {
+      "codes": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09"
+      ],
+      "requirement": "optional"
+    },
+    "summary.010_CTT.01": {
+      "definition": "Total number of line items in the transaction set\nThe number of HL segments present in the transaction set."
+    },
+    "summary.010_CTT.02": {
+      "requirement": "not_used"
+    },
+    "summary.010_CTT.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.020_LIN.04": {
+      "codes": ["CB", "IN", "EN", "UP"]
+    },
+    "detail.010_HL.060_PO4.05": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.06": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.07": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.10": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.11": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.12": {
+      "requirement": "not_used"
+    },
+    "detail.010_HL.060_PO4.13": {
+      "requirement": "not_used"
+    }
+  },
+  "appendix": "",
+  "guide_id": "01G2XXC9WA1MXFTPN7C5MTKDJV"
+}

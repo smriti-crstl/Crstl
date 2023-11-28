@@ -1,0 +1,398 @@
+{
+  "heading": {
+    "transaction_set_header_ST": {
+      "transaction_set_identifier_code_01": {
+        "classNames": " grid-three-column transaction_set_identifier_code_01"
+      },
+      "transaction_set_control_number_02": {
+        "classNames": " grid-three-column transaction_set_control_number_02"
+      },
+      "classNames": "grid-three-column transaction_set_header_ST"
+    },
+    "beginning_segment_for_ship_notice_BSN": {
+      "transaction_set_purpose_code_01": {
+        "classNames": "transaction_set_purpose_code_01"
+      },
+      "shipment_identification_02": {
+        "classNames": "shipment_identification_02"
+      },
+      "date_03": { "classNames": "date_03" },
+      "time_04": { "classNames": "time_04" },
+      "hierarchical_structure_code_05": {
+        "classNames": "hierarchical_structure_code_05"
+      },
+      "classNames": "grid-three-column beginning_segment_for_ship_notice_BSN"
+    },
+    "classNames": "heading"
+  },
+  "detail": {
+    "HL_loop_shipment": {
+      "items": {
+        "N1_loop_ship_from": {
+          "items": {
+            "name_N1": {
+              "entity_identifier_code_01": {
+                "classNames": "entity_identifier_code_01"
+              },
+              "name_02": { "classNames": "name_02" },
+              "identification_code_qualifier_03": {
+                "classNames": "identification_code_qualifier_03"
+              },
+              "identification_code_04": {
+                "classNames": "identification_code_04"
+              },
+              "classNames": "name_N1"
+            },
+            "address_information_N3": {
+              "items": {
+                "address_information_01": {
+                  "classNames": "address_information_01"
+                },
+                "address_information_02": {
+                  "classNames": "address_information_02"
+                }
+              },
+              "classNames": "address_information_N3"
+            },
+            "geographic_location_N4": {
+              "city_name_01": { "classNames": "city_name_01" },
+              "state_or_province_code_02": {
+                "classNames": "state_or_province_code_02"
+              },
+              "postal_code_03": { "classNames": "postal_code_03" },
+              "country_code_04": { "classNames": "country_code_04" },
+              "classNames": "geographic_location_N4"
+            }
+          },
+          "classNames": "N1_loop_ship_from"
+        },
+        "carrier_details_quantity_and_weight_TD1": {
+          "items": {
+            "packaging_code_01": { "classNames": "packaging_code_01" },
+            "lading_quantity_02": { "classNames": "lading_quantity_02" },
+            "weight_qualifier_06": { "classNames": "weight_qualifier_06" },
+            "weight_07": { "classNames": "weight_07" },
+            "unit_or_basis_for_measurement_code_08": {
+              "classNames": "unit_or_basis_for_measurement_code_08"
+            },
+            "volume_09": { "classNames": "volume_09" },
+            "unit_or_basis_for_measurement_code_10": {
+              "classNames": "unit_or_basis_for_measurement_code_10"
+            }
+          },
+          "classNames": "carrier_details_quantity_and_weight_TD1"
+        },
+        "carrier_details_routing_sequence_transit_time_TD5": {
+          "items": {
+            "routing_sequence_code_01": {
+              "classNames": "routing_sequence_code_01"
+            },
+            "identification_code_qualifier_02": {
+              "classNames": "identification_code_qualifier_02"
+            },
+            "identification_code_03": {
+              "classNames": "identification_code_03"
+            },
+            "transportation_method_type_code_04": {
+              "classNames": "transportation_method_type_code_04"
+            },
+            "routing_05": { "classNames": "routing_05" }
+          },
+          "classNames": "carrier_details_routing_sequence_transit_time_TD5"
+        },
+        "carrier_details_equipment_TD3": {
+          "items": {
+            "equipment_description_code_01": {
+              "classNames": "equipment_description_code_01"
+            },
+            "equipment_number_03": { "classNames": "equipment_number_03" }
+          },
+          "classNames": "carrier_details_equipment_TD3"
+        },
+        "reference_identification_REF": {
+          "items": {
+            "reference_identification_qualifier_01": {
+              "classNames": "reference_identification_qualifier_01"
+            },
+            "reference_identification_02": {
+              "classNames": "reference_identification_02"
+            }
+          },
+          "classNames": "reference_identification_REF"
+        },
+        "date_time_reference_DTM": {
+          "items": {
+            "date_time_qualifier_01": {
+              "classNames": "date_time_qualifier_01"
+            },
+            "date_02": { "classNames": "date_02" },
+            "time_03": { "classNames": "time_03" }
+          },
+          "classNames": "date_time_reference_DTM"
+        },
+        "fob_related_instructions_FOB": {
+          "shipment_method_of_payment_01": {
+            "classNames": "shipment_method_of_payment_01"
+          },
+          "location_qualifier_02": { "classNames": "location_qualifier_02" },
+          "description_03": { "classNames": "description_03" },
+          "transportation_terms_qualifier_code_04": {
+            "classNames": "transportation_terms_qualifier_code_04"
+          },
+          "transportation_terms_code_05": {
+            "classNames": "transportation_terms_code_05"
+          },
+          "classNames": "fob_related_instructions_FOB"
+        },
+        "N1_loop_ship_to": {
+          "items": {
+            "name_N1": {
+              "entity_identifier_code_01": {
+                "classNames": "entity_identifier_code_01"
+              },
+              "name_02": { "classNames": "name_02" },
+              "identification_code_qualifier_03": {
+                "classNames": "identification_code_qualifier_03"
+              },
+              "identification_code_04": {
+                "classNames": "identification_code_04"
+              },
+              "classNames": "name_N1"
+            },
+            "address_information_N3": {
+              "items": {
+                "address_information_01": {
+                  "classNames": "address_information_01"
+                },
+                "address_information_02": {
+                  "classNames": "address_information_02"
+                }
+              },
+              "classNames": "address_information_N3"
+            },
+            "geographic_location_N4": {
+              "city_name_01": { "classNames": "city_name_01" },
+              "state_or_province_code_02": {
+                "classNames": "state_or_province_code_02"
+              },
+              "postal_code_03": { "classNames": "postal_code_03" },
+              "country_code_04": { "classNames": "country_code_04" },
+              "classNames": "geographic_location_N4"
+            }
+          },
+          "classNames": "N1_loop_ship_to"
+        },
+        "HL_loop_order": {
+          "items": {
+            "purchase_order_reference_PRF": {
+              "purchase_order_number_01": {
+                "classNames": "purchase_order_number_01"
+              },
+              "release_number_02": { "classNames": "release_number_02" },
+              "date_04": { "classNames": "date_04" },
+              "classNames": "purchase_order_reference_PRF"
+            },
+            "reference_identification_REF": {
+              "items": {
+                "reference_identification_qualifier_01": {
+                  "classNames": "reference_identification_qualifier_01"
+                },
+                "reference_identification_02": {
+                  "classNames": "reference_identification_02"
+                }
+              },
+              "classNames": "reference_identification_REF"
+            },
+            "HL_loop_pack": {
+              "items": {
+                "item_identification_LIN": {
+                  "assigned_identification_01": {
+                    "classNames": "assigned_identification_01"
+                  },
+                  "product_service_id_qualifier_02": {
+                    "classNames": "product_service_id_qualifier_02"
+                  },
+                  "product_service_id_03": {
+                    "classNames": "product_service_id_03"
+                  },
+                  "product_service_id_qualifier_04": {
+                    "classNames": "product_service_id_qualifier_04"
+                  },
+                  "product_service_id_05": {
+                    "classNames": "product_service_id_05"
+                  },
+                  "product_service_id_qualifier_06": {
+                    "classNames": "product_service_id_qualifier_06"
+                  },
+                  "product_service_id_07": {
+                    "classNames": "product_service_id_07"
+                  },
+                  "product_service_id_qualifier_08": {
+                    "classNames": "product_service_id_qualifier_08"
+                  },
+                  "product_service_id_09": {
+                    "classNames": "product_service_id_09"
+                  },
+                  "classNames": "item_identification_LIN"
+                },
+                "marks_and_numbers_MAN": {
+                  "items": {
+                    "marks_and_numbers_qualifier_01": {
+                      "classNames": "marks_and_numbers_qualifier_01"
+                    },
+                    "marks_and_numbers_02": {
+                      "classNames": "marks_and_numbers_02"
+                    }
+                  },
+                  "classNames": "marks_and_numbers_MAN"
+                },
+                "HL_loop_item": {
+                  "items": {
+                    "item_identification_LIN": {
+                      "assigned_identification_01": {
+                        "classNames": "assigned_identification_01"
+                      },
+                      "product_service_id_qualifier_02": {
+                        "classNames": "product_service_id_qualifier_02"
+                      },
+                      "product_service_id_03": {
+                        "classNames": "product_service_id_03"
+                      },
+                      "product_service_id_qualifier_04": {
+                        "classNames": "product_service_id_qualifier_04"
+                      },
+                      "product_service_id_05": {
+                        "classNames": "product_service_id_05"
+                      },
+                      "product_service_id_qualifier_06": {
+                        "classNames": "product_service_id_qualifier_06"
+                      },
+                      "product_service_id_07": {
+                        "classNames": "product_service_id_07"
+                      },
+                      "product_service_id_qualifier_08": {
+                        "classNames": "product_service_id_qualifier_08"
+                      },
+                      "product_service_id_09": {
+                        "classNames": "product_service_id_09"
+                      },
+                      "product_service_id_qualifier_10": {
+                        "classNames": "product_service_id_qualifier_10"
+                      },
+                      "product_service_id_11": {
+                        "classNames": "product_service_id_11"
+                      },
+                      "product_service_id_qualifier_12": {
+                        "classNames": "product_service_id_qualifier_12"
+                      },
+                      "product_service_id_13": {
+                        "classNames": "product_service_id_13"
+                      },
+                      "classNames": "item_identification_LIN"
+                    },
+                    "item_detail_shipment_SN1": {
+                      "assigned_identification_01": {
+                        "classNames": "assigned_identification_01"
+                      },
+                      "number_of_units_shipped_02": {
+                        "classNames": "number_of_units_shipped_02"
+                      },
+                      "unit_or_basis_for_measurement_code_03": {
+                        "classNames": "unit_or_basis_for_measurement_code_03"
+                      },
+                      "quantity_shipped_to_date_04": {
+                        "classNames": "quantity_shipped_to_date_04"
+                      },
+                      "quantity_ordered_05": {
+                        "classNames": "quantity_ordered_05"
+                      },
+                      "unit_or_basis_for_measurement_code_06": {
+                        "classNames": "unit_or_basis_for_measurement_code_06"
+                      },
+                      "classNames": "item_detail_shipment_SN1"
+                    },
+                    "item_physical_details_PO4": {
+                      "pack_01": { "classNames": "pack_01" },
+                      "size_02": { "classNames": "size_02" },
+                      "unit_or_basis_for_measurement_code_03": {
+                        "classNames": "unit_or_basis_for_measurement_code_03"
+                      },
+                      "packaging_code_04": {
+                        "classNames": "packaging_code_04"
+                      },
+                      "weight_qualifier_05": {
+                        "classNames": "weight_qualifier_05"
+                      },
+                      "gross_weight_per_pack_06": {
+                        "classNames": "gross_weight_per_pack_06"
+                      },
+                      "unit_or_basis_for_measurement_code_07": {
+                        "classNames": "unit_or_basis_for_measurement_code_07"
+                      },
+                      "gross_volume_per_pack_08": {
+                        "classNames": "gross_volume_per_pack_08"
+                      },
+                      "unit_or_basis_for_measurement_code_09": {
+                        "classNames": "unit_or_basis_for_measurement_code_09"
+                      },
+                      "length_10": { "classNames": "length_10" },
+                      "width_11": { "classNames": "width_11" },
+                      "height_12": { "classNames": "height_12" },
+                      "unit_or_basis_for_measurement_code_13": {
+                        "classNames": "unit_or_basis_for_measurement_code_13"
+                      },
+                      "number_18": { "classNames": "number_18" },
+                      "classNames": "item_physical_details_PO4"
+                    },
+                    "product_item_description_PID": {
+                      "items": {
+                        "item_description_type_01": {
+                          "classNames": "item_description_type_01"
+                        },
+                        "product_process_characteristic_code_02": {
+                          "classNames": "product_process_characteristic_code_02"
+                        }
+                      },
+                      "classNames": "product_item_description_PID"
+                    },
+                    "date_time_reference_DTM": {
+                      "items": {
+                        "date_time_qualifier_01": {
+                          "classNames": "date_time_qualifier_01"
+                        },
+                        "date_02": { "classNames": "date_02" }
+                      },
+                      "classNames": "date_time_reference_DTM"
+                    }
+                  },
+                  "classNames": "HL_loop_item"
+                }
+              },
+              "classNames": "HL_loop_pack"
+            }
+          },
+          "classNames": "HL_loop_order"
+        }
+      },
+      "classNames": "HL_loop_shipment"
+    },
+    "classNames": "detail"
+  },
+  "summary": {
+    "transaction_totals_CTT": {
+      "number_of_line_items_01": { "classNames": "number_of_line_items_01" },
+      "classNames": "transaction_totals_CTT"
+    },
+    "transaction_set_trailer_SE": {
+      "number_of_included_segments_01": {
+        "classNames": "number_of_included_segments_01"
+      },
+      "transaction_set_control_number_02": {
+        "classNames": "transaction_set_control_number_02"
+      },
+      "classNames": "transaction_set_trailer_SE"
+    },
+    "classNames": "summary"
+  }
+}
+

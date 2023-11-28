@@ -1,0 +1,783 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "heading": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "transaction_set_header_ST": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "transaction_set_identifier_code_01": {
+              "type": "string",
+              "default": "856",
+              "enum": ["856"],
+              "x12-codes": {
+                "856": {
+                  "code": "856"
+                }
+              }
+            },
+            "transaction_set_control_number_02": {
+              "type": "string",
+              "minLength": 4,
+              "maxLength": 9
+            }
+          },
+          "required": [
+            "transaction_set_identifier_code_01",
+            "transaction_set_control_number_02"
+          ]
+        },
+        "beginning_segment_for_ship_notice_BSN": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "transaction_set_purpose_code_01": {
+              "type": "string",
+              "x12-codes": {
+                "00": {
+                  "description": "Original",
+                  "code": "00"
+                }
+              },
+              "enum": ["00"]
+            },
+            "shipment_identification_02": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 30
+            },
+            "date_03": {
+              "type": "string",
+              "format": "date",
+              "x12-format": "CCYYMMDD"
+            },
+            "time_04": {
+              "type": "string",
+              "x12-format": "HHMMSS",
+              "pattern": "^([01][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$"
+            }
+          },
+          "required": [
+            "transaction_set_purpose_code_01",
+            "shipment_identification_02",
+            "date_03",
+            "time_04"
+          ]
+        },
+        "date_time_reference_DTM": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "date_time_qualifier_01": {
+                "type": "string",
+                "minLength": 3,
+                "maxLength": 3
+              }
+            },
+            "required": ["date_time_qualifier_01"]
+          },
+          "minItems": 1,
+          "maxItems": 10
+        }
+      },
+      "required": ["beginning_segment_for_ship_notice_BSN"]
+    },
+    "detail": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "HL_loop_shipment": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "carrier_details_quantity_and_weight_TD1": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "packaging_code_01": {
+                      "type": "string",
+                      "minLength": 3,
+                      "maxLength": 5
+                    },
+                    "lading_quantity_02": {
+                      "type": "integer",
+                      "minimum": -9999999,
+                      "maximum": 9999999
+                    },
+                    "weight_qualifier_06": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2
+                    },
+                    "weight_07": {
+                      "minLength": 1,
+                      "maxLength": 10,
+                      "type": "string"
+                    },
+                    "unit_or_basis_for_measurement_code_08": {
+                      "type": "string",
+                      "x12-codes": {
+                        "LB": {
+                          "description": "Pound",
+                          "code": "LB"
+                        }
+                      },
+                      "enum": ["LB"]
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "type": "object",
+                      "x12-condition": "C0102",
+                      "dependentRequired": {
+                        "packaging_code_01": ["lading_quantity_02"]
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "x12-condition": "C0607",
+                      "dependentRequired": {
+                        "weight_qualifier_06": ["weight_07"]
+                      }
+                    },
+                    {
+                      "x12-condition": "P0708",
+                      "type": "object",
+                      "dependentRequired": {
+                        "weight_07": ["unit_or_basis_for_measurement_code_08"],
+                        "unit_or_basis_for_measurement_code_08": ["weight_07"]
+                      }
+                    }
+                  ]
+                },
+                "minItems": 1,
+                "maxItems": 20
+              },
+              "carrier_details_routing_sequence_transit_time_TD5": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "transportation_method_type_code_04": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2,
+                      "description": "Code specifying the method or type of transportation for the shipment.\n\nK  Back Haul\nM  Motor (Common Carrier)\n\n(Not a complete list)"
+                    },
+                    "routing_05": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 35
+                    },
+                    "transit_time_direction_qualifier_10": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 2,
+                      "description": "Code specifying the value of time used to measure the transit time\n\nCD  Calendar Days\nWD  Working Days\nWW  5 Day Work Week\n\n(Not a complete list)"
+                    },
+                    "transit_time_11": {
+                      "type": "number",
+                      "minimum": -9999,
+                      "maximum": 9999
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "type": "object",
+                      "x12-condition": "C1011",
+                      "dependentRequired": {
+                        "transit_time_direction_qualifier_10": [
+                          "transit_time_11"
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "minItems": 1,
+                "maxItems": 12
+              },
+              "reference_information_REF": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "reference_identification_qualifier_01": {
+                      "type": "string",
+                      "x12-codes": {
+                        "BM": {
+                          "description": "Bill of Lading Number",
+                          "code": "BM"
+                        }
+                      },
+                      "enum": ["BM"]
+                    },
+                    "reference_identification_02": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 50
+                    }
+                  },
+                  "description": "To specify identifying information\n\nBM  Bill of Lading Number"
+                },
+                "minItems": 1
+              },
+              "date_time_reference_DTM": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "date_time_qualifier_01": {
+                      "type": "string",
+                      "x12-codes": {
+                        "011": {
+                          "description": "Shipped",
+                          "code": "011"
+                        }
+                      },
+                      "enum": ["011"]
+                    },
+                    "date_02": {
+                      "type": "string",
+                      "format": "date",
+                      "x12-format": "CCYYMMDD"
+                    }
+                  }
+                },
+                "minItems": 1,
+                "maxItems": 10
+              },
+              "party_identification_N1_loop": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "party_identification_N1": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "entity_identifier_code_01": {
+                          "type": "string",
+                          "x12-codes": {
+                            "ST": {
+                              "description": "Ship To",
+                              "code": "ST"
+                            }
+                          },
+                          "enum": ["ST"]
+                        },
+                        "name_02": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 60
+                        },
+                        "identification_code_qualifier_03": {
+                          "type": "string",
+                          "x12-codes": {
+                            "UL": {
+                              "description": "Global Location Number (GLN)",
+                              "code": "UL"
+                            }
+                          },
+                          "enum": ["UL"]
+                        },
+                        "identification_code_04": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 80
+                        }
+                      },
+                      "allOf": [
+                        {
+                          "x12-condition": "R0203",
+                          "anyOf": [
+                            {
+                              "required": ["name_02"],
+                              "type": "object",
+                              "properties": {
+                                "name_02": true
+                              }
+                            },
+                            {
+                              "required": ["identification_code_qualifier_03"],
+                              "type": "object",
+                              "properties": {
+                                "identification_code_qualifier_03": true
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "x12-condition": "P0304",
+                          "type": "object",
+                          "dependentRequired": {
+                            "identification_code_qualifier_03": [
+                              "identification_code_04"
+                            ],
+                            "identification_code_04": [
+                              "identification_code_qualifier_03"
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    "party_location_N3": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "address_information_01": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 55
+                          }
+                        }
+                      },
+                      "minItems": 1,
+                      "maxItems": 2
+                    },
+                    "geographic_location_N4": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "city_name_01": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 30
+                        },
+                        "state_or_province_code_02": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 2
+                        },
+                        "postal_code_03": {
+                          "type": "string",
+                          "minLength": 3,
+                          "maxLength": 15
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "HL_loop_order": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "purchase_order_reference_PRF": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "purchase_order_number_01": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 22
+                        }
+                      }
+                    },
+                    "reference_information_REF": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "reference_identification_qualifier_01": {
+                            "type": "string",
+                            "x12-codes": {
+                              "IV": {
+                                "description": "Seller's Invoice Number",
+                                "code": "IV"
+                              }
+                            },
+                            "enum": ["IV"]
+                          },
+                          "reference_identification_02": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 50
+                          }
+                        }
+                      },
+                      "minItems": 1
+                    },
+                    "HL_loop_tare": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "marks_and_numbers_information_MAN": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "marks_and_numbers_qualifier_01": {
+                                  "type": "string",
+                                  "x12-codes": {
+                                    "GM": {
+                                      "description": "EAN.UCC Serial Shipping Container Code (SSCC) and Application Identifier",
+                                      "code": "GM"
+                                    }
+                                  },
+                                  "enum": ["GM"]
+                                },
+                                "marks_and_numbers_02": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "maxLength": 48
+                                },
+                                "marks_and_numbers_03": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "maxLength": 48
+                                },
+                                "marks_and_numbers_qualifier_04": {
+                                  "type": "string",
+                                  "x12-codes": {
+                                    "UC": {
+                                      "description": "U.P.C. Shipping Container Code",
+                                      "code": "UC"
+                                    }
+                                  },
+                                  "enum": ["UC"]
+                                },
+                                "marks_and_numbers_05": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "maxLength": 48
+                                },
+                                "marks_and_numbers_06": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "maxLength": 48
+                                }
+                              },
+                              "allOf": [
+                                {
+                                  "x12-condition": "P0405",
+                                  "type": "object",
+                                  "dependentRequired": {
+                                    "marks_and_numbers_qualifier_04": [
+                                      "marks_and_numbers_05"
+                                    ],
+                                    "marks_and_numbers_05": [
+                                      "marks_and_numbers_qualifier_04"
+                                    ]
+                                  }
+                                },
+                                {
+                                  "type": "object",
+                                  "x12-condition": "C0605",
+                                  "dependentRequired": {
+                                    "marks_and_numbers_06": [
+                                      "marks_and_numbers_05"
+                                    ]
+                                  }
+                                }
+                              ]
+                            },
+                            "minItems": 1
+                          },
+                          "HL_loop_pack": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "marks_and_numbers_information_MAN": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "marks_and_numbers_qualifier_01": {
+                                        "type": "string",
+                                        "x12-codes": {
+                                          "GM": {
+                                            "description": "EAN.UCC Serial Shipping Container Code (SSCC) and Application Identifier",
+                                            "code": "GM"
+                                          }
+                                        },
+                                        "enum": ["GM"]
+                                      },
+                                      "marks_and_numbers_02": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "maxLength": 48
+                                      },
+                                      "marks_and_numbers_03": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "maxLength": 48
+                                      },
+                                      "marks_and_numbers_qualifier_04": {
+                                        "type": "string",
+                                        "x12-codes": {
+                                          "UC": {
+                                            "description": "U.P.C. Shipping Container Code",
+                                            "code": "UC"
+                                          }
+                                        },
+                                        "enum": ["UC"]
+                                      },
+                                      "marks_and_numbers_05": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "maxLength": 48
+                                      },
+                                      "marks_and_numbers_06": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "maxLength": 48
+                                      }
+                                    },
+                                    "allOf": [
+                                      {
+                                        "x12-condition": "P0405",
+                                        "type": "object",
+                                        "dependentRequired": {
+                                          "marks_and_numbers_qualifier_04": [
+                                            "marks_and_numbers_05"
+                                          ],
+                                          "marks_and_numbers_05": [
+                                            "marks_and_numbers_qualifier_04"
+                                          ]
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "x12-condition": "C0605",
+                                        "dependentRequired": {
+                                          "marks_and_numbers_06": [
+                                            "marks_and_numbers_05"
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "minItems": 1
+                                },
+                                "HL_loop_item": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "item_identification_LIN": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "product_service_id_qualifier_02": {
+                                            "type": "string",
+                                            "x12-codes": {
+                                              "CB": {
+                                                "description": "Buyer's Catalog Number - McLane Item number",
+                                                "code": "CB"
+                                              }
+                                            },
+                                            "enum": ["CB"]
+                                          },
+                                          "product_service_id_03": {
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "maxLength": 48
+                                          },
+                                          "product_service_id_qualifier_04": {
+                                            "type": "string",
+                                            "x12-codes": {
+                                              "UK": {
+                                                "description": "GTIN 14-digit Data Structure",
+                                                "code": "UK"
+                                              }
+                                            },
+                                            "enum": ["UK"]
+                                          },
+                                          "product_service_id_05": {
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "maxLength": 48
+                                          }
+                                        },
+                                        "allOf": [
+                                          {
+                                            "x12-condition": "P0405",
+                                            "type": "object",
+                                            "dependentRequired": {
+                                              "product_service_id_qualifier_04": [
+                                                "product_service_id_05"
+                                              ],
+                                              "product_service_id_05": [
+                                                "product_service_id_qualifier_04"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "item_detail_shipment_SN1": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "number_of_units_shipped_02": {
+                                            "type": "number",
+                                            "minimum": -9999999999,
+                                            "maximum": 9999999999
+                                          },
+                                          "unit_or_basis_for_measurement_code_03": {
+                                            "type": "string",
+                                            "minLength": 2,
+                                            "maxLength": 2
+                                          }
+                                        }
+                                      },
+                                      "item_physical_details_PO4": {
+                                        "type": "object",
+                                        "additionalProperties": false,
+                                        "properties": {
+                                          "pack_01": {
+                                            "type": "integer",
+                                            "minimum": -999999,
+                                            "maximum": 999999
+                                          },
+                                          "size_02": {
+                                            "type": "number",
+                                            "minimum": -99999999,
+                                            "maximum": 99999999
+                                          },
+                                          "unit_or_basis_for_measurement_code_03": {
+                                            "type": "string",
+                                            "minLength": 2,
+                                            "maxLength": 2
+                                          },
+                                          "inner_pack_14": {
+                                            "type": "integer",
+                                            "minimum": -999999,
+                                            "maximum": 999999
+                                          }
+                                        },
+                                        "allOf": [
+                                          {
+                                            "x12-condition": "P0203",
+                                            "type": "object",
+                                            "dependentRequired": {
+                                              "size_02": [
+                                                "unit_or_basis_for_measurement_code_03"
+                                              ],
+                                              "unit_or_basis_for_measurement_code_03": [
+                                                "size_02"
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "product_item_description_PID": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "additionalProperties": false,
+                                          "properties": {
+                                            "item_description_type_01": {
+                                              "type": "string",
+                                              "x12-codes": {
+                                                "F": {
+                                                  "description": "Free-form",
+                                                  "code": "F"
+                                                }
+                                              },
+                                              "enum": ["F"]
+                                            },
+                                            "description_05": {
+                                              "type": "string",
+                                              "minLength": 1,
+                                              "maxLength": 80
+                                            }
+                                          }
+                                        },
+                                        "minItems": 1,
+                                        "maxItems": 200
+                                      }
+                                    },
+                                    "title": "HL Loop"
+                                  }
+                                }
+                              },
+                              "title": "HL Loop",
+                              "required": ["HL_loop_item"]
+                            }
+                          }
+                        },
+                        "title": "HL Loop",
+                        "required": ["HL_loop_pack"]
+                      }
+                    }
+                  },
+                  "title": "HL Loop",
+                  "required": ["HL_loop_tare"]
+                }
+              }
+            },
+            "required": ["HL_loop_order"]
+          }
+        }
+      },
+      "required": ["HL_loop_shipment"]
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "transaction_totals_CTT": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "number_of_line_items_01": {
+              "type": "integer",
+              "minimum": -999999,
+              "maximum": 999999
+            }
+          },
+          "required": ["number_of_line_items_01"]
+        },
+        "transaction_set_trailer_SE": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "number_of_included_segments_01": {
+              "type": "integer",
+              "minimum": -9999999999,
+              "maximum": 9999999999
+            },
+            "transaction_set_control_number_02": {
+              "type": "string",
+              "minLength": 4,
+              "maxLength": 9
+            }
+          },
+          "required": [
+            "number_of_included_segments_01",
+            "transaction_set_control_number_02"
+          ]
+        }
+      },
+      "required": []
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["heading", "detail"]
+}

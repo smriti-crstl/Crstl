@@ -1,0 +1,1504 @@
+{
+  "properties": {
+    "heading": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "transaction_set_header_ST": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "transaction_set_identifier_code_01": {
+              "type": "string",
+              "default": "856",
+              "enum": ["856"],
+              "x12-codes": { "856": { "code": "856" } },
+              "title": "Transaction Set Identifier Code"
+            },
+            "transaction_set_control_number_02": {
+              "type": "string",
+              "minLength": 4,
+              "maxLength": 9,
+              "title": "Transaction Set Control Number"
+            }
+          },
+          "required": [
+            "transaction_set_identifier_code_01",
+            "transaction_set_control_number_02"
+          ],
+          "title": "Transaction Set Header"
+        },
+        "beginning_segment_for_ship_notice_BSN": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "transaction_set_purpose_code_01": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 2,
+              "title": "Transaction Set Purpose Code"
+            },
+            "shipment_identification_02": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 30,
+              "title": "Shipment Identification"
+            },
+            "date_03": {
+              "type": "string",
+              "format": "date",
+              "x12-format": "CCYYMMDD",
+              "title": "Date"
+            },
+            "time_04": {
+              "type": "string",
+              "x12-format": "HHMMSS",
+              "pattern": "^([01][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$",
+              "title": "Time"
+            },
+            "hierarchical_structure_code_05": {
+              "type": "string",
+              "x12-codes": {
+                "0001": {
+                  "description": "Shipment, Order, Packaging, Item",
+                  "code": "0001"
+                }
+              },
+              "enum": ["0001"],
+              "title": "Hierarchical Structure Code"
+            }
+          },
+          "required": [
+            "transaction_set_purpose_code_01",
+            "shipment_identification_02"
+          ],
+          "title": "Beginning Segment For Ship Notice"
+        }
+      },
+      "required": ["beginning_segment_for_ship_notice_BSN"],
+      "title": "Heading"
+    },
+    "detail": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "HL_loop_shipment": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "N1_loop_ship_from": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "name_N1": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "entity_identifier_code_01": {
+                          "type": "string",
+                          "x12-codes": {
+                            "SF": { "description": "Ship From", "code": "SF" }
+                          },
+                          "enum": ["SF"],
+                          "enumNames": ["Ship From"],
+                          "title": "Entity Identifier Code"
+                        },
+                        "name_02": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 60,
+                          "title": "Name"
+                        },
+                        "identification_code_qualifier_03": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 2,
+                          "description": "1 D-U-N-S Number, Dun & Bradstreet\n9 D-U-N-S+4, D-U-N-S Number with Four Character Suffix 11 Drug Enforcement Administration (DEA)\n\nCode designating the system/method of code structure used for Identification Code (67)",
+                          "title": "Identification Code Qualifier"
+                        },
+                        "identification_code_04": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 80,
+                          "description": " DUNS, DUNS+4, or DEA as per N103 qualifier. Generally, non-Rx utilize DUNS variations while Rx use DEA. If there is a case where a DUNS is utilized for a Rx item, then the DEA should be provided in the N2 segment. The DUNS is required for our logistics partner, Descartes\n\nCode identifying a party or other code\n\n- This segment, used alone, provides the most efficient method of providing organizational identification. To obtain this efficiency the \"ID Code\" (N104) must provide a key to the table maintained by the transaction processing party.",
+                          "title": "Identification Code"
+                        }
+                      },
+                      "required": ["entity_identifier_code_01"],
+                      "allOf": [
+                        {
+                          "x12-condition": "R0203",
+                          "anyOf": [
+                            {
+                              "required": ["name_02"],
+                              "type": "object",
+                              "properties": { "name_02": true }
+                            },
+                            {
+                              "required": ["identification_code_qualifier_03"],
+                              "type": "object",
+                              "properties": {
+                                "identification_code_qualifier_03": true
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "x12-condition": "P0304",
+                          "dependentRequired": {
+                            "identification_code_qualifier_03": [
+                              "identification_code_04"
+                            ],
+                            "identification_code_04": [
+                              "identification_code_qualifier_03"
+                            ]
+                          }
+                        }
+                      ],
+                      "title": "Name"
+                    },
+                    "address_information_N3": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "address_information_01": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 55,
+                            "title": "Address Information"
+                          },
+                          "address_information_02": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 55,
+                            "title": "Address Information"
+                          }
+                        }
+                      },
+                      "minItems": 1,
+                      "maxItems": 2,
+                      "title": "Address Information"
+                    },
+                    "geographic_location_N4": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "city_name_01": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 30,
+                          "title": "City Name"
+                        },
+                        "state_or_province_code_02": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 2,
+                          "title": "State Or Province Code"
+                        },
+                        "postal_code_03": {
+                          "type": "string",
+                          "minLength": 3,
+                          "maxLength": 15,
+                          "title": "Postal Code"
+                        },
+                        "country_code_04": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 3,
+                          "title": "Country Code"
+                        }
+                      },
+                      "title": "Geographic Location"
+                    }
+                  },
+                  "required": [
+                    "name_N1",
+                    "address_information_N3",
+                    "geographic_location_N4"
+                  ],
+                  "title": "N1 Loop Ship From"
+                },
+                "title": "Ship From"
+              },
+              "carrier_details_quantity_and_weight_TD1": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "packaging_code_01": {
+                      "type": "string",
+                      "x12-codes": {
+                        "CAS": { "description": "Case", "code": "CAS" },
+                        "CTN": { "description": "Carton", "code": "CTN" },
+                        "PLT": { "description": "Pallet", "code": "PLT" },
+                        "TBN": { "description": "Tote Bin", "code": "TBN" }
+                      },
+                      "enum": ["CAS", "CTN", "PLT", "TBN"],
+                      "enumNames": ["Case", "Carton", "Pallet", "Tote Bin"],
+                      "description": "PLT is applicable to all Non-RX warehouse shipments. The other codes may apply to RX items and Store shipments.\n\nCode identifying the type of packaging; Part 1: Packaging Form, Part 2: Packaging Material; if the Data Element is used, then Part 1 is always required",
+                      "title": "Packaging Code"
+                    },
+                    "lading_quantity_02": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9999999,
+                      "title": "Lading Quantity"
+                    },
+                    "weight_qualifier_06": {
+                      "type": "string",
+                      "x12-codes": {
+                        "G": { "description": "Gross Weight", "code": "G" }
+                      },
+                      "enum": ["G"],
+                      "enumNames": ["Gross Weight"],
+                      "title": "Weight Qualifier"
+                    },
+                    "weight_07": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 9999999999,
+                      "title": "Weight"
+                    },
+                    "unit_or_basis_for_measurement_code_08": {
+                      "type": "string",
+                      "x12-codes": {
+                        "LB": { "description": "Pound", "code": "LB" }
+                      },
+                      "enum": ["LB"],
+                      "enumNames": ["Pound"],
+                      "title": "Unit Or Basis For Measurement Code"
+                    },
+                    "volume_09": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 99999999,
+                      "title": "Volume"
+                    },
+                    "unit_or_basis_for_measurement_code_10": {
+                      "type": "string",
+                      "x12-codes": {
+                        "CF": { "description": "Cubic Feet", "code": "CF" }
+                      },
+                      "enum": ["CF"],
+                      "enumNames": ["Cubic Feet"],
+                      "title": "Unit Or Basis For Measurement Code"
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "x12-condition": "C0607",
+                      "dependentRequired": {
+                        "weight_qualifier_06": ["weight_07"]
+                      }
+                    },
+                    {
+                      "x12-condition": "P0708",
+                      "dependentRequired": {
+                        "weight_07": ["unit_or_basis_for_measurement_code_08"],
+                        "unit_or_basis_for_measurement_code_08": ["weight_07"]
+                      }
+                    },
+                    {
+                      "x12-condition": "P0910",
+                      "dependentRequired": {
+                        "volume_09": ["unit_or_basis_for_measurement_code_10"],
+                        "unit_or_basis_for_measurement_code_10": ["volume_09"]
+                      }
+                    },
+                    {
+                      "x12-condition": "P0102",
+                      "dependentRequired": {
+                        "packaging_code_01": ["lading_quantity_02"],
+                        "lading_quantity_02": ["packaging_code_01"]
+                      }
+                    }
+                  ]
+                },
+                "minItems": 1,
+                "maxItems": 20,
+                "title": "Carrier Details Quantity And Weight"
+              },
+              "carrier_details_routing_sequence_transit_time_TD5": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "routing_sequence_code_01": {
+                      "type": "string",
+                      "x12-codes": {
+                        "B": {
+                          "description": "Origin/Delivery Carrier (Any Mode)",
+                          "code": "B"
+                        }
+                      },
+                      "enum": ["B"],
+                      "enumNames": ["Origin/Delivery Carrier (Any Mode)"],
+                      "title": "Routing Sequence Code"
+                    },
+                    "identification_code_qualifier_02": {
+                      "type": "string",
+                      "x12-codes": {
+                        "2": {
+                          "description": "Standard Carrier Alpha Code (SCAC)",
+                          "code": "2"
+                        }
+                      },
+                      "enum": ["2"],
+                      "enumNames": ["Standard Carrier Alpha Code (SCAC)"],
+                      "title": "Identification Code Qualifier"
+                    },
+                    "identification_code_03": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 80,
+                      "description": "Standard Carrier Abbreviation Code (SCAC)\n\nCode identifying a party or other code",
+                      "title": "Identification Code"
+                    },
+                    "transportation_method_type_code_04": {
+                      "type": "string",
+                      "x12-codes": {
+                        "A": { "description": "Air", "code": "A" },
+                        "AE": { "description": "Air Express", "code": "AE" },
+                        "M": {
+                          "description": "Motor (Common Carrier)",
+                          "code": "M"
+                        },
+                        "R": { "description": "Rail", "code": "R" },
+                        "S": { "description": "Ocean", "code": "S" },
+                        "SR": { "description": "Supplier Truck", "code": "SR" },
+                        "U": {
+                          "description": "Private Parcel Service",
+                          "code": "U"
+                        },
+                        "X": {
+                          "description": "Intermodal (Piggyback)",
+                          "code": "X"
+                        }
+                      },
+                      "enum": ["A", "AE", "M", "R", "S", "SR", "U", "X"],
+                      "enumNames": [
+                        "Air",
+                        "Air Express",
+                        "Motor (Common Carrier)",
+                        "Rail",
+                        "Ocean",
+                        "Supplier Truck",
+                        "Private Parcel Service",
+                        "Intermodal (Piggyback)"
+                      ],
+                      "title": "Transportation Method Type Code"
+                    },
+                    "routing_05": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 35,
+                      "description": "Carrier's Identity\n\nFree-form description of the routing or requested routing for shipment, or the originating carrier's identity",
+                      "title": "Routing"
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "x12-condition": "C0203",
+                      "dependentRequired": {
+                        "identification_code_qualifier_02": [
+                          "identification_code_03"
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "minItems": 1,
+                "maxItems": 12,
+                "title": "Carrier Details Routing Sequence Transit Time"
+              },
+              "carrier_details_equipment_TD3": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "equipment_description_code_01": {
+                      "type": "string",
+                      "x12-codes": {
+                        "CN": { "description": "Container", "code": "CN" },
+                        "CZ": {
+                          "description": "Refrigerated Container",
+                          "code": "CZ"
+                        },
+                        "RT": {
+                          "description": "Controlled Temperature Trailer (Reefer)",
+                          "code": "RT"
+                        },
+                        "TL": {
+                          "description": "Trailer (not otherwise specified)",
+                          "code": "TL"
+                        },
+                        "VE": { "description": "Vessel, Ocean", "code": "VE" }
+                      },
+                      "enum": ["CN", "CZ", "RT", "TL", "VE"],
+                      "enumNames": [
+                        "Container",
+                        "Refrigerated Container",
+                        "Controlled Temperature Trailer (Reefer)",
+                        "Trailer (not otherwise specified)",
+                        "Vessel, Ocean"
+                      ],
+                      "title": "Equipment Description Code"
+                    },
+                    "equipment_number_03": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 10,
+                      "description": "Trailer Number / Air Bill Number\n\nSequencing or serial part of an equipment unit's identifying number (pure numeric form for equipment number is preferred)",
+                      "title": "Equipment Number"
+                    }
+                  }
+                },
+                "minItems": 1,
+                "maxItems": 12,
+                "title": "Carrier Details Equipment"
+              },
+              "reference_identification_REF": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "reference_identification_qualifier_01": {
+                      "type": "string",
+                      "x12-codes": {
+                        "2I": {
+                          "description": "Tracking Number",
+                          "code": "2I"
+                        },
+                        "BM": {
+                          "description": "Bill of Lading Number",
+                          "code": "BM"
+                        },
+                        "CN": {
+                          "description": "Carrier's Reference Number (PRO/Invoice)",
+                          "code": "CN"
+                        }
+                      },
+                      "enum": ["2I", "BM", "CN"],
+                      "title": "Reference Identification Qualifier"
+                    },
+                    "reference_identification_02": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 30,
+                      "description": " Bill of Lading Number, if REF01 = BM Carrier's Reference Number, if REF01 = CN Tracking Number, if REF01 = 2I (Optional)\n\nReference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier",
+                      "title": "Reference Identification"
+                    }
+                  },
+                  "required": [
+                    "reference_identification_qualifier_01",
+                    "reference_identification_02"
+                  ]
+                },
+                "minItems": 1,
+                "title": "Reference Identification"
+              },
+              "date_time_reference_DTM": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "date_time_qualifier_01": {
+                      "type": "string",
+                      "x12-codes": {
+                        "011": { "description": "Shipped", "code": "011" },
+                        "067": {
+                          "description": "Current Schedule Delivery",
+                          "code": "067"
+                        }
+                      },
+                      "enum": ["011", "067"],
+                      "title": "Date Time Qualifier"
+                    },
+                    "date_02": {
+                      "type": "string",
+                      "format": "date",
+                      "x12-format": "CCYYMMDD",
+                      "title": "Date"
+                    },
+                    "time_03": {
+                      "type": "string",
+                      "x12-format": "HHMMSS",
+                      "pattern": "^([01][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$",
+                      "title": "Time"
+                    }
+                  },
+                  "required": ["date_time_qualifier_01"],
+                  "allOf": [
+                    {
+                      "x12-condition": "R0203",
+                      "anyOf": [
+                        {
+                          "required": ["date_02"],
+                          "type": "object",
+                          "properties": { "date_02": true }
+                        },
+                        {
+                          "required": ["time_03"],
+                          "type": "object",
+                          "properties": { "time_03": true }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "minItems": 1,
+                "maxItems": 10,
+                "title": "Date Time Reference"
+              },
+              "fob_related_instructions_FOB": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "shipment_method_of_payment_01": {
+                    "type": "string",
+                    "x12-codes": {
+                      "CC": { "description": "Collect", "code": "CC" },
+                      "PB": {
+                        "description": "Customer Pick-up/Backhaul",
+                        "code": "PB"
+                      },
+                      "PP": {
+                        "description": "Prepaid (by Seller)",
+                        "code": "PP"
+                      }
+                    },
+                    "enum": ["CC", "PB", "PP"],
+                    "title": "Shipment Method Of Payment"
+                  },
+                  "location_qualifier_02": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2,
+                    "description": "OR Origin (Shipping Point)\nPS 5-Digit US Zip Code\nPU 6-Digit Canadian Postal Code\n\nCode identifying type of location\n\n- FOB02 is the code specifying transportation responsibility location.",
+                    "title": "Location Qualifier"
+                  },
+                  "description_03": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80,
+                    "description": "A general, free form message regarding FOB status of the shipment. Example: \"At Dock\"\n\nA free-form description to clarify the related data elements and their content",
+                    "title": "Description"
+                  },
+                  "transportation_terms_qualifier_code_04": {
+                    "type": "string",
+                    "x12-codes": {
+                      "02": { "description": "Trade Terms Code", "code": "02" }
+                    },
+                    "enum": ["02"],
+                    "title": "Transportation Terms Qualifier Code"
+                  },
+                  "transportation_terms_code_05": {
+                    "type": "string",
+                    "x12-codes": {
+                      "FOB": { "description": "Free on Board", "code": "FOB" }
+                    },
+                    "enum": ["FOB"],
+                    "title": "Transportation Terms Code"
+                  }
+                },
+                "required": ["shipment_method_of_payment_01"],
+                "allOf": [
+                  {
+                    "x12-condition": "C0302",
+                    "dependentRequired": {
+                      "description_03": ["location_qualifier_02"]
+                    }
+                  },
+                  {
+                    "x12-condition": "C0405",
+                    "dependentRequired": {
+                      "transportation_terms_qualifier_code_04": [
+                        "transportation_terms_code_05"
+                      ]
+                    }
+                  }
+                ],
+                "title": "Fob Related Instructions"
+              },
+              "N1_loop_ship_to": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "name_N1": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "entity_identifier_code_01": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 3,
+                          "title": "Entity Identifier Code"
+                        },
+                        "name_02": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 60,
+                          "title": "Name"
+                        },
+                        "identification_code_qualifier_03": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 2,
+                          "title": "Identification Code Qualifier"
+                        },
+                        "identification_code_04": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 80,
+                          "title": "Identification Code"
+                        }
+                      },
+                      "required": ["entity_identifier_code_01"],
+                      "allOf": [
+                        {
+                          "x12-condition": "R0203",
+                          "anyOf": [
+                            {
+                              "required": ["name_02"],
+                              "type": "object",
+                              "properties": { "name_02": true }
+                            },
+                            {
+                              "required": ["identification_code_qualifier_03"],
+                              "type": "object",
+                              "properties": {
+                                "identification_code_qualifier_03": true
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "x12-condition": "P0304",
+                          "dependentRequired": {
+                            "identification_code_qualifier_03": [
+                              "identification_code_04"
+                            ],
+                            "identification_code_04": [
+                              "identification_code_qualifier_03"
+                            ]
+                          }
+                        }
+                      ],
+                      "title": "Name"
+                    },
+                    "address_information_N3": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "address_information_01": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 55,
+                            "title": "Address Information"
+                          },
+                          "address_information_02": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 55,
+                            "title": "Address Information"
+                          }
+                        }
+                      },
+                      "minItems": 1,
+                      "maxItems": 2,
+                      "title": "Address Information"
+                    },
+                    "geographic_location_N4": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "city_name_01": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 30,
+                          "title": "City Name"
+                        },
+                        "state_or_province_code_02": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 2,
+                          "title": "State Or Province Code"
+                        },
+                        "postal_code_03": {
+                          "type": "string",
+                          "minLength": 3,
+                          "maxLength": 15,
+                          "title": "Postal Code"
+                        },
+                        "country_code_04": {
+                          "type": "string",
+                          "minLength": 2,
+                          "maxLength": 3,
+                          "title": "Country Code"
+                        }
+                      },
+                      "title": "Geographic Location"
+                    }
+                  },
+                  "required": [
+                    "name_N1",
+                    "address_information_N3",
+                    "geographic_location_N4"
+                  ],
+                  "title": "N1 Loop Ship To"
+                },
+                "title": "Ship To"
+              },
+              "HL_loop_order": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "purchase_order_reference_PRF": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "purchase_order_number_01": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 22,
+                          "title": "Purchase Order Number"
+                        },
+                        "release_number_02": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 30,
+                          "title": "Release Number"
+                        },
+                        "date_04": {
+                          "type": "string",
+                          "format": "date",
+                          "x12-format": "CCYYMMDD",
+                          "title": "Date"
+                        }
+                      },
+                      "required": ["purchase_order_number_01"],
+                      "title": "Purchase Order Reference"
+                    },
+                    "reference_identification_REF": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "reference_identification_qualifier_01": {
+                            "type": "string",
+                            "minLength": 2,
+                            "maxLength": 3,
+                            "title": "Reference Identification Qualifier"
+                          },
+                          "reference_identification_02": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 30,
+                            "title": "Reference Identification"
+                          }
+                        },
+                        "required": ["reference_identification_qualifier_01"]
+                      },
+                      "minItems": 1,
+                      "title": "Reference Identification"
+                    },
+                    "HL_loop_pack": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "item_identification_LIN": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                              "assigned_identification_01": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 20,
+                                "title": "Assigned Identification"
+                              },
+                              "product_service_id_qualifier_02": {
+                                "type": "string",
+                                "minLength": 2,
+                                "maxLength": 2,
+                                "title": "Product Service Id Qualifier"
+                              },
+                              "product_service_id_03": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 48,
+                                "title": "Product Service Id"
+                              },
+                              "product_service_id_qualifier_04": {
+                                "type": "string",
+                                "minLength": 2,
+                                "maxLength": 2,
+                                "title": "Product Service Id Qualifier"
+                              },
+                              "product_service_id_05": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 48,
+                                "title": "Product Service Id"
+                              },
+                              "product_service_id_qualifier_06": {
+                                "type": "string",
+                                "minLength": 2,
+                                "maxLength": 2,
+                                "title": "Product Service Id Qualifier"
+                              },
+                              "product_service_id_07": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 48,
+                                "title": "Product Service Id"
+                              },
+                              "product_service_id_qualifier_08": {
+                                "type": "string",
+                                "minLength": 2,
+                                "maxLength": 2,
+                                "title": "Product Service Id Qualifier"
+                              },
+                              "product_service_id_09": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 48,
+                                "title": "Product Service Id"
+                              }
+                            },
+                            "required": [
+                              "product_service_id_qualifier_02",
+                              "product_service_id_03"
+                            ],
+                            "allOf": [
+                              {
+                                "x12-condition": "P0405",
+                                "dependentRequired": {
+                                  "product_service_id_qualifier_04": [
+                                    "product_service_id_05"
+                                  ],
+                                  "product_service_id_05": [
+                                    "product_service_id_qualifier_04"
+                                  ]
+                                }
+                              },
+                              {
+                                "x12-condition": "P0607",
+                                "dependentRequired": {
+                                  "product_service_id_qualifier_06": [
+                                    "product_service_id_07"
+                                  ],
+                                  "product_service_id_07": [
+                                    "product_service_id_qualifier_06"
+                                  ]
+                                }
+                              },
+                              {
+                                "x12-condition": "P0809",
+                                "dependentRequired": {
+                                  "product_service_id_qualifier_08": [
+                                    "product_service_id_09"
+                                  ],
+                                  "product_service_id_09": [
+                                    "product_service_id_qualifier_08"
+                                  ]
+                                }
+                              }
+                            ],
+                            "title": "Item Identification"
+                          },
+                          "marks_and_numbers_MAN": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "marks_and_numbers_qualifier_01": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "maxLength": 2,
+                                  "title": "Marks And Numbers Qualifier"
+                                },
+                                "marks_and_numbers_02": {
+                                  "type": "string",
+                                  "minLength": 1,
+                                  "maxLength": 48,
+                                  "title": "Marks And Numbers"
+                                }
+                              },
+                              "required": [
+                                "marks_and_numbers_qualifier_01",
+                                "marks_and_numbers_02"
+                              ]
+                            },
+                            "minItems": 1,
+                            "title": "Marks And Numbers"
+                          },
+                          "HL_loop_item": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "properties": {
+                                "item_identification_LIN": {
+                                  "type": "object",
+                                  "additionalProperties": false,
+                                  "properties": {
+                                    "assigned_identification_01": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 20,
+                                      "title": "Assigned Identification"
+                                    },
+                                    "product_service_id_qualifier_02": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Product Service Id Qualifier"
+                                    },
+                                    "product_service_id_03": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 48,
+                                      "title": "Product Service Id"
+                                    },
+                                    "product_service_id_qualifier_04": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Product Service Id Qualifier"
+                                    },
+                                    "product_service_id_05": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 48,
+                                      "title": "Product Service Id"
+                                    },
+                                    "product_service_id_qualifier_06": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Product Service Id Qualifier"
+                                    },
+                                    "product_service_id_07": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 48,
+                                      "title": "Product Service Id"
+                                    },
+                                    "product_service_id_qualifier_08": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Product Service Id Qualifier"
+                                    },
+                                    "product_service_id_09": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 48,
+                                      "title": "Product Service Id"
+                                    },
+                                    "product_service_id_qualifier_10": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Product Service Id Qualifier"
+                                    },
+                                    "product_service_id_11": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 48,
+                                      "title": "Product Service Id"
+                                    },
+                                    "product_service_id_qualifier_12": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Product Service Id Qualifier"
+                                    },
+                                    "product_service_id_13": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 48,
+                                      "title": "Product Service Id"
+                                    }
+                                  },
+                                  "required": [
+                                    "product_service_id_qualifier_02",
+                                    "product_service_id_03"
+                                  ],
+                                  "allOf": [
+                                    {
+                                      "x12-condition": "P0405",
+                                      "dependentRequired": {
+                                        "product_service_id_qualifier_04": [
+                                          "product_service_id_05"
+                                        ],
+                                        "product_service_id_05": [
+                                          "product_service_id_qualifier_04"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "P0607",
+                                      "dependentRequired": {
+                                        "product_service_id_qualifier_06": [
+                                          "product_service_id_07"
+                                        ],
+                                        "product_service_id_07": [
+                                          "product_service_id_qualifier_06"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "P0809",
+                                      "dependentRequired": {
+                                        "product_service_id_qualifier_08": [
+                                          "product_service_id_09"
+                                        ],
+                                        "product_service_id_09": [
+                                          "product_service_id_qualifier_08"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "P1011",
+                                      "dependentRequired": {
+                                        "product_service_id_qualifier_10": [
+                                          "product_service_id_11"
+                                        ],
+                                        "product_service_id_11": [
+                                          "product_service_id_qualifier_10"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "P1213",
+                                      "dependentRequired": {
+                                        "product_service_id_qualifier_12": [
+                                          "product_service_id_13"
+                                        ],
+                                        "product_service_id_13": [
+                                          "product_service_id_qualifier_12"
+                                        ]
+                                      }
+                                    }
+                                  ],
+                                  "title": "Item Identification"
+                                },
+                                "item_detail_shipment_SN1": {
+                                  "type": "object",
+                                  "additionalProperties": false,
+                                  "properties": {
+                                    "assigned_identification_01": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 20,
+                                      "title": "Assigned Identification"
+                                    },
+                                    "number_of_units_shipped_02": {
+                                      "type": "number",
+                                      "minimum": 0,
+                                      "maximum": 9999999999,
+                                      "title": "Number Of Units Shipped"
+                                    },
+                                    "unit_or_basis_for_measurement_code_03": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Unit Or Basis For Measurement Code"
+                                    },
+                                    "quantity_shipped_to_date_04": {
+                                      "type": "number",
+                                      "minimum": 0,
+                                      "maximum": 999999999999999,
+                                      "title": "Quantity Shipped To Date"
+                                    },
+                                    "quantity_ordered_05": {
+                                      "type": "number",
+                                      "minimum": 0,
+                                      "maximum": 999999999999999,
+                                      "title": "Quantity Ordered"
+                                    },
+                                    "unit_or_basis_for_measurement_code_06": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Unit Or Basis For Measurement Code"
+                                    }
+                                  },
+                                  "required": [
+                                    "number_of_units_shipped_02",
+                                    "unit_or_basis_for_measurement_code_03"
+                                  ],
+                                  "allOf": [
+                                    {
+                                      "x12-condition": "P0506",
+                                      "dependentRequired": {
+                                        "quantity_ordered_05": [
+                                          "unit_or_basis_for_measurement_code_06"
+                                        ],
+                                        "unit_or_basis_for_measurement_code_06": [
+                                          "quantity_ordered_05"
+                                        ]
+                                      }
+                                    }
+                                  ],
+                                  "title": "Item Detail Shipment"
+                                },
+                                "item_physical_details_PO4": {
+                                  "type": "object",
+                                  "additionalProperties": false,
+                                  "properties": {
+                                    "pack_01": {
+                                      "type": "integer",
+                                      "minimum": 0,
+                                      "maximum": 999999,
+                                      "title": "Pack"
+                                    },
+                                    "size_02": {
+                                      "type": "number",
+                                      "minimum": 0,
+                                      "maximum": 99999999,
+                                      "title": "Size"
+                                    },
+                                    "unit_or_basis_for_measurement_code_03": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Unit Or Basis For Measurement Code"
+                                    },
+                                    "packaging_code_04": {
+                                      "type": "string",
+                                      "minLength": 3,
+                                      "maxLength": 5,
+                                      "title": "Packaging Code"
+                                    },
+                                    "weight_qualifier_05": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 2,
+                                      "title": "Weight Qualifier"
+                                    },
+                                    "gross_weight_per_pack_06": {
+                                      "type": "number",
+                                      "minimum": 0,
+                                      "maximum": 999999999,
+                                      "title": "Gross Weight Per Pack"
+                                    },
+                                    "unit_or_basis_for_measurement_code_07": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Unit Or Basis For Measurement Code"
+                                    },
+                                    "gross_volume_per_pack_08": {
+                                      "type": "number",
+                                      "minimum": 0,
+                                      "maximum": 999999999,
+                                      "title": "Gross Volume Per Pack"
+                                    },
+                                    "unit_or_basis_for_measurement_code_09": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Unit Or Basis For Measurement Code"
+                                    },
+                                    "length_10": {
+                                      "type": "number",
+                                      "minimum": 0,
+                                      "maximum": 99999999,
+                                      "title": "Length"
+                                    },
+                                    "width_11": {
+                                      "type": "number",
+                                      "minimum": 0,
+                                      "maximum": 99999999,
+                                      "title": "Width"
+                                    },
+                                    "height_12": {
+                                      "type": "number",
+                                      "minimum": 0,
+                                      "maximum": 99999999,
+                                      "title": "Height"
+                                    },
+                                    "unit_or_basis_for_measurement_code_13": {
+                                      "type": "string",
+                                      "minLength": 2,
+                                      "maxLength": 2,
+                                      "title": "Unit Or Basis For Measurement Code"
+                                    },
+                                    "number_18": {
+                                      "type": "integer",
+                                      "minimum": 0,
+                                      "maximum": 999999999,
+                                      "title": "Number"
+                                    }
+                                  },
+                                  "allOf": [
+                                    {
+                                      "x12-condition": "P0203",
+                                      "dependentRequired": {
+                                        "size_02": [
+                                          "unit_or_basis_for_measurement_code_03"
+                                        ],
+                                        "unit_or_basis_for_measurement_code_03": [
+                                          "size_02"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "C0506",
+                                      "dependentRequired": {
+                                        "weight_qualifier_05": [
+                                          "gross_weight_per_pack_06"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "P0607",
+                                      "dependentRequired": {
+                                        "gross_weight_per_pack_06": [
+                                          "unit_or_basis_for_measurement_code_07"
+                                        ],
+                                        "unit_or_basis_for_measurement_code_07": [
+                                          "gross_weight_per_pack_06"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "P0809",
+                                      "dependentRequired": {
+                                        "gross_volume_per_pack_08": [
+                                          "unit_or_basis_for_measurement_code_09"
+                                        ],
+                                        "unit_or_basis_for_measurement_code_09": [
+                                          "gross_volume_per_pack_08"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "C1013",
+                                      "dependentRequired": {
+                                        "length_10": [
+                                          "unit_or_basis_for_measurement_code_13"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "C1113",
+                                      "dependentRequired": {
+                                        "width_11": [
+                                          "unit_or_basis_for_measurement_code_13"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "C1213",
+                                      "dependentRequired": {
+                                        "height_12": [
+                                          "unit_or_basis_for_measurement_code_13"
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "x12-condition": "L13101112",
+                                      "anyOf": [
+                                        {
+                                          "dependentRequired": {
+                                            "unit_or_basis_for_measurement_code_13": [
+                                              "length_10"
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "dependentRequired": {
+                                            "unit_or_basis_for_measurement_code_13": [
+                                              "width_11"
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "dependentRequired": {
+                                            "unit_or_basis_for_measurement_code_13": [
+                                              "height_12"
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "x12-condition": "C1804",
+                                      "dependentRequired": {
+                                        "number_18": ["packaging_code_04"]
+                                      }
+                                    }
+                                  ],
+                                  "title": "Item Physical Details"
+                                },
+                                "product_item_description_PID": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "item_description_type_01": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "maxLength": 1,
+                                        "title": "Item Description Type"
+                                      },
+                                      "product_process_characteristic_code_02": {
+                                        "type": "string",
+                                        "minLength": 2,
+                                        "maxLength": 3,
+                                        "title": "Product Process Characteristic Code"
+                                      }
+                                    },
+                                    "required": ["item_description_type_01"]
+                                  },
+                                  "minItems": 1,
+                                  "maxItems": 200,
+                                  "title": "Product Item Description"
+                                },
+                                "date_time_reference_DTM": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                      "date_time_qualifier_01": {
+                                        "type": "string",
+                                        "minLength": 3,
+                                        "maxLength": 3,
+                                        "title": "Date Time Qualifier"
+                                      },
+                                      "date_02": {
+                                        "type": "string",
+                                        "format": "date",
+                                        "x12-format": "CCYYMMDD",
+                                        "title": "Date"
+                                      }
+                                    },
+                                    "required": ["date_time_qualifier_01"]
+                                  },
+                                  "minItems": 1,
+                                  "maxItems": 10,
+                                  "title": "Date Time Reference"
+                                }
+                              },
+                              "title": "Item HL Loop",
+                              "required": [
+                                "item_identification_LIN",
+                                "item_detail_shipment_SN1",
+                                "date_time_reference_DTM"
+                              ]
+                            },
+                            "title": "Item"
+                          }
+                        },
+                        "title": "Pack HL Loop",
+                        "required": [
+                          "item_identification_LIN",
+                          "marks_and_numbers_MAN",
+                          "HL_loop_item"
+                        ]
+                      },
+                      "title": "Pack"
+                    }
+                  },
+                  "title": "Order HL Loop",
+                  "required": [
+                    "purchase_order_reference_PRF",
+                    "reference_identification_REF",
+                    "HL_loop_pack"
+                  ]
+                },
+                "title": "Order"
+              }
+            },
+            "required": [
+              "N1_loop_ship_from",
+              "carrier_details_quantity_and_weight_TD1",
+              "carrier_details_routing_sequence_transit_time_TD5",
+              "carrier_details_equipment_TD3",
+              "reference_identification_REF",
+              "date_time_reference_DTM",
+              "fob_related_instructions_FOB",
+              "N1_loop_ship_to",
+              "HL_loop_order"
+            ],
+            "title": "Shipment HL Loop"
+          },
+          "title": "Shipment"
+        }
+      },
+      "required": ["HL_loop_shipment"],
+      "title": "Detail"
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "transaction_totals_CTT": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "number_of_line_items_01": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 999999,
+              "title": "Number Of Line Items"
+            }
+          },
+          "required": ["number_of_line_items_01"],
+          "title": "Transaction Totals"
+        },
+        "transaction_set_trailer_SE": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "number_of_included_segments_01": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9999999999,
+              "title": "Number Of Included Segments"
+            },
+            "transaction_set_control_number_02": {
+              "type": "string",
+              "minLength": 4,
+              "maxLength": 9,
+              "title": "Transaction Set Control Number"
+            }
+          },
+          "required": [
+            "number_of_included_segments_01",
+            "transaction_set_control_number_02"
+          ],
+          "title": "Transaction Set Trailer"
+        }
+      },
+      "required": ["transaction_totals_CTT"],
+      "title": "Summary"
+    }
+  }
+}

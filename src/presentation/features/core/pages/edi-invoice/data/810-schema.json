@@ -1,0 +1,743 @@
+{
+  "properties": {
+    "heading": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "transaction_set_header_ST": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "transaction_set_identifier_code_01": {
+              "type": "string",
+              "default": "810",
+              "enum": ["810"],
+              "x12-codes": { "810": { "code": "810" } },
+              "title": "Transaction Set Identifier Code"
+            },
+            "transaction_set_control_number_02": {
+              "type": "string",
+              "minLength": 4,
+              "maxLength": 9,
+              "title": "Transaction Set Control Number"
+            }
+          },
+          "required": [
+            "transaction_set_identifier_code_01",
+            "transaction_set_control_number_02"
+          ],
+          "title": "Transaction Set Header"
+        },
+        "beginning_segment_for_invoice_BIG": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "date_01": {
+              "type": "string",
+              "format": "date",
+              "x12-format": "CCYYMMDD",
+              "title": "Date"
+            },
+            "invoice_number_02": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 22,
+              "description": "Vendor’s Invoice Number",
+              "title": "Invoice Number"
+            },
+            "date_03": {
+              "type": "string",
+              "format": "date",
+              "x12-format": "CCYYMMDD",
+              "title": "Date"
+            },
+            "purchase_order_number_04": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 22,
+              "description": "CVS P.O. # being Invoiced",
+              "title": "Purchase Order Number"
+            },
+            "transaction_type_code_07": {
+              "description": "For Credits: ‘CR’ or ‘CN’ acceptable",
+              "type": "string",
+              "x12-codes": {
+                "CN": { "description": "Credit Invoice", "code": "CN" },
+                "CR": { "description": "Credit Memo", "code": "CR" }
+              },
+              "enum": ["CN", "CR"],
+              "title": "Transaction Type Code"
+            }
+          },
+          "required": [
+            "date_01",
+            "invoice_number_02",
+            "date_03",
+            "purchase_order_number_04",
+            "transaction_type_code_07"
+          ],
+          "title": "Beginning Segment For Invoice"
+        },
+        "reference_identification_REF": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "reference_identification_qualifier_01": {
+                "type": "string",
+                "x12-codes": {
+                  "VR": { "description": "Vendor ID Number", "code": "VR" }
+                },
+                "enum": ["VR"],
+                "title": "Reference Identification Qualifier"
+              },
+              "reference_identification_02": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 30,
+                "description": "CVS Vendor Number",
+                "title": "Reference Identification"
+              }
+            },
+            "required": [
+              "reference_identification_qualifier_01",
+              "reference_identification_02"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 12,
+          "title": "Reference Identification"
+        },
+        "name_N1_loop": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name_N1": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "entity_identifier_code_01": {
+                    "type": "string",
+                    "x12-codes": {
+                      "RE": {
+                        "description": "Party to receive commercial invoice remittance",
+                        "code": "RE"
+                      },
+                      "ST": { "description": "Ship To", "code": "ST" }
+                    },
+                    "enum": ["RE", "ST"],
+                    "title": "Entity Identifier Code"
+                  },
+                  "identification_code_qualifier_03": {
+                    "type": "string",
+                    "x12-codes": {
+                      "11": {
+                        "description": "Use if Pharmacy (DEA Number)",
+                        "code": "11"
+                      },
+                      "54": {
+                        "description": "Warehouse (Use if Front Store OTC Items)",
+                        "code": "54"
+                      }
+                    },
+                    "enum": ["11", "54"],
+                    "title": "Identification Code Qualifier"
+                  },
+                  "identification_code_04": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 80,
+                    "description": "Code identifying a party or other code\n\n- If N103 = ‘54’ - 4 Character Warehouse Code (See Distribution Center ID Table for Ship-to-location)\n\n- If N103 = ‘11’ - (See DEA Codes Table for Ship-to-location)",
+                    "title": "Identification Code"
+                  }
+                },
+                "required": [
+                  "entity_identifier_code_01",
+                  "identification_code_qualifier_03",
+                  "identification_code_04"
+                ],
+                "title": "Name"
+              }
+            },
+            "required": ["name_N1"]
+          },
+          "title": "Name"
+        },
+        "terms_of_sale_deferred_terms_of_sale_ITD": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "terms_type_code_01": {
+                "type": "string",
+                "x12-codes": {
+                  "01": { "description": "Basic", "code": "01" },
+                  "02": { "description": "End of Month (EOM)", "code": "02" },
+                  "04": {
+                    "description": "Deferred or Installment",
+                    "code": "04"
+                  },
+                  "07": { "description": "Extended", "code": "07" }
+                },
+                "enum": ["01", "02", "04", "07"],
+                "title": "Terms Type Code"
+              },
+              "terms_basis_date_code_02": {
+                "type": "string",
+                "x12-codes": {
+                  "4": { "description": "Specified Date", "code": "4" },
+                  "15": { "description": "Receipt of Goods", "code": "15" }
+                },
+                "enum": ["4", "15"],
+                "title": "Terms Basis Date Code"
+              },
+              "terms_discount_percent_03": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 999999,
+                "title": "Terms Discount Percent"
+              },
+              "terms_discount_days_due_05": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 999,
+                "title": "Terms Discount Days Due"
+              },
+              "terms_net_days_07": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 999,
+                "title": "Terms Net Days"
+              },
+              "deferred_amount_due_10": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 9999999999,
+                "title": "Deferred Amount Due"
+              }
+            },
+            "allOf": [
+              {
+                "x12-condition": "L0305",
+                "anyOf": [
+                  {
+                    "dependentRequired": {
+                      "terms_discount_percent_03": [
+                        "terms_discount_days_due_05"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "required": ["terms_discount_days_due_05"]
+          },
+          "minItems": 1,
+          "title": "Terms Of Sale Deferred Terms Of Sale"
+        },
+        "date_time_reference_DTM": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "date_time_qualifier_01": {
+                "type": "string",
+                "x12-codes": {
+                  "011": { "description": "Shipped", "code": "011" }
+                },
+                "enum": ["011"],
+                "title": "Date Time Qualifier"
+              },
+              "date_02": {
+                "type": "string",
+                "format": "date",
+                "x12-format": "CCYYMMDD",
+                "title": "Date"
+              }
+            },
+            "required": ["date_time_qualifier_01", "date_02"]
+          },
+          "minItems": 1,
+          "maxItems": 10,
+          "title": "Date Time Reference"
+        },
+        "fob_related_instructions_FOB": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "shipment_method_of_payment_01": {
+              "type": "string",
+              "x12-codes": {
+                "BP": { "description": "Paid by Buyer", "code": "BP" },
+                "CC": { "description": "Collect", "code": "CC" },
+                "FO": { "description": "FOB Port of Call", "code": "FO" },
+                "PC": {
+                  "description": "Prepaid but Charged to Customer",
+                  "code": "PC"
+                },
+                "PP": { "description": "Prepaid (by Seller)", "code": "PP" },
+                "TP": { "description": "Third Party Pay", "code": "TP" }
+              },
+              "enum": ["BP", "CC", "FO", "PC", "PP", "TP"],
+              "title": "Shipment Method Of Payment"
+            },
+            "location_qualifier_02": {
+              "type": "string",
+              "x12-codes": {
+                "OR": { "description": "Origin (Shipping Point)", "code": "OR" }
+              },
+              "enum": ["OR"],
+              "title": "Location Qualifier"
+            },
+            "description_03": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80,
+              "title": "Description"
+            }
+          },
+          "required": ["shipment_method_of_payment_01"],
+          "allOf": [
+            {
+              "x12-condition": "C0302",
+              "dependentRequired": {
+                "description_03": ["location_qualifier_02"]
+              }
+            }
+          ],
+          "title": "Fob Related Instructions"
+        }
+      },
+      "required": [
+        "beginning_segment_for_invoice_BIG",
+        "reference_identification_REF",
+        "fob_related_instructions_FOB"
+      ],
+      "title": "Heading"
+    },
+    "detail": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "baseline_item_data_invoice_IT1_loop": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "baseline_item_data_invoice_IT1": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "quantity_invoiced_02": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 9999999999,
+                    "title": "Quantity Invoiced"
+                  },
+                  "unit_or_basis_for_measurement_code_03": {
+                    "type": "string",
+                    "x12-codes": {
+                      "CA": { "description": "Case", "code": "CA" },
+                      "DZ": { "description": "Dozen", "code": "DZ" },
+                      "EA": { "description": "Each", "code": "EA" },
+                      "PC": { "description": "Piece", "code": "PC" }
+                    },
+                    "enum": ["CA", "DZ", "EA", "PC"],
+                    "title": "Unit Or Basis For Measurement Code"
+                  },
+                  "unit_price_04": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 999999999999999,
+                    "title": "Unit Price"
+                  },
+                  "basis_of_unit_price_code_05": {
+                    "type": "string",
+                    "x12-codes": {
+                      "CP": {
+                        "description": "Current Price (Subject to Change)",
+                        "code": "CP"
+                      },
+                      "DS": { "description": "Discount", "code": "DS" },
+                      "PR": { "description": "Promotion", "code": "PR" }
+                    },
+                    "enum": ["CP", "DS", "PR"],
+                    "title": "Basis Of Unit Price Code"
+                  },
+                  "product_service_id_qualifier_06": {
+                    "type": "string",
+                    "x12-codes": {
+                      "ND": {
+                        "description": "National Drug Code (NDC)",
+                        "code": "ND"
+                      },
+                      "UD": {
+                        "description": "U.P.C./EAN Consumer Package Code (2-5-5)",
+                        "code": "UD"
+                      },
+                      "UI": {
+                        "description": "U.P.C. Consumer Package Code (1-5-5)",
+                        "code": "UI"
+                      }
+                    },
+                    "enum": ["ND", "UD", "UI"],
+                    "title": "Product Service Id Qualifier"
+                  },
+                  "product_service_id_07": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 48,
+                    "description": "Identifying number for a product or service\n- **Item**: UPC Number or EAN\n- **RX**: NDC Code\n\nIf no UPC is available, will be Purchaser’s Item Number (6 characters)",
+                    "title": "Product Service Id"
+                  },
+                  "product_service_id_qualifier_08": {
+                    "type": "string",
+                    "x12-codes": {
+                      "UA": {
+                        "description": "U.P.C./EAN Case Code (2-5-5)",
+                        "code": "UA"
+                      }
+                    },
+                    "enum": ["UA"],
+                    "title": "Product Service Id Qualifier"
+                  },
+                  "product_service_id_09": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 48,
+                    "description": "Case UPC Code\n(Optional)",
+                    "title": "Product Service Id"
+                  },
+                  "product_service_id_qualifier_10": {
+                    "type": "string",
+                    "x12-codes": {
+                      "PI": {
+                        "description": "Purchaser's Item Code",
+                        "code": "PI"
+                      }
+                    },
+                    "enum": ["PI"],
+                    "title": "Product Service Id Qualifier"
+                  },
+                  "product_service_id_11": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 48,
+                    "description": "CVS Item Number (Required)",
+                    "title": "Product Service Id"
+                  }
+                },
+                "allOf": [
+                  {
+                    "x12-condition": "P020304",
+                    "dependentRequired": {
+                      "quantity_invoiced_02": [
+                        "unit_or_basis_for_measurement_code_03",
+                        "unit_price_04"
+                      ],
+                      "unit_or_basis_for_measurement_code_03": [
+                        "quantity_invoiced_02",
+                        "unit_price_04"
+                      ],
+                      "unit_price_04": [
+                        "quantity_invoiced_02",
+                        "unit_or_basis_for_measurement_code_03"
+                      ]
+                    }
+                  },
+                  {
+                    "x12-condition": "P0607",
+                    "dependentRequired": {
+                      "product_service_id_qualifier_06": [
+                        "product_service_id_07"
+                      ],
+                      "product_service_id_07": [
+                        "product_service_id_qualifier_06"
+                      ]
+                    }
+                  },
+                  {
+                    "x12-condition": "P0809",
+                    "dependentRequired": {
+                      "product_service_id_qualifier_08": [
+                        "product_service_id_09"
+                      ],
+                      "product_service_id_09": [
+                        "product_service_id_qualifier_08"
+                      ]
+                    }
+                  }
+                ],
+                "required": [
+                  "product_service_id_qualifier_10",
+                  "product_service_id_11"
+                ],
+                "title": "Baseline Item Data Invoice"
+              },
+              "product_item_description_PID_loop": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "product_item_description_PID": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "item_description_type_01": {
+                          "type": "string",
+                          "x12-codes": {
+                            "F": { "description": "Free-form", "code": "F" }
+                          },
+                          "enum": ["F"],
+                          "title": "Item Description Type"
+                        },
+                        "description_05": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80,
+                          "description": "Item Description",
+                          "title": "Description"
+                        }
+                      },
+                      "required": [
+                        "item_description_type_01",
+                        "description_05"
+                      ],
+                      "title": "Product Item Description"
+                    }
+                  },
+                  "required": ["product_item_description_PID"]
+                },
+                "maxItems": 1000,
+                "title": "Product Item Description"
+              },
+              "item_physical_details_PO4": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "pack_01": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 999999,
+                    "description": "CVS ordered Case Pack (Number of selling Units per Case)",
+                    "title": "Pack"
+                  }
+                },
+                "description": "PO4 Segment must be sent only if IT103 (Unit of Measure) = ‘CA’ or ‘DZ’. Please, don’t send it when IT103 = ‘PC’ or ‘EA’. If sent case pack value must be 1.\n\nTo specify the physical qualities, packaging, weights, and dimensions relating to the item",
+                "title": "Item Physical Details"
+              }
+            },
+            "required": ["baseline_item_data_invoice_IT1"]
+          },
+          "title": "Baseline Item Data Invoice"
+        }
+      },
+      "required": [],
+      "title": "Detail"
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "total_monetary_value_summary_TDS": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "amount_01": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 999999999999999,
+              "description": "Total Invoice. The amount of invoice (including charges, less allowances) before terms discount, if applicable.",
+              "title": "Amount"
+            },
+            "amount_02": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 999999999999999,
+              "description": " Total Invoice. The amount of invoice (including charges, less allowances) before terms discount, if applicable.",
+              "title": "Amount"
+            },
+            "amount_03": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 999999999999999,
+              "description": " The amount of invoice due if paid by terms discount due date (total invoice amount less cash discount).",
+              "title": "Amount"
+            },
+            "amount_04": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 999999999999999,
+              "description": " The total amount of terms discount.",
+              "title": "Amount"
+            }
+          },
+          "required": ["amount_01"],
+          "title": "Total Monetary Value Summary"
+        },
+        "service_promotion_allowance_or_charge_information_SAC_loop": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "service_promotion_allowance_or_charge_information_SAC": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "allowance_or_charge_indicator_01": {
+                    "type": "string",
+                    "x12-codes": {
+                      "A": { "description": "Allowance", "code": "A" }
+                    },
+                    "enum": ["A"],
+                    "title": "Allowance Or Charge Indicator"
+                  },
+                  "service_promotion_allowance_or_charge_code_02": {
+                    "type": "string",
+                    "x12-codes": {
+                      "D240": { "description": "Freight", "code": "D240" },
+                      "G020": {
+                        "description": " Bottle redemption/CRV charges(Alcohol ONLY)",
+                        "code": "G020"
+                      },
+                      "H650": {
+                        "description": "Tax for Hawaii DC Only",
+                        "code": "H650"
+                      },
+                      "H850": { "description": "Taxes", "code": "H850" },
+                      "ZZZZ": {
+                        "description": "Mutually Defined",
+                        "code": "ZZZZ"
+                      }
+                    },
+                    "enum": ["D240", "G020", "H650", "H850", "ZZZZ"],
+                    "title": "Service Promotion Allowance Or Charge Code"
+                  },
+                  "amount_05": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 999999999999999,
+                    "title": "Amount"
+                  },
+                  "allowance_or_charge_method_of_handling_code_12": {
+                    "type": "string",
+                    "x12-codes": {
+                      "02": { "description": "Off Invoice", "code": "02" }
+                    },
+                    "enum": ["02"],
+                    "title": "Allowance Or Charge Method Of Handling Code"
+                  },
+                  "description_15": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80,
+                    "title": "Description"
+                  }
+                },
+                "required": [
+                  "allowance_or_charge_indicator_01",
+                  "service_promotion_allowance_or_charge_code_02"
+                ],
+                "description": "If SAC Segment is sent as Header on 850 – Purchase Order, it needs to be sent as Summary on 810 – DC Invoice. \n\nTo request or identify a service, promotion, allowance, or charge; to specify the amount or percentage for the service, promotion, allowance, or charge",
+                "title": "Service Promotion Allowance Or Charge Information"
+              }
+            },
+            "required": [
+              "service_promotion_allowance_or_charge_information_SAC"
+            ],
+            "description": "If SAC Segment is sent as Header on 850 – Purchase Order, it needs to be sent as Summary on 810 – DC Invoice."
+          },
+          "maxItems": 25,
+          "minItems": 1,
+          "title": "Service Promotion Allowance Or Charge Information"
+        },
+        "invoice_shipment_summary_ISS_loop": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "invoice_shipment_summary_ISS": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "number_of_units_shipped_01": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 9999999999,
+                    "title": "Number Of Units Shipped"
+                  },
+                  "unit_or_basis_for_measurement_code_02": {
+                    "type": "string",
+                    "x12-codes": {
+                      "CA": { "description": "Case", "code": "CA" }
+                    },
+                    "enum": ["CA"],
+                    "title": "Unit Or Basis For Measurement Code"
+                  }
+                },
+                "required": [
+                  "number_of_units_shipped_01",
+                  "unit_or_basis_for_measurement_code_02"
+                ],
+                "title": "Invoice Shipment Summary"
+              }
+            },
+            "required": ["invoice_shipment_summary_ISS"]
+          },
+          "title": "Invoice Shipment Summary"
+        },
+        "transaction_totals_CTT": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "number_of_line_items_01": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 999999,
+              "title": "Number Of Line Items"
+            }
+          },
+          "required": ["number_of_line_items_01"],
+          "title": "Transaction Totals"
+        },
+        "transaction_set_trailer_SE": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "number_of_included_segments_01": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9999999999,
+              "title": "Number Of Included Segments"
+            },
+            "transaction_set_control_number_02": {
+              "type": "string",
+              "minLength": 4,
+              "maxLength": 9,
+              "title": "Transaction Set Control Number"
+            }
+          },
+          "required": [
+            "number_of_included_segments_01",
+            "transaction_set_control_number_02"
+          ],
+          "title": "Transaction Set Trailer"
+        }
+      },
+      "required": ["total_monetary_value_summary_TDS"],
+      "title": "Summary"
+    }
+  },
+  "type": "object",
+  "additionalProperties": false
+}
+

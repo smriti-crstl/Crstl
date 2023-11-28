@@ -1,0 +1,216 @@
+{
+  "heading": {
+    "transaction_set_header_ST": {
+      "transaction_set_identifier_code_01": {
+        "classNames": "grid-three-column transaction_set_identifier_code_01"
+      },
+      "transaction_set_control_number_02": {
+        "classNames": "grid-three-column transaction_set_control_number_02"
+      },
+      "classNames": "grid-three-column transaction_set_header_ST"
+    },
+    "beginning_segment_for_invoice_BIG": {
+      "date_01": { "classNames": "grid-three-column date_01" },
+      "invoice_number_02": {
+        "classNames": "grid-three-column invoice_number_02"
+      },
+      "date_03": { "classNames": "grid-three-column date_03" },
+      "purchase_order_number_04": {
+        "classNames": "grid-three-column purchase_order_number_04"
+      },
+      "transaction_type_code_07": {
+        "classNames": "grid-three-column transaction_type_code_07"
+      },
+      "classNames": "grid-three-column beginning_segment_for_invoice_BIG"
+    },
+    "reference_identification_REF": {
+      "items": {
+        "reference_identification_qualifier_01": {
+          "classNames": "grid-three-column reference_identification_qualifier_01"
+        },
+        "reference_identification_02": {
+          "classNames": "grid-three-column reference_identification_02"
+        }
+      },
+      "classNames": "grid-three-column reference_identification_REF"
+    },
+    "name_N1_loop": {
+      "items": {
+        "name_N1": {
+          "entity_identifier_code_01": {
+            "classNames": "grid-three-column entity_identifier_code_01"
+          },
+          "identification_code_qualifier_03": {
+            "classNames": "grid-three-column identification_code_qualifier_03"
+          },
+          "identification_code_04": {
+            "classNames": "grid-three-column identification_code_04"
+          },
+          "classNames": "grid-three-column name_N1"
+        }
+      },
+      "classNames": "grid-three-column name_N1_loop"
+    },
+    "terms_of_sale_deferred_terms_of_sale_ITD": {
+      "items": {
+        "terms_type_code_01": {
+          "classNames": "grid-three-column terms_type_code_01"
+        },
+        "terms_basis_date_code_02": {
+          "classNames": "grid-three-column terms_basis_date_code_02"
+        },
+        "terms_discount_percent_03": {
+          "classNames": "grid-three-column terms_discount_percent_03"
+        },
+        "terms_discount_days_due_05": {
+          "classNames": "grid-three-column terms_discount_days_due_05"
+        },
+        "terms_net_days_07": {
+          "classNames": "grid-three-column terms_net_days_07"
+        },
+        "deferred_amount_due_10": {
+          "classNames": "grid-three-column deferred_amount_due_10"
+        }
+      },
+      "classNames": "grid-three-column terms_of_sale_deferred_terms_of_sale_ITD"
+    },
+    "date_time_reference_DTM": {
+      "items": {
+        "date_time_qualifier_01": {
+          "classNames": "grid-three-column date_time_qualifier_01"
+        },
+        "date_02": { "classNames": "grid-three-column date_02" }
+      },
+      "classNames": "grid-three-column date_time_reference_DTM"
+    },
+    "fob_related_instructions_FOB": {
+      "shipment_method_of_payment_01": {
+        "classNames": "grid-three-column shipment_method_of_payment_01"
+      },
+      "location_qualifier_02": {
+        "classNames": "grid-three-column location_qualifier_02"
+      },
+      "description_03": { "classNames": "grid-three-column description_03" },
+      "classNames": "grid-three-column fob_related_instructions_FOB"
+    },
+    "classNames": "heading"
+  },
+  "detail": {
+    "baseline_item_data_invoice_IT1_loop": {
+      "items": {
+        "baseline_item_data_invoice_IT1": {
+          "quantity_invoiced_02": {
+            "classNames": "grid-three-column quantity_invoiced_02"
+          },
+          "unit_or_basis_for_measurement_code_03": {
+            "classNames": "grid-three-column unit_or_basis_for_measurement_code_03"
+          },
+          "unit_price_04": { "classNames": "grid-three-column unit_price_04" },
+          "basis_of_unit_price_code_05": {
+            "classNames": "grid-three-column basis_of_unit_price_code_05"
+          },
+          "product_service_id_qualifier_06": {
+            "classNames": "grid-three-column product_service_id_qualifier_06"
+          },
+          "product_service_id_07": {
+            "classNames": "grid-three-column product_service_id_07"
+          },
+          "product_service_id_qualifier_08": {
+            "classNames": "grid-three-column product_service_id_qualifier_08"
+          },
+          "product_service_id_09": {
+            "classNames": "grid-three-column product_service_id_09"
+          },
+          "product_service_id_qualifier_10": {
+            "classNames": "grid-three-column product_service_id_qualifier_10"
+          },
+          "product_service_id_11": {
+            "classNames": "grid-three-column product_service_id_11"
+          },
+          "classNames": "grid-three-column baseline_item_data_invoice_IT1"
+        },
+        "product_item_description_PID_loop": {
+          "items": {
+            "product_item_description_PID": {
+              "item_description_type_01": {
+                "classNames": "grid-three-column item_description_type_01"
+              },
+              "description_05": {
+                "classNames": "grid-three-column description_05"
+              },
+              "classNames": "grid-three-column product_item_description_PID"
+            }
+          },
+          "classNames": "grid-three-column product_item_description_PID_loop"
+        },
+        "item_physical_details_PO4": {
+          "pack_01": { "classNames": "grid-three-column pack_01" },
+          "classNames": "grid-three-column item_physical_details_PO4"
+        }
+      },
+      "classNames": "baseline_item_data_invoice_IT1_loop"
+    },
+    "classNames": "detail"
+  },
+  "summary": {
+    "total_monetary_value_summary_TDS": {
+      "amount_01": { "classNames": "grid-three-column amount_01" },
+      "amount_02": { "classNames": "grid-three-column amount_02" },
+      "amount_03": { "classNames": "grid-three-column amount_03" },
+      "amount_04": { "classNames": "grid-three-column amount_04" },
+      "classNames": "grid-three-column total_monetary_value_summary_TDS"
+    },
+    "service_promotion_allowance_or_charge_information_SAC_loop": {
+      "items": {
+        "service_promotion_allowance_or_charge_information_SAC": {
+          "allowance_or_charge_indicator_01": {
+            "classNames": "grid-three-column allowance_or_charge_indicator_01"
+          },
+          "service_promotion_allowance_or_charge_code_02": {
+            "classNames": "grid-three-column service_promotion_allowance_or_charge_code_02"
+          },
+          "amount_05": { "classNames": "grid-three-column amount_05" },
+          "allowance_or_charge_method_of_handling_code_12": {
+            "classNames": "grid-three-column allowance_or_charge_method_of_handling_code_12"
+          },
+          "description_15": {
+            "classNames": "grid-three-column description_15"
+          },
+          "classNames": "grid-three-column service_promotion_allowance_or_charge_information_SAC"
+        }
+      },
+      "classNames": "grid-three-column service_promotion_allowance_or_charge_information_SAC_loop"
+    },
+    "invoice_shipment_summary_ISS_loop": {
+      "items": {
+        "invoice_shipment_summary_ISS": {
+          "number_of_units_shipped_01": {
+            "classNames": "grid-three-column number_of_units_shipped_01"
+          },
+          "unit_or_basis_for_measurement_code_02": {
+            "classNames": "grid-three-column unit_or_basis_for_measurement_code_02"
+          },
+          "classNames": "grid-three-column invoice_shipment_summary_ISS"
+        }
+      },
+      "classNames": "grid-three-column invoice_shipment_summary_ISS_loop"
+    },
+    "transaction_totals_CTT": {
+      "number_of_line_items_01": {
+        "classNames": "grid-three-column number_of_line_items_01"
+      },
+      "classNames": "grid-three-column transaction_totals_CTT"
+    },
+    "transaction_set_trailer_SE": {
+      "number_of_included_segments_01": {
+        "classNames": "grid-three-column number_of_included_segments_01"
+      },
+      "transaction_set_control_number_02": {
+        "classNames": "grid-three-column transaction_set_control_number_02"
+      },
+      "classNames": "grid-three-column transaction_set_trailer_SE"
+    },
+    "classNames": "summary"
+  }
+}
+

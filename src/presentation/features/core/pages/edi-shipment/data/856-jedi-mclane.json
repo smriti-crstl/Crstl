@@ -1,0 +1,268 @@
+{
+  "interchanges": [
+    {
+      "interchange_control_header_ISA": {
+        "authorization_information_qualifier_01": "no_authorization_information_present_no_meaningful_information_in_i02_00",
+        "authorization_information_02": "",
+        "security_information_qualifier_03": "no_security_information_present_no_meaningful_information_in_i04_00",
+        "security_information_04": "",
+        "interchange_id_qualifier_05": "phone_telephone_companies_12",
+        "interchange_sender_id_06": "3103184019",
+        "interchange_id_qualifier_07": "global_location_number_gln_07",
+        "interchange_receiver_id_08": "0083967000016",
+        "repetition_separator_11": "^",
+        "interchange_control_version_number_12": "00501",
+        "acknowledgment_requested_14": "no_interchange_acknowledgment_requested_0",
+        "interchange_usage_indicator_15": "production_data_P",
+        "component_element_separator_16": ">"
+      },
+      "groups": [
+        {
+          "functional_group_header_GS": {
+            "application_senders_code_02": "3103184019",
+            "application_receivers_code_03": "0083967000016",
+            "responsible_agency_code_07": "accredited_standards_committee_x12_X",
+            "version_release_industry_identifier_code_08": "005010"
+          },
+          "transaction_sets": [
+            {
+              "heading": {
+                "transaction_set_header_ST": {
+                  "transaction_set_identifier_code_01": "856"
+                },
+                "beginning_segment_for_ship_notice_BSN": {
+                  "transaction_set_purpose_code_01": "00",
+                  "shipment_identification_02": "USER_INPUT",
+                  "date_03": "2022-09-07",
+                  "time_04": "14:25:12"
+                }
+              },
+              "detail": {
+                "HL_loop_shipment": [
+                  {
+                    "carrier_details_quantity_and_weight_TD1": [
+                      {
+                        "packaging_code_01": "CTN25",
+                        "lading_quantity_02": 1,
+                        "weight_qualifier_06": "G",
+                        "weight_07": "USER_INPUT",
+                        "unit_or_basis_for_measurement_code_08": "LB"
+                      }
+                    ],
+                    "carrier_details_routing_sequence_transit_time_TD5": [
+                      {
+                        "transportation_method_type_code_04": "D",
+                        "routing_05": "USER_NPUT"
+                      }
+                    ],
+                    "reference_information_REF": [
+                      {
+                        "reference_identification_qualifier_01": "BM",
+                        "reference_identification_02": "USER_INPUT"
+                      }
+                    ],
+                    "date_time_reference_DTM": [
+                      {
+                        "date_time_qualifier_01": "011",
+                        "date_02": "USER_INPUT"
+                      }
+                    ],
+                    "party_identification_N1_loop": [
+                      {
+                        "party_identification_N1": {
+                          "entity_identifier_code_01": "ST",
+                          "name_02": "MCLANE SOUTHWEST",
+                          "identification_code_qualifier_03": "UL",
+                          "identification_code_04": "0083967001006"
+                        },
+                        "party_location_N3": [
+                          {
+                            "address_information_01": "2828 INDUSTRIAL BLVD."
+                          }
+                        ],
+                        "geographic_location_N4": {
+                          "city_name_01": "TEMPLE",
+                          "state_or_province_code_02": "TX",
+                          "postal_code_03": "76504"
+                        }
+                      }
+                    ],
+                    "HL_loop_order": [
+                      {
+                        "purchase_order_reference_PRF": {
+                          "purchase_order_number_01": "SW01746049-01"
+                        },
+                        "HL_loop_tare": [
+                          {
+                            "HL_loop_pack": [
+                              {
+                                "marks_and_numbers_information_MAN": [
+                                  {
+                                    "marks_and_numbers_qualifier_01": "GM",
+                                    "marks_and_numbers_02": "1"
+                                  }
+                                ],
+                                "HL_loop_item": [
+                                  {
+                                    "item_identification_LIN": {
+                                      "product_service_id_qualifier_02": "CB",
+                                      "product_service_id_03": "000350579",
+                                      "product_service_id_qualifier_04": "UK",
+                                      "product_service_id_05": "20000000350574"
+                                    },
+                                    "item_detail_shipment_SN1": {
+                                      "number_of_units_shipped_02": 1,
+                                      "unit_or_basis_for_measurement_code_03": "CA"
+                                    },
+                                    "item_physical_details_PO4": {
+                                      "pack_01": 9999,
+                                      "size_02": 0.68,
+                                      "unit_or_basis_for_measurement_code_03": "CA",
+                                      "inner_pack_14": 1
+                                    },
+                                    "product_item_description_PID": [
+                                      {
+                                        "item_description_type_01": "F",
+                                        "description_05": "ITEM ACCEPTED OK TO PAY"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "marks_and_numbers_information_MAN": [
+                                  {
+                                    "marks_and_numbers_qualifier_01": "GM",
+                                    "marks_and_numbers_02": "2"
+                                  }
+                                ],
+                                "HL_loop_item": [
+                                  {
+                                    "item_identification_LIN": {
+                                      "product_service_id_qualifier_02": "CB",
+                                      "product_service_id_03": "000350579",
+                                      "product_service_id_qualifier_04": "UK",
+                                      "product_service_id_05": "20000000350574"
+                                    },
+                                    "item_detail_shipment_SN1": {
+                                      "number_of_units_shipped_02": 1,
+                                      "unit_or_basis_for_measurement_code_03": "CA"
+                                    },
+                                    "item_physical_details_PO4": {
+                                      "pack_01": 9999,
+                                      "size_02": 0.68,
+                                      "unit_or_basis_for_measurement_code_03": "CA",
+                                      "inner_pack_14": 1
+                                    },
+                                    "product_item_description_PID": [
+                                      {
+                                        "item_description_type_01": "F",
+                                        "description_05": "ITEM ACCEPTED OK TO PAY"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "marks_and_numbers_information_MAN": [
+                                  {
+                                    "marks_and_numbers_qualifier_01": "GM",
+                                    "marks_and_numbers_02": "3"
+                                  }
+                                ],
+                                "HL_loop_item": [
+                                  {
+                                    "item_identification_LIN": {
+                                      "product_service_id_qualifier_02": "CB",
+                                      "product_service_id_03": "123",
+                                      "product_service_id_qualifier_04": "UK",
+                                      "product_service_id_05": "20000000350574"
+                                    },
+                                    "item_detail_shipment_SN1": {
+                                      "number_of_units_shipped_02": 1,
+                                      "unit_or_basis_for_measurement_code_03": "CA"
+                                    },
+                                    "item_physical_details_PO4": {
+                                      "pack_01": 9999,
+                                      "size_02": 0.68,
+                                      "unit_or_basis_for_measurement_code_03": "CA",
+                                      "inner_pack_14": 1
+                                    },
+                                    "product_item_description_PID": [
+                                      {
+                                        "item_description_type_01": "F",
+                                        "description_05": "ITEM ACCEPTED OK TO PAY"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "marks_and_numbers_information_MAN": [
+                                  {
+                                    "marks_and_numbers_qualifier_01": "GM",
+                                    "marks_and_numbers_02": "4"
+                                  }
+                                ],
+                                "HL_loop_item": [
+                                  {
+                                    "item_identification_LIN": {
+                                      "product_service_id_qualifier_02": "CB",
+                                      "product_service_id_03": "123",
+                                      "product_service_id_qualifier_04": "UK",
+                                      "product_service_id_05": "20000000350574"
+                                    },
+                                    "item_detail_shipment_SN1": {
+                                      "number_of_units_shipped_02": 1,
+                                      "unit_or_basis_for_measurement_code_03": "CA"
+                                    },
+                                    "item_physical_details_PO4": {
+                                      "pack_01": 9999,
+                                      "size_02": 0.68,
+                                      "unit_or_basis_for_measurement_code_03": "CA",
+                                      "inner_pack_14": 1
+                                    },
+                                    "product_item_description_PID": [
+                                      {
+                                        "item_description_type_01": "F",
+                                        "description_05": "ITEM ACCEPTED OK TO PAY"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "summary": {
+                "transaction_totals_CTT": {
+                  "number_of_line_items_01": 4
+                },
+                "transaction_set_trailer_SE": {}
+              }
+            }
+          ],
+          "functional_group_trailer_GE": {
+            "number_of_transaction_sets_included_01": "1"
+          },
+          "release": "005010"
+        }
+      ],
+      "interchange_control_trailer_IEA": {
+        "number_of_included_functional_groups_01": "1"
+      },
+      "delimiters": {
+        "element": "*",
+        "segment": "~",
+        "sub_element": ">",
+        "repetition": "^"
+      }
+    }
+  ],
+  "__version": "jedi@2.0"
+}

@@ -1,0 +1,11 @@
+const INTEGRATION_TYPES = {
+  E_COMMERCE: "E_Commerce",
+  SHIPPING_AND_FULFILLMENT: "Shipping_and_Fulfillment",
+};
+
+const INTEGRATION_MAP = {
+  [INTEGRATION_TYPES.E_COMMERCE]: "e-Commerce",
+  [INTEGRATION_TYPES.SHIPPING_AND_FULFILLMENT]: "Shipping and Fulfillment",
+};
+
+export { INTEGRATION_TYPES, INTEGRATION_MAP };

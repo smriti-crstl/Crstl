@@ -1,0 +1,15 @@
+{
+  "data": [
+    {
+      "13 Pushpa Nagari": { "quantity": "15", "estValue": "300" },
+      "sku": "55"
+    },
+    { "13 Pushpa Nagari": { "quantity": "72" }, "sku": "123" },
+    {
+      "Paris Warehouse": { "quantity": "0" },
+      "13 Pushpa Nagari": { "quantity": "52" },
+      "sku": "445566"
+    }
+  ],
+  "lastUpdatedAt": "2021-12-13T02:15:00.860+00:00"
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "source": "QuickBooks Online",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-10-28T07:14:00.718Z",
+    "integrationType": "Accounting"
+  },
+  {
+    "source": "Shopify",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T19:15:01.229Z",
+    "integrationType": "E_Commerce"
+  },
+  {
+    "source": "Bank of America",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T12:13:00.827Z",
+    "integrationType": "Finance"
+  },
+  {
+    "source": "Amazon",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T19:15:01.322Z",
+    "integrationType": "E_Commerce"
+  },
+  {
+    "source": "Shipstation",
+    "currentStatus": "NotOK",
+    "integrationType": "Shipping_and_Fulfillment"
+  },
+  { "source": "SPS", "currentStatus": "OK", "integrationType": "EDI" },
+  {
+    "source": "Rho Business Banking",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T12:13:01.211Z",
+    "integrationType": "Finance"
+  },
+  {
+    "source": "Platypus OAuth Bank",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T12:13:01.697Z",
+    "integrationType": "Finance"
+  },
+  {
+    "source": "Citibank Online",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T12:13:02.035Z",
+    "integrationType": "Finance"
+  },
+  {
+    "source": "Chase",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T12:13:02.406Z",
+    "integrationType": "Finance"
+  },
+  {
+    "source": "Slack",
+    "currentStatus": "OK",
+    "integrationType": "Collaboration"
+  },
+  {
+    "source": "PNC",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T12:13:02.843Z",
+    "integrationType": "Finance"
+  },
+  {
+    "source": "Regions Bank",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T12:13:03.730Z",
+    "integrationType": "Finance"
+  },
+  {
+    "source": "Quickbooks Desktop",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2021-12-20T19:15:00.748Z",
+    "integrationType": "Accounting"
+  }
+]

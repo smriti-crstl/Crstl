@@ -1,0 +1,32 @@
+[
+  {
+    "id": "e74b7673-485e-4eb5-b2e1-be8e7b2220bb",
+    "type": "B2B",
+    "name": "UNFI"
+  },
+  {
+    "id": "66755132-dd66-49d5-b813-a3c1de31792b",
+    "type": "B2B",
+    "name": "Walmart"
+  },
+  {
+    "id": "9a282612-cf47-4596-8dd9-8856f5d71567",
+    "type": "B2B",
+    "name": "CVS"
+  },
+  {
+    "id": "4ee5d354-d698-4227-9b8c-d045786667a0",
+    "type": "B2B",
+    "name": "Target"
+  },
+  {
+    "id": "426e9eb4-977a-4cfb-8e16-ce8df54a974a",
+    "type": "B2C",
+    "name": "Shopify"
+  },
+  {
+    "id": "a5f57a0e-b19a-412c-a70f-af1356488a63",
+    "type": "B2C",
+    "name": "Amazon"
+  }
+]

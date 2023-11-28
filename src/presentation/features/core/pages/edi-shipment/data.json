@@ -1,0 +1,420 @@
+{
+  "metadata": {
+    "key": "Target-Ship-NoticeManifest",
+    "onSubmit": {
+      "endpoint": ""
+    }
+  },
+  "data": [
+    {
+      "id": "fa354085-8d70-475f-bc70-28437bd9fd56",
+      "label": "Transaction Set Identifier Code",
+      "name": "143_ST_01",
+      "type": "dropdown",
+      "dataType": "ID",
+      "placeholder": "Enter Transaction Set Identifier Code",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Transaction Set Identifier Code"
+        },
+        {
+          "min": 3,
+          "message": "Must have at least 3 characters"
+        },
+        {
+          "max": 3,
+          "message": "Can have at most 3 characters"
+        },
+        {}
+      ],
+      "options": [
+        {
+          "code": "856",
+          "description": "Ship Notice/Manifest"
+        }
+      ]
+    },
+    {
+      "id": "eb354085-8d70-475f-bc70-28437bd9fd56",
+      "label": "Transaction Set Control Number",
+      "name": "329_ST_02",
+      "type": "input",
+      "dataType": "ID",
+      "placeholder": "Enter Transaction Set Control",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Transaction Set Control"
+        },
+        {
+          "min": 4,
+          "message": "Must have at least 4 characters"
+        },
+        {
+          "max": 9,
+          "message": "Can have at most 9 characters"
+        },
+        {}
+      ]
+    },
+    {
+      "id": "28b69f93-00bf-4d49-bb4d-4f7eee741e31",
+      "label": "Transaction Set Purpose Code",
+      "name": "353_BSN_01",
+      "type": "dropdown",
+      "dataType": "ID",
+      "placeholder": "Enter Transaction Set Purpose Code",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Transaction Set Purpose Code"
+        },
+        {
+          "min": 2,
+          "message": "Must have at least 2 characters"
+        },
+        {
+          "max": 2,
+          "message": "Can have at most 2 characters"
+        },
+        {}
+      ],
+      "options": [
+        {
+          "code": "00",
+          "description": "Original"
+        },
+        {
+          "code": "07",
+          "description": "Duplicate"
+        }
+      ]
+    },
+    {
+      "id": "09c6abb7-ca2d-4b6e-83d1-a504007db4a2",
+      "label": "Shipment Identification",
+      "name": "396_BSN_02",
+      "type": "input",
+      "dataType": "AN",
+      "placeholder": "Enter Shipment Identification",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Shipment Identification"
+        },
+        {
+          "min": 2,
+          "message": "Must have at least 2 characters"
+        },
+        {
+          "max": 30,
+          "message": "Can have at most 30 characters"
+        },
+        {
+          "note": "A unique control number assigned by the original shipper to identify a specific shipment\n\nNote that EDI Standards state that this should be a unique number. Target applications have been written based on that. This number will be used to differentiate multiple 856s received from a supplier. This number should be different than the Purchase Order or Bill of Lading Number."
+        }
+      ]
+    },
+    {
+      "id": "28b59f93-00bf-4d49-bb4d-4f7eee741e31",
+      "label": "Date",
+      "name": "373_BSN_03",
+      "type": "datepicker",
+      "dataType": "DT",
+      "placeholder": "Enter Date",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Date"
+        }
+      ]
+    },
+    {
+      "id": "28b69f84-00bf-4d49-bb4d-4f7eee741e31",
+      "label": "Time",
+      "name": "337_BSN_04",
+      "type": "input",
+      "dataType": "ID",
+      "placeholder": "Enter Time",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Time in HHMMSS"
+        }
+      ]
+    },
+    {
+      "id": "56577dd2-2821-480b-861f-a187b657a12a",
+      "label": "Hierarchical Structure Code",
+      "name": "1005_BSN_05",
+      "type": "dropdown",
+      "dataType": "ID",
+      "placeholder": "Enter Hierarchical Structure Code",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Hierarchical Structure Code"
+        },
+        {
+          "min": 4,
+          "message": "Must have at least 4 characters"
+        },
+        {
+          "max": 4,
+          "message": "Can have at most 4 characters"
+        },
+        {
+          "note": "Code indicating the hierarchical application structure of a transaction set that utilizes the HL segment to define the structure of the transaction set\n\n0001 - Pick & Pack Format - typically used when different SKUs are packed.\n0002 - Standard Pack Format - used when identical SKUs are packed"
+        }
+      ],
+      "options": [
+        {
+          "code": "0001",
+          "description": "Shipment, Order, Packaging, Item"
+        },
+        {
+          "code": "0002",
+          "description": "Shipment, Order, Item, Packaging"
+        }
+      ]
+    },
+    {
+      "id": "bb383e6b-a2ba-4201-8194-570d68cb9298",
+      "label": "detail_HL",
+      "name": "detail_HL",
+      "type": "table",
+      "columns": [
+        {
+          "title": "Hierarchical ID Number",
+          "dataIndex": "HL_01_628",
+          "requirement": "Mandatory",
+          "editable": true
+        },
+        {
+          "title": "Hierarchical Parent ID Number",
+          "dataIndex": "HL_02_734",
+          "requirement": "Optional",
+          "editable": true
+        },
+        {
+          "title": "Hierarchical Level Code",
+          "dataIndex": "HL_03_735",
+          "requirement": "Mandatory",
+          "editable": true,
+          "options": [
+            {
+              "code": "S",
+              "description": "Shipment"
+            }
+          ]
+        },
+        {
+          "title": "Routing Sequence Code",
+          "dataIndex": "TD5_01_133",
+          "requirement": "Mandatory",
+          "editable": true,
+          "options": [
+            {
+              "code": "B",
+              "description": "Origin/Delivery Carrier (Any Mode)"
+            }
+          ]
+        },
+        {
+          "title": "Identification Code Qualifier",
+          "dataIndex": "TD5_02_66",
+          "requirement": "Mandatory",
+          "editable": true,
+          "options": [
+            {
+              "code": "2",
+              "description": "Standard Carrier Alpha Code (SCAC)"
+            }
+          ]
+        },
+        {
+          "title": "Identification Code",
+          "dataIndex": "TD5_03_67",
+          "requirement": "Mandatory",
+          "editable": true
+        },
+        {
+          "title": "Transportation Method/Type Code",
+          "dataIndex": "TD5_04_91",
+          "requirement": "Mandatory",
+          "editable": true,
+          "options": [
+            {
+              "code": "A",
+              "description": "Air"
+            },
+            {
+              "code": "C",
+              "description": "Consolidation"
+            },
+            {
+              "code": "M",
+              "description": "Motor (Common Carrier)"
+            },
+            {
+              "code": "U",
+              "description": "Private Parcel Service"
+            }
+          ]
+        },
+        {
+          "title": "Routing",
+          "dataIndex": "TD5_05_387",
+          "requirement": "Conditional",
+          "editable": true
+        },
+        {
+          "title": "Reference Identification Qualifier",
+          "dataIndex": "REF_01_128",
+          "requirement": "Mandatory",
+          "editable": true,
+          "options": [
+            {
+              "code": "CN",
+              "description": "Carrier's Reference Number (PRO/Invoice)"
+            },
+            {
+              "code": "MB",
+              "description": "Master Bill of Lading"
+            },
+            {
+              "code": "BM",
+              "description": "Bill of Lading Number"
+            }
+          ]
+        },
+        {
+          "title": "Reference Identification",
+          "dataIndex": "REF_02_127",
+          "requirement": "Mandatory",
+          "editable": true
+        },
+        {
+          "title": "Entity Identifier Code",
+          "dataIndex": "N1_01_98",
+          "requirement": "Mandatory",
+          "editable": true,
+          "options": [
+            {
+              "code": "BS",
+              "description": "Bill and Ship To"
+            },
+            {
+              "code": "BY",
+              "description": "Buying Party (Purchaser)"
+            },
+            {
+              "code": "SF",
+              "description": "Ship From"
+            },
+            {
+              "code": "ST",
+              "description": "Ship To"
+            }
+          ]
+        },
+        {
+          "title": "Identification Code Qualifier",
+          "dataIndex": "N1_03_66",
+          "requirement": "Conditional",
+          "editable": true,
+          "options": [
+            {
+              "code": "91",
+              "description": "Assigned by Seller or Seller's Agent"
+            },
+            {
+              "code": "92",
+              "description": "Assigned by Buyer or Buyer's Agent"
+            }
+          ]
+        },
+        {
+          "title": "Identification Code",
+          "dataIndex": "N1_04_67",
+          "requirement": "Conditional",
+          "editable": true
+        },
+        {
+          "title": "Address Information",
+          "dataIndex": "N3_01_166",
+          "requirement": "Mandatory",
+          "editable": true
+        }
+      ]
+    },
+    {
+      "id": "27be9d9b-00bf-4d49-bb4d-4f7eee741e31",
+      "label": "Number of Line Items",
+      "name": "354_CTT_01",
+      "type": "input",
+      "dataType": "ID",
+      "placeholder": "Enter Number Of Line Items",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Number Of Line Items"
+        },
+        {
+          "min": 1,
+          "message": "Must have at least 1 character"
+        },
+        {
+          "max": 6,
+          "message": "Can have at most 6 characters"
+        }
+      ]
+    },
+    {
+      "id": "29be9d9d-00bf-4d49-bb4d-4f7eee741e31",
+      "label": "Number Of Included Segments",
+      "name": "96_SE_01",
+      "type": "input",
+      "dataType": "ID",
+      "placeholder": "Enter Number Of Included Segments",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Number Of Included Segments"
+        },
+        {
+          "min": 1,
+          "message": "Must have at least 1 character"
+        },
+        {
+          "max": 10,
+          "message": "Can have at most 10 characters"
+        }
+      ]
+    },
+    {
+      "id": "29be9d9d-00bf-4d49-aa1d-4f7eee741e31",
+      "label": "Transaction Set Control Number",
+      "name": "329_SE_02",
+      "type": "input",
+      "dataType": "ID",
+      "placeholder": "Enter Transaction Set Control Number",
+      "rules": [
+        {
+          "requirement": "Mandatory",
+          "message": "Please enter Transaction Set Control Number"
+        },
+        {
+          "min": 4,
+          "message": "Must have at least 4 characters"
+        },
+        {
+          "max": 9,
+          "message": "Can have at most 9 characters"
+        }
+      ]
+    }
+  ]
+}
+

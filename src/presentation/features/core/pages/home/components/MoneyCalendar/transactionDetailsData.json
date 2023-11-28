@@ -1,0 +1,821 @@
+{
+  "code": "success",
+  "data": {
+    "total": "67846.55",
+    "data": [
+      {
+        "key": "9d4aab24-ca62-4c55-9b91-c6f6a67494a1",
+        "amount": "-4.22",
+        "date": "2021-12-31",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "a6aa2add-1db1-487e-80a6-b2bd472f7fe6",
+        "amount": "-4.22",
+        "date": "2021-12-31",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "27f7b2c9-3588-4aff-9e8e-691246c3e15d",
+        "amount": "-4.22",
+        "date": "2021-12-31",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "56cdfbad-9717-4400-a5e8-4f4509eb5633",
+        "amount": "-4.22",
+        "date": "2021-12-31",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "9f6bf165-31e7-4586-85b5-ebfd2193dae1",
+        "amount": "-4.22",
+        "date": "2021-12-31",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "4a5fac7f-66b6-4c10-ae07-8b2d23f9b709",
+        "amount": "-4.22",
+        "date": "2021-12-31",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "eff0122b-de48-4b7b-8a09-ab72952b8f47",
+        "amount": "89.40",
+        "date": "2022-01-01",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Sparkfun"
+      },
+      {
+        "key": "b47df94e-e5ee-488a-82da-01a4c78ea730",
+        "amount": "89.40",
+        "date": "2022-01-01",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Sparkfun"
+      },
+      {
+        "key": "71e9edec-ef7d-4bc9-8258-5cf59e3e35dd",
+        "amount": "89.40",
+        "date": "2022-01-01",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Sparkfun"
+      },
+      {
+        "key": "e4e66af1-414e-444a-9379-a133d38ca48d",
+        "amount": "89.40",
+        "date": "2022-01-01",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Sparkfun"
+      },
+      {
+        "key": "2730959a-ae6c-4db2-9181-62981be13663",
+        "amount": "89.40",
+        "date": "2022-01-01",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Sparkfun"
+      },
+      {
+        "key": "389edf54-26a6-4ee4-8b25-5c4e01a90e57",
+        "amount": "89.40",
+        "date": "2022-01-01",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Sparkfun"
+      },
+      {
+        "key": "9aeb83cf-eff1-4bd7-ac79-db07efc90f32",
+        "amount": "12.00",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "McDonald's"
+      },
+      {
+        "key": "de7ac5cb-ce31-4718-95b9-80d0191592f8",
+        "amount": "12.00",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "McDonald's"
+      },
+      {
+        "key": "88d0e387-97a6-4681-818b-ceea56808eda",
+        "amount": "4.33",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Starbucks"
+      },
+      {
+        "key": "b8fa2fd1-b38d-45e7-86b3-f9d7af923340",
+        "amount": "12.00",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "McDonald's"
+      },
+      {
+        "key": "4bf35cc1-a078-4976-82d3-90f7bdc5df97",
+        "amount": "4.33",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Starbucks"
+      },
+      {
+        "key": "046e8441-191b-4057-a290-c5ca294be013",
+        "amount": "12.00",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "McDonald's"
+      },
+      {
+        "key": "67386dc1-5280-48c0-8879-87cd80655934",
+        "amount": "4.33",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Starbucks"
+      },
+      {
+        "key": "3e524133-b44d-4e7b-a5e2-2aca600ba147",
+        "amount": "12.00",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "McDonald's"
+      },
+      {
+        "key": "f0fedde6-c16d-44c4-8d49-ebc5ec193bc9",
+        "amount": "4.33",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Starbucks"
+      },
+      {
+        "key": "bf7cf657-a0cf-4436-9bf6-e40f945a4b08",
+        "amount": "4.33",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Starbucks"
+      },
+      {
+        "key": "64ba7ed3-9c6c-4102-b00b-102d2449b6fb",
+        "amount": "4.33",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Starbucks"
+      },
+      {
+        "key": "3143ed10-f000-4096-8932-3f9b4ba71d25",
+        "amount": "12.00",
+        "date": "2022-01-02",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "McDonald's"
+      },
+      {
+        "key": "fe637b4a-fad6-41f9-97bc-b31266355fd3",
+        "amount": "78.50",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Touchstone"
+      },
+      {
+        "key": "337bd486-389c-4cfb-a567-4e4e0dceea15",
+        "amount": "-500.00",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "United Airlines"
+      },
+      {
+        "key": "97a3d131-a70e-4471-b217-81e98dea0a57",
+        "amount": "78.50",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Touchstone"
+      },
+      {
+        "key": "f9918e7c-2b13-486a-95bf-07c57665498f",
+        "amount": "-500.00",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "United Airlines"
+      },
+      {
+        "key": "23b4a30f-83d2-43f5-95cd-0b13386b4055",
+        "amount": "78.50",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Touchstone"
+      },
+      {
+        "key": "a8868835-27f9-465a-9fbe-46eb0960d0a8",
+        "amount": "-500.00",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "United Airlines"
+      },
+      {
+        "key": "4ff03b6a-0038-4255-bb77-b04d98e86daa",
+        "amount": "78.50",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Touchstone"
+      },
+      {
+        "key": "109c5435-83e6-4b19-bb32-7d9306909656",
+        "amount": "-500.00",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "United Airlines"
+      },
+      {
+        "key": "566c5289-bf19-43ca-9e7c-d417b2466a6c",
+        "amount": "78.50",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Touchstone"
+      },
+      {
+        "key": "bfd3d4ef-d11c-4dc7-a885-acabaab5aa01",
+        "amount": "-500.00",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "United Airlines"
+      },
+      {
+        "key": "5a2df981-8cdd-4aca-a042-4c7f68b081d4",
+        "amount": "78.50",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Touchstone"
+      },
+      {
+        "key": "7f25d1a8-2a40-411b-af7a-4320feeb1766",
+        "amount": "-500.00",
+        "date": "2022-01-03",
+        "currency": "USD",
+        "type": "inflow",
+        "counterparty": "United Airlines"
+      },
+      {
+        "key": "570fe7b8-51f3-40a0-bcef-33fe11fb81d2",
+        "amount": "5850.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "ce96ea14-3820-47b2-b9c7-ce42586f959f",
+        "amount": "1000.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "50fb8bdd-530f-4a2a-9fa8-ff6bca2da4ed",
+        "amount": "5850.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "0f57eb6b-91ce-4791-a058-21ef5bfe28e7",
+        "amount": "1000.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "0caf7bc5-df09-4d52-bab0-fe45192210e8",
+        "amount": "5850.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "d2a2650a-cbd4-4275-b721-eb54d17c9310",
+        "amount": "1000.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "67e9d623-2d51-4568-99a4-58e4f5c129a3",
+        "amount": "5850.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "f24ce52f-a36c-4b54-9d3f-7479f1d09754",
+        "amount": "1000.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "07f30bfc-ddba-4d87-adbb-4e1c21b13965",
+        "amount": "5850.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "2b0cd8d7-b982-4804-9361-ea8ea0456df7",
+        "amount": "1000.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "30c35799-ac4c-491f-886c-d89e64339be6",
+        "amount": "5850.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "83292823-325e-49b6-8422-7fc1e95c69e0",
+        "amount": "1000.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "47198928-ba9b-4632-97e6-f558bebda516",
+        "amount": "5850.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "eca496b0-1aff-47ea-a4c1-2347f6fa2159",
+        "amount": "1000.00",
+        "date": "2022-01-04",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "bbbd06f5-9935-4830-87ce-2b35ad2f19bc",
+        "amount": "5.40",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Uber"
+      },
+      {
+        "key": "dd0ada30-1a32-4b74-bc48-5796adc9c195",
+        "amount": "25.00",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "127f538f-40fd-4f65-beb6-d9ced5e93372",
+        "amount": "5.40",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Uber"
+      },
+      {
+        "key": "1278a2de-5b00-4e76-af7b-f2947b983f1f",
+        "amount": "25.00",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "95c8a89f-e17b-4a0c-89e6-c2e7b5cf2547",
+        "amount": "5.40",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Uber"
+      },
+      {
+        "key": "94e14ca2-97eb-4fa9-8eac-f819df0763ad",
+        "amount": "25.00",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "f95f9fbc-96d2-4a6c-b71c-0ca57958617a",
+        "amount": "5.40",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Uber"
+      },
+      {
+        "key": "6657e43f-88b7-460b-8718-46cf138d1ef6",
+        "amount": "25.00",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "f0db7e72-f2b0-4af5-8f64-402b0efbfe98",
+        "amount": "5.40",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Uber"
+      },
+      {
+        "key": "88f0f129-fb0b-49e9-9679-06029ee06089",
+        "amount": "25.00",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "d86c3bbd-a061-4cd7-8e62-83cb76c5171e",
+        "amount": "25.00",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "33b9f020-beee-45c8-95c5-686e56e90448",
+        "amount": "5.40",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Uber"
+      },
+      {
+        "key": "5a0a6dc8-735b-4834-8e0f-d34fc8cfb3a3",
+        "amount": "25.00",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "f34bb65b-e1c7-4e9a-a593-5c49c8364e3b",
+        "amount": "5.40",
+        "date": "2022-01-05",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Uber"
+      },
+      {
+        "key": "183f34f6-bf7d-410d-a3f8-01bcbf3a460d",
+        "amount": "16.11",
+        "date": "2022-01-06",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Zoom"
+      },
+      {
+        "key": "bf819f3a-d580-4ce9-badc-067c30c4a85a",
+        "amount": "12.00",
+        "date": "2022-01-11",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Xero"
+      },
+      {
+        "key": "5195717e-a576-4965-864a-95ec23c75f37",
+        "amount": "16.00",
+        "date": "2022-01-12",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Fellow.App"
+      },
+      {
+        "key": "ceceec06-a25b-425b-b624-6436ca0a3a1f",
+        "amount": "34.22",
+        "date": "2022-01-13",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Shopify"
+      },
+      {
+        "key": "93c0ed42-cdeb-47d9-9b77-7cb72b9fbf3c",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Madison Bicycle Shop"
+      },
+      {
+        "key": "dfb01d09-7afd-4ad4-954a-ad5e17956447",
+        "amount": "2078.50",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "aa878534-7b0d-4404-a1b7-3f26f269aaf4",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "KFC"
+      },
+      {
+        "key": "0485fec1-6804-448c-83e8-bcf8a8c7d187",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Madison Bicycle Shop"
+      },
+      {
+        "key": "c2d6c691-7938-4ed6-b17b-b18a52e137c3",
+        "amount": "14.16",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Namecheap"
+      },
+      {
+        "key": "1dd11a70-84e9-4efe-a856-4ba65158825e",
+        "amount": "2078.50",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "12faae0f-b779-4414-8885-189c6d0cc7c7",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "KFC"
+      },
+      {
+        "key": "8a10d1ae-c6dc-4f51-a846-f33243342547",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Madison Bicycle Shop"
+      },
+      {
+        "key": "1ee5f6f8-c206-4860-bd0b-0ddebbab0f2f",
+        "amount": "2078.50",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "9a7603d7-3f5a-45fb-a7a9-35029b26c5e3",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "KFC"
+      },
+      {
+        "key": "a1849a1a-3a6a-4f9e-ab7a-3a8407b3a4a4",
+        "amount": "2078.50",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "308ef3e8-4d82-4fa0-b5ee-a08c68f5ad88",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "KFC"
+      },
+      {
+        "key": "a76ef48d-6cf1-4d05-8f0d-55e5c752e723",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Madison Bicycle Shop"
+      },
+      {
+        "key": "d46adddc-2389-41e0-ae1c-c0b6795b0630",
+        "amount": "2078.50",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "7c00ae6e-8631-4a05-bb49-9a256c008a90",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "KFC"
+      },
+      {
+        "key": "ca613471-7d25-44bb-82e3-1ae1ba4a64ba",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Madison Bicycle Shop"
+      },
+      {
+        "key": "0d829588-dd16-4315-8a44-edc1f5c00f2e",
+        "amount": "2078.50",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "NA"
+      },
+      {
+        "key": "4f4d4e72-ce19-4b31-82dc-50d1522a2f28",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "KFC"
+      },
+      {
+        "key": "0b34e506-e482-469b-b4b6-feca63d8b088",
+        "amount": "500.00",
+        "date": "2022-01-14",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Madison Bicycle Shop"
+      },
+      {
+        "key": "3376b5aa-7267-4c41-bd85-13b301e48440",
+        "amount": "500.00",
+        "date": "2022-01-15",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Tectra Inc"
+      },
+      {
+        "key": "9f0cf5b2-935b-45bf-8ce4-542e9ac3bb96",
+        "amount": "500.00",
+        "date": "2022-01-15",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Tectra Inc"
+      },
+      {
+        "key": "1dd8e3bc-62f3-405a-8d5c-0bedfd8f2b90",
+        "amount": "500.00",
+        "date": "2022-01-15",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Tectra Inc"
+      },
+      {
+        "key": "b97471f5-28e0-44ab-bf48-4639d4e5391d",
+        "amount": "500.00",
+        "date": "2022-01-15",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Tectra Inc"
+      },
+      {
+        "key": "1d24cb38-918a-4d3c-9bf6-72a96231dada",
+        "amount": "500.00",
+        "date": "2022-01-15",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Tectra Inc"
+      },
+      {
+        "key": "78eeec5e-2231-4b0e-b18f-c7fa51603bcd",
+        "amount": "500.00",
+        "date": "2022-01-15",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Tectra Inc"
+      },
+      {
+        "key": "b145d2b1-bfe0-4130-a38d-f62520b6251c",
+        "amount": "39.00",
+        "date": "2022-01-16",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "BrowserStack"
+      },
+      {
+        "key": "53956684-64fd-4d9a-99f4-5a8897078bc3",
+        "amount": "1.20",
+        "date": "2022-01-16",
+        "currency": "USD",
+        "type": "outflow",
+        "counterparty": "Globalotp"
+      }
+    ],
+    "metadata": {
+      "dataSources": [
+        {
+          "name": "Chase",
+          "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+          "connectedAt": "2021-08-27T09:38:36.131+00:00",
+          "createdBy": "Mrinal Sen"
+        },
+        {
+          "name": "Platypus OAuth Bank",
+          "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+          "connectedAt": "2022-01-03T12:11:12.504+00:00",
+          "createdBy": "Dipti Demo"
+        },
+        {
+          "name": " Rho Business Banking",
+          "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+          "connectedAt": "2021-09-27T09:36:29.508+00:00",
+          "createdBy": "Dipti Demo"
+        },
+        {
+          "name": "Bank of America",
+          "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+          "connectedAt": "2021-09-08T09:33:04.153+00:00",
+          "createdBy": "Mrinal Sen"
+        },
+        {
+          "name": "Regions Bank",
+          "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+          "connectedAt": "2021-12-17T10:07:29.599+00:00",
+          "createdBy": "Dipti Demo"
+        },
+        {
+          "name": "Citibank Online",
+          "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+          "connectedAt": "2021-12-19T18:56:40.921+00:00",
+          "createdBy": "Dipti Demo"
+        },
+        {
+          "name": "PNC",
+          "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+          "connectedAt": "2021-12-19T18:23:54.623+00:00",
+          "createdBy": "Dipti Demo"
+        },
+        {
+          "name": "Ramp",
+          "imageUrl": "https://i.ibb.co/5KDmQBW/ramp-logo-small.png",
+          "connectedAt": "2022-01-12T06:49:43.703+00:00",
+          "createdBy": "Dipti Demo"
+        }
+      ],
+      "description": ""
+    }
+  }
+}

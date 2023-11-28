@@ -1,0 +1,3 @@
+{
+  "integrations": [{ "name": "Shipstation" }, { "name": "Platypus OAuth Bank" }]
+}

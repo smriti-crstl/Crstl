@@ -1,0 +1,190 @@
+[
+  {
+    "OrderStatus": [
+      {
+        "status": "Open",
+        "status_type": "Order",
+        "backgroundColor": "#03989E",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Acknowledged",
+        "status_type": "Order",
+        "backgroundColor": "#C9D6F5",
+        "textColor": "#002A98"
+      },
+      {
+        "status": "PO Change",
+        "status_type": "Order",
+        "backgroundColor": "#E33436",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "ASN",
+        "status_type": "Order",
+        "backgroundColor": "#34A853",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "In Progress",
+        "status_type": "Order",
+        "backgroundColor": "#F2C94C",
+        "textColor": "#323232"
+      }
+    ],
+    "FulfillmentStatus": [
+      {
+        "status": "Fulfilled",
+        "status_type": "Fulfillment",
+        "backgroundColor": "#34A853",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Unfulfilled",
+        "status_type": "Fulfillment",
+        "backgroundColor": "#F2C94C",
+        "textColor": "#323232"
+      },
+      {
+        "status": "Partially Fulfilled",
+        "status_type": "Fulfillment",
+        "backgroundColor": "#C9D6F5",
+        "textColor": "#002A98"
+      },
+      {
+        "status": "Scheduled",
+        "status_type": "Fulfillment",
+        "backgroundColor": "#1890FF",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "DeliveryStatus": [
+      {
+        "status": "Unknown",
+        "status_type": "Delivery",
+        "backgroundColor": "#E2E2E2",
+        "textColor": "#000000"
+      },
+      {
+        "status": "Pre-Transit",
+        "status_type": "Delivery",
+        "backgroundColor": "#FDF884",
+        "textColor": "#000000"
+      },
+      {
+        "status": "In-Transit",
+        "status_type": "Delivery",
+        "backgroundColor": "#F2C94C",
+        "textColor": "#000000"
+      },
+      {
+        "status": "Out for Delivery",
+        "status_type": "Delivery",
+        "backgroundColor": "#1890FF",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Available for Pickup",
+        "status_type": "Delivery",
+        "backgroundColor": "#00A298",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Return to Sender",
+        "status_type": "Delivery",
+        "backgroundColor": "#6B66EB",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Delivered",
+        "status_type": "Delivery",
+        "backgroundColor": "#34A853",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Failure",
+        "status_type": "Delivery",
+        "backgroundColor": "#E33436",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Cancelled",
+        "status_type": "Delivery",
+        "backgroundColor": "#000000",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Unfulfilled",
+        "status_type": "Delivery",
+        "backgroundColor": "#FFFFFF",
+        "textColor": "#000000"
+      }
+    ],
+    "InvoiceStatus": [
+      {
+        "status": "Open",
+        "status_type": "Invoice",
+        "backgroundColor": "#03989E",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Sent",
+        "status_type": "Invoice",
+        "backgroundColor": "#34A853",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Delayed",
+        "status_type": "Invoice",
+        "backgroundColor": "#E33436",
+        "textColor": "#FFFFFF"
+      }
+    ],
+    "Payment": [
+      {
+        "status": "Pending",
+        "status_type": "Payment",
+        "backgroundColor": "#F2C94C",
+        "textColor": "#323232"
+      },
+      {
+        "status": "Paid",
+        "status_type": "Payment",
+        "backgroundColor": "#34A853",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Partially Paid",
+        "status_type": "Payment",
+        "backgroundColor": "#C9D6F5",
+        "textColor": "#002A98"
+      }
+    ],
+    "ChargeBackStatus": [
+      {
+        "status": "Open",
+        "status_type": "Chargeback",
+        "backgroundColor": "#03989E",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Submitted",
+        "status_type": "Chargeback",
+        "backgroundColor": "#1890FF",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Won",
+        "status_type": "Chargeback",
+        "backgroundColor": "#34A853",
+        "textColor": "#FFFFFF"
+      },
+      {
+        "status": "Lost",
+        "status_type": "Chargeback",
+        "backgroundColor": "#E33436",
+        "textColor": "#FFFFFF"
+      }
+    ]
+  }
+]

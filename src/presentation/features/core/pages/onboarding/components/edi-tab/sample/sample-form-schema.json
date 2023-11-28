@@ -1,0 +1,1124 @@
+{
+  "properties": {
+    "heading": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "transaction_set_header_ST": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "transaction_set_identifier_code_01": {
+              "type": "string",
+              "default": "810",
+              "enum": ["810"],
+              "x12-codes": {
+                "810": {
+                  "code": "810"
+                }
+              },
+              "description": "Code uniquely identifying a Transaction Set.\n\n- The transaction set identifier (ST01) is used by the translation routines of the interchange partners to select the appropriate transaction set definition (e.g., 810 selects the Invoice Transaction Set).",
+              "title": "Transaction Set Identifier Code"
+            },
+            "transaction_set_control_number_02": {
+              "minLength": 4,
+              "maxLength": 9,
+              "type": "string",
+              "description": "Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set.",
+              "title": "Transaction Set Control Number"
+            }
+          },
+          "required": [
+            "transaction_set_identifier_code_01",
+            "transaction_set_control_number_02"
+          ],
+          "description": "To indicate the start of a transaction set and to assign a control number.",
+          "title": "Transaction Set Header"
+        },
+        "beginning_segment_for_invoice_BIG": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "date_01": {
+              "type": "string",
+              "format": "date",
+              "examples": ["2022-10-17"],
+              "description": "Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year- BIG01 is the invoice issue date.",
+              "title": "Date"
+            },
+            "invoice_number_02": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 22,
+              "description": "Identifying number assigned by issuer.",
+              "title": "Invoice Number"
+            },
+            "date_03": {
+              "type": "string",
+              "format": "date",
+              "examples": ["2022-10-16"],
+              "description": "Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year- BIG03 is the date assigned by the purchaser to purchase order.",
+              "title": "Date"
+            },
+            "purchase_order_number_04": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 22,
+              "description": "Identifying number for Purchase Order assigned by the orderer/purchaser.",
+              "title": "Purchase Order Number"
+            }
+          },
+          "required": [
+            "date_01",
+            "invoice_number_02",
+            "date_03",
+            "purchase_order_number_04"
+          ],
+          "description": "To indicate the beginning of an invoice transaction set and transmit identifying numbers and dates.",
+          "title": "Beginning Segment For Invoice"
+        },
+        "note_special_instruction_NTE": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "note_reference_code_01": {
+                "description": "Code identifying the functional area or purpose for which the note applies.",
+                "type": "string",
+                "x12-codes": {
+                  "INV": {
+                    "description": "Invoice Instruction",
+                    "code": "INV"
+                  }
+                },
+                "enum": ["INV"],
+                "title": "Note Reference Code"
+              },
+              "description_02": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "description": "A free-form description to clarify the related data elements and their content.",
+                "title": "Description"
+              }
+            },
+            "description": "To transmit information in a free-form format, if necessary, for comment or special instruction."
+          },
+          "minItems": 1,
+          "maxItems": 100,
+          "title": "Note Special Instruction"
+        },
+        "reference_information_REF": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "reference_identification_qualifier_01": {
+                "type": "string",
+                "x12-codes": {
+                  "BM": {
+                    "description": "Bill of Lading Number",
+                    "code": "BM"
+                  }
+                },
+                "enum": ["BM"],
+                "description": "Code qualifying the Reference Identification.",
+                "title": "Reference Identification Qualifier"
+              },
+              "reference_identification_02": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 50,
+                "description": "Reference information as defined for a particular Transaction Set or as specified by the Reference Identification Qualifier.",
+                "title": "Reference Identification"
+              }
+            },
+            "description": "To specify identifying information."
+          },
+          "minItems": 1,
+          "maxItems": 12,
+          "title": "Reference Information"
+        },
+        "party_identification_N1_loop": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "party_identification_N1": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "entity_identifier_code_01": {
+                    "type": "string",
+                    "x12-codes": {
+                      "BT": {
+                        "description": "Bill-to-Party",
+                        "code": "BT"
+                      },
+                      "BY": {
+                        "description": "Buying Party (Purchaser)",
+                        "code": "BY"
+                      },
+                      "PE": {
+                        "description": "Payee",
+                        "code": "PE"
+                      },
+                      "RI": {
+                        "description": "Remit To",
+                        "code": "RI"
+                      },
+                      "SF": {
+                        "description": "Ship From",
+                        "code": "SF"
+                      },
+                      "ST": {
+                        "description": "Ship To",
+                        "code": "ST"
+                      },
+                      "VN": {
+                        "description": "Vendor",
+                        "code": "VN"
+                      }
+                    },
+                    "enum": ["BT", "BY", "PE", "RI", "SF", "ST", "VN"],
+                    "description": "Code identifying an organizational entity, a physical location, property or an individual.",
+                    "title": "Entity Identifier Code"
+                  },
+                  "name_02": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 60,
+                    "description": "Free-form name.",
+                    "title": "Name"
+                  },
+                  "identification_code_qualifier_03": {
+                    "description": "Code designating the system/method of code structure used for Identification Code (67).",
+                    "type": "string",
+                    "x12-codes": {
+                      "9": {
+                        "description": "D-U-N-S+4, D-U-N-S Number with Four Character Suffix",
+                        "code": "9"
+                      },
+                      "91": {
+                        "description": "Assigned by Seller or Seller's Agent",
+                        "code": "91"
+                      },
+                      "92": {
+                        "description": "Assigned by Buyer or Buyer's Agent",
+                        "code": "92"
+                      },
+                      "ZZ": {
+                        "description": "Mutually Defined",
+                        "code": "ZZ"
+                      }
+                    },
+                    "enum": ["9", "91", "92", "ZZ"],
+                    "title": "Identification Code Qualifier"
+                  },
+                  "identification_code_04": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 80,
+                    "description": "Code identifying a party or other code.- This segment, used alone, provides the most efficient method of providing organizational identification. To obtain this efficiency the \"ID Code\" (N104) must provide a key to the table maintained by the transaction processing party.",
+                    "title": "Identification Code"
+                  }
+                },
+                "required": [
+                  "entity_identifier_code_01",
+                  "name_02",
+                  "identification_code_qualifier_03",
+                  "identification_code_04"
+                ],
+                "description": "To identify a party by type of organization, name, and code.\nNote: When 850 BEG02=DS and N101=ST the N103 and N104 Required NOT to be sent \n When 850 BEG02=DS and N101=BY the N103 and N104 is REQUIRED indicating the buying DC\n",
+                "title": "Party Identification"
+              },
+              "party_location_N3": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "address_information_01": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 55,
+                      "description": "Address information.",
+                      "title": "Address Information"
+                    }
+                  },
+                  "required": ["address_information_01"],
+                  "description": "To specify the location of the named party."
+                },
+                "minItems": 1,
+                "maxItems": 2,
+                "title": "Party Location"
+              },
+              "geographic_location_N4": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "city_name_01": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 30,
+                    "description": "Free-form text for city name.\n- A combination of either N401 through N404, or N405 and N406 may be adequate to specify a location.",
+                    "title": "City Name"
+                  },
+                  "state_or_province_code_02": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 2,
+                    "description": "Code (Standard State/Province) as defined by appropriate government agency.- N402 is required only if city name (N401) is in the U.S. or Canada.",
+                    "title": "State Or Province Code"
+                  },
+                  "postal_code_03": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 15,
+                    "description": "Code defining international postal zone code excluding punctuation and blanks (zip code for United States).",
+                    "title": "Postal Code"
+                  },
+                  "country_code_04": {
+                    "type": "string",
+                    "minLength": 2,
+                    "maxLength": 3,
+                    "description": "Code identifying the country.",
+                    "title": "Country Code"
+                  }
+                },
+                "required": [
+                  "city_name_01",
+                  "state_or_province_code_02",
+                  "postal_code_03"
+                ],
+                "description": "To specify the geographic place of the named party.",
+                "title": "Geographic Location"
+              }
+            },
+            "required": ["party_identification_N1"]
+          },
+          "title": "Party Identification"
+        },
+        "terms_of_sale_deferred_terms_of_sale_ITD": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "terms_type_code_01": {
+                "description": "Code identifying type of payment terms.- If the code in ITD01 is \"04\", then ITD07 or ITD09 is required and either ITD10 or ITD11 is required; if the code in ITD01 is \"05\", then ITD06 or ITD07 is required.",
+                "type": "string",
+                "x12-codes": {
+                  "01": {
+                    "description": "Basic",
+                    "code": "01"
+                  }
+                },
+                "enum": ["01"],
+                "title": "Terms Type Code"
+              },
+              "terms_basis_date_code_02": {
+                "description": "Code identifying the beginning of the terms period.",
+                "type": "string",
+                "x12-codes": {
+                  "2": {
+                    "description": "Delivery Date",
+                    "code": "2"
+                  }
+                },
+                "enum": ["2"],
+                "title": "Terms Basis Date Code"
+              },
+              "terms_net_due_date_06": {
+                "type": "string",
+                "format": "date",
+                "examples": ["2022-10-16"],
+                "description": "Date when total invoice amount becomes due expressed in format CCYYMMDD where CC represents the first two digits of the calendar year.",
+                "title": "Terms Net Due Date"
+              },
+              "terms_net_days_07": {
+                "description": "Number of days until total invoice amount is due (discount not applicable).",
+                "minLength": 1,
+                "maxLength": 3,
+                "type": "string",
+                "pattern": "^\\d+?\\d*$",
+                "title": "Terms Net Days"
+              },
+              "description_12": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80,
+                "description": "A free-form description to clarify the related data elements and their content.",
+                "title": "Description"
+              }
+            },
+            "required": [
+              "terms_type_code_01",
+              "terms_basis_date_code_02",
+              "terms_net_due_date_06",
+              "terms_net_days_07",
+              "description_12"
+            ],
+            "description": "To specify terms of sale ."
+          },
+          "minItems": 1,
+          "title": "Terms Of Sale Deferred Terms Of Sale"
+        },
+        "date_time_reference_DTM": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "date_time_qualifier_01": {
+                "description": "Code specifying type of date or time, or both date and time.",
+                "type": "string",
+                "x12-codes": {
+                  "011": {
+                    "description": "Shipped",
+                    "code": "011"
+                  }
+                },
+                "enum": ["011"],
+                "title": "Date Time Qualifier"
+              },
+              "date_02": {
+                "type": "string",
+                "format": "date",
+                "examples": ["2022-10-16"],
+                "description": "Date expressed as CCYYMMDD where CC represents the first two digits of the calendar year.",
+                "title": "Date"
+              }
+            },
+            "required": ["date_time_qualifier_01", "date_02"],
+            "description": "To specify pertinent dates and times."
+          },
+          "minItems": 1,
+          "maxItems": 10,
+          "title": "Date Time Reference"
+        },
+        "fob_related_instructions_FOB": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "shipment_method_of_payment_01": {
+              "description": "Code identifying payment terms for transportation charges- FOB01 indicates which party will pay the carrier.",
+              "type": "string",
+              "x12-codes": {
+                "PP": {
+                  "description": "Prepaid (by Seller)",
+                  "code": "PP"
+                }
+              },
+              "enum": ["PP"],
+              "title": "Shipment Method Of Payment"
+            }
+          },
+          "description": "To specify transportation instructions relating to shipment.",
+          "title": "Fob Related Instructions"
+        }
+      },
+      "required": [
+        "beginning_segment_for_invoice_BIG",
+        "party_identification_N1_loop",
+        "terms_of_sale_deferred_terms_of_sale_ITD"
+      ],
+      "title": "Heading"
+    },
+    "detail": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "baseline_item_data_invoice_IT1_loop": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "baseline_item_data_invoice_IT1": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "quantity_invoiced_02": {
+                    "minLength": 1,
+                    "maxLength": 15,
+                    "type": "string",
+                    "pattern": "^\\d+.?\\d*$",
+                    "description": "Number of units invoiced (supplier units).",
+                    "title": "Quantity Invoiced"
+                  },
+                  "unit_or_basis_for_measurement_code_03": {
+                    "description": "Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken.",
+                    "type": "string",
+                    "x12-codes": {
+                      "CA": {
+                        "description": "Case",
+                        "code": "CA"
+                      }
+                    },
+                    "enum": ["CA"],
+                    "title": "Unit Or Basis For Measurement Code"
+                  },
+                  "unit_price_04": {
+                    "minLength": 1,
+                    "maxLength": 15,
+                    "type": "string",
+                    "pattern": "^\\d+.?\\d*$",
+                    "description": "Price per unit of product, service, commodity, etc .",
+                    "title": "Unit Price"
+                  },
+                  "product_service_id_qualifier_06": {
+                    "type": "string",
+                    "x12-codes": {
+                      "UP": {
+                        "description": "UCC - 12",
+                        "code": "UP"
+                      }
+                    },
+                    "enum": ["UP"],
+                    "description": "Code identifying the type/source of the descriptive number used in Product/Service ID (234).\n\n- IT106 through IT125 provide for ten different product/service IDs for each item. For example: Case, Color, Drawing No., U.P.C. No., ISBN No., Model No., or SKU.",
+                    "title": "Product Service Id Qualifier"
+                  },
+                  "product_service_id_07": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 48,
+                    "description": "Identifying number for a product or service.",
+                    "title": "Product Service Id"
+                  },
+                  "product_service_id_qualifier_08": {
+                    "description": "Code identifying the type/source of the descriptive number used in Product/Service ID (234).",
+                    "type": "string",
+                    "x12-codes": {
+                      "IA": {
+                        "description": "Information Media Type",
+                        "code": "IA"
+                      },
+                      "IN": {
+                        "description": "Buyer's Item Number",
+                        "code": "IN"
+                      },
+                      "UA": {
+                        "description": "U.P.C./EAN Case Code (2-5-5)",
+                        "code": "UA"
+                      },
+                      "UK": {
+                        "description": "GTIN 14-digit Data Structure",
+                        "code": "UK"
+                      }
+                    },
+                    "enum": ["IA", "IN", "UA", "UK"],
+                    "title": "Product Service Id Qualifier"
+                  },
+                  "product_service_id_09": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 48,
+                    "title": "Product Service Id"
+                  }
+                },
+                "required": [
+                  "quantity_invoiced_02",
+                  "unit_or_basis_for_measurement_code_03",
+                  "unit_price_04",
+                  "product_service_id_qualifier_06",
+                  "product_service_id_07"
+                ],
+                "allOf": [
+                  {
+                    "x12-condition": "P0809",
+                    "type": "object",
+                    "dependentRequired": {
+                      "product_service_id_qualifier_08": [
+                        "product_service_id_09"
+                      ],
+                      "product_service_id_09": [
+                        "product_service_id_qualifier_08"
+                      ]
+                    }
+                  }
+                ],
+                "description": "To specify the basic and most frequently used line item data for the invoice and related transactions.",
+                "title": "Baseline Item Data Invoice"
+              },
+              "additional_item_data_IT3": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "number_of_units_shipped_01": {
+                      "minLength": 1,
+                      "maxLength": 10,
+                      "type": "string",
+                      "pattern": "^\\d+.?\\d*$",
+                      "title": "Number Of Units Shipped"
+                    },
+                    "unit_or_basis_for_measurement_code_02": {
+                      "type": "string",
+                      "x12-codes": {
+                        "CA": {
+                          "description": "Case",
+                          "code": "CA"
+                        },
+                        "EA": {
+                          "description": "Each",
+                          "code": "EA"
+                        },
+                        "LB": {
+                          "description": "Pound",
+                          "code": "LB"
+                        }
+                      },
+                      "enum": ["CA", "EA", "LB"],
+                      "title": "Unit Or Basis For Measurement Code"
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "x12-condition": "P0102",
+                      "type": "object",
+                      "dependentRequired": {
+                        "number_of_units_shipped_01": [
+                          "unit_or_basis_for_measurement_code_02"
+                        ],
+                        "unit_or_basis_for_measurement_code_02": [
+                          "number_of_units_shipped_01"
+                        ]
+                      }
+                    }
+                  ],
+                  "description": "To specify additional item details relating to variations between ordered and shipped quantities, or to specify alternate units of measures and quantities."
+                },
+                "minItems": 1,
+                "maxItems": 5,
+                "title": "Additional Item Data"
+              },
+              "pricing_information_CTP": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "price_identifier_code_02": {
+                      "description": "Code identifying pricing specification.",
+                      "type": "string",
+                      "x12-codes": {
+                        "ALT": {
+                          "description": "Alternate Price",
+                          "code": "ALT"
+                        },
+                        "PRP": {
+                          "description": "Promotional price",
+                          "code": "PRP"
+                        }
+                      },
+                      "enum": ["ALT", "PRP"],
+                      "title": "Price Identifier Code"
+                    },
+                    "unit_price_03": {
+                      "description": "Price per unit of product, service, commodity, etc \n\n- See Figures Appendix for an example detailing the use of CTP03 and CTP04.\n- See Figures Appendix for an example detailing the use of CTP03, CTP04 and CTP07.",
+                      "minLength": 1,
+                      "maxLength": 15,
+                      "type": "string",
+                      "pattern": "^\\d+.?\\d*$",
+                      "title": "Unit Price"
+                    }
+                  },
+                  "description": "To specify pricing information."
+                },
+                "minItems": 1,
+                "maxItems": 25,
+                "title": "Pricing Information"
+              },
+              "product_item_description_PID_loop": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "product_item_description_PID": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "item_description_type_01": {
+                          "type": "string",
+                          "x12-codes": {
+                            "F": {
+                              "description": "Free-form",
+                              "code": "F"
+                            }
+                          },
+                          "enum": ["F"],
+                          "description": "Code indicating the format of a description.- If PID01 equals \"F\", then PID05 is used. If PID01 equals \"S\", then PID04 is used. If PID01 equals \"X\", then both PID04 and PID05 are used.",
+                          "title": "Item Description Type"
+                        },
+                        "description_05": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80,
+                          "description": "A free-form description to clarify the related data elements and their content.",
+                          "title": "Description"
+                        }
+                      },
+                      "required": [
+                        "item_description_type_01",
+                        "description_05"
+                      ],
+                      "description": "To describe a product or process in coded or free-form format.",
+                      "title": "Product Item Description"
+                    }
+                  }
+                },
+                "title": "Product Item Description"
+              },
+              "item_physical_details_PO4": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "pack_01": {
+                    "minLength": 1,
+                    "maxLength": 6,
+                    "type": "string",
+                    "pattern": "^\\d+?\\d*$",
+                    "description": "The number of inner containers, or number of eaches if there are no inner containers, per outer container.",
+                    "title": "Pack"
+                  }
+                },
+                "description": "To specify the physical qualities, packaging, weights, and dimensions relating to the item.",
+                "title": "Item Physical Details"
+              },
+              "service_promotion_allowance_or_charge_information_SAC_loop": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "service_promotion_allowance_or_charge_information_SAC": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "allowance_or_charge_indicator_01": {
+                          "description": "Code which indicates an allowance or charge for the service specified.\n\n- If SAC01 is \"A\" or \"C\", then at least one of SAC05, SAC07, or SAC08 is required.",
+                          "type": "string",
+                          "x12-codes": {
+                            "A": {
+                              "description": "Allowance",
+                              "code": "A"
+                            }
+                          },
+                          "enum": ["A"],
+                          "title": "Allowance Or Charge Indicator"
+                        },
+                        "service_promotion_allowance_or_charge_code_02": {
+                          "description": "Code identifying the service, promotion, allowance, or charge.\nComment: Codes to be used where C350 sent on the Purchase Order for item level discounts.",
+                          "type": "string",
+                          "x12-codes": {
+                            "C310": {
+                              "description": "Discount",
+                              "code": "C310"
+                            },
+                            "F800": {
+                              "description": "Promotional Allowance",
+                              "code": "F800"
+                            }
+                          },
+                          "enum": ["C310", "F800"],
+                          "title": "Service Promotion Allowance Or Charge Code"
+                        },
+                        "amount_05": {
+                          "type": "number",
+                          "minimum": -9999999999999.99,
+                          "maximum": 9999999999999.99,
+                          "multipleOf": 0.01,
+                          "x12-max-length": 15,
+                          "description": "Monetary amount.\n- SAC05 is the total amount for the service, promotion, allowance, or charge.\n- If SAC05 is present with SAC07 or SAC08, then SAC05 takes precedence.",
+                          "title": "Amount"
+                        },
+                        "allowance_or_charge_method_of_handling_code_12": {
+                          "type": "string",
+                          "x12-codes": {
+                            "02": {
+                              "description": "Off Invoice",
+                              "code": "02"
+                            }
+                          },
+                          "enum": ["02"],
+                          "description": "Code indicating method of handling for an allowance or charge.",
+                          "title": "Allowance Or Charge Method Of Handling Code"
+                        },
+                        "description_15": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 80,
+                          "description": "A free-form description to clarify the related data elements and their content.",
+                          "title": "Description"
+                        }
+                      },
+                      "required": [
+                        "allowance_or_charge_indicator_01",
+                        "service_promotion_allowance_or_charge_code_02",
+                        "amount_05",
+                        "allowance_or_charge_method_of_handling_code_12",
+                        "description_15"
+                      ],
+                      "description": "To request or identify a service, promotion, allowance, or charge; to specify the amount or percentage for the service, promotion, allowance, or charge.",
+                      "title": "Service Promotion Allowance Or Charge Information"
+                    }
+                  },
+                  "required": [
+                    "service_promotion_allowance_or_charge_information_SAC"
+                  ]
+                },
+                "title": "Service Promotion Allowance Or Charge Information"
+              }
+            },
+            "required": ["baseline_item_data_invoice_IT1"]
+          },
+          "title": "Baseline Item Data Invoice"
+        }
+      },
+      "required": ["baseline_item_data_invoice_IT1_loop"],
+      "title": "Detail"
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "total_monetary_value_summary_TDS": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "amount_01": {
+              "type": "number",
+              "minimum": -9999999999999.99,
+              "maximum": 9999999999999.99,
+              "multipleOf": 0.01,
+              "x12-max-length": 15,
+              "description": "Monetary amount.\n\n- TDS01 is the total amount of invoice (including charges, less allowances) before terms discount (if discount is applicable).",
+              "title": "Amount"
+            },
+            "amount_02": {
+              "type": "number",
+              "minimum": -9999999999999.99,
+              "maximum": 9999999999999.99,
+              "multipleOf": 0.01,
+              "x12-max-length": 15,
+              "description": "Monetary amount.\n\n- TDS02 indicates the amount upon which the terms discount amount is calculated.\n- TDS02 is required if the dollar value subject to discount is not equal to the dollar value of TDS01.",
+              "title": "Amount"
+            },
+            "amount_03": {
+              "type": "number",
+              "minimum": -9999999999999.99,
+              "maximum": 9999999999999.99,
+              "multipleOf": 0.01,
+              "x12-max-length": 15,
+              "description": "Monetary amount.\n\n- TDS03 is the amount of invoice due if paid by terms discount due date (total invoice or installment amount less cash discount). ",
+              "title": "Amount"
+            },
+            "amount_04": {
+              "type": "number",
+              "minimum": -9999999999999.99,
+              "maximum": 9999999999999.99,
+              "multipleOf": 0.01,
+              "x12-max-length": 15,
+              "description": "Monetary amount.\n\n- TDS04 indicates the total amount of terms discount.",
+              "title": "Amount"
+            }
+          },
+          "required": ["amount_01"],
+          "description": "To specify the total invoice discounts and amounts.",
+          "title": "Total Monetary Value Summary"
+        },
+        "carrier_details_CAD": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "transportation_method_type_code_01": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2,
+              "description": "Code specifying the method or type of transportation for the shipment.",
+              "title": "Transportation Method Type Code"
+            },
+            "equipment_initial_02": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4,
+              "description": "Prefix or alphabetic part of an equipment unit's identifying number.",
+              "title": "Equipment Initial"
+            },
+            "equipment_number_03": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 15,
+              "description": "Sequencing or serial part of an equipment unit's identifying number (pure numeric form for equipment number is preferred).",
+              "title": "Equipment Number"
+            }
+          },
+          "description": "To specify transportation details for the transaction.",
+          "title": "Carrier Details"
+        },
+        "service_promotion_allowance_or_charge_information_SAC_loop": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "service_promotion_allowance_or_charge_information_SAC": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "allowance_or_charge_indicator_01": {
+                    "type": "string",
+                    "x12-codes": {
+                      "A": {
+                        "description": "Allowance",
+                        "code": "A"
+                      },
+                      "C": {
+                        "description": "Charge",
+                        "code": "C"
+                      }
+                    },
+                    "enum": ["A", "C"],
+                    "description": "Code which indicates an allowance or charge for the service specified.\n\n- If SAC01 is \"A\" or \"C\", then at least one of SAC05, SAC07, or SAC08 is required.",
+                    "title": "Allowance Or Charge Indicator"
+                  },
+                  "service_promotion_allowance_or_charge_code_02": {
+                    "type": "string",
+                    "x12-codes": {
+                      "B570": {
+                        "description": "Container Deposits",
+                        "code": "B570"
+                      },
+                      "B720": {
+                        "description": "Cooperative Advertising/Merchandising Allowance (Performance)",
+                        "code": "B720"
+                      },
+                      "C000": {
+                        "description": "Defective Allowance",
+                        "code": "C000"
+                      },
+                      "C290": {
+                        "description": "Discount - Service Option (Pickup)",
+                        "code": "C290"
+                      },
+                      "C350": {
+                        "description": "Distributor Discount/Allowance",
+                        "code": "C350"
+                      },
+                      "D240": {
+                        "description": "Freight",
+                        "code": "D240"
+                      },
+                      "F170": {
+                        "description": "Pallet Exchange Charge",
+                        "code": "F170"
+                      },
+                      "F180": {
+                        "description": "Pallet",
+                        "code": "F180"
+                      },
+                      "F670": {
+                        "description": "Price and Marketing Allowance",
+                        "code": "F670"
+                      },
+                      "G860": {
+                        "description": "Shrink Allowance",
+                        "code": "G860"
+                      },
+                      "H560": {
+                        "description": "Swell",
+                        "code": "H560"
+                      },
+                      "H920": {
+                        "description": "Temporary Allowance",
+                        "code": "H920"
+                      },
+                      "I020": {
+                        "description": "Third Party Pallets",
+                        "code": "I020"
+                      }
+                    },
+                    "enum": [
+                      "B570",
+                      "B720",
+                      "C000",
+                      "C290",
+                      "C350",
+                      "D240",
+                      "F170",
+                      "F180",
+                      "F670",
+                      "G860",
+                      "H560",
+                      "H920",
+                      "I020"
+                    ],
+                    "description": "Code identifying the service, promotion, allowance, or charge.",
+                    "title": "Service Promotion Allowance Or Charge Code"
+                  },
+                  "amount_05": {
+                    "type": "number",
+                    "minimum": -9999999999999.99,
+                    "maximum": 9999999999999.99,
+                    "multipleOf": 0.01,
+                    "x12-max-length": 15,
+                    "description": "Monetary amount.\n\n- SAC05 is the total amount for the service, promotion, allowance, or charge.\n- If SAC05 is present with SAC07 or SAC08, then SAC05 takes precedence.",
+                    "title": "Amount"
+                  },
+                  "allowance_or_charge_method_of_handling_code_12": {
+                    "type": "string",
+                    "x12-codes": {
+                      "02": {
+                        "description": "Off Invoice",
+                        "code": "02"
+                      },
+                      "06": {
+                        "description": "Charge to be Paid by Customer",
+                        "code": "06"
+                      }
+                    },
+                    "enum": ["02", "06"],
+                    "description": "Code indicating method of handling for an allowance or charge.",
+                    "title": "Allowance Or Charge Method Of Handling Code"
+                  },
+                  "description_15": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80,
+                    "description": "A free-form description to clarify the related data elements and their content.",
+                    "title": "Description"
+                  }
+                },
+                "required": [
+                  "allowance_or_charge_indicator_01",
+                  "service_promotion_allowance_or_charge_code_02",
+                  "amount_05",
+                  "allowance_or_charge_method_of_handling_code_12",
+                  "description_15"
+                ],
+                "description": "To request or identify a service, promotion, allowance, or charge; to specify the amount or percentage for the service, promotion, allowance, or charge.",
+                "title": "Service Promotion Allowance Or Charge Information"
+              }
+            }
+          },
+          "title": "Service Promotion Allowance Or Charge Information"
+        },
+        "invoice_shipment_summary_ISS_loop": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "invoice_shipment_summary_ISS": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "number_of_units_shipped_01": {
+                    "minLength": 1,
+                    "maxLength": 10,
+                    "type": "string",
+                    "pattern": "^\\d+.?\\d*$",
+                    "description": "Numeric value of units shipped in manufacturer's shipping units for a line item or transaction set.",
+                    "title": "Number Of Units Shipped"
+                  },
+                  "unit_or_basis_for_measurement_code_02": {
+                    "type": "string",
+                    "x12-codes": {
+                      "CA": {
+                        "description": "Case",
+                        "code": "CA"
+                      }
+                    },
+                    "enum": ["CA"],
+                    "description": "Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken.",
+                    "title": "Unit Or Basis For Measurement Code"
+                  },
+                  "weight_03": {
+                    "minLength": 1,
+                    "maxLength": 10,
+                    "type": "string",
+                    "pattern": "^\\d+.?\\d*$",
+                    "description": "Numeric value of weight.",
+                    "title": "Weight"
+                  },
+                  "unit_or_basis_for_measurement_code_04": {
+                    "type": "string",
+                    "x12-codes": {
+                      "LB": {
+                        "description": "Pound",
+                        "code": "LB"
+                      }
+                    },
+                    "enum": ["LB"],
+                    "description": "Code specifying the units in which a value is being expressed, or manner in which a measurement has been taken.",
+                    "title": "Unit Or Basis For Measurement Code"
+                  }
+                },
+                "required": [
+                  "number_of_units_shipped_01",
+                  "unit_or_basis_for_measurement_code_02",
+                  "weight_03",
+                  "unit_or_basis_for_measurement_code_04"
+                ],
+                "description": "To specify summary details of total items shipped in terms of quantity, weight, and volume.",
+                "title": "Invoice Shipment Summary"
+              }
+            }
+          },
+          "title": "Invoice Shipment Summary"
+        },
+        "transaction_totals_CTT": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "number_of_line_items_01": {
+              "minLength": 1,
+              "maxLength": 6,
+              "type": "string",
+              "title": "Number Of Line Items"
+            }
+          },
+          "required": ["number_of_line_items_01"],
+          "title": "Transaction Totals"
+        },
+        "transaction_set_trailer_SE": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "number_of_included_segments_01": {
+              "minLength": 1,
+              "maxLength": 10,
+              "type": "string",
+              "description": "Total number of segments included in a transaction set including ST and SE segments.",
+              "title": "Number Of Included Segments"
+            },
+            "transaction_set_control_number_02": {
+              "minLength": 4,
+              "maxLength": 9,
+              "type": "string",
+              "description": "Identifying control number that must be unique within the transaction set functional group assigned by the originator for a transaction set.",
+              "title": "Transaction Set Control Number"
+            }
+          },
+          "required": [
+            "number_of_included_segments_01",
+            "transaction_set_control_number_02"
+          ],
+          "description": "To indicate the end of the transaction set and provide the count of the transmitted segments (including the beginning (ST) and ending (SE) segments).",
+          "title": "Transaction Set Trailer"
+        }
+      },
+      "required": [
+        "total_monetary_value_summary_TDS",
+        "transaction_totals_CTT"
+      ],
+      "title": "Summary"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "source": "Shipstation",
+    "currentStatus": "NotOK",
+    "integrationType": "Shipping_and_Fulfillment",
+    "imageUrl": "https://i.ibb.co/x5FzQ9Q/Ship-Station-Secondary-Logo-Stacked-1-1.png",
+    "firstAddedAt": "2021-11-11T07:37:23.297Z",
+    "addedBy": "Mrinal Sen",
+    "lastReAuthorizedAt": "-",
+    "lastReAuthorizedBy": "-"
+  },
+  {
+    "source": "Google Ads",
+    "currentStatus": "OK",
+    "integrationType": "Marketing",
+    "imageUrl": "https://i.ibb.co/6wLcQNT/goog-ads.png",
+    "firstAddedAt": "2022-01-24T07:37:24.495Z",
+    "addedBy": "Dipti Demo",
+    "assistedIntegration": true,
+    "lastReAuthorizedAt": "-",
+    "lastReAuthorizedBy": "-"
+  },
+  {
+    "source": "Ramp",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2022-01-27T23:44:01.469Z",
+    "integrationType": "Finance",
+    "imageUrl": "https://i.ibb.co/5KDmQBW/ramp-logo-small.png",
+    "firstAddedAt": "2022-01-12T06:49:43.703Z",
+    "addedBy": "Dipti Demo",
+    "lastReAuthorizedAt": "-",
+    "lastReAuthorizedBy": "-"
+  },
+  {
+    "source": "Slack",
+    "currentStatus": "OK",
+    "integrationType": "Collaboration",
+    "imageUrl": "https://i.ibb.co/5cmcLVv/Slack-Mark-Web-200x200-9ae0e45.png",
+    "firstAddedAt": "2021-11-11T02:33:10.364Z",
+    "addedBy": "Dipti Demo",
+    "lastReAuthorizedAt": "2021-12-15T07:27:27.003+00:00",
+    "lastReAuthorizedBy": "Dipti Demo"
+  },
+  {
+    "source": "Quickbooks Desktop or Xero",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2022-01-28T00:15:00.573Z",
+    "integrationType": "Accounting",
+    "imageUrl": "https://i.ibb.co/7VHgf8K/rz.png",
+    "firstAddedAt": "2021-10-18T13:49:57.778Z",
+    "addedBy": "Mrinal Sen",
+    "lastReAuthorizedAt": "-",
+    "lastReAuthorizedBy": "-"
+  },
+  {
+    "source": "Amazon",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2022-01-28T00:24:01.296Z",
+    "integrationType": "E_Commerce",
+    "imageUrl": "https://i.ibb.co/1KFsYn7/amz1.png",
+    "firstAddedAt": "2021-10-12T12:57:26.853Z",
+    "addedBy": "Dipti Demo",
+    "lastReAuthorizedAt": "-",
+    "lastReAuthorizedBy": "-"
+  },
+  {
+    "source": "Rho Business Banking",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2022-01-28T00:43:01.647Z",
+    "integrationType": "Finance",
+    "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+    "firstAddedAt": "2021-09-27T09:36:29.508Z",
+    "addedBy": "Dipti Demo",
+    "lastReAuthorizedAt": "2022-01-03T12:02:02.992+00:00",
+    "lastReAuthorizedBy": "Dipti Demo"
+  },
+  {
+    "source": "Bank of America",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2022-01-28T00:43:01.035Z",
+    "integrationType": "Finance",
+    "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+    "firstAddedAt": "2021-09-08T09:33:04.153Z",
+    "addedBy": "Mrinal Sen",
+    "lastReAuthorizedAt": "2022-01-19T09:21:48.207+00:00",
+    "lastReAuthorizedBy": "Dipti Demo"
+  },
+  {
+    "source": "Shopify",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2022-01-28T00:15:00.792Z",
+    "integrationType": "E_Commerce",
+    "imageUrl": "https://i.ibb.co/jzpcvz8/shopify-512-1.png",
+    "firstAddedAt": "2021-08-27T15:57:26.097Z",
+    "addedBy": "Mrinal Sen",
+    "assistedIntegration": true,
+    "lastReAuthorizedAt": "2021-12-06T11:01:49.581+00:00",
+    "lastReAuthorizedBy": "Dipti Demo"
+  },
+  {
+    "source": "QuickBooks Online",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2022-01-27T23:36:00.392Z",
+    "integrationType": "Accounting",
+    "imageUrl": "https://i.ibb.co/3T70zMC/qb-thumb-1.png",
+    "firstAddedAt": "2021-08-27T09:48:18.014Z",
+    "addedBy": "Mrinal Sen",
+    "lastReAuthorizedAt": "-",
+    "lastReAuthorizedBy": "-"
+  },
+  {
+    "source": "Chase",
+    "currentStatus": "OK",
+    "lastUpdatedAt": "2022-01-16T08:43:03.031Z",
+    "integrationType": "Finance",
+    "imageUrl": "https://i.ibb.co/rm0XVXb/finance.png",
+    "firstAddedAt": "2021-08-27T09:38:36.131Z",
+    "addedBy": "Mrinal Sen",
+    "lastReAuthorizedAt": "2021-12-16T10:57:04.682+00:00",
+    "lastReAuthorizedBy": "Dipti Demo"
+  },
+  {
+    "source": "SPS",
+    "currentStatus": "OK",
+    "integrationType": "EDI",
+    "imageUrl": "https://i.ibb.co/y8rnfcL/SPScommercee.png",
+    "firstAddedAt": "2021-08-26T13:30:10.117Z",
+    "addedBy": "Mrinal Sen",
+    "assistedIntegration": true,
+    "lastReAuthorizedAt": "-",
+    "lastReAuthorizedBy": "-"
+  }
+]

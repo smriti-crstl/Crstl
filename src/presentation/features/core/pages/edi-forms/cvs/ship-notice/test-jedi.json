@@ -1,0 +1,205 @@
+{
+  "code": "success",
+  "data": {
+    "metadata": {
+      "customer_id": "",
+      "integration_id": null,
+      "document_type": "856",
+      "created_at": "2022-04-25T12:54:34.644Z",
+      "updated_at": null,
+      "created_by": "auto",
+      "trading_partner_name": "Target",
+      "source_document_id": "62569ef976d0fdb4296f7aa6",
+      "source_document_type": "850",
+      "stage": "draft",
+      "isa13": "21",
+      "gs06": "22",
+      "st02": "0001"
+    },
+    "file": {
+      "json_edi": {
+        "interchanges": [
+          {
+            "interchange_control_header_ISA": {
+              "authorization_information_qualifier_01": "no_authorization_information_present_no_meaningful_information_in_i02_00",
+              "authorization_information_02": "",
+              "security_information_qualifier_03": "no_security_information_present_no_meaningful_information_in_i04_00",
+              "security_information_04": "",
+              "interchange_id_qualifier_05": "mutually_defined_ZZ",
+              "interchange_sender_id_06": "SPS1993611",
+              "interchange_id_qualifier_07": "ucc_edi_communications_id_comm_id_08",
+              "interchange_receiver_id_08": "6111470100",
+              "interchange_date_09": "220425",
+              "interchange_time_10": "1254",
+              "interchange_control_standards_identifier_11": "us_edi_community_of_asc_x12_tdcc_and_ucs_U",
+              "interchange_control_version_number_12": "00401",
+              "acknowledgment_requested_14": "no_acknowledgment_requested_0",
+              "usage_indicator_15": "production_data_P",
+              "component_element_separator_16": ">"
+            },
+            "groups": [
+              {
+                "functional_group_header_GS": {
+                  "functional_identifier_code_01": "ship_notice_manifest_856_SH",
+                  "application_senders_code_02": "SPS1993611",
+                  "application_receivers_code_03": "6111470100",
+                  "date_04": "20220425",
+                  "time_05": "1254",
+                  "responsible_agency_code_07": "accredited_standards_committee_x12_X",
+                  "version_release_industry_identifier_code_08": "004010"
+                },
+                "transaction_sets": [
+                  {
+                    "set": "856",
+                    "heading": {
+                      "transaction_set_header_ST": {
+                        "transaction_set_identifier_code_01": "856",
+                        "transaction_set_control_number_02": "3650"
+                      },
+                      "beginning_segment_for_ship_notice_BSN": {
+                        "transaction_set_purpose_code_01": "00",
+                        "shipment_identification_02": "USER_INPUT",
+                        "date_03": "20220425",
+                        "time_04": "1254",
+                        "hierarchical_structure_code_05": "0001"
+                      }
+                    },
+                    "detail": {
+                      "hierarchical_level_HL_shipment": {
+                        "hierarchical_level_HL": {
+                          "hierarchical_id_number_01": "1",
+                          "hierarchical_level_code_03": "S"
+                        },
+                        "carrier_details_routing_sequence_transit_time_TD5": [
+                          {
+                            "routing_sequence_code_01": "origin_delivery_carrier_any_mode_B",
+                            "identification_code_qualifier_02": "2",
+                            "identification_code_03": "U_I",
+                            "transportation_method_type_code_04": "U",
+                            "routing_05": "USER_INPUT"
+                          }
+                        ],
+                        "reference_identification_REF_BM": {
+                          "reference_identification_qualifier_01": "BM",
+                          "reference_identification_02": "USER_INPUT"
+                        },
+                        "reference_identification_REF_CN": {
+                          "reference_identification_qualifier_01": "CN",
+                          "reference_identification_02": "USER_INPUT"
+                        },
+                        "name_N1_loop": [
+                          {
+                            "name_N1": {
+                              "entity_identifier_code_01": "ST",
+                              "identification_code_qualifier_03": "92",
+                              "identification_code_04": "0559"
+                            }
+                          }
+                        ]
+                      },
+                      "hierarchical_level_HL_order": {
+                        "hierarchical_level_HL": {
+                          "hierarchical_id_number_01": "2",
+                          "hierarchical_parent_id_number_02": "1",
+                          "hierarchical_level_code_03": "O"
+                        },
+                        "purchase_order_reference_PRF": {
+                          "purchase_order_number_01": "10000339247-0559"
+                        },
+                        "product_item_description_PID": [
+                          {
+                            "item_description_type_01": "S",
+                            "agency_qualifier_code_03": "VI",
+                            "product_description_code_04": "FL"
+                          }
+                        ],
+                        "carrier_details_quantity_and_weight_TD1": [
+                          {
+                            "packaging_code_01": "CTN25",
+                            "lading_quantity_02": "1"
+                          }
+                        ],
+                        "name_N1_loop": [
+                          {
+                            "name_N1": {
+                              "entity_identifier_code_01": "buying_party_purchaser_BY",
+                              "identification_code_qualifier_03": "assigned_by_buyer_or_buyers_agent_92",
+                              "identification_code_04": "0559"
+                            }
+                          }
+                        ]
+                      },
+                      "hierarchical_level_HL_P_loop": [
+                        {
+                          "hierarchical_level_HL": {
+                            "hierarchical_id_number_01": "3",
+                            "hierarchical_parent_id_number_02": "2",
+                            "hierarchical_level_code_03": "P"
+                          },
+                          "item_physical_details_PO4": { "pack_01": "24" },
+                          "marks_and_numbers_MAN": [
+                            {
+                              "marks_and_numbers_qualifier_01": "GM",
+                              "marks_and_numbers_02": "USER_INPUT"
+                            }
+                          ]
+                        }
+                      ],
+                      "hierarchical_level_HL_I_loop": [
+                        {
+                          "hierarchical_level_HL": {
+                            "hierarchical_id_number_01": "4",
+                            "hierarchical_parent_id_number_02": "3",
+                            "hierarchical_level_code_03": "I"
+                          },
+                          "item_identification_LIN": {
+                            "assigned_identification_01": "1",
+                            "product_service_id_qualifier_02": "upc_consumer_package_code_1_5_5_1_UP",
+                            "product_service_id_03": "869657000012",
+                            "product_service_id_qualifier_04": "buyers_catalog_number_CB",
+                            "product_service_id_05": "094080085"
+                          },
+                          "item_detail_shipment_SN1": {
+                            "number_of_units_shipped_02": "288",
+                            "unit_or_basis_for_measurement_code_03": "each_EA"
+                          },
+                          "item_physical_details_PO4": {
+                            "pack_01": "24",
+                            "inner_pack_14": "12"
+                          }
+                        }
+                      ]
+                    },
+                    "summary": {
+                      "transaction_totals_CTT": {
+                        "number_of_line_items_01": "0"
+                      },
+                      "transaction_set_trailer_SE": {
+                        "number_of_included_segments_01": "0",
+                        "transaction_set_control_number_02": "0003"
+                      }
+                    }
+                  }
+                ],
+                "functional_group_trailer_GE": {
+                  "number_of_transaction_sets_included_01": "1"
+                }
+              }
+            ],
+            "interchange_control_trailer_IEA": {
+              "number_of_included_functional_groups_01": "1"
+            },
+            "delimiters": { "element": "*", "segment": "~", "sub_element": ">" }
+          }
+        ],
+        "__version": "jedi@2.0"
+      },
+      "metadata": {
+        "version": 2,
+        "created_at": "2022-04-28T14:42:19.753Z",
+        "autofilled": false,
+        "source_document_version": 1
+      }
+    }
+  }
+}
