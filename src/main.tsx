@@ -9,7 +9,7 @@ import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
 
 import reportWebVitals from "./reportWebVitals";
-import { amplitude } from "@crstl/app/src/presentation/utils";
+import { amplitude } from "presentation/utils";
 import { getAppEnvironment } from "./appEnvironment";
 // import { setupInterceptorsTo } from "./interceptor";
 
