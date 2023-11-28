@@ -2,11 +2,12 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import path from 'path';
 import svgr from '@svgr/rollup';
+import viteTsconfigPaths from 'vite-tsconfig-paths'
 
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), svgr()],
+  plugins: [react(), svgr(), viteTsconfigPaths()],
   resolve: {
     alias: {
       // Alias 'src' to the root of the 'src' directory

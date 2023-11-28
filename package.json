@@ -54,6 +54,7 @@
     "source-map-explorer": "^2.5.2",
     "styled-components": "^5.2.1",
     "styled-normalize": "^8.0.7",
+    "vite-tsconfig-paths": "^4.2.1",
     "web-vitals": "^1.0.1",
     "xlsx": "^0.18.2"
   },

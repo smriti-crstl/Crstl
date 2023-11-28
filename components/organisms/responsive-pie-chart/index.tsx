@@ -1,5 +1,4 @@
 import { ReactElement, useState } from "react";
-import { ResponsivePie } from "@nivo/pie";
 import { currencyFormatter } from "@crstl/app/src/presentation/utils";
 import { LegendPosition } from "@crstl/components/organisms/legends";
 import styled from "styled-components";
@@ -144,43 +143,7 @@ export const ResponsivePieChart = ({
   return (
     <>
       <PieChartContainer>
-        <ResponsivePie
-          id="id"
-          data={data ? data.data : []}
-          arcLinkLabel={(d) => getArcLinkLabel(d.data?.label)}
-          cornerRadius={3}
-          margin={{ top: 30, right: 40, bottom: 30, left: 40 }}
-          arcLinkLabelsDiagonalLength={10}
-          enableArcLabels={false}
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
-          arcLinkLabelsTextOffset={3}
-          arcLinkLabelsStraightLength={10}
-          arcLinkLabelsColor={{ from: "color" }}
-          innerRadius={0.9}
-          padAngle={2}
-          colors={{ datum: "data.color" }}
-          borderWidth={1}
-          borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}
-          arcLinkLabelsSkipAngle={12}
-          arcLinkLabelsTextColor="#000000"
-          arcLinkLabelsThickness={2}
-          arcLabelsTextColor={{ from: "color", modifiers: [["darker", 2]] }}
-          tooltip={() => null}
-          theme={{
-            tooltip: {
-              container: {
-                background: "white",
-              },
-            },
-            fontFamily: "Inter",
-            labels: {
-              text: {
-                fontSize: "10px",
-              },
-            },
-          }}
-        />
+       
         {segmentSummary ? (
           <PieChartInfo
             value={getDisplayValue({

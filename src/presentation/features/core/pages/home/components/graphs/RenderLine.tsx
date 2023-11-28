@@ -21,11 +21,9 @@ import {
 import { ReactElement, useContext } from "react";
 import styled from "styled-components";
 
-import { Defs } from "@nivo/core";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 // yarn add @nivo/core @nivo/line
-import { ResponsiveLine } from "@nivo/line";
 
 import { AnalyticsDateRangeContext } from "../../../analytics/components/reports";
 import { X_AXIS_LABEL_COL_COUNT } from "../../../analytics/config";
@@ -161,18 +159,7 @@ export const MyResponsiveLine = ({
       <>
         {id === "TotalBalance" && (
           <>
-            <Defs
-              defs={[
-                {
-                  id: "GradientA",
-                  type: "linearGradient",
-                  colors: [
-                    { offset: 0, color: "inherit" },
-                    { offset: 100, color: "inherit", opacity: 0 },
-                  ],
-                },
-              ]}
-            />
+            
             <path
               key={id}
               d={areaGenerator(
@@ -190,72 +177,6 @@ export const MyResponsiveLine = ({
     ));
 
   return (
-    <ResponsiveLine
-      data={data}
-      margin={{ top: 10, right: 20, bottom: 70, left: 20 }}
-      yScale={{
-        type: "linear",
-        min: typeof minYScale !== "undefined" ? minYScale : "auto",
-        max: "auto",
-      }}
-      xScale={{
-        type: "time",
-        format: "%Y-%m-%d",
-        precision: "day",
-      }}
-      yFormat=" >-.2f"
-      axisTop={null}
-      axisRight={null}
-      enableArea={true}
-      tooltip={({ point }) => {
-        return (
-          <Tooltip
-            balance={point.data.yFormatted as string}
-            date={point.data.xFormatted as string}
-            color={point.serieColor as string}
-            isCount={isCount || false}
-          />
-        );
-      }}
-      axisBottom={{
-        tickRotation: 0,
-        format: (value) => formatDateByMonth(value),
-        tickValues: tickValues,
-      }}
-      axisLeft={{
-        format: (value) => formatNumber(value),
-      }}
-      pointColor={data.color}
-      pointBorderWidth={2}
-      pointBorderColor={{ from: "serieColor" }}
-      pointSize={0}
-      curve="linear"
-      lineWidth={2}
-      colors={{ datum: "color" }}
-      useMesh={true}
-      enableCrosshair={false}
-      theme={{
-        textColor: "#8F9FAE",
-        fontSize: 12,
-        fontFamily: "Inter",
-        grid: {
-          line: {
-            stroke: theme.palette.colors.WHITE_SMOKE,
-          },
-        },
-      }}
-      layers={[
-        "grid",
-        "markers",
-        "axes",
-        "crosshair",
-        DashedLine,
-        Areas,
-        "points",
-        "slices",
-        "mesh",
-        "legends",
-      ]}
-    />
+   <div />
   );
 };
