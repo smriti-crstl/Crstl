@@ -10,7 +10,7 @@ import { Integrations } from "@sentry/tracing";
 
 import reportWebVitals from "./reportWebVitals";
 import { amplitude } from "@crstl/app/src/presentation/utils";
-import { getAppEnvironment } from "appEnvironment";
+import { getAppEnvironment } from "./appEnvironment";
 // import { setupInterceptorsTo } from "./interceptor";
 
 Sentry.init({

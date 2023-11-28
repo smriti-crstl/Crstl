@@ -88,7 +88,7 @@ const RootRouter = (): ReactElement => {
           const script = document.createElement("script");
           script.async = true;
           const scriptText = document.createTextNode(`window.FrontChat("init", {
-            chatId: "${process.env.REACT_APP_FRONT_CHAT_ID}",
+            chatId: "${import.meta.env.VITE_APP_FRONT_CHAT_ID}",
             useDefaultLauncher: true,
             email: "${userDetailsData.email}",
             name: "${userDetailsData.fullName}",

@@ -5,7 +5,7 @@ enum AppEnvironment {
 }
 
 export function getAppEnvironment(): AppEnvironment {
-  const appEnvVar = process.env.REACT_APP_ENV;
+  const appEnvVar = import.meta.env.VITE_APP_ENV;
   switch (appEnvVar) {
     case "PRODUCTION": {
       return AppEnvironment.PRODUCTION;

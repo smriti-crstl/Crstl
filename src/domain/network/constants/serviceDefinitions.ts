@@ -8,6 +8,6 @@ const DEFAULT_FALLBACK_CORE_V2_URL =
   "http://crstl-api-dot-omnicrstl-sandbox.uc.r.appspot.com/v2";
 
 export const serviceDefinitions: IBackendServiceNames = {
-  CORE: process.env.REACT_APP_CORE_URL || DEFAULT_FALLBACK_CORE_URL,
-  CORE_V2: process.env.REACT_APP_CORE_V2_URL || DEFAULT_FALLBACK_CORE_V2_URL,
+  CORE: import.meta.env.VITE_APP_CORE_URL || DEFAULT_FALLBACK_CORE_URL,
+  CORE_V2: import.meta.env.VITE_APP_CORE_V2_URL || DEFAULT_FALLBACK_CORE_V2_URL,
 };

@@ -10,7 +10,7 @@ import { CoreContainerLayout } from "./layout";
 import { DownloadShipmentDocsProvider } from "../pages/edi/Download/DownloadShipmentDocs/hooks/useDownloadShipmentDocs";
 
 const client = createClient({
-  publicApiKey: process.env.REACT_APP_LIVEBLOCKS_PUBLIC_KEY ?? "",
+  publicApiKey: import.meta.env.VITE_APP_LIVEBLOCKS_PUBLIC_KEY ?? "",
 });
 
 function CoreContainerLayoutWithProviders() {

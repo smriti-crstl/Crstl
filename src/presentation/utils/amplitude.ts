@@ -2,7 +2,7 @@ import _amplitude from "amplitude-js";
 
 const instance = _amplitude.getInstance();
 
-instance.init(process.env.REACT_APP_AMPLITUDE_PROJECT_ID || "");
+instance.init(import.meta.env.VITE_APP_AMPLITUDE_PROJECT_ID || "");
 
 function logEvent(event: string) {
   return instance.logEvent(event);

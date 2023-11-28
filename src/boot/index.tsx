@@ -37,6 +37,6 @@ const BootApp = (): ReactElement => {
 };
 
 export default withLDProvider({
-  clientSideID: process.env.REACT_APP_LAUNCHDARLY_CLIENT_ID || "",
+  clientSideID: import.meta.env.VITE_APP_LAUNCHDARLY_CLIENT_ID || "",
 })(BootApp);
 
