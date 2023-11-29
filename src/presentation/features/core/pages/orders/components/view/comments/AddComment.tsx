@@ -1,4 +1,5 @@
-import { Col, Comment, Form, Mentions, Row } from "antd";
+import { Comment } from '@ant-design/compatible';
+import { Col, Form, Mentions, Row } from "antd";
 import { useCreateCommentQuery } from "domain/interactors/orders";
 import { useUserTeamQuery } from "domain/interactors/shared";
 import { CORE_ORDERS_TEXT_CONSTANTS } from "presentation/texts-reservoir";

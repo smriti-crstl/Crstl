@@ -23,20 +23,18 @@ export const RailzAuth = ({
   if (isconnected) {
     return <ConnectedIndicator />;
   } else {
-    return (
-      <>
-        <Modal
-          title={RAILS_CONFIG.RAILZ_INTEGRATION}
-          visible={isModalOpen}
-          onCancel={() => setIsModalOpen(false)}
-          footer={null}
-          maskClosable={false}
-          maskStyle={{ backgroundColor: theme.palette.colors.KLIEN_BLUE }}
-        >
-          <div id={RAILS_CONFIG.RAILS_CONNECT_DIV}></div>
-        </Modal>
-        <ColoredButton onClick={onAddButtonClick}>Add</ColoredButton>
-      </>
-    );
+    return (<>
+      <Modal
+        title={RAILS_CONFIG.RAILZ_INTEGRATION}
+        open={isModalOpen}
+        onCancel={() => setIsModalOpen(false)}
+        footer={null}
+        maskClosable={false}
+        maskStyle={{ backgroundColor: theme.palette.colors.KLIEN_BLUE }}
+      >
+        <div id={RAILS_CONFIG.RAILS_CONNECT_DIV}></div>
+      </Modal>
+      <ColoredButton onClick={onAddButtonClick}>Add</ColoredButton>
+    </>);
   }
 };

@@ -22,7 +22,7 @@ export const DropdownWithVisibleOverlay = ({
 }: SimpleDropdownProps): ReactElement => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   return (
-    <Dropdown
+    (<Dropdown
       forceRender
       trigger={["click"]}
       onVisibleChange={(flag) => {
@@ -32,10 +32,10 @@ export const DropdownWithVisibleOverlay = ({
           setIsDropdownVisible?.(flag);
         }
       }}
-      visible={isVisibleControlled || isVisible}
+      open={isVisibleControlled || isVisible}
       overlay={menu}
     >
       {children}
-    </Dropdown>
+    </Dropdown>)
   );
 };
