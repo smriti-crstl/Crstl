@@ -235,7 +235,7 @@ export const ShipmentDocumentsModalDropShip: React.FC<Props> = ({
     <Modal
       style={{ top: showForm ? "10vh" : "5vh" }}
       bodyStyle={{ overflowY: "auto" }}
-      visible={visible}
+      open={visible}
       width={showForm ? "50%" : "70%"}
       onCancel={toggle}
       title="Shipment Documents"

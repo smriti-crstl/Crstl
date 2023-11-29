@@ -15,7 +15,7 @@ export const InviteTeammatesModal = ({
   toggleModal,
 }: Props): ReactElement => {
   return (
-    <PaddedModal onCancel={toggleModal} visible={isVisible} width="50%">
+    <PaddedModal onCancel={toggleModal} open={isVisible} width="50%">
       <Logo image={CrstlColoured} isLarge />
       <br />
       <InviteUsersPlugIn

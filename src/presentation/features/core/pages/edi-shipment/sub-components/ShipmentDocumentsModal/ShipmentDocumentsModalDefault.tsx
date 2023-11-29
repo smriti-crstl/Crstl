@@ -138,7 +138,7 @@ export const ShipmentDocumentsModalDefault: React.FC<PublicProps> = ({
   return (
     <Modal
       style={{ top: "5vh" }}
-      visible={visible}
+      open={visible}
       width="70%"
       onCancel={toggle}
       title="Shipment Documents"

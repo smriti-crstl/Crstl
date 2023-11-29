@@ -38,7 +38,7 @@ const AUTH_PLUGIN_INVITE_USERS_FORM_CONFIG: [
     containerProps: {
       showMultipleLines: false,
     },
-    dropdownClassName: "hide-dropdown",
+    popupClassName: "hide-dropdown",
   },
   {
     componentType: "single-select",

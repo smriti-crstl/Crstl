@@ -37,7 +37,7 @@ export const HistoryButtonWrapper = ({
       <Modal
         width="800px"
         bodyStyle={{ padding: "0.5rem 0 0 0" }}
-        visible={isModalOpen}
+        open={isModalOpen}
         onCancel={() => {
           setIsModalOpen(false);
         }}

@@ -24,7 +24,7 @@ export const ShopifyInputModal = ({
 
   return (
     <PaddedModal
-      visible={isShopNameModalOpen}
+      open={isShopNameModalOpen}
       onCancel={() => setIsShopNameModalOpen(false)}
     >
       <GenericHeading size="MD">Please enter the shop name</GenericHeading>

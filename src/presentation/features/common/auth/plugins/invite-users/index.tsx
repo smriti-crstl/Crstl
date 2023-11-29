@@ -79,7 +79,7 @@ export const InviteUsersPlugIn = ({
             TEXT_CONSTANTS.PLUGINS.INVITE_USERS.SUCCESS_MODAL
               .SUCCESS_BUTTON_TEXT,
         }}
-        visible={isInviteModalVisible}
+        open={isInviteModalVisible}
         isSuccess
         width="50vw"
         handleSuccessButtonClick={() => {

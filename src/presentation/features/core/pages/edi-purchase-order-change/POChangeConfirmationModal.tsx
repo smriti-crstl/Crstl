@@ -33,7 +33,7 @@ const POChangeConfirmationModal = ({
   return (
     <StyledModal
       width={740}
-      visible={showPOChangeConfirmationModal}
+      open={showPOChangeConfirmationModal}
       footer={null}
       closable={true}
       onCancel={closeModal}

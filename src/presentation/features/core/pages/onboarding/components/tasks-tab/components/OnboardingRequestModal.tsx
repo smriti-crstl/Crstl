@@ -41,7 +41,7 @@ export const OnboardingRequestModal: React.FC<
 > = ({ isVisible, toggleModal, ...rest }) => (
   <StyledModal
     centered
-    visible={isVisible}
+    open={isVisible}
     onCancel={toggleModal}
     footer={null}
     width="70%"

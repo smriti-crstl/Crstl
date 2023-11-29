@@ -443,7 +443,7 @@ export const TradingPartnerInfo = () => {
 
       <StyledModal
         closable
-        visible={isConfirmModalVisible}
+        open={isConfirmModalVisible}
         onCancel={handleModalClose}
         onOk={handleModalConfirm}
       >

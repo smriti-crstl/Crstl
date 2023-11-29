@@ -33,7 +33,7 @@ export const WelcomeModal = (): ReactElement => {
 
   return (
     <PaddedModal
-      visible={showModal}
+      open={showModal}
       cancelCallback={() => setShowModal(false)}
       closable={false}
     >

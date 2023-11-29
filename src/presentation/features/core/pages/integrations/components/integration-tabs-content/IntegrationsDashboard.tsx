@@ -227,7 +227,7 @@ function IntegrationsDashboard() {
             currentIntegrationSource?.name || ""
           )}
           {...resultProps}
-          visible={isModalVisible}
+          open={isModalVisible}
           cancelCallback={onModalCancel}
         />
         <FluidWidthCard title="Integration status">

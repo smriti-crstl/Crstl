@@ -67,7 +67,7 @@ const FieldDescriptionPopover = ({
         <StyledLabel>{title}</StyledLabel>
       </Popover>
       <StyledModal
-        visible={showGlossaryModal}
+        open={showGlossaryModal}
         onCancel={closeModal}
         onOk={closeModal}
         footer={null}

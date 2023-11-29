@@ -100,7 +100,7 @@ export const FinancialTabConnectedBanks = (): ReactElement => {
           currentIntegrationSource?.name || ""
         )}
         {...resultProps}
-        visible={isModalVisible}
+        open={isModalVisible}
         cancelCallback={onModalCancel}
       />
       <RenderIntegrations

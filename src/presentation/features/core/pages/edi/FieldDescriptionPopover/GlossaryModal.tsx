@@ -55,7 +55,7 @@ const GlossaryModal = ({
 
   return (
     <StyledModal
-      visible={showGlossaryModal}
+      open={showGlossaryModal}
       destroyOnClose={true}
       footer={null}
       onCancel={onCancel}
