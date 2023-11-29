@@ -7,7 +7,7 @@ import {
 import { DEFAULT_FNS_DATE_FORMAT } from "globals/configs";
 import { Base64 } from "js-base64";
 import { startCase } from "lodash";
-import { parse } from "querystring";
+import queryString from 'query-string';
 
 const isBool = (value: unknown): boolean => typeof value === "boolean";
 
@@ -38,7 +38,7 @@ const parseSearchParams = <ResultData = { [key: string]: string }>(
   searchQuery: string
 ): ResultData => {
   // Removing ? from the search URL
-  const parsedQuery = parse(searchQuery.slice(1));
+  const parsedQuery = queryString.parse(searchQuery.slice(1));
   return ({ ...parsedQuery } as unknown) as ResultData;
 };
 
