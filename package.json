@@ -21,7 +21,7 @@
     "@types/react-simple-maps": "^1.0.6",
     "@types/react-tooltip": "^4.2.4",
     "amplitude-js": "^8.13.1",
-    "antd": "^4.12.2",
+    "antd": "^5.11.5",
     "axios": "^0.21.1",
     "babel-plugin-styled-components": "^2.0.7",
     "clsx": "^1.1.1",
