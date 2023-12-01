@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "prettier --write \"**/*.+(ts|tsx|md)\" && eslint \"src/**/*.tsx\" \"src/**/*.ts\"",
+    "format": "prettier --write \"**/*.+(ts|tsx|md)\"",
+    "fix-lint": "eslint --fix \"src/**/*.tsx\" \"src/**/*.ts\""
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -34,7 +36,6 @@
     "lint-staged": "^10.5.4",
     "lodash": "^4.17.20",
     "moment": "^2.29.4",
-    "prettier": "^2.8.8",
     "qs": "^6.9.6",
     "query-string": "^8.1.0",
     "react": "^18.2.0",
@@ -52,15 +53,14 @@
     "styled-normalize": "^8.0.7",
     "vite-tsconfig-paths": "^4.2.1",
     "web-vitals": "^1.0.1",
-    "xlsx": "^0.18.2"
+    "xlsx": "^0.18.2",
+    "@testing-library/react": "^14.1.2"
   },
   "devDependencies": {
-    "@types/amplitude-js": "^8.0.2",
-    "@types/react-tooltip": "^4.2.4",
     "@svgr/rollup": "^8.1.0",
     "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@types/amplitude-js": "^8.0.2",
     "@types/antd": "^1.0.0",
     "@types/color": "^3.0.1",
     "@types/file-saver": "^2.0.5",
@@ -70,22 +70,25 @@
     "@types/react": "^18.2.39",
     "@types/react-dom": "^18.2.17",
     "@types/react-router-dom": "^5.1.7",
+    "@types/react-tooltip": "^4.2.4",
     "@types/styled-components": "^5.1.32",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
-    "babel-eslint": "^10.1.0",
     "cypress": "^13.6.0",
-    "eslint": "^7.15.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "mockdate": "^3.0.5",
     "msw": "^0.35.0",
     "path": "^0.12.7",
+    "prettier": "^3.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
   },
@@ -93,16 +96,6 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "rules": {
-      "no-unused-vars": "warn",
-      "@typescript-eslint/no-unused-vars": "warn"
-    }
   },
   "browserslist": {
     "production": [
@@ -135,3 +128,4 @@
   },
   "proxy": "https://omnicrstl-sandbox.web.app"
 }
+
