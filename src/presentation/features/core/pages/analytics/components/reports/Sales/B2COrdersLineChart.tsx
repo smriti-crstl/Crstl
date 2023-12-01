@@ -4,10 +4,10 @@ import { ErrorBoundary } from "presentation/features/common/components/ErrorBoun
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import { FixedSizeCard } from "@crstl/components/atoms/card";
-import { GenericLoading } from "@crstl/components/atoms/loading";
-import { GenericSubHeading } from "@crstl/components/atoms/typography";
-import { LegendPosition } from "@crstl/components/organisms/legends";
+import { FixedSizeCard } from "components/atoms/card";
+import { GenericLoading } from "components/atoms/loading";
+import { GenericSubHeading } from "components/atoms/typography";
+import { LegendPosition } from "components/organisms/legends";
 
 // import { DateDropdown } from "./DateDropdown";
 import HighChartsLineGraph from "../../../../home/components/graphs/HighChartsLineGraph";

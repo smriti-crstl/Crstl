@@ -5,7 +5,7 @@ import { getUserCrstlRoleOptions } from "presentation/constants";
 import { useUserDetails } from "presentation/hooks/common";
 import { ReactElement } from "react";
 
-import { SingleSelect } from "@crstl/components/atoms/selects";
+import { SingleSelect } from "components/atoms/selects";
 
 type Props = {
   currentValue: string;

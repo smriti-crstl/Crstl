@@ -1,7 +1,7 @@
 import { useUserDetails } from "presentation/hooks/common";
 import React from "react";
 
-import { Role } from "@crstl/api/src/apis/models/User";
+import { Role } from "models/User";
 
 import AccessDenied from "../pages/access-denied";
 

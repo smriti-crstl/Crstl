@@ -1,17 +1,17 @@
 import { ReactElement } from "react";
 
-import { SimpleCheckbox } from "@crstl/components/atoms/checkbox";
+import { SimpleCheckbox } from "components/atoms/checkbox";
 import {
   EmailInput,
   NumberInput,
   PasswordInput,
   SimpleInput,
-} from "@crstl/components/atoms/inputs";
+} from "components/atoms/inputs";
 import {
   CommonSelect,
   MultiTagsSelect,
   SingleSelect,
-} from "@crstl/components/atoms/selects";
+} from "components/atoms/selects";
 
 export type ComponentTypes =
   | "simple-input"

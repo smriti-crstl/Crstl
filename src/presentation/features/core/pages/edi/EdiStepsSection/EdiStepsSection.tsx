@@ -20,9 +20,9 @@ import {
 import {
   DocumentTitle,
   EdiWorkflowStep,
-} from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
-import { Spinner } from "@crstl/components/atoms/loading";
-import { Chip } from "@crstl/components/molecules/order-chips/Chip";
+} from "models/v1/edi/EdiDocuments";
+import { Spinner } from "components/atoms/loading";
+import { Chip } from "components/molecules/order-chips/Chip";
 
 import {
   getButtonStyles,

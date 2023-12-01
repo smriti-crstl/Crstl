@@ -4,7 +4,7 @@ import {
   PartialHighChartsOptions,
 } from "globals/configs/highcharts";
 import { ChartTooltip } from "../components/ChartTooltip";
-import { MarketingMetricChartModel } from "@crstl/api/src/apis/models/v1/AdwordsModel";
+import { MarketingMetricChartModel } from "models/v1/AdwordsModel";
 import { groupBy } from "lodash";
 import { AxisLabelsFormatterContextObject, YAxisOptions } from "highcharts";
 import {

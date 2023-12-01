@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Icon from "@ant-design/icons";
 import onboardingHeaderBgImg from "@crstl/app/src/globals/assets/images/onboarding-header-bg.png";
-import { Modal } from "@crstl/components/atoms/modal";
+import { Modal } from "components/atoms/modal";
 
 interface ButtonProps {
   backgroundColor: string;

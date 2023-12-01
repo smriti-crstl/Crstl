@@ -2,8 +2,8 @@ import { usePostPlaidLinkQuery } from "domain/interactors/integrations/plaid";
 import { CORE_INTEGRATIONS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement, useEffect, useState } from "react";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { GenericError } from "@crstl/components/atoms/error";
+import { ColoredButton } from "components/atoms/buttons";
+import { GenericError } from "components/atoms/error";
 
 import { Plaid } from "./Plaid";
 

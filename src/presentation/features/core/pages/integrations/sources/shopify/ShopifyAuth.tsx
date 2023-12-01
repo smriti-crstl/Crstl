@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { ConnectedIndicator } from "@crstl/components/atoms/indicators";
+import { ColoredButton } from "components/atoms/buttons";
+import { ConnectedIndicator } from "components/atoms/indicators";
 import { SHOPIFY_CONFIG } from "./shopify.config";
 
 type Props = {

@@ -1,5 +1,5 @@
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { ConnectedIndicator } from "@crstl/components/atoms/indicators";
+import { ColoredButton } from "components/atoms/buttons";
+import { ConnectedIndicator } from "components/atoms/indicators";
 import { CORE_INTEGRATIONS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
 type Props = {

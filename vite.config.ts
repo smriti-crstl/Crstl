@@ -18,9 +18,9 @@ export default defineConfig({
        'boot': path.resolve(__dirname, './src/boot'),
       'globals': path.resolve(__dirname, './src/globals'),
       'presentation': path.resolve(__dirname, './src/presentation'),
-      '@crstl/components': path.resolve(__dirname, './src/components'),
-      '@crstl/validations': path.resolve(__dirname, './validations'),
-      '@crstl/api/src/apis/models': path.resolve(__dirname, './models'),
+      'components': path.resolve(__dirname, './src/components'),
+      'validations': path.resolve(__dirname, './src/validations'),
+      'models': path.resolve(__dirname, './src/models'),
     },
   },
   server: {

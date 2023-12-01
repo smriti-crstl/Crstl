@@ -3,7 +3,7 @@ import { OrgTPDocType } from "domain/entity/shared/models";
 import { useMemo } from "react";
 import { useTheme } from "styled-components";
 
-import { TabsConfig } from "@crstl/components/atoms/tabs";
+import { TabsConfig } from "components/atoms/tabs";
 
 import { ColorCircle, TabItemContainer } from "../components/edi-tab/styles";
 

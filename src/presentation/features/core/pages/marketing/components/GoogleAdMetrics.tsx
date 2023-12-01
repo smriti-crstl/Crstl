@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { CardBody, FluidWidthCard } from "@crstl/components/atoms/card";
-import { EmptyData } from "@crstl/components/atoms/empty";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { CardBody, FluidWidthCard } from "components/atoms/card";
+import { EmptyData } from "components/atoms/empty";
+import { GenericLoading } from "components/atoms/loading";
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 import { useGetAdWordsData } from "domain/interactors/marketing";
 import { EmptyCardWrapper } from "../../analytics/components/common/common.styles";

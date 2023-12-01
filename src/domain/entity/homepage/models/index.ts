@@ -3,9 +3,9 @@ import {
   HomepageChartQueryModel,
   ChartResponseModel,
   CreditCardResponseModel,
-} from "@crstl/api/src/apis/models/plaid/PlaidIntegration";
-import { LiveBlocksTokenResponse } from "@crstl/api/src/apis/models/LiveBlock";
-import { SankeyDataResponseModel } from "@crstl/api/src/apis/models/v1/Sankey";
+} from "models/plaid/PlaidIntegration";
+import { LiveBlocksTokenResponse } from "models/LiveBlock";
+import { SankeyDataResponseModel } from "models/v1/Sankey";
 import { Metadata } from "domain/entity/shared/models/metadata";
 
 export type CollectiveBalanceChartRes = ChartResponseModel & Metadata;

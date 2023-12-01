@@ -1,7 +1,7 @@
 import { Collapse, Space } from "antd";
 import styled from "styled-components";
 
-import { OnboardingTaskData } from "@crstl/api/src/apis/models/v1/edi/OnboardingTaskList";
+import { OnboardingTaskData } from "models/v1/edi/OnboardingTaskList";
 
 const { Panel } = Collapse;
 

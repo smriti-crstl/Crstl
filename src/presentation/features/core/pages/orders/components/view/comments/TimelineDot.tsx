@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import { AvatarWithBackground } from "@crstl/components/atoms/avatar";
+import { AvatarWithBackground } from "components/atoms/avatar";
 
 type Props = {
   imageUrl?: string;

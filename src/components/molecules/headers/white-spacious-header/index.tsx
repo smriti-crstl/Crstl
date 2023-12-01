@@ -3,7 +3,7 @@ import { ReactElement, ReactNode } from "react";
 import { useHistory } from "react-router";
 import styled from "styled-components";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
+import { ColoredButton } from "components/atoms/buttons";
 
 import { GenericHeading } from "../../../atoms/typography";
 import { HeaderIconProps, HeaderIcons } from "../../icon-groups";

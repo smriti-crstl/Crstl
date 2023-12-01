@@ -11,10 +11,10 @@ import {
   Title,
 } from "./alerts.styles";
 import moment from "moment";
-import { Spinner } from "@crstl/components/atoms/loading";
-import { HeaderShadowContainerWithoutTabs } from "@crstl/components/molecules/headers";
+import { Spinner } from "components/atoms/loading";
+import { HeaderShadowContainerWithoutTabs } from "components/molecules/headers";
 import { CustomDateRangePicker } from "../analytics/components/common";
-import { HeaderButtonGroup } from "@crstl/components/molecules/button-groups/header-button-group";
+import { HeaderButtonGroup } from "components/molecules/button-groups/header-button-group";
 import {
   generatePath,
   useHistory,

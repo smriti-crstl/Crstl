@@ -1,8 +1,8 @@
 import { CORE_SETTINGS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 
-import { HorizontallyCenteredPaperCard } from "@crstl/components/atoms/card";
-import { GenericHeading } from "@crstl/components/atoms/typography";
+import { HorizontallyCenteredPaperCard } from "components/atoms/card";
+import { GenericHeading } from "components/atoms/typography";
 
 import { SettingsTabsWrapper } from "../common/wrapper";
 import { ProfileTabMyProfileFields } from "./my-profile";

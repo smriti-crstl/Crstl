@@ -1,7 +1,7 @@
 import { COLORS } from "globals/themes/default/colors";
 import { CSSProperties } from "react";
 
-import { EdiWorkflowStep } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
+import { EdiWorkflowStep } from "models/v1/edi/EdiDocuments";
 
 export const getChipStyles = (item: EdiWorkflowStep): CSSProperties => ({
   background: item?.disabled ? COLORS.GRAY_DARK : item.color?.backgroundColor,

@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 import { useQueryClient } from "react-query";
 import { generatePath, useHistory, useParams } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { POChangeAckButton } from "../edi-purchase-order-change/POChangeAckButton";
 import POChangeConfirmationModal from "../edi-purchase-order-change/POChangeConfirmationModal";

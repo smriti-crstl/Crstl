@@ -1,10 +1,10 @@
 import { usePostPlaidUpdateAccessTokenQuery } from "domain/interactors/integrations/plaid";
 import { ReactElement, useLayoutEffect, useState } from "react";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
+import { ColoredButton } from "components/atoms/buttons";
 
 import { PlaidUpdate } from "./PlaidUpdate";
-import { ConnectedIndicator } from "@crstl/components/atoms/indicators";
+import { ConnectedIndicator } from "components/atoms/indicators";
 
 type Props = {
   integrationId: string;

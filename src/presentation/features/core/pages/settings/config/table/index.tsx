@@ -3,8 +3,8 @@ import { USER_DEFAULT_IMAGE_URL } from "presentation/constants";
 import { RenderTimestamp } from "presentation/features/common/components";
 import { CORE_SETTINGS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
-import { UserModel } from "@crstl/api/src/apis/models/User";
-import { AvatarWithBackground } from "@crstl/components/atoms/avatar";
+import { UserModel } from "models/User";
+import { AvatarWithBackground } from "components/atoms/avatar";
 
 import { TeamsJobFunctionsDropdown } from "../../components/team-tab/dropdowns/job-functions";
 import { TeamsStatusDropdown } from "../../components/team-tab/dropdowns/status-change";

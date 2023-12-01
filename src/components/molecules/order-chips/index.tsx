@@ -2,7 +2,7 @@ import { Spin } from "antd";
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { Dispatch, ReactElement, SetStateAction } from "react";
 
-import { DropdownWithVisibleOverlay } from "@crstl/components/atoms/dropdown";
+import { DropdownWithVisibleOverlay } from "components/atoms/dropdown";
 
 import { DropdownMenu } from "../../atoms/menu";
 import { Chip } from "./Chip";

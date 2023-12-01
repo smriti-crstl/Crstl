@@ -1,11 +1,11 @@
 import { EDIAddressModelFE } from "domain/entity/edi-setup/models";
 
-import { OrgDataResponse } from "@crstl/api/src/apis/models/v1/edi/OrgData";
+import { OrgDataResponse } from "models/v1/edi/OrgData";
 import {
   ICommonSelectProps,
   ISingleSelectProps,
-} from "@crstl/components/atoms/selects";
-import { CreateFormProps } from "@crstl/components/organisms/create-form";
+} from "components/atoms/selects";
+import { CreateFormProps } from "components/organisms/create-form";
 
 // TODO: add types in packages/app/src/domain/entity/profile/models/index.ts for org data api
 

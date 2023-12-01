@@ -1,8 +1,8 @@
 import { ReactElement } from "react";
 
-import { GenericError } from "@crstl/components/atoms/error";
-import { GenericLoading } from "@crstl/components/atoms/loading";
-import { GenericHeading } from "@crstl/components/atoms/typography";
+import { GenericError } from "components/atoms/error";
+import { GenericLoading } from "components/atoms/loading";
+import { GenericHeading } from "components/atoms/typography";
 
 import { HomeAccountCarousal, SlideDataSetProps } from "../carousal";
 

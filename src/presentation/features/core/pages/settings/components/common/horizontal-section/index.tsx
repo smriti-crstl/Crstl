@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import { ReactElement, ReactNode } from "react";
 
-import { GenericHeading } from "@crstl/components/atoms/typography";
+import { GenericHeading } from "components/atoms/typography";
 
 type Props = {
   children: ReactNode;

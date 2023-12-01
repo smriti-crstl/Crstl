@@ -2,7 +2,7 @@ import { CoreRouteOnboardingOptions } from "globals/configs/urls/constants";
 import { useFlags } from "launchdarkly-react-client-sdk";
 import { useEffect, useState } from "react";
 
-import { TabsConfig } from "@crstl/components/atoms/tabs";
+import { TabsConfig } from "components/atoms/tabs";
 
 import {
   OnboardingAlertsTab,

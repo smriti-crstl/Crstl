@@ -3,7 +3,7 @@ import { find, get } from "lodash";
 import React, { forwardRef, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { TradingPartnerNames } from "../edi/Edi.config";
 import {

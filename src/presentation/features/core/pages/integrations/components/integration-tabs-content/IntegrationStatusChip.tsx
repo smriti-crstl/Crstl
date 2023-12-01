@@ -1,6 +1,6 @@
 import { COLORS } from "globals/themes/default/colors";
-import { IntegrationStatusModel } from "@crstl/api/src/apis/models/v1/integration/IntegrationStatus";
-import { Chip } from "@crstl/components/molecules/order-chips/Chip";
+import { IntegrationStatusModel } from "models/v1/integration/IntegrationStatus";
+import { Chip } from "components/molecules/order-chips/Chip";
 import { CORE_INTEGRATIONS } from "globals/configs";
 import styled from "styled-components";
 import { generatePath, useHistory } from "react-router-dom";

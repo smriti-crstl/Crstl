@@ -3,8 +3,8 @@ import {
   ChargebackStatusModel,
   InvoiceStatusModel,
   PaymentStatusModel,
-} from "@crstl/api/src/apis/models/EnumTypes";
-import { PurchaseOrderStatusModel } from "@crstl/api/src/apis/models/PurchaseOrder";
+} from "models/EnumTypes";
+import { PurchaseOrderStatusModel } from "models/PurchaseOrder";
 import MockDate from "mockdate";
 import { customDataHandler } from "mocks/organizationHandlers";
 import { server } from "mocks/server";

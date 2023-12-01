@@ -3,7 +3,7 @@ import { useChangeChipStatusQuery } from "domain/interactors/orders";
 import { useUserDetails } from "presentation/hooks/common";
 import { ReactElement, useState } from "react";
 
-import { OrderChips } from "@crstl/components/molecules/order-chips";
+import { OrderChips } from "components/molecules/order-chips";
 
 type Props = {
   configArray:

@@ -2,7 +2,7 @@ import { ReactElement, ReactNode } from "react";
 import styled, { css } from "styled-components";
 
 import { CheckCircleFilled, WarningFilled } from "@ant-design/icons";
-import { IModalProps, Modal } from "@crstl/components/atoms/modal";
+import { IModalProps, Modal } from "components/atoms/modal";
 
 import PartyPopperImage from "../../assets/images/party-popper.png";
 import { ColoredButton } from "../../atoms/buttons";

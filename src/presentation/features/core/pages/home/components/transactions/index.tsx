@@ -1,4 +1,4 @@
-import { TabPaneChildrenWrapper } from "@crstl/components/atoms/tabs";
+import { TabPaneChildrenWrapper } from "components/atoms/tabs";
 import { EditableTransactions } from "./EditableTransactions";
 import Transactions from "./Transactions";
 

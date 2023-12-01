@@ -1,5 +1,5 @@
 import { ReactElement, useState } from "react";
-import { BaseForm } from "@crstl/components/atoms/form";
+import { BaseForm } from "components/atoms/form";
 import { Button, DatePicker, Form, Input } from "antd";
 import { Select } from "antd";
 import { DyTable, IState } from "../DynaForm/DynaTable";

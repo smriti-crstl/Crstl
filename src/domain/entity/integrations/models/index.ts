@@ -8,13 +8,13 @@ import {
   BusinessNameResponse,
   RailzIntegrationResponse,
   GenericQueryStringRequest,
-} from "@crstl/api/src/apis/models/Integration";
+} from "models/Integration";
 import {
   QBOCreateIntegrationModel,
   QBOInitiateIntegrationModel,
-} from "@crstl/api/src/apis/models/qbo/QBOIntegration";
-import { AMZInitiateIntegrationModel } from "@crstl/api/src/apis/models/amz/AMZIntegration";
-import { SlackInitiateIntegrationModel } from "@crstl/api/src/apis/models/Slack";
+} from "models/qbo/QBOIntegration";
+import { AMZInitiateIntegrationModel } from "models/amz/AMZIntegration";
+import { SlackInitiateIntegrationModel } from "models/Slack";
 // ! TODO: TAMAN / BACKEND : Add id in IntegrationSourceModel
 // ! TODO: TAMAN / BACKEND : PostIntegrationsRes verify the response model
 // ! TODO: TAMAN / BACKEND : PostPurchaseOrderImportRes verify the response model
@@ -41,7 +41,7 @@ export type PostPurchaseOrderImportRes = Record<string, unknown>;
 export {
   IntegrationTypeModel as IntegrationTypes,
   IntegrationKeyModel as IntegrationKeyModelFE,
-} from "@crstl/api/src/apis/models/Integration";
+} from "models/Integration";
 
 // new
 
@@ -124,9 +124,9 @@ export * from "./plaid";
 export type {
   SlackChannelModel,
   SlackChannelItemModel,
-} from "@crstl/api/src/apis/models/v1/slack/SlackIntegration";
+} from "models/v1/slack/SlackIntegration";
 
-export type { ReAuthIntegrationListModel } from "@crstl/api/src/apis/models/v1/integration/ReAuthIntegrationList";
+export type { ReAuthIntegrationListModel } from "models/v1/integration/ReAuthIntegrationList";
 
 export interface IntegrationStatusModelRes {
   addedBy: string;

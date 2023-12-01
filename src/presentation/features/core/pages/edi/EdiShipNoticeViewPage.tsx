@@ -1,4 +1,4 @@
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 import { TargetJSON } from "domain/entity/edi/models/TargetJson856";
 import { useListDocumentQuery } from "domain/interactors/edi";
 import { useParams } from "react-router-dom";

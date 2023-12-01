@@ -36,8 +36,8 @@ import {
 } from "react-router-dom";
 
 import { EditOutlined, EyeOutlined } from "@ant-design/icons";
-import { DocumentUpdatedResponseModel } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { DocumentUpdatedResponseModel } from "models/v1/edi/EdiDocuments";
+import { Spinner } from "components/atoms/loading";
 
 import FieldDescriptionPopover from "../../../edi/FieldDescriptionPopover";
 import { EDI_GLOSSARY_KEYS } from "../../../edi/FieldDescriptionPopover/ShortCodeGlossary.config";

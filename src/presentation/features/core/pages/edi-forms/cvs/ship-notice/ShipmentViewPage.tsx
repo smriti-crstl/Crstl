@@ -16,7 +16,7 @@ import {
   PrinterOutlined,
   SettingOutlined
 } from "@ant-design/icons";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import {
   OrderViewContainer,

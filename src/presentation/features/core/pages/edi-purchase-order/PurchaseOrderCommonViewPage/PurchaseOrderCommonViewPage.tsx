@@ -10,7 +10,7 @@ import React, { useEffect, useState } from "react";
 import { generatePath, useHistory, useParams } from "react-router-dom";
 
 import { EditOutlined } from "@ant-design/icons";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { StyledSecondaryButton } from "../../edi-edit/EdiEditPage.styles";
 import { getValue } from "../../edi/edi.utils";

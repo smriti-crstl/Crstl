@@ -3,7 +3,7 @@ import {
   GoogleAdResponse,
   FacebookAdResponse,
   MarketingMetricChartResponseModel,
-} from "@crstl/api/src/apis/models/v1/AdwordsModel";
+} from "models/v1/AdwordsModel";
 import {
   getAdWordsData,
   getAdWordsIndividualMetricsTrend,

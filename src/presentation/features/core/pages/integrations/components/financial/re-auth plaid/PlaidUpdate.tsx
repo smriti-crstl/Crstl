@@ -7,8 +7,8 @@ import {
 } from "react";
 import { usePlaidLink } from "react-plaid-link";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { GenericError } from "@crstl/components/atoms/error";
+import { ColoredButton } from "components/atoms/buttons";
+import { GenericError } from "components/atoms/error";
 
 type Props = {
   plaidLinkToken: string;

@@ -14,7 +14,7 @@ import { forwardRef, Ref, useImperativeHandle, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useReactToPrint } from "react-to-print";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { businessViewConfig, BusinessViewRenderer } from "./components";
 import { ViewModeContainer } from "./EdiViewPage.styles";

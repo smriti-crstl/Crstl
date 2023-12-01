@@ -1,7 +1,7 @@
 import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
-import { CreateFormProps } from "@crstl/components/organisms/create-form";
-import { AUTH_VALIDATIONS } from "@crstl/validations/config";
+import { CreateFormProps } from "components/organisms/create-form";
+import { AUTH_VALIDATIONS } from "validations/config";
 
 import { UserChangePasswordReq } from "../../../../../../../domain/entity/auth/models/index";
 

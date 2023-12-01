@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { CommonSelectOptions } from "@crstl/components/atoms/selects";
+import { CommonSelectOptions } from "components/atoms/selects";
 
 import {
   EDI_SETUP_FIELD_CONSTANTS,

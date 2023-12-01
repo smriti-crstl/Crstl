@@ -1,8 +1,8 @@
 import { ReactElement, useContext, useState } from "react";
 
-import { AnalyticsPaperCard } from "@crstl/components/atoms/card";
-import { SimpleCheckbox } from "@crstl/components/atoms/checkbox";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { AnalyticsPaperCard } from "components/atoms/card";
+import { SimpleCheckbox } from "components/atoms/checkbox";
+import { GenericLoading } from "components/atoms/loading";
 import { SALES_CHART_HEADER } from "../../../config/ChartHeaders/ChartHeaders";
 import {
   useSalesBySkuB2BDataQuery,

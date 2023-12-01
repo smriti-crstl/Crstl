@@ -1,6 +1,6 @@
 import ReactDOMServer from "react-dom/server";
-import { MarketingMetricChartResponseModel } from "@crstl/api/src/apis/models/v1/AdwordsModel";
-import { FluidWidthCard } from "@crstl/components/atoms/card";
+import { MarketingMetricChartResponseModel } from "models/v1/AdwordsModel";
+import { FluidWidthCard } from "components/atoms/card";
 import {
   IExtendTooltipFormatter,
   PartialHighChartsOptions,

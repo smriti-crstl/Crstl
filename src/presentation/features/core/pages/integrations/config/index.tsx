@@ -1,7 +1,7 @@
 import { CoreRouteIntegrationsOptions } from "globals/configs/urls/constants";
 import { CORE_INTEGRATIONS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
-import { TabsConfig } from "@crstl/components/atoms/tabs";
+import { TabsConfig } from "components/atoms/tabs";
 
 import { IntegrationsFinancialTab } from "../components/financial";
 import {

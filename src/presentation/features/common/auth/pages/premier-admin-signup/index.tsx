@@ -2,7 +2,7 @@ import { History } from "history";
 import { ReactElement, useState } from "react";
 import styled from "styled-components";
 
-import { SimpleSteps } from "@crstl/components/atoms/steps";
+import { SimpleSteps } from "components/atoms/steps";
 
 import { AUTH_PREMIER_ADMIN_SIGN_UP_STEPS_CONFIG } from "./config";
 import { StepOne } from "./step-components/StepOne";

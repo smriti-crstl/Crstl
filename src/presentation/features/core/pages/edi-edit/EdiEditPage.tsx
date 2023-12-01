@@ -35,7 +35,7 @@ import {
 } from "react-router-dom";
 
 import { EyeOutlined } from "@ant-design/icons";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import {
   ButtonsContainer,

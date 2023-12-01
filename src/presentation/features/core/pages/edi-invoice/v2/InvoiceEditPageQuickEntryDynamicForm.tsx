@@ -27,8 +27,8 @@ import {
   useParams,
 } from "react-router-dom";
 
-import { DocumentUpdatedResponseModel } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { DocumentUpdatedResponseModel } from "models/v1/edi/EdiDocuments";
+import { Spinner } from "components/atoms/loading";
 
 // import Form from "@rjsf/core";
 import jediJson from "../data/listDocumentResponseWithAllData.json";

@@ -5,7 +5,7 @@ import {
   FacebookAdResponse,
   GoogleAdResponse,
   MarketingMetricChartResponseModel,
-} from "@crstl/api/src/apis/models/v1/AdwordsModel";
+} from "models/v1/AdwordsModel";
 
 const ENDPOINTS = {
   GET_AD_WORDS_DATA: "/marketing/google",

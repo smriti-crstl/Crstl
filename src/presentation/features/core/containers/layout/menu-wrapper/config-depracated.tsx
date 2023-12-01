@@ -32,7 +32,7 @@ import { generatePath } from "react-router";
 import styled from "styled-components";
 
 import Icon, { RocketOutlined } from "@ant-design/icons";
-import { SideMenuPropsElementProps } from "@crstl/components/molecules/side-menu";
+import { SideMenuPropsElementProps } from "components/molecules/side-menu";
 
 const IconWithMarginTop = styled(Icon)`
   margin-top: 6px;

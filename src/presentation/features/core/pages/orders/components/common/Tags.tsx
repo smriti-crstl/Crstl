@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import { SimpleTag } from "@crstl/components/atoms/tags";
+import { SimpleTag } from "components/atoms/tags";
 
 import { ORDER_TABLE_FILTER_TAGS_DATA_INDEXES_MAPPINGS } from "../../config";
 import { ConfigFiltersState } from "./OrderFilters";

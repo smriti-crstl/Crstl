@@ -6,7 +6,7 @@ import { useUserDetails } from "presentation/hooks/common";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-import { PurchaseOrderSummaryModel } from "@crstl/api/src/apis/models/PurchaseOrderSummary";
+import { PurchaseOrderSummaryModel } from "models/PurchaseOrderSummary";
 
 export const useFilteredOrdersSummary = (
   page?: string,

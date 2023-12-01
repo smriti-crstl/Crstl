@@ -9,7 +9,7 @@ import { ReactElement, useState } from "react";
 import {
   SingleSelect,
   SingleSelectOptions,
-} from "@crstl/components/atoms/selects";
+} from "components/atoms/selects";
 
 import { TEAM_USERS_IS_ACTIVE_API_PAYLOAD_VALUES } from "../../../../constants";
 import { ChangeStatusModal } from "./ChangeStatusModal";

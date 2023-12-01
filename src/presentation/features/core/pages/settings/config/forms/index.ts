@@ -4,8 +4,8 @@ import {
 } from "presentation/constants";
 import { CORE_SETTINGS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
-import { ISingleSelectProps } from "@crstl/components/atoms/selects";
-import { CreateFormProps } from "@crstl/components/organisms/create-form";
+import { ISingleSelectProps } from "components/atoms/selects";
+import { CreateFormProps } from "components/organisms/create-form";
 
 import {
   COMPANY_DETAILS_FIELD_CONSTANTS,

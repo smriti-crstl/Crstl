@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { SideMenu } from "@crstl/components/molecules/side-menu";
+import { SideMenu } from "components/molecules/side-menu";
 import {
   getLogoutMenuConfig,
   getSideMenuTriggerConfig,

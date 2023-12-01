@@ -2,11 +2,11 @@ import { Divider } from "antd";
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import { PaperCard } from "@crstl/components/atoms/card";
+import { PaperCard } from "components/atoms/card";
 import {
   GenericHeading,
   GenericSubHeading,
-} from "@crstl/components/atoms/typography";
+} from "components/atoms/typography";
 
 const Wrapper = styled.div`
   max-width: 1000px;

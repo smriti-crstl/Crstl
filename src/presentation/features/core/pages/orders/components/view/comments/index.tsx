@@ -9,9 +9,9 @@ import {
 import { ReactElement, useCallback, useState } from "react";
 import { useParams } from "react-router";
 
-import { GenericError } from "@crstl/components/atoms/error";
-import { GenericLoading } from "@crstl/components/atoms/loading";
-import { HeaderBar } from "@crstl/components/molecules/bars";
+import { GenericError } from "components/atoms/error";
+import { GenericLoading } from "components/atoms/loading";
+import { HeaderBar } from "components/molecules/bars";
 
 import { AddComment } from "./AddComment";
 import { CommentDescription } from "./CommentDescription";

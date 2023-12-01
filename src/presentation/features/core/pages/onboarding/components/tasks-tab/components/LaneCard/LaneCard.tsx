@@ -1,7 +1,7 @@
 import moment from "moment";
 
 import { CheckOutlined } from "@ant-design/icons";
-import { CardData } from "@crstl/api/src/apis/models/v1/edi/OnboardingTaskList";
+import { CardData } from "models/v1/edi/OnboardingTaskList";
 
 import { SetOnboardingRequestModalData } from "../../../../hooks/useSetupFormModal";
 import { ActionButton } from "../ActionButton";

@@ -4,7 +4,7 @@ import {
 } from "domain/entity/integrations/models";
 import { ReactElement } from "react";
 
-import { IntegrationTypeModel } from "@crstl/api/src/apis/models/Integration";
+import { IntegrationTypeModel } from "models/Integration";
 
 import { IntegrationsListElement } from "../../integrations-list";
 import { ReAuthPlaid } from "../re-auth plaid";

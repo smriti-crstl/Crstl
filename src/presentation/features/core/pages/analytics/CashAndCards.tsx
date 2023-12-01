@@ -1,10 +1,10 @@
 import { ReactElement } from "react";
 
 import { CashAndCardReport } from "./components/reports";
-import { HeaderShadowContainerWithoutTabs } from "@crstl/components/molecules/headers";
+import { HeaderShadowContainerWithoutTabs } from "components/molecules/headers";
 import { WelcomeModal } from "../orders/components/common/WelcomeModal";
 
-// import { Tabs } from "@crstl/components/atoms/tabs";
+// import { Tabs } from "components/atoms/tabs";
 // import { ANALYTICS_TABS_CONFIG } from "./config";
 
 const CashAndCards = (): ReactElement => {

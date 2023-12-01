@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import { ConnectedIndicator } from "@crstl/components/atoms/indicators";
+import { ConnectedIndicator } from "components/atoms/indicators";
 
 import { StyledPrimaryButton } from "../../../edi-edit/EdiEditPage.styles";
 

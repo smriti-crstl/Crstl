@@ -1,6 +1,6 @@
 import { ColumnsType } from "antd/lib/table";
 
-import { StatusModel } from "@crstl/api/src/apis/models/config";
+import { StatusModel } from "models/config";
 
 import { IHistoryData } from "../components/view/order-table-sections/status/HistoryButtonWrapper";
 import { HistoryChips } from "../components/view/order-table-sections/status/HistoryChips/HistoryChips";

@@ -2,8 +2,8 @@ import moment from "moment";
 import { HomeAccountCarousal } from "presentation/features/core/pages/home/components/account-information/carousal";
 import { ReactElement } from "react";
 
-import { FixedSizeCard } from "@crstl/components/atoms/card";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { FixedSizeCard } from "components/atoms/card";
+import { GenericLoading } from "components/atoms/loading";
 
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 import { CarouselContainer } from "./Finance.styles";

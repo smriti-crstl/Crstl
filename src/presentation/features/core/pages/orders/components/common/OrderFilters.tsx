@@ -18,7 +18,7 @@ import {
 import {
   CheckboxDropdownMenu,
   DropdownMenuProps,
-} from "@crstl/components/molecules/dropdowns";
+} from "components/molecules/dropdowns";
 import { StyledCol, StyledRow } from "./OrderFilterStyles";
 
 export type ConfigFiltersState = {

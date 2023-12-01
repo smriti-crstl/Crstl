@@ -1,4 +1,4 @@
-import { PurchaseOrderSummaryResponse } from "@crstl/api/src/apis/models/PurchaseOrderSummary";
+import { PurchaseOrderSummaryResponse } from "models/PurchaseOrderSummary";
 import { AxiosError } from "axios";
 import { getNewOrdersSummary } from "domain/entity/orders/repositories";
 import { QueryObserverResult, UseQueryOptions } from "react-query";

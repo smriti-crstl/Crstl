@@ -3,8 +3,8 @@ import { InviteUsersPlugIn } from "presentation/features/common/auth/plugins/inv
 import { CORE_SETTINGS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 
-import { Logo } from "@crstl/components/atoms/logo";
-import { PaddedModal } from "@crstl/components/atoms/modal";
+import { Logo } from "components/atoms/logo";
+import { PaddedModal } from "components/atoms/modal";
 
 type Props = {
   isVisible: boolean;

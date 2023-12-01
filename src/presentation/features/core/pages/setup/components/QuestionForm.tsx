@@ -1,4 +1,4 @@
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 import { InputNumber, Radio, Select } from "antd";
 import { GetIntakeFormRes } from "domain/entity/edi-setup/models";
 import {

@@ -1,4 +1,4 @@
-// import { TabsConfig } from "@crstl/components/atoms/tabs";
+// import { TabsConfig } from "components/atoms/tabs";
 
 // import { CoreAnalyticsReports } from "../components/reports";
 

@@ -1,17 +1,17 @@
-import { ChannelModel } from "@crstl/api/src/apis/models/Channel";
+import { ChannelModel } from "models/Channel";
 import {
   CommentModel,
   CreateCommentRequest,
   DeleteCommentResponse,
-} from "@crstl/api/src/apis/models/Comments";
-import { ConfigModel } from "@crstl/api/src/apis/models/config";
+} from "models/Comments";
+import { ConfigModel } from "models/config";
 import {
   PurchaseOrderResponse,
   PurchaseOrderStatusModel,
   UpdateConfigurableChipsQueryRequest,
   UpdateConfigurableChipsResponse,
-} from "@crstl/api/src/apis/models/PurchaseOrder";
-import { PurchaseOrderSummaryModel } from "@crstl/api/src/apis/models/PurchaseOrderSummary";
+} from "models/PurchaseOrder";
+import { PurchaseOrderSummaryModel } from "models/PurchaseOrderSummary";
 
 export type ChannelsRes = ChannelModel;
 export type TransformedChannels =

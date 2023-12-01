@@ -1,12 +1,12 @@
 import moment from "moment";
-import { AnalyticsPaperCard } from "@crstl/components/atoms/card";
-import { EmptyData } from "@crstl/components/atoms/empty";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { AnalyticsPaperCard } from "components/atoms/card";
+import { EmptyData } from "components/atoms/empty";
+import { GenericLoading } from "components/atoms/loading";
 import { Table } from "antd";
 import { useGetIntegrationStatus } from "domain/interactors/integrations";
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 import styled from "styled-components";
-import { IntegrationStatusModel } from "@crstl/api/src/apis/models/v1/integration/IntegrationStatus";
+import { IntegrationStatusModel } from "models/v1/integration/IntegrationStatus";
 import { IntegrationStatusChip } from "./IntegrationStatusChip";
 import { ColumnsType } from "antd/lib/table";
 

@@ -7,7 +7,7 @@ import { get } from "lodash";
 import { getUserJobFunctionsOptions } from "presentation/constants";
 import { ReactElement } from "react";
 
-import { SingleSelect } from "@crstl/components/atoms/selects";
+import { SingleSelect } from "components/atoms/selects";
 
 type Props = {
   currentValue: string;

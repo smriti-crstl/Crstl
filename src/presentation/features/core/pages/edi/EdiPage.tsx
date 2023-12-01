@@ -23,7 +23,7 @@ import { lazyRetry } from "presentation/utils";
 import React, { lazy, Suspense } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
 
-import { HeaderShadowContainerWithoutTabs } from "@crstl/components/molecules/headers";
+import { HeaderShadowContainerWithoutTabs } from "components/molecules/headers";
 
 import { EdiCommentsSection } from "./EdiCommentsSection";
 import { EdiStepsSection } from "./EdiStepsSection";

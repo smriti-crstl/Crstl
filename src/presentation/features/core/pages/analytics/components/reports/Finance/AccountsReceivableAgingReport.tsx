@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import moment from "moment";
 import { currencyUSDFormatter, EllipsedText } from "presentation/utils";
-import { FixedSizeCard } from "@crstl/components/atoms/card";
-import { EmptyData } from "@crstl/components/atoms/empty";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { FixedSizeCard } from "components/atoms/card";
+import { EmptyData } from "components/atoms/empty";
+import { GenericLoading } from "components/atoms/loading";
 
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 // import { SelectedDateRange } from "../../common";

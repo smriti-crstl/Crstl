@@ -10,7 +10,7 @@ import {
   useParams,
 } from "react-router-dom";
 import styled from "styled-components";
-import { HeaderButtonGroup } from "@crstl/components/molecules/button-groups/header-button-group";
+import { HeaderButtonGroup } from "components/molecules/button-groups/header-button-group";
 
 import { LIVE_TABS, PATH_NAMES } from "../../config";
 import { CustomDateRangePicker } from "../common";

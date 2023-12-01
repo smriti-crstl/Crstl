@@ -1,4 +1,4 @@
-import { IntegrationTypeModel } from "@crstl/api/src/apis/models/Integration";
+import { IntegrationTypeModel } from "models/Integration";
 import { IntegrationSourceModelExtended } from "domain/entity/integrations/models";
 import { useGetAllIntegrationsQuery } from "domain/interactors/integrations";
 import { CoreRouteIntegrationsOptions } from "globals/configs/urls/constants";

@@ -7,7 +7,7 @@ import { ReactElement } from "react";
 import { useParams } from "react-router";
 import styled from "styled-components";
 
-import { GenericError } from "@crstl/components/atoms/error";
+import { GenericError } from "components/atoms/error";
 
 import { ORDER_DETAILS_TABLE_CONFIG } from "../../../../config/orderDetailsTable";
 import {

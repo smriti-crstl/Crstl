@@ -1,7 +1,7 @@
 import { serviceDefinitions } from "domain/network";
 import { rest } from "msw";
 import { ENDPOINTS } from "domain/entity/integrations/repositories";
-import { IntegrationStatusModel } from "@crstl/api/src/apis/models/v1/integration/IntegrationStatus";
+import { IntegrationStatusModel } from "models/v1/integration/IntegrationStatus";
 import data from "./data.json";
 
 const url = `${serviceDefinitions.CORE}${ENDPOINTS.INTEGRATION_STATUS}`;

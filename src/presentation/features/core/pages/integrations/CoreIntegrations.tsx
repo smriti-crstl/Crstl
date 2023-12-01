@@ -5,7 +5,7 @@ import { Marketplace } from "./components/marketplace";
 // import { ReactElement } from "react";
 // import { generatePath, useHistory, useParams } from "react-router-dom";
 
-// import { Tabs } from "@crstl/components/atoms/tabs";
+// import { Tabs } from "components/atoms/tabs";
 
 // import { INTEGRATIONS_TABS_CONFIG } from "./config";
 

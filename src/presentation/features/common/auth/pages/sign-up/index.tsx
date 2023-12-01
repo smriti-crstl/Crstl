@@ -3,11 +3,11 @@ import { LOGIN } from "globals/configs";
 import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { PaperCard } from "@crstl/components/atoms/card";
-import { GenericHeading } from "@crstl/components/atoms/typography";
-import { AuthBottomBar } from "@crstl/components/molecules/auth-bottom-bar";
-import { CreateForm } from "@crstl/components/organisms/create-form";
+import { ColoredButton } from "components/atoms/buttons";
+import { PaperCard } from "components/atoms/card";
+import { GenericHeading } from "components/atoms/typography";
+import { AuthBottomBar } from "components/molecules/auth-bottom-bar";
+import { CreateForm } from "components/organisms/create-form";
 
 import { SIGN_UP_FORM_CONFIG } from "./utils/config";
 

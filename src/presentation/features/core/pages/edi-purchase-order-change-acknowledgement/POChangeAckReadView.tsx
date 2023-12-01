@@ -11,7 +11,7 @@ import { generatePath, useHistory, useParams } from "react-router-dom";
 import { useReactToPrint } from "react-to-print";
 
 import { DownloadOutlined, EditOutlined } from "@ant-design/icons";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { StyledSecondaryButton } from "../edi-edit/EdiEditPage.styles";
 import { ButtonsContainer } from "../edi-view/EdiViewPage.styles";

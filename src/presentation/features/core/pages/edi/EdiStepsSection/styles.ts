@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 interface IStepTitle {
   strong?: boolean;

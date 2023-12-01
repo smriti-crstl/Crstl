@@ -14,9 +14,9 @@ import { useSearchParams } from "presentation/hooks/common";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import { SimpleTable } from "@crstl/components/atoms/table";
-import { Chip } from "@crstl/components/molecules/order-chips/Chip";
-import { PageWrapper } from "@crstl/components/molecules/page";
+import { SimpleTable } from "components/atoms/table";
+import { Chip } from "components/molecules/order-chips/Chip";
+import { PageWrapper } from "components/molecules/page";
 
 import { DownloadEventLogCSV } from "../Download/DownloadEventLogCSV";
 import { exportToCsv, getTpfName } from "../edi.utils";

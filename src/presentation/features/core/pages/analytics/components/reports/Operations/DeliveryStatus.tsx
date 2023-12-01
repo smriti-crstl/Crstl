@@ -1,11 +1,11 @@
 import moment from "moment";
 import { ReactElement } from "react";
-import { FixedSizeCard } from "@crstl/components/atoms/card";
+import { FixedSizeCard } from "components/atoms/card";
 import { useOrderDeliveryStatusChartDataOperations } from "../../../hooks/useGetAnalyticsChartData";
 import { OPERATIONS_CHART_HEADER } from "../../../config/ChartHeaders/ChartHeaders";
-import { GenericLoading } from "@crstl/components/atoms/loading";
-import { ResponsivePieChart } from "@crstl/components/organisms/responsive-pie-chart";
-import { EmptyData } from "@crstl/components/atoms/empty";
+import { GenericLoading } from "components/atoms/loading";
+import { ResponsivePieChart } from "components/organisms/responsive-pie-chart";
+import { EmptyData } from "components/atoms/empty";
 import { EmptyCardWrapper } from "../../common/common.styles";
 import styled from "styled-components";
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";

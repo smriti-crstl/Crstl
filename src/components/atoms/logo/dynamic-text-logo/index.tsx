@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import Crstl from "@crstl/components/assets/svgs/logo.svg";
+import Crstl from "components/assets/svgs/logo.svg";
 
 type DynamicTextLogoProps = {
   text?: string;

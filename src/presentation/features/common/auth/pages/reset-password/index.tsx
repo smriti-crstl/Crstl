@@ -1,7 +1,7 @@
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { BaseForm } from "@crstl/components/atoms/form";
-import { GenericHeading } from "@crstl/components/atoms/typography";
-import { CreateForm } from "@crstl/components/organisms/create-form";
+import { ColoredButton } from "components/atoms/buttons";
+import { BaseForm } from "components/atoms/form";
+import { GenericHeading } from "components/atoms/typography";
+import { CreateForm } from "components/organisms/create-form";
 import { Form } from "antd";
 import { useResetPasswordQuery } from "domain/interactors/auth";
 import { setNotification } from "domain/services/notification";

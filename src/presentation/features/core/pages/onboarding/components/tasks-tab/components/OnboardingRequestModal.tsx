@@ -9,7 +9,7 @@ import { useGetTradingPartners } from "domain/interactors/shared";
 import { setNotification } from "domain/services/notification";
 import { useRef, useState } from "react";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import {
   ButtonsContainer,

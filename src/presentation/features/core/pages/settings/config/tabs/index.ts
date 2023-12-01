@@ -2,7 +2,7 @@ import { CoreRouteSettingsOptions } from "globals/configs/urls/constants";
 import { compact } from "lodash";
 import { CORE_SETTINGS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
-import { TabsConfig } from "@crstl/components/atoms/tabs";
+import { TabsConfig } from "components/atoms/tabs";
 
 interface Tab {
   tab: string;

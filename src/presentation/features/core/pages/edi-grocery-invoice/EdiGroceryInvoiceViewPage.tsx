@@ -2,7 +2,7 @@ import { useListDocumentQuery } from "domain/interactors/edi";
 import { useFlags } from "launchdarkly-react-client-sdk";
 import { useParams } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import EdiGroceryInvoiceView from "../edi-view/EdiGroceryInvoiceView";
 import { GroceryInvoiceReadView } from "./GroceryInvoiceReadView";

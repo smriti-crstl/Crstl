@@ -1,6 +1,6 @@
 import { ReactElement, useCallback, useReducer } from "react";
 
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { GenericLoading } from "components/atoms/loading";
 
 import { useIntegrationsList } from "../../integration-tabs-content/useIntegrationsList";
 import { useUserDetails } from "presentation/hooks/common";
@@ -10,7 +10,7 @@ import {
   IntegrationActionTypes,
   IntegrationsReducer,
 } from "../../../reducer";
-import { ResultModal } from "@crstl/components/molecules/modals";
+import { ResultModal } from "components/molecules/modals";
 import { generateIntegrationResultModalTextConstants } from "../../../utils";
 import { useViewResultModal } from "../../integration-tabs-content/useViewResultModal";
 import { useHistory } from "react-router-dom";

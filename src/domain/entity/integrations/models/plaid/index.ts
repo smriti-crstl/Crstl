@@ -2,7 +2,7 @@ import {
   PlaidIntegrationsModel,
   PlaidLinkTokenModel,
   SinglePlaidIntegrationModel,
-} from "@crstl/api/src/apis/models/plaid/PlaidIntegration";
+} from "models/plaid/PlaidIntegration";
 
 export type PlaidLinkTokenRes = PlaidLinkTokenModel;
 export type PlaidAccessTokenRes = unknown;

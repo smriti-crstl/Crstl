@@ -2,7 +2,7 @@ import {
   ContactEmailResponse,
   UpdateContactEmailRequest,
   UpdateContactEmailResponse,
-} from "@crstl/api/src/apis/models/v1/edi/OrgData";
+} from "models/v1/edi/OrgData";
 
 export type ContactEmail = UpdateContactEmailRequest;
 

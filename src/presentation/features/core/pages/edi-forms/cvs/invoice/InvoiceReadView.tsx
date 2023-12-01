@@ -7,7 +7,7 @@ import { CORE_EDI_INVOICE_EDIT_PAGE } from "globals/configs";
 import React, { useEffect } from "react";
 import { generatePath, useHistory, useParams } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { Container } from "../../../edi/EdiPurchaseOrderSection.styles";
 import { PageWrapper } from "../edi-purchase-order/PurchaseOrderPage.styles";

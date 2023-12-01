@@ -1,6 +1,6 @@
 import { useTimestamp } from "presentation/hooks/common/use-timestamp";
 
-import { SubParagraph } from "@crstl/components/atoms/typography/paragraph/subParagraph";
+import { SubParagraph } from "components/atoms/typography/paragraph/subParagraph";
 
 type Props = {
   createdAt?: string;

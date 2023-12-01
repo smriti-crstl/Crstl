@@ -1,12 +1,12 @@
 import {
   OnboardingConfig,
   OnboardingConfigData,
-} from "@crstl/api/src/apis/models/v1/edi/OnboardingConfig";
+} from "models/v1/edi/OnboardingConfig";
 import {
   GetOnboardingFormSubmissionRes,
   PostOnboardingFormSubmissionBody,
   PostOnboardingFormSubmissionRes,
-} from "@crstl/api/src/apis/models/v1/edi/OnboardingFormSubmission";
+} from "models/v1/edi/OnboardingFormSubmission";
 
 export type OnboardingConfigFE = OnboardingConfig;
 

@@ -11,8 +11,8 @@ import { parse } from "qs";
 import React, { ReactElement, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { generatePath, useHistory, useParams } from "react-router";
-import { PurchaseOrderSummaryModel } from "@crstl/api/src/apis/models/PurchaseOrderSummary";
-import { SimpleTable } from "@crstl/components/atoms/table";
+import { PurchaseOrderSummaryModel } from "models/PurchaseOrderSummary";
+import { SimpleTable } from "components/atoms/table";
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 import {
   ORDERS_EXCLUDE_COLUMNS_SHOPIFY_AMAZON,

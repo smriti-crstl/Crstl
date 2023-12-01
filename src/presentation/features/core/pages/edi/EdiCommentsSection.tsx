@@ -11,8 +11,8 @@ import {
 import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import { GenericLoading } from "@crstl/components/atoms/loading";
-import { HeaderBar } from "@crstl/components/molecules/bars";
+import { GenericLoading } from "components/atoms/loading";
+import { HeaderBar } from "components/molecules/bars";
 
 import { CommentsName } from "../orders/components/view/comments/CommentsName";
 import { TimelineDot } from "../orders/components/view/comments/TimelineDot";

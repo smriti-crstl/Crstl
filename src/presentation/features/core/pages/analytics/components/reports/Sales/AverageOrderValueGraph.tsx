@@ -2,8 +2,8 @@ import { currencyFormatter, formatDate } from "presentation/utils";
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import { FixedSizeCard } from "@crstl/components/atoms/card";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { FixedSizeCard } from "components/atoms/card";
+import { GenericLoading } from "components/atoms/loading";
 
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 // import { DateDropdown } from "./DateDropdown";

@@ -5,8 +5,8 @@ import { QueryFunctionContext } from "react-query";
 import {
   GenericApiResponse,
   SlackRecipientRequest,
-} from "@crstl/api/src/apis/models/Integration";
-import { RampInitiateIntegrationResponseModel } from "@crstl/api/src/apis/models/v1/RampIntegrationModel";
+} from "models/Integration";
+import { RampInitiateIntegrationResponseModel } from "models/v1/RampIntegrationModel";
 
 import {
   AMZAuthorizationSearchParams,

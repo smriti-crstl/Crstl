@@ -6,7 +6,7 @@ import { CORE_ORDERS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
+import { ColoredButton } from "components/atoms/buttons";
 
 // TODO: Replace w CommentsMention Molecule
 

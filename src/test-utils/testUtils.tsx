@@ -9,7 +9,7 @@ import { AppProvider, DateRangeProvider } from "presentation/hooks/contexts";
 import { useUserDetails } from "presentation/hooks/common";
 import { Types } from "presentation/hooks/contexts/reducers";
 import { UserDetailsRes } from "domain/entity/shared/models";
-import { JobFunctions, Role } from "@crstl/api/src/apis/models/User";
+import { JobFunctions, Role } from "models/User";
 
 setLogger({
   log: console.log,

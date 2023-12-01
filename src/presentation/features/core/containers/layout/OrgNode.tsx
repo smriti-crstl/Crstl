@@ -8,7 +8,7 @@ import {
 } from "domain/interactors/auth";
 import styled from "styled-components";
 import { PrivateRouteLocationStateProps } from "presentation/router";
-import { Role } from "@crstl/api/src/apis/models/User";
+import { Role } from "models/User";
 import { setNotification } from "domain/services/notification";
 import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { useHistory } from "react-router-dom";

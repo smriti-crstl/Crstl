@@ -4,7 +4,7 @@ import {
   LikeOutlined,
   RocketOutlined,
 } from "@ant-design/icons";
-import { DocumentTitle } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
+import { DocumentTitle } from "models/v1/edi/EdiDocuments";
 
 interface PublicProps {
   stepTitle: DocumentTitle;

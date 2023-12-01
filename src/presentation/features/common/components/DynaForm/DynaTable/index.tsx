@@ -9,7 +9,7 @@ import React, {
   useEffect,
   SetStateAction,
 } from "react";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 import { Column } from "../types";
 import { currencyUSDFormatter } from "presentation/utils";
 

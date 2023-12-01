@@ -1,4 +1,4 @@
-import { DropdownMenuProps } from "@crstl/components/molecules/dropdowns";
+import { DropdownMenuProps } from "components/molecules/dropdowns";
 import {
   OrdersSummaryRes,
   OrganizationConfigModelRes,

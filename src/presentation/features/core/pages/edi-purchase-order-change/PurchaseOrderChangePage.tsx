@@ -16,7 +16,7 @@ import React, { forwardRef, useEffect, useState } from "react";
 import { useQueryClient } from "react-query";
 import { generatePath, useHistory, useParams } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { getTpfNameFromListDoc } from "../edi/edi.utils";
 import { CVSProductList } from "./CVSProductList";

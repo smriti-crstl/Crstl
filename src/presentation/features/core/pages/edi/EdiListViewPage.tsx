@@ -31,10 +31,10 @@ import {
   SelectOutlined,
   ExperimentOutlined,
 } from "@ant-design/icons";
-import { Spinner } from "@crstl/components/atoms/loading";
-import { SimpleTable } from "@crstl/components/atoms/table";
-import { Chip } from "@crstl/components/molecules/order-chips/Chip";
-import { PageWrapper } from "@crstl/components/molecules/page";
+import { Spinner } from "components/atoms/loading";
+import { SimpleTable } from "components/atoms/table";
+import { Chip } from "components/molecules/order-chips/Chip";
+import { PageWrapper } from "components/molecules/page";
 
 import DownloadCSV from "./Download/DownloadCSV";
 import { blankObject, poCsvConfig } from "./Edi.config";

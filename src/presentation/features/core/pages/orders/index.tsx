@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 
-import { TabPaneChildrenWrapper } from "@crstl/components/atoms/tabs";
-import { HeaderShadowContainerWithoutTabs } from "@crstl/components/molecules/headers";
+import { TabPaneChildrenWrapper } from "components/atoms/tabs";
+import { HeaderShadowContainerWithoutTabs } from "components/molecules/headers";
 
 import { OrdersAll } from "./components/all";
 import { WelcomeModal } from "./components/common/WelcomeModal";

@@ -1,6 +1,6 @@
 import { ReactElement, ReactNode } from "react";
 import styled from "styled-components";
-import AuthIllustration from "@crstl/components/assets/images/auth-illustration-update.png";
+import AuthIllustration from "components/assets/images/auth-illustration-update.png";
 type Props = {
   children: ReactNode;
   imageText: string;

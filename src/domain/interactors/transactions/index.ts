@@ -1,4 +1,4 @@
-import { TransactionDetail } from "@crstl/api/src/apis/models/v1/TransactionByMerchant";
+import { TransactionDetail } from "models/v1/TransactionByMerchant";
 import { AxiosError } from "axios";
 import {
   AccountData,

@@ -1,9 +1,9 @@
 import Modal from "antd/lib/modal/Modal";
 import { ReactElement, useState } from "react";
 
-import { StatusModel } from "@crstl/api/src/apis/models/config";
-import { ColoredButton, LinkButton } from "@crstl/components/atoms/buttons";
-import { GenericHeading } from "@crstl/components/atoms/typography";
+import { StatusModel } from "models/config";
+import { ColoredButton, LinkButton } from "components/atoms/buttons";
+import { GenericHeading } from "components/atoms/typography";
 
 import { HistoryComponent } from "./HistoryComponent";
 

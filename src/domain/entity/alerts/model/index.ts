@@ -1,3 +1,3 @@
-import { AlertsResponse } from "@crstl/api/src/apis/models/Alerts";
+import { AlertsResponse } from "models/Alerts";
 
 export type AlertsRes = AlertsResponse;

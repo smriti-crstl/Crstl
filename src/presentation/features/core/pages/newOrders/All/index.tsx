@@ -13,8 +13,8 @@ import { ReactElement, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { generatePath, useHistory, useParams } from "react-router";
 
-import { PurchaseOrderSummaryModel } from "@crstl/api/src/apis/models/PurchaseOrderSummary";
-import { SimpleTable } from "@crstl/components/atoms/table";
+import { PurchaseOrderSummaryModel } from "models/PurchaseOrderSummary";
+import { SimpleTable } from "components/atoms/table";
 import { ORDERS_TABLE_CONFIG } from "../../orders/config";
 import { useFilteredOrdersSummary } from "../../newOrders/hooks/index";
 import { getConfigFilterFields } from "../../orders/utils";

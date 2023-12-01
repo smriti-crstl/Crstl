@@ -10,8 +10,8 @@ import { CORE_SETTINGS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 import { generatePath, useHistory, useParams } from "react-router-dom";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { Tabs } from "@crstl/components/atoms/tabs";
+import { ColoredButton } from "components/atoms/buttons";
+import { Tabs } from "components/atoms/tabs";
 
 import { InviteTeammatesModal } from "./components/team-tab/invite-teammates";
 import { useSettingsTabsConfig } from "./hooks/useSettingsTabsConfig";

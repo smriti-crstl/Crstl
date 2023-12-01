@@ -10,7 +10,7 @@ import { buildIntegrationSourceModel } from "test-utils/generate";
 import {
   IntegrationKeyModel,
   IntegrationTypeModel,
-} from "@crstl/api/src/apis/models/Integration";
+} from "models/Integration";
 
 function renderComponent({
   path = CORE_INTEGRATIONS_FINANCIAL,

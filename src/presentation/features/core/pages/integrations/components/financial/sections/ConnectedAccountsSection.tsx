@@ -1,5 +1,5 @@
-import { GenericLoading } from "@crstl/components/atoms/loading";
-import { GenericHeading } from "@crstl/components/atoms/typography";
+import { GenericLoading } from "components/atoms/loading";
+import { GenericHeading } from "components/atoms/typography";
 import { Divider } from "antd";
 import { usePlaidIntegrationsListQuery } from "domain/interactors/integrations/plaid";
 import styled from "styled-components";

@@ -7,7 +7,7 @@ import { useQueryClient } from "react-query";
 import { generatePath, useHistory } from "react-router-dom";
 import { useTheme } from "styled-components";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { POChangeDocNewStateButtonsContainer } from "./PurchaseOrderChangePage.styles";
 

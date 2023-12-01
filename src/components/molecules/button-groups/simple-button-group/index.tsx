@@ -4,7 +4,7 @@ import { ReactElement } from "react";
 import {
   ColoredButton,
   ColoredButtonProps,
-} from "@crstl/components/atoms/buttons";
+} from "components/atoms/buttons";
 
 interface IButtonProps extends ColoredButtonProps {
   text: string;

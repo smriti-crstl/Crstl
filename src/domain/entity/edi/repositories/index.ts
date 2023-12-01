@@ -11,7 +11,7 @@ import {
   DocumentUpdatedResponseModel,
   StepperConfigResponseModel,
   UpdateDocumentInput,
-} from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
+} from "models/v1/edi/EdiDocuments";
 
 import {
   AddEdiCommentReq,

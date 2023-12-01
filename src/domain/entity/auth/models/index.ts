@@ -1,9 +1,9 @@
-import { InviteUserRequest } from "@crstl/api/src/apis/models/Invitation";
+import { InviteUserRequest } from "models/Invitation";
 import {
   UserCreateFromInviteRequest,
   UserLogin,
   UserUpdate,
-} from "@crstl/api/src/apis/models/User";
+} from "models/User";
 
 export type UserLoginReq = UserLogin;
 

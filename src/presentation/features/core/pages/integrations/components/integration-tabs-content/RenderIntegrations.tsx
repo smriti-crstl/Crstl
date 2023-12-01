@@ -6,7 +6,7 @@ import {
 import { CORE_INTEGRATIONS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { Dispatch, ReactElement } from "react";
 
-import { EmptyText } from "@crstl/components/atoms/empty";
+import { EmptyText } from "components/atoms/empty";
 
 import { IntegrationStateActions } from "../../reducer";
 import { OtherGenericIntegrations } from "../../sources/others";

@@ -4,8 +4,8 @@ import { useTimestamp } from "presentation/hooks/common/use-timestamp";
 import { ReactElement, useState } from "react";
 import { useParams } from "react-router";
 
-import { GenericError } from "@crstl/components/atoms/error";
-import { SimpleList } from "@crstl/components/atoms/list";
+import { GenericError } from "components/atoms/error";
+import { SimpleList } from "components/atoms/list";
 
 import { createOrderDetailsDataSource } from "../../../config/orderDetails";
 import { OrderCollapse } from "./OrderCollapse";

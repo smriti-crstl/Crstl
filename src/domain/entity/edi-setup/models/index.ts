@@ -4,7 +4,7 @@ import {
   OrgDataModel,
   OrgDataResponse,
   UpdateOrgDataResponseModel,
-} from "@crstl/api/src/apis/models/v1/edi/OrgData";
+} from "models/v1/edi/OrgData";
 
 export type GetOrgDataRes = OrgDataResponse;
 

@@ -11,10 +11,10 @@ import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 import { useLocation } from "react-router-dom";
 
-import { Role } from "@crstl/api/src/apis/models/User";
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { GenericHeading } from "@crstl/components/atoms/typography";
-import { CreateForm } from "@crstl/components/organisms/create-form";
+import { Role } from "models/User";
+import { ColoredButton } from "components/atoms/buttons";
+import { GenericHeading } from "components/atoms/typography";
+import { CreateForm } from "components/organisms/create-form";
 
 export type OrgSelectionPlugInProps = {
   history: History;

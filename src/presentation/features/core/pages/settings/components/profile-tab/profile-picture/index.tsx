@@ -3,8 +3,8 @@ import { CORE_SETTINGS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import { AvatarWithBackground } from "@crstl/components/atoms/avatar";
-import { SimpleButtonGroup } from "@crstl/components/molecules/button-groups";
+import { AvatarWithBackground } from "components/atoms/avatar";
+import { SimpleButtonGroup } from "components/molecules/button-groups";
 
 const Wrapper = styled(Row)`
   margin: ${({ theme }) => `${theme.spacing.LARGE} 0`};

@@ -26,7 +26,7 @@ import { amplitude } from "presentation/utils";
 import { generatePath } from "react-router";
 
 import Icon from "@ant-design/icons";
-import { SideMenuPropsElementProps } from "@crstl/components/molecules/side-menu";
+import { SideMenuPropsElementProps } from "components/molecules/side-menu";
 
 import { MenuTabKey } from "./types";
 

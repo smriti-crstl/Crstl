@@ -1,4 +1,4 @@
-import { CreateFormProps } from "@crstl/components/organisms/create-form";
+import { CreateFormProps } from "components/organisms/create-form";
 import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
 const SIGN_UP_FORM_CONFIG: CreateFormProps[] = [

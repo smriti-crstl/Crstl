@@ -1,11 +1,11 @@
 import { CORE_ORDERS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 
-import { UploadButton } from "@crstl/components/atoms/buttons";
+import { UploadButton } from "components/atoms/buttons";
 import {
   GenericHeading,
   GenericSubHeading,
-} from "@crstl/components/atoms/typography";
+} from "components/atoms/typography";
 
 export const RenderUploadOfOrderDetails = (): ReactElement => {
   return (

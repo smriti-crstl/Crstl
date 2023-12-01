@@ -9,7 +9,7 @@ import {
 } from "globals/configs";
 import { startCase } from "lodash";
 
-import { HeaderIconProps } from "@crstl/components/molecules/icon-groups";
+import { HeaderIconProps } from "components/molecules/icon-groups";
 
 type CoreHeaderProps = {
   avatarText: string | undefined;

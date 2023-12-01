@@ -1,6 +1,6 @@
 import { ReactElement, useState } from "react";
 import { currencyFormatter } from "@crstl/app/src/presentation/utils";
-import { LegendPosition } from "@crstl/components/organisms/legends";
+import { LegendPosition } from "components/organisms/legends";
 import styled from "styled-components";
 import { PieChartInfo } from "./PieChartInfo";
 

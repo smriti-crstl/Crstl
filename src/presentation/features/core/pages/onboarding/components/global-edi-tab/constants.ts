@@ -1,6 +1,6 @@
 import { COUNTRIES, STATES } from "presentation/constants";
 
-import { CommonSelectOptions } from "@crstl/components/atoms/selects";
+import { CommonSelectOptions } from "components/atoms/selects";
 
 import { EdiSetupFormConfigType, EdiSetupTabFieldConstants } from "./types";
 

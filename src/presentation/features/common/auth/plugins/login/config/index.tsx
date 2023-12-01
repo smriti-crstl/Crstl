@@ -1,9 +1,9 @@
 import { EULA, PRIVACY_POLICY } from "globals/configs";
 import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
-import { SimpleCheckboxProps } from "@crstl/components/atoms/checkbox";
-import { AuthBottomBar } from "@crstl/components/molecules/auth-bottom-bar";
-import { CreateFormProps } from "@crstl/components/organisms/create-form";
+import { SimpleCheckboxProps } from "components/atoms/checkbox";
+import { AuthBottomBar } from "components/molecules/auth-bottom-bar";
+import { CreateFormProps } from "components/organisms/create-form";
 
 const AUTH_PLUGINS_LOGIN_FORM_CONFIG: [
   CreateFormProps,

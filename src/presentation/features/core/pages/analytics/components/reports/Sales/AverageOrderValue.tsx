@@ -1,13 +1,13 @@
 import { ReactElement, useEffect, useState, useContext } from "react";
 import { StarOutlined, StarFilled } from "@ant-design/icons";
 
-import { PaperCard } from "@crstl/components/atoms/card";
+import { PaperCard } from "components/atoms/card";
 import { ResponsiveLine } from "@nivo/line";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { linearGradientDef } from "@nivo/core";
 
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { GenericLoading } from "components/atoms/loading";
 import { SALES_CHART_HEADER } from "../../../config/ChartHeaders/ChartHeaders";
 import { useGetAverageOrderValueDataQuery } from "domain/interactors/analytics";
 

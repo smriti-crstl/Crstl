@@ -1,7 +1,7 @@
 import { Alert, Button, Col, Form, Row, Select } from "antd";
-import { BaseForm } from "@crstl/components/atoms/form";
+import { BaseForm } from "components/atoms/form";
 import React from "react";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 import {
   useGetSlackChannelList,
   useUpdateSlackRecipient,

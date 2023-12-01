@@ -4,12 +4,12 @@ import { ReactElement, useState } from "react";
 import { useHistory, useLocation } from "react-router";
 import styled from "styled-components";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { PaddedModal } from "@crstl/components/atoms/modal";
+import { ColoredButton } from "components/atoms/buttons";
+import { PaddedModal } from "components/atoms/modal";
 import {
   GenericHeading,
   GenericSubHeading,
-} from "@crstl/components/atoms/typography";
+} from "components/atoms/typography";
 
 const PartyPopper = styled.img`
   height: 7rem;

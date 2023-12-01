@@ -3,7 +3,7 @@ import { API_V1 } from "domain/network";
 import { isArray, last } from "lodash";
 import { QueryFunctionContext } from "react-query";
 
-import { TransactionDetail } from "@crstl/api/src/apis/models/v1/TransactionByMerchant";
+import { TransactionDetail } from "models/v1/TransactionByMerchant";
 
 import {
   AccountData,

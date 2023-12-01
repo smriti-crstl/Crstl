@@ -5,12 +5,12 @@ import {
 } from "domain/entity/integrations/models";
 import { OrdersSummaryRes } from "domain/entity/orders/models";
 
-import { InvoiceStatusModel } from "@crstl/api/src/apis/models/EnumTypes";
+import { InvoiceStatusModel } from "models/EnumTypes";
 import {
   IntegrationKeyModel,
   IntegrationTypeModel,
-} from "@crstl/api/src/apis/models/Integration";
-import { PurchaseOrderStatusModel } from "@crstl/api/src/apis/models/PurchaseOrder";
+} from "models/Integration";
+import { PurchaseOrderStatusModel } from "models/PurchaseOrder";
 
 function buildEDIPurchaseOrderSummary(
   overrides: Partial<DocumentListRow>

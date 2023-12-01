@@ -3,13 +3,13 @@ import { useForm } from "antd/lib/form/Form";
 import { usePutContactEmailMutation } from "domain/interactors/alerts-tab";
 import { setNotification } from "domain/services/notification";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { BaseForm } from "@crstl/components/atoms/form";
-import { PaddedModal } from "@crstl/components/atoms/modal";
+import { ColoredButton } from "components/atoms/buttons";
+import { BaseForm } from "components/atoms/form";
+import { PaddedModal } from "components/atoms/modal";
 import {
   SimpleButtonGroup,
   SimpleButtonGroupProps
-} from "@crstl/components/molecules/button-groups";
+} from "components/molecules/button-groups";
 
 interface Props {
   isVisible: boolean;

@@ -12,9 +12,9 @@ import {
 import { getTpfName } from "presentation/features/core/pages/edi/edi.utils";
 import { DOCUMENT_TYPE_FILTER_CONFIG } from "presentation/features/core/pages/edi/event-log/constants";
 
-import { CommonSelect } from "@crstl/components/atoms/selects";
+import { CommonSelect } from "components/atoms/selects";
 
-import { SearchDocumentsDateField } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
+import { SearchDocumentsDateField } from "models/v1/edi/EdiDocuments";
 import { RuleObject } from "antd/lib/form";
 import { useFlags } from "launchdarkly-react-client-sdk";
 import { useEffect } from "react";

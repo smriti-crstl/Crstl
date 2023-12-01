@@ -5,7 +5,7 @@ import { ReactComponent as Grid } from "globals/assets/svgs/view_module.svg";
 import { useMemo, useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { emptyBoardData } from "../../constants";
 import { useSetupFormModal } from "../../hooks/useSetupFormModal";

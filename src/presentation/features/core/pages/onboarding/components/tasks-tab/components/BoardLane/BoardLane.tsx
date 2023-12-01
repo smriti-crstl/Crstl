@@ -1,4 +1,4 @@
-import { OnboardingTaskData } from "@crstl/api/src/apis/models/v1/edi/OnboardingTaskList";
+import { OnboardingTaskData } from "models/v1/edi/OnboardingTaskList";
 
 import { SetOnboardingRequestModalData } from "../../../../hooks/useSetupFormModal";
 import { LaneCard } from "../LaneCard";

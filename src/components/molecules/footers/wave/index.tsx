@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
-import Wave from "@crstl/components/assets/images/wave.png";
+import Wave from "components/assets/images/wave.png";
 
 const StyledWave = styled.img`
   height: 10rem;

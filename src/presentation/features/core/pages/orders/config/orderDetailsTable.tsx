@@ -1,7 +1,7 @@
 import { ColumnsType } from "antd/lib/table";
 
-import { TabsConfig } from "@crstl/components/atoms/tabs";
-import { Chip } from "@crstl/components/molecules/order-chips/Chip";
+import { TabsConfig } from "components/atoms/tabs";
+import { Chip } from "components/molecules/order-chips/Chip";
 
 import { OrderDetailsTablePoSummary } from "../components/view/order-table-sections/po-summary";
 import { OrderDetailsTableSection } from "../components/view/order-table-sections/status";

@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { SideMenu } from "@crstl/components/molecules/side-menu";
+import { SideMenu } from "components/molecules/side-menu";
 import { getSideMenuConfig } from "./config";
 import { useFlags } from "launchdarkly-react-client-sdk";
 import { useGetOrdersSummaryCountQuery } from "domain/interactors/edi";

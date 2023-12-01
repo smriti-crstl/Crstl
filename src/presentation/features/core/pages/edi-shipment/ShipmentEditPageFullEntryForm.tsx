@@ -39,8 +39,8 @@ import {
   MinusCircleOutlined,
   PlusOutlined,
 } from "@ant-design/icons";
-import { DocumentUpdatedResponseModel } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { DocumentUpdatedResponseModel } from "models/v1/edi/EdiDocuments";
+import { Spinner } from "components/atoms/loading";
 
 import { ButtonsContainer } from "../edi-invoice/InvoiceEditPage.styles";
 import FieldDescriptionPopover from "../edi/FieldDescriptionPopover";

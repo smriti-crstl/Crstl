@@ -9,10 +9,10 @@ import { CORE_SETTINGS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement, useEffect } from "react";
 import styled from "styled-components";
 
-import { BaseForm } from "@crstl/components/atoms/form";
-import { Spinner } from "@crstl/components/atoms/loading";
-import { Paragraph } from "@crstl/components/atoms/typography";
-import { CreateForm } from "@crstl/components/organisms/create-form";
+import { BaseForm } from "components/atoms/form";
+import { Spinner } from "components/atoms/loading";
+import { Paragraph } from "components/atoms/typography";
+import { CreateForm } from "components/organisms/create-form";
 
 import { PROFILE_TAB_MY_PROFILE_FORM_CONFIG } from "../../../config";
 import { extractMyProfileFormFieldsDataFromUserDetails } from "../../../utils";

@@ -1,4 +1,4 @@
-import { RampInitiateIntegrationResponseModel } from "@crstl/api/src/apis/models/v1/RampIntegrationModel";
+import { RampInitiateIntegrationResponseModel } from "models/v1/RampIntegrationModel";
 import { AxiosError } from "axios";
 import {
   AMZAuthorizationSearchParams,

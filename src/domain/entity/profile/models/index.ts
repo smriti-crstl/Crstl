@@ -2,7 +2,7 @@ import {
   OrganizationModel,
   OrganizationUpdateRequest,
   OrganizationUpdateResponse,
-} from "@crstl/api/src/apis/models/Organization";
+} from "models/Organization";
 import {
   UserActivateQueryRequest,
   UserActivateResponse,
@@ -10,9 +10,9 @@ import {
   UserUpdateJobFunctionResponse,
   UserUpdateRequest,
   UserUpdateResponse,
-} from "@crstl/api/src/apis/models/User";
-import { USTimezoneModelResponse } from "@crstl/api/src/apis/models/UsTimezones";
-import { AddressModel } from "@crstl/api/src/apis/models/ValueTypes";
+} from "models/User";
+import { USTimezoneModelResponse } from "models/UsTimezones";
+import { AddressModel } from "models/ValueTypes";
 
 // Profile Details Update
 export type UserUpdateProfileDetailsReq = UserUpdateRequest;

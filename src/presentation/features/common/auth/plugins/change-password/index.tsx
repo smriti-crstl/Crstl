@@ -3,10 +3,10 @@ import { useChangePasswordQuery } from "domain/interactors/auth";
 import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { BaseForm } from "@crstl/components/atoms/form";
-import { GenericHeading } from "@crstl/components/atoms/typography";
-import { CreateForm } from "@crstl/components/organisms/create-form";
+import { ColoredButton } from "components/atoms/buttons";
+import { BaseForm } from "components/atoms/form";
+import { GenericHeading } from "components/atoms/typography";
+import { CreateForm } from "components/organisms/create-form";
 
 import { AUTH_PLUGIN_CHANGE_PASSWORD_FORM_CONFIG } from "./config";
 

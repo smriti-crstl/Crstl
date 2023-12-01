@@ -1,6 +1,6 @@
 import { ReactElement, ReactNode } from "react";
-import { CustomHeaderWithIcons } from "@crstl/components/molecules/headers";
-import { WaveFooter } from "@crstl/components/molecules/footers/wave";
+import { CustomHeaderWithIcons } from "components/molecules/headers";
+import { WaveFooter } from "components/molecules/footers/wave";
 import styled from "styled-components";
 
 type Props = {

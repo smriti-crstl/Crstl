@@ -12,7 +12,7 @@ import { generatePath, useHistory, useLocation } from "react-router-dom";
 import {
   CheckboxDropdownMenu,
   DropdownMenuProps,
-} from "@crstl/components/molecules/dropdowns";
+} from "components/molecules/dropdowns";
 
 import { OrderTags } from "../../orders/components/common/Tags";
 

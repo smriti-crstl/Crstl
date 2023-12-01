@@ -1,4 +1,4 @@
-import { AdwordsModel } from "@crstl/api/src/apis/models/v1/AdwordsModel";
+import { AdwordsModel } from "models/v1/AdwordsModel";
 import { currencyFormatter, numberFormatter } from "presentation/utils";
 import styled from "styled-components";
 

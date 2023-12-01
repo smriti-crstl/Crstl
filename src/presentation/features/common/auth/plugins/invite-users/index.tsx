@@ -7,14 +7,14 @@ import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement, useState } from "react";
 import { useHistory } from "react-router";
 
-import { BaseForm } from "@crstl/components/atoms/form";
-import { GenericHeading } from "@crstl/components/atoms/typography";
+import { BaseForm } from "components/atoms/form";
+import { GenericHeading } from "components/atoms/typography";
 import {
   SimpleButtonGroup,
   SimpleButtonGroupProps,
-} from "@crstl/components/molecules/button-groups";
-import { ResultModal } from "@crstl/components/molecules/modals";
-import { CreateForm } from "@crstl/components/organisms/create-form";
+} from "components/molecules/button-groups";
+import { ResultModal } from "components/molecules/modals";
+import { CreateForm } from "components/organisms/create-form";
 
 import { AUTH_PLUGIN_INVITE_USERS_FORM_CONFIG } from "./config";
 import styled from "styled-components";

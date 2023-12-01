@@ -1,8 +1,8 @@
 import { ReactComponent as ArrowRight } from "globals/assets/svgs/arrow-right.svg";
 import { ReactElement } from "react";
 
-import { StatusModel } from "@crstl/api/src/apis/models/config";
-import { Chip } from "@crstl/components/molecules/order-chips/Chip";
+import { StatusModel } from "models/config";
+import { Chip } from "components/molecules/order-chips/Chip";
 
 import {
   ContainerWrapper,

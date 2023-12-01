@@ -2,8 +2,8 @@ import { ButtonProps } from "antd";
 import { ReactElement } from "react";
 import { Link } from "react-router-dom";
 
-import { LinkButton } from "@crstl/components/atoms/buttons";
-import { Paragraph } from "@crstl/components/atoms/typography";
+import { LinkButton } from "components/atoms/buttons";
+import { Paragraph } from "components/atoms/typography";
 
 type AuthBottomBarProps = {
   text: string;

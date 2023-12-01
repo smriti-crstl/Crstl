@@ -5,8 +5,8 @@ import {
 import { useUserDetails } from "presentation/hooks/common";
 import { ReactElement, useMemo } from "react";
 
-import { PaperCard } from "@crstl/components/atoms/card";
-import { SimpleTable } from "@crstl/components/atoms/table";
+import { PaperCard } from "components/atoms/card";
+import { SimpleTable } from "components/atoms/table";
 
 import { SETTINGS_TEAMS_TABLE_CONFIG } from "../../config";
 import { TableContainer } from "./styles";

@@ -1,8 +1,8 @@
 import moment from "moment";
 import { useEffect, useState } from "react";
 
-import { OnboardingTaskData } from "@crstl/api/src/apis/models/v1/edi/OnboardingTaskList";
-import { SimpleTable } from "@crstl/components/atoms/table";
+import { OnboardingTaskData } from "models/v1/edi/OnboardingTaskList";
+import { SimpleTable } from "components/atoms/table";
 
 import { SetOnboardingRequestModalData } from "../../../../hooks/useSetupFormModal";
 import { ActionButton } from "../ActionButton";

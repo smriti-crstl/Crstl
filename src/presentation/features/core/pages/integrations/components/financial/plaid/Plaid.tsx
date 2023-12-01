@@ -10,9 +10,9 @@ import {
 } from "react";
 import { usePlaidLink } from "react-plaid-link";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { GenericError } from "@crstl/components/atoms/error";
-import { ResultModal } from "@crstl/components/molecules/modals";
+import { ColoredButton } from "components/atoms/buttons";
+import { GenericError } from "components/atoms/error";
+import { ResultModal } from "components/molecules/modals";
 
 import {
   InitialIntegrationState,

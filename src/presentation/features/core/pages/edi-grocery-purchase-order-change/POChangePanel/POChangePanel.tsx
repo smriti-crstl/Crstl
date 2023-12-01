@@ -16,7 +16,7 @@ import { useTimestamp } from "presentation/hooks/common/use-timestamp";
 import { useState } from "react";
 import { generatePath, useHistory, useParams } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import POChangeConfirmationModal from "../../edi-purchase-order-change/POChangeConfirmationModal";
 import { ExternalPONote } from "./ExternalPONote";

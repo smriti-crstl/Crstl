@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import { ColoredButton } from "@crstl/components/atoms/buttons";
-import { ConnectedIndicator } from "@crstl/components/atoms/indicators";
+import { ColoredButton } from "components/atoms/buttons";
+import { ConnectedIndicator } from "components/atoms/indicators";
 import { Modal } from "antd";
 import { RAILS_CONFIG } from "./railz.config";
 import { theme } from "globals/themes";

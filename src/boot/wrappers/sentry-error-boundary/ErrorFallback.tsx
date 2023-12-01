@@ -1,6 +1,6 @@
 import React from "react";
 import { Result } from "antd";
-import { ColoredButton } from "@crstl/components/atoms/buttons";
+import { ColoredButton } from "components/atoms/buttons";
 import { getWithExpiry, setWithExpiry } from "domain/services/localStorage";
 
 type Props = {

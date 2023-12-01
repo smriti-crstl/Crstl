@@ -7,15 +7,15 @@ import { getEndDate } from "presentation/utils";
 import { ReactElement, useState } from "react";
 import styled, { CSSObject } from "styled-components";
 
-import { FixedSizeCard } from "@crstl/components/atoms/card";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { FixedSizeCard } from "components/atoms/card";
+import { Spinner } from "components/atoms/loading";
 
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 import { DataSources } from "presentation/features/common/components/DataSources";
 // import transactionDetailsData from "./transactionDetailsData.json";
 import { ExpectedPaymentsCalendar } from "./ExpectedPaymentsCalendar";
 import { ActualPaymentsCalendar } from "./ActualPaymentsCalendar";
-import { ColoredButton } from "@crstl/components/atoms/buttons";
+import { ColoredButton } from "components/atoms/buttons";
 import { ExcelExport } from "../../../analytics/components/common/ExcelExport";
 import { csvConfig, TRANSACTION } from "./MoneyCalendar.enums";
 import { DownloadButtonContainer } from "../../../analytics/components/common/ExcelExport/csv.styles";

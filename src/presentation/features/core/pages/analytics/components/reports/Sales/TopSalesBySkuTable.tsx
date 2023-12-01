@@ -2,9 +2,9 @@ import { useGetTopSalesBySKUQuery } from "domain/interactors/analytics";
 import { currencyFormatter, EllipsedText } from "presentation/utils";
 import { ReactElement } from "react";
 
-import { FixedSizeCard } from "@crstl/components/atoms/card";
-import { EmptyData } from "@crstl/components/atoms/empty";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { FixedSizeCard } from "components/atoms/card";
+import { EmptyData } from "components/atoms/empty";
+import { GenericLoading } from "components/atoms/loading";
 
 import { CARD_HEIGHT } from "../../../config";
 import { SALES_CHART_HEADER } from "../../../config/ChartHeaders/ChartHeaders";

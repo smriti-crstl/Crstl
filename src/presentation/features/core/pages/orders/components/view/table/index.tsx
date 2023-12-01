@@ -1,6 +1,6 @@
 import { ReactElement, useCallback, useState } from "react";
 
-import { BorderedTabs } from "@crstl/components/atoms/tabs/BorderedTabs";
+import { BorderedTabs } from "components/atoms/tabs/BorderedTabs";
 
 import { ORDER_DETAILS_TABLE_TABS_CONFIG } from "../../../config/orderDetailsTable";
 import { ORDER_DETAILS_TAB_KEYS } from "../../../constants";

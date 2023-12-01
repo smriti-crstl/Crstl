@@ -4,7 +4,7 @@ import { useSearchParams, useUserDetails } from "presentation/hooks/common";
 import React from "react";
 import { generatePath, useHistory } from "react-router-dom";
 
-import { CardData } from "@crstl/api/src/apis/models/v1/edi/OnboardingTaskList";
+import { CardData } from "models/v1/edi/OnboardingTaskList";
 
 import { SetOnboardingRequestModalData } from "../../../hooks/useSetupFormModal";
 import { TRADING_PARTNER_ID_SEARCH_KEY } from "../../edi-tab/constants";

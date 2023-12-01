@@ -13,7 +13,7 @@ import { CORE_LAYOUT_TEXT_CONSTANTS } from "presentation/texts-reservoir/core/la
 import { ReactElement, useLayoutEffect } from "react";
 import { matchPath, useLocation } from "react-router-dom";
 
-import { LayoutWithDarkSider } from "@crstl/components/organisms/layouts";
+import { LayoutWithDarkSider } from "components/organisms/layouts";
 import { useOthers, useUpdateMyPresence } from "@liveblocks/react";
 
 import { CoreRouter } from "../../router";

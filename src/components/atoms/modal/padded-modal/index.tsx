@@ -2,7 +2,7 @@ import { Modal, ModalProps } from "antd";
 import { ReactElement, ReactNode } from "react";
 import styled from "styled-components";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 type ComponentWrapperProps = {
   $customTopAndBottomPadding: string | undefined;

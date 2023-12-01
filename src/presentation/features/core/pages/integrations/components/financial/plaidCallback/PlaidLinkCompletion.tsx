@@ -1,5 +1,5 @@
-import { GenericError } from "@crstl/components/atoms/error";
-import { Content } from "@crstl/components/molecules/modals";
+import { GenericError } from "components/atoms/error";
+import { Content } from "components/molecules/modals";
 import { usePostPlaidAccessTokenQuery } from "domain/interactors/integrations/plaid";
 import { CORE_INTEGRATIONS_FINANCIAL } from "globals/configs";
 import { useCallback, useEffect, useReducer, useState } from "react";

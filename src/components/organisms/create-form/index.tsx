@@ -4,7 +4,7 @@ import { CSSProperties, ReactElement } from "react";
 import {
   ComponentTypes,
   FromMappings,
-} from "@crstl/components/molecules/form-mappings";
+} from "components/molecules/form-mappings";
 
 import { FormFields } from "./interface";
 

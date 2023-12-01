@@ -2,13 +2,13 @@
 import { ReactElement, useEffect } from "react";
 import styled from "styled-components";
 
-// import { AuthBottomBar } from "@crstl/components/molecules/auth-bottom-bar";
+// import { AuthBottomBar } from "components/molecules/auth-bottom-bar";
 import { LoginPlugIn, LoginPlugInProps } from "../../plugins/login";
 import { useAuthentication } from "domain/interactors/auth/hooks";
 import { CORE_EDI_LIST_VIEW, CORE_SETUP, ORG_SELECTION } from "globals/configs";
 import { useHistory } from "react-router-dom";
 import { tokenManagement } from "domain/interactors/auth/service";
-import { Role } from "@crstl/api/src/apis/models/User";
+import { Role } from "models/User";
 
 const LoginContainer = styled.div`
   padding-top: 1.5rem;

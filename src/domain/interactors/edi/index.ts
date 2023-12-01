@@ -77,7 +77,7 @@ import {
 import {
   DocumentUpdatedResponseModel,
   UpdateDocumentInput,
-} from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
+} from "models/v1/edi/EdiDocuments";
 
 const EDI_QUERY_KEYS = {
   LIST_DOCUMENT: "LIST_DOCUMENT",

@@ -4,8 +4,8 @@ import { useUserTeamQuery } from "domain/interactors/shared";
 import { useUserDetails } from "presentation/hooks/common";
 import { ReactElement } from "react";
 
-import { HorizontallyCenteredPaperCard } from "@crstl/components/atoms/card";
-import { SimpleTable } from "@crstl/components/atoms/table";
+import { HorizontallyCenteredPaperCard } from "components/atoms/card";
+import { SimpleTable } from "components/atoms/table";
 
 import { StyledPrimaryButton } from "../../../edi-edit/EdiEditPage.styles";
 import { IntegrationsTabContent } from "../../../integrations/components/integration-tabs-content";

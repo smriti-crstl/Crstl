@@ -1,6 +1,6 @@
 import { useFlags } from "launchdarkly-react-client-sdk";
-import { HeaderShadowContainerWithoutTabs } from "@crstl/components/molecules/headers";
-import { PageWrapper, PageContainer } from "@crstl/components/molecules/page";
+import { HeaderShadowContainerWithoutTabs } from "components/molecules/headers";
+import { PageWrapper, PageContainer } from "components/molecules/page";
 import { GoogleAdMetricsTrend } from "./components/GoogleAdMetricsTrend";
 import { GoogleAdMetrics } from "./components/GoogleAdMetrics";
 import styled from "styled-components";

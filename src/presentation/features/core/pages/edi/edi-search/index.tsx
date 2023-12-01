@@ -11,9 +11,9 @@ import { currencyUSDFormatter } from "presentation/utils";
 import { useState } from "react";
 import { generatePath, Link } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
-import { SimpleTable } from "@crstl/components/atoms/table";
-import { PageWrapper } from "@crstl/components/molecules/page";
+import { Spinner } from "components/atoms/loading";
+import { SimpleTable } from "components/atoms/table";
+import { PageWrapper } from "components/molecules/page";
 
 import { DownloadEdiSearchCSV } from "../Download/DownloadEdiSearchCSV";
 import { exportToCsv, getTpfName } from "../edi.utils";

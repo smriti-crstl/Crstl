@@ -32,8 +32,8 @@ import {
 } from "react-router-dom";
 
 import { EditOutlined } from "@ant-design/icons";
-import { DocumentUpdatedResponseModel } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { DocumentUpdatedResponseModel } from "models/v1/edi/EdiDocuments";
+import { Spinner } from "components/atoms/loading";
 
 // import styled from "styled-components";
 // import { MinusCircleOutlined } from "@ant-design/icons";

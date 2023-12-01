@@ -1,4 +1,4 @@
-import { HorizontallyCenteredPaperCard } from "@crstl/components/atoms/card";
+import { HorizontallyCenteredPaperCard } from "components/atoms/card";
 
 import { TradingPartnerInfo } from "./components/TradingPartnerInfo";
 

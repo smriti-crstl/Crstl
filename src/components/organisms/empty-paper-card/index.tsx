@@ -1,5 +1,5 @@
 import { ReactElement, useEffect, useState, useContext } from "react";
-import { PaperCard } from "@crstl/components/atoms/card";
+import { PaperCard } from "components/atoms/card";
 import { StarOutlined, StarFilled } from "@ant-design/icons";
 import { EmptyData } from "../../atoms/empty";
 import { ThemeContext } from "styled-components";

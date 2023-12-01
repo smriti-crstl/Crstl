@@ -5,8 +5,8 @@ import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import {
   IMultiTagsSelectProps,
   ISingleSelectProps,
-} from "@crstl/components/atoms/selects";
-import { CreateFormProps } from "@crstl/components/organisms/create-form";
+} from "components/atoms/selects";
+import { CreateFormProps } from "components/organisms/create-form";
 
 const AUTH_PLUGIN_INVITE_USERS_FIELD_CONSTANTS: {
   INVITEE_EMAILS: keyof UserInvitationReq;

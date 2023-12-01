@@ -26,8 +26,8 @@ import {
   useParams,
 } from "react-router-dom";
 
-import { DocumentUpdatedResponseModel } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
-import { Spinner } from "@crstl/components/atoms/loading";
+import { DocumentUpdatedResponseModel } from "models/v1/edi/EdiDocuments";
+import { Spinner } from "components/atoms/loading";
 
 import { ButtonsContainer } from "../../edi-invoice/InvoiceEditPage.styles";
 import { BSN_1005_OPTIONS } from "../data/BSN_1005_options";

@@ -1,9 +1,9 @@
 import { ReactElement } from "react";
 
-import { FixedSizeCard } from "@crstl/components/atoms/card";
-import { EmptyData } from "@crstl/components/atoms/empty";
-import { GenericLoading } from "@crstl/components/atoms/loading";
-import { ResponsivePieChart } from "@crstl/components/organisms/responsive-pie-chart";
+import { FixedSizeCard } from "components/atoms/card";
+import { EmptyData } from "components/atoms/empty";
+import { GenericLoading } from "components/atoms/loading";
+import { ResponsivePieChart } from "components/organisms/responsive-pie-chart";
 
 import { FINANCE_CHART_HEADER } from "../../../config/ChartHeaders/ChartHeaders";
 import { useGetAnalyticsChartDataFinance } from "../../../hooks/useGetAnalyticsChartData";

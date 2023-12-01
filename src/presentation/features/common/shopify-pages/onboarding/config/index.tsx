@@ -1,7 +1,7 @@
-import { SimpleCheckboxProps } from "@crstl/components/atoms/checkbox";
-import { AuthBottomBar } from "@crstl/components/molecules/auth-bottom-bar";
-import { CreateFormProps } from "@crstl/components/organisms/create-form";
-import { AUTH_VALIDATIONS } from "@crstl/validations/config";
+import { SimpleCheckboxProps } from "components/atoms/checkbox";
+import { AuthBottomBar } from "components/molecules/auth-bottom-bar";
+import { CreateFormProps } from "components/organisms/create-form";
+import { AUTH_VALIDATIONS } from "validations/config";
 import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { SHOPIFY_ONBOARDING_TEXT_CONSTANTS } from "presentation/texts-reservoir/common/shopify";
 import { SHOPIFY_ONBOARDING_FIELD_CONSTANTS } from "../constants";

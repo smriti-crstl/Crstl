@@ -1,7 +1,7 @@
 import { AxiosError } from "axios";
 import { ReactElement } from "react";
 
-import { GenericError } from "@crstl/components/atoms/error";
+import { GenericError } from "components/atoms/error";
 
 import { ErrorContainer } from "./ErrorBoundary.styles";
 

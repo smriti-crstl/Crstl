@@ -1,7 +1,7 @@
 import { CORE_ORDERS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
-// import { TabsConfig } from "@crstl/components/atoms/tabs";
-import { DropdownMenuProps } from "@crstl/components/molecules/dropdowns";
+// import { TabsConfig } from "components/atoms/tabs";
+import { DropdownMenuProps } from "components/molecules/dropdowns";
 
 // import { OrdersAll } from "../components/all";
 // import { ORDERS_ALL_TABS_CONSTANTS } from "../constants";

@@ -4,7 +4,7 @@ import { ReactComponent as ArrowUp } from "globals/assets/svgs/arrow-up.svg";
 import { ReactElement, ReactNode } from "react";
 import styled from "styled-components";
 
-import { StyledCollapse } from "@crstl/components/atoms/collapse";
+import { StyledCollapse } from "components/atoms/collapse";
 
 import { RenderIcons } from "./RenderIcons";
 

@@ -1,4 +1,4 @@
-import { StepsData } from "@crstl/components/atoms/steps";
+import { StepsData } from "components/atoms/steps";
 import { TEXT_CONSTANTS } from "presentation/texts-reservoir";
 
 const AUTH_PREMIER_ADMIN_SIGN_UP_STEPS_CONFIG: StepsData = [

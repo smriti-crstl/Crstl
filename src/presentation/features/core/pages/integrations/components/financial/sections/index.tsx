@@ -3,8 +3,8 @@ import { CORE_INTEGRATIONS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import { PaperCard } from "@crstl/components/atoms/card";
-import { GenericHeading } from "@crstl/components/atoms/typography";
+import { PaperCard } from "components/atoms/card";
+import { GenericHeading } from "components/atoms/typography";
 
 import { FinancialTabConnectedBanks } from "../connected";
 import { FinancialTabPlaidIntegration } from "../plaid";

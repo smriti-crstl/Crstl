@@ -1,8 +1,8 @@
 import { Table } from "antd";
 import { ReactElement } from "react";
 
-import { StatusModel } from "@crstl/api/src/apis/models/config";
-import { TableContainer } from "@crstl/components/atoms/table";
+import { StatusModel } from "models/config";
+import { TableContainer } from "components/atoms/table";
 
 import { ORDER_DETAILS_HISTORY_TABLE_CONFIG } from "../../../../config/historyTableConfig";
 import { IHistoryData } from "./HistoryButtonWrapper";

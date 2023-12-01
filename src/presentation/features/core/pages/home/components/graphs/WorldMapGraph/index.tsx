@@ -2,12 +2,12 @@ import { ReactElement, useState, useLayoutEffect } from "react";
 import { Divider, Select, Button } from "antd";
 import styled from "styled-components";
 import ReactTooltip from "react-tooltip";
-import { SimpleCheckbox } from "@crstl/components/atoms/checkbox";
+import { SimpleCheckbox } from "components/atoms/checkbox";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 
 import { GeoMap } from "./GeoMap";
 import { LegendLabels } from "./LegendLabels";
-import { SubParagraph } from "@crstl/components/atoms/typography/paragraph/subParagraph";
+import { SubParagraph } from "components/atoms/typography/paragraph/subParagraph";
 import { useTimestamp } from "presentation/hooks/common/use-timestamp";
 import { GEOMAP_MARKER_MOCK, MarkerProp } from "../../../mocks";
 

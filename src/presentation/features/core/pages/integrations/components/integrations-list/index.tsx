@@ -5,8 +5,8 @@ import { INTEGRATION_MAP } from "presentation/constants/Integration";
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import { IntegrationTypeModel } from "@crstl/api/src/apis/models/Integration";
-import { ShrinkTag, StatusTag } from "@crstl/components/atoms/tags";
+import { IntegrationTypeModel } from "models/Integration";
+import { ShrinkTag, StatusTag } from "components/atoms/tags";
 
 import { CallToAction } from "./CallToAction";
 import { IntegrationMetaData } from "./IntegrationMetaData";

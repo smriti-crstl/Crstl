@@ -1,4 +1,4 @@
-import { SearchDocumentsDateField } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
+import { SearchDocumentsDateField } from "models/v1/edi/EdiDocuments";
 import { AdvanceSearchOptions } from "./types";
 
 export const STATUS_OPTIONS_CONFIG: AdvanceSearchOptions[] = [

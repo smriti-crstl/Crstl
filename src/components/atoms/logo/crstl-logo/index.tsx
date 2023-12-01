@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import CrstlLogo from "@crstl/components/assets/images/logo.png";
+import CrstlLogo from "components/assets/images/logo.png";
 
 type ImageProps = {
   $height?: string;

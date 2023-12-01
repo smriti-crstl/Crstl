@@ -1,20 +1,20 @@
-import { StatusLabel as _StatusLabel } from "@crstl/api/src/apis/models/PurchaseOrder";
+import { StatusLabel as _StatusLabel } from "models/PurchaseOrder";
 import {
   JobFunctions as _JobFunctions,
   Role as _Role,
   UserModel,
-} from "@crstl/api/src/apis/models/User";
+} from "models/User";
 import {
   SearchDocumentsDocumentModel,
   SearchDocumentsInput,
   SearchDocumentsResponseDataModel,
-} from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
+} from "models/v1/edi/EdiDocuments";
 import {
   DocumentModel,
   TradingPartnerDocumentsModel,
   TradingPartnersModel,
-} from "@crstl/api/src/apis/models/v1/edi/TradingPartner";
-import { InvitedUser } from "@crstl/api/src/apis/models/v1/InviteUser";
+} from "models/v1/edi/TradingPartner";
+import { InvitedUser } from "models/v1/InviteUser";
 
 export type AdvancedSearchDocsType = SearchDocumentsInput;
 export type AdvancedSearchDocsRes = SearchDocumentsResponseDataModel;

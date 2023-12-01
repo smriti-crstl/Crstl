@@ -1,4 +1,4 @@
-import { DocumentUpdatedResponseModel } from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
+import { DocumentUpdatedResponseModel } from "models/v1/edi/EdiDocuments";
 import { Alert } from "antd";
 import styled from "styled-components";
 import { AlertContainer } from "../InvoicePage.styles";

@@ -2,14 +2,14 @@ import {
   AutofillDocumentOutput,
   OrderStateUpdateResponseModel,
   POChangeStateUpdateResponseModel,
-} from "@crstl/api/src/apis/models/v1/edi/EdiDocuments";
+} from "models/v1/edi/EdiDocuments";
 import {
   SaveCustomSortRequest,
   SaveCustomSortResponse,
-} from "@crstl/api/src/apis/models/v1/edi/OrgData";
-import { PrismaticAuthToken } from "@crstl/api/src/apis/models/v1/edi/prismatic";
+} from "models/v1/edi/OrgData";
+import { PrismaticAuthToken } from "models/v1/edi/prismatic";
 
-export type { ShippingLabelModel } from "@crstl/api/src/apis/models/v1/edi/ShippingLabel";
+export type { ShippingLabelModel } from "models/v1/edi/ShippingLabel";
 
 export interface DocumentMetadata {
   ext_id: string;

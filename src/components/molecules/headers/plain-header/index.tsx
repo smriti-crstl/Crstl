@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import { Logo } from "@crstl/components/atoms/logo";
+import { Logo } from "components/atoms/logo";
 
 const StyledHeader = styled.header<{ isDefault?: boolean }>`
   background: ${({ theme }) => theme.palette.base.SECONDARY};

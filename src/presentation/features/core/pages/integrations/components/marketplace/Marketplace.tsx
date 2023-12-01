@@ -2,7 +2,7 @@ import { tokenManagement } from "domain/interactors/auth/service";
 import { useGetAppMarketplaceTokenQuery } from "domain/interactors/edi";
 import { useEffect, useState } from "react";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { ErrorMessage } from "./ErrorMessage";
 import { getIntegrationQuery } from "./queries";

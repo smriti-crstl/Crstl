@@ -15,7 +15,7 @@ import { Menu } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 import { SelectedDateRange } from "../../../analytics/components/common";
-import { FixedSizeCard } from "@crstl/components/atoms/card";
+import { FixedSizeCard } from "components/atoms/card";
 import { TRANSACTIONS } from "./Transactions.config";
 import moment from "moment";
 

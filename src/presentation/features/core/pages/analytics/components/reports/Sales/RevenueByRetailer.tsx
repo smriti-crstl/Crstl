@@ -1,10 +1,10 @@
 import { ReactElement } from "react";
-import { FixedSizeCard } from "@crstl/components/atoms/card";
+import { FixedSizeCard } from "components/atoms/card";
 import { useRevenueByRetailerChartDataSales } from "../../../hooks/useGetAnalyticsChartData";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { GenericLoading } from "components/atoms/loading";
 import { SALES_CHART_HEADER } from "../../../config/ChartHeaders/ChartHeaders";
-import { ResponsivePieChart } from "@crstl/components/organisms/responsive-pie-chart";
-import { EmptyData } from "@crstl/components/atoms/empty";
+import { ResponsivePieChart } from "components/organisms/responsive-pie-chart";
+import { EmptyData } from "components/atoms/empty";
 import {
   EmptyCardWrapper,
   PieChartHeader,

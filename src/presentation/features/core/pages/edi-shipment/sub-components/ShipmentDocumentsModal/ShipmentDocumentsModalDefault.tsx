@@ -7,8 +7,8 @@ import { useQueryClient } from "react-query";
 import styled from "styled-components";
 
 import { SettingOutlined } from "@ant-design/icons";
-import { Spinner } from "@crstl/components/atoms/loading";
-import { Modal } from "@crstl/components/atoms/modal";
+import { Spinner } from "components/atoms/loading";
+import { Modal } from "components/atoms/modal";
 
 import { StyledSecondaryButton } from "../../../edi-edit/EdiEditPage.styles";
 import { createTitle } from "../../../edi/edi.utils";

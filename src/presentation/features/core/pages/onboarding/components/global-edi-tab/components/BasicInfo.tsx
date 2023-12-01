@@ -8,10 +8,10 @@ import { setNotification } from "domain/services/notification";
 import { useUserDetails } from "presentation/hooks/common";
 import { useState } from "react";
 
-import { BaseForm } from "@crstl/components/atoms/form";
-import { Spinner } from "@crstl/components/atoms/loading";
-import { GenericHeading } from "@crstl/components/atoms/typography";
-import { CreateForm } from "@crstl/components/organisms/create-form";
+import { BaseForm } from "components/atoms/form";
+import { Spinner } from "components/atoms/loading";
+import { GenericHeading } from "components/atoms/typography";
+import { CreateForm } from "components/organisms/create-form";
 
 import { StyledPrimaryButton } from "../../../../edi-edit/EdiEditPage.styles";
 import { useEdiSetupFormConfig } from "../../../hooks/useEdiSetupFormConfig";

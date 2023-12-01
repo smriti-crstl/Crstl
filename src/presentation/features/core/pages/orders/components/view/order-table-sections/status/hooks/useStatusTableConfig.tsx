@@ -6,7 +6,7 @@ import { StatusLabelFE } from "domain/entity/shared/models";
 import { ORDER_DETAILS_TABLE_ROWS_CONFIG } from "presentation/features/core/pages/orders/config/orderDetailsTable";
 import { ORDER_DETAILS_VIEW_STATUS_TABLE_CONSTANTS } from "presentation/features/core/pages/orders/constants";
 
-import { StatusModel } from "@crstl/api/src/apis/models/config";
+import { StatusModel } from "models/config";
 
 export interface StatusTableConfig {
   label?: string;

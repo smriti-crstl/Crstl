@@ -9,7 +9,7 @@ import {
 } from "test-utils";
 import { buildEDIPurchaseOrderSummary } from "test-utils/generate";
 
-import { PurchaseOrderStatusModel } from "@crstl/api/src/apis/models/PurchaseOrder";
+import { PurchaseOrderStatusModel } from "models/PurchaseOrder";
 import { screen } from "@testing-library/dom";
 import userEvent from "@testing-library/user-event";
 

@@ -14,11 +14,11 @@ import { useUserDetails } from "presentation/hooks/common";
 import { CORE_SETTINGS_TEXT_CONSTANTS } from "presentation/texts-reservoir";
 import { ReactElement, useCallback, useLayoutEffect, useState } from "react";
 
-import { HorizontallyCenteredPaperCard } from "@crstl/components/atoms/card";
-import { BaseForm } from "@crstl/components/atoms/form";
-import { Spinner } from "@crstl/components/atoms/loading";
-import { GenericHeading } from "@crstl/components/atoms/typography";
-import { CreateForm } from "@crstl/components/organisms/create-form";
+import { HorizontallyCenteredPaperCard } from "components/atoms/card";
+import { BaseForm } from "components/atoms/form";
+import { Spinner } from "components/atoms/loading";
+import { GenericHeading } from "components/atoms/typography";
+import { CreateForm } from "components/organisms/create-form";
 
 import { useCompanyDetailsFormConfig } from "../../hooks/useCompanyDetailsFormConfig";
 import { extractMyCompanyDetailsFormFieldsDataFromOrganizationDetails } from "../../utils";

@@ -9,12 +9,12 @@ import { Dispatch, ReactElement, SetStateAction } from "react";
 import { UseMutateFunction } from "react-query";
 import styled from "styled-components";
 
-import { IPaddedModalProps, PaddedModal } from "@crstl/components/atoms/modal";
+import { IPaddedModalProps, PaddedModal } from "components/atoms/modal";
 import {
   GenericHeading,
   GenericSubHeading,
-} from "@crstl/components/atoms/typography";
-import { SimpleButtonGroup } from "@crstl/components/molecules/button-groups";
+} from "components/atoms/typography";
+import { SimpleButtonGroup } from "components/molecules/button-groups";
 
 import { TEAM_USERS_IS_ACTIVE_API_PAYLOAD_VALUES } from "../../../../constants";
 

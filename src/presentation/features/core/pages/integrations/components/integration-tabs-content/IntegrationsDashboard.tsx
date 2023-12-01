@@ -4,8 +4,8 @@ import { useCallback, useReducer } from "react";
 import { useQueryClient } from "react-query";
 import { useHistory } from "react-router-dom";
 
-import { FluidWidthCard } from "@crstl/components/atoms/card";
-import { ResultModal } from "@crstl/components/molecules/modals";
+import { FluidWidthCard } from "components/atoms/card";
+import { ResultModal } from "components/molecules/modals";
 import { usePostIntegrationSearchParams } from "../../hooks/usePostIntegrationSearchParams";
 import {
   InitialIntegrationState,
@@ -15,14 +15,14 @@ import {
 import { generateIntegrationResultModalTextConstants } from "../../utils";
 import { useIntegrationsList } from "./useIntegrationsList";
 import { useViewResultModal } from "./useViewResultModal";
-import { StyedTable } from "@crstl/components/atoms/table";
+import { StyedTable } from "components/atoms/table";
 import moment from "moment";
 import { IntegrationStatusChip } from "./IntegrationStatusChip";
-import { IntegrationStatusModel } from "@crstl/api/src/apis/models/v1/integration/IntegrationStatus";
+import { IntegrationStatusModel } from "models/v1/integration/IntegrationStatus";
 import { useGetIntegrationStatus } from "domain/interactors/integrations";
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
-import { EmptyData } from "@crstl/components/atoms/empty";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { EmptyData } from "components/atoms/empty";
+import { GenericLoading } from "components/atoms/loading";
 import styled from "styled-components";
 import { IntegrationStatusModelRes } from "domain/entity/integrations/models";
 

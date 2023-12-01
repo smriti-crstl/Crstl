@@ -3,7 +3,7 @@ import { get } from "lodash";
 import { forwardRef } from "react";
 import { useParams } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import { firstTransactionSet } from "../../constants";
 import {

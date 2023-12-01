@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import {
   ISingleSelectProps,
   SingleSelectOptions,
-} from "@crstl/components/atoms/selects";
-import { CreateFormProps } from "@crstl/components/organisms/create-form";
+} from "components/atoms/selects";
+import { CreateFormProps } from "components/organisms/create-form";
 
 import { PROFILE_TAB_COMPANY_DETAILS_FORM_CONFIG } from "../config";
 import { COMPANY_DETAILS_FIELD_CONSTANTS } from "../constants";

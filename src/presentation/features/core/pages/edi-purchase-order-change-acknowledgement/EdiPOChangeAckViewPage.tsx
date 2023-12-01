@@ -3,7 +3,7 @@ import { useFlags } from "launchdarkly-react-client-sdk";
 import { CoreEDIDocumentNumber } from "presentation/texts-reservoir";
 import { useParams } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
+import { Spinner } from "components/atoms/loading";
 
 import EdiPOChangeAckView from "../edi-view/EdiPOChangeAckView";
 import { Container } from "./EdiPOChangeAckViewPage.styles";

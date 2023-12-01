@@ -4,8 +4,8 @@ import { ReactElement, useCallback, useReducer } from "react";
 import { useQueryClient } from "react-query";
 import { useHistory } from "react-router-dom";
 
-import { PaperCard } from "@crstl/components/atoms/card";
-import { ResultModal } from "@crstl/components/molecules/modals";
+import { PaperCard } from "components/atoms/card";
+import { ResultModal } from "components/molecules/modals";
 
 import { usePlaidIntegrationsListQuery } from "domain/interactors/integrations/plaid";
 import { usePostIntegrationSearchParams } from "../../hooks/usePostIntegrationSearchParams";

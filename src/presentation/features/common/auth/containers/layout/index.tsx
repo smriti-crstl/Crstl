@@ -1,5 +1,5 @@
 import { ReactElement, ReactNode } from "react";
-import { TwoVerticalSectionLayout } from "@crstl/components/organisms/layouts";
+import { TwoVerticalSectionLayout } from "components/organisms/layouts";
 type Props = {
   children: ReactNode;
 };

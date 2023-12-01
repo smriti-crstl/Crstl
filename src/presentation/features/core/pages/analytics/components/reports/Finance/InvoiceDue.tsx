@@ -4,9 +4,9 @@ import moment from "moment";
 import { currencyUSDFormatter } from "presentation/utils";
 import { ReactElement, useState, useEffect } from "react";
 
-import { AnalyticsPaperCard } from "@crstl/components/atoms/card";
-import { EmptyData } from "@crstl/components/atoms/empty";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { AnalyticsPaperCard } from "components/atoms/card";
+import { EmptyData } from "components/atoms/empty";
+import { GenericLoading } from "components/atoms/loading";
 
 import { FINANCE_CHART_HEADER } from "../../../config/ChartHeaders/ChartHeaders";
 import { EmptyCardWrapper } from "../../common/common.styles";

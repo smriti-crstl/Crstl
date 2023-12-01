@@ -5,8 +5,8 @@ import { parseSearchParams } from "presentation/utils";
 import { ReactElement, useLayoutEffect, useState } from "react";
 import { useLocation, useParams } from "react-router";
 
-import { GenericError } from "@crstl/components/atoms/error";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { GenericError } from "components/atoms/error";
+import { GenericLoading } from "components/atoms/loading";
 
 const SHOPIFY_INTEGRATION_SOURCE_ID = "0bd1effe-f9cf-4f95-993f-70942cc9b84e";
 

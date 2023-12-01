@@ -5,7 +5,7 @@ import styled from "styled-components";
 import {
   GenericHeading,
   GenericSubHeading,
-} from "@crstl/components/atoms/typography";
+} from "components/atoms/typography";
 
 const Wrapper = styled(Row)``;
 

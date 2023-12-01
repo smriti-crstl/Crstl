@@ -1,8 +1,8 @@
 import moment from "moment";
 import styled from "styled-components";
 import ReactDOMServer from "react-dom/server";
-import { FixedSizeCard } from "@crstl/components/atoms/card";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { FixedSizeCard } from "components/atoms/card";
+import { GenericLoading } from "components/atoms/loading";
 
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 import HighChartsLineGraph from "../../home/components/graphs/HighChartsLineGraph";

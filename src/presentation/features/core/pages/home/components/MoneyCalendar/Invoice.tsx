@@ -1,4 +1,4 @@
-import { GenericHeading } from "@crstl/components/atoms/typography";
+import { GenericHeading } from "components/atoms/typography";
 import { EllipsedText } from "presentation/utils";
 import { ReactElement, useContext } from "react";
 import { ThemeContext } from "styled-components";

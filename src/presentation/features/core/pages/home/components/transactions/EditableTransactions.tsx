@@ -19,9 +19,9 @@ import {
 } from "domain/interactors/transactions";
 import { TransactionDetail } from "@crstl/app/src/domain/entity/transactions/models";
 import moment, { isMoment } from "moment";
-import { FluidWidthCard } from "@crstl/components/atoms/card";
+import { FluidWidthCard } from "components/atoms/card";
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { GenericLoading } from "components/atoms/loading";
 import styled, { CSSObject } from "styled-components";
 import {
   DropdownContainer,

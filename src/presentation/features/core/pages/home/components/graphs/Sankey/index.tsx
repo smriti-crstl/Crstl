@@ -3,14 +3,14 @@ import { ReactElement } from "react";
 import {
   FixedSizeCard,
   StyledFullWidthCard,
-} from "@crstl/components/atoms/card";
-import { Spinner } from "@crstl/components/atoms/loading";
+} from "components/atoms/card";
+import { Spinner } from "components/atoms/loading";
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 import Sankey from "./Sankey";
 import { useGetSankeyDataQuery } from "domain/interactors/homepage";
 import { TITLE } from "./Sankey.config";
 import { SelectedDateRange } from "presentation/features/core/pages/analytics/components/common";
-import { EmptyData } from "@crstl/components/atoms/empty";
+import { EmptyData } from "components/atoms/empty";
 import { EmptyCardWrapper } from "presentation/features/core/pages/analytics/components/common/common.styles";
 import { useDateRange } from "presentation/hooks/contexts";
 import { DataSources } from "presentation/features/common/components/DataSources";

@@ -3,8 +3,8 @@ import { FilterFilled } from "@ant-design/icons";
 import { ColumnsType } from "antd/lib/table";
 import _ from "lodash";
 
-import { SimpleTable } from "@crstl/components/atoms/table";
-import { Chip } from "@crstl/components/molecules/order-chips/Chip";
+import { SimpleTable } from "components/atoms/table";
+import { Chip } from "components/molecules/order-chips/Chip";
 import { useGetConnectionsTPFQuery } from "domain/interactors/connections";
 import {
   ConnectionsRowData,

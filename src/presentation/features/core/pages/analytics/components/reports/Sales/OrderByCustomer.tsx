@@ -1,11 +1,11 @@
 import { ReactElement, useContext, useState } from "react";
-import { AnalyticsPaperCard } from "@crstl/components/atoms/card";
+import { AnalyticsPaperCard } from "components/atoms/card";
 import { useOrderByCustomerChartDataSales } from "../../../hooks/useGetAnalyticsChartData";
-import { GenericLoading } from "@crstl/components/atoms/loading";
+import { GenericLoading } from "components/atoms/loading";
 import { SALES_CHART_HEADER } from "../../../config/ChartHeaders/ChartHeaders";
-import { ResponsivePieChart } from "@crstl/components/organisms/responsive-pie-chart";
+import { ResponsivePieChart } from "components/organisms/responsive-pie-chart";
 import { AnalyticsDateRangeContext } from "..";
-import { EmptyData } from "@crstl/components/atoms/empty";
+import { EmptyData } from "components/atoms/empty";
 import { EmptyCardWrapper } from "../../common/common.styles";
 import { ErrorBoundary } from "presentation/features/common/components/ErrorBoundary";
 

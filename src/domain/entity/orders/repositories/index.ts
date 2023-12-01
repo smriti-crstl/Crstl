@@ -3,7 +3,7 @@ import { API_V1 } from "domain/network";
 import { sortByDate } from "presentation/utils";
 import { QueryFunctionContext } from "react-query";
 
-import { PurchaseOrderSummaryResponse } from "@crstl/api/src/apis/models/PurchaseOrderSummary";
+import { PurchaseOrderSummaryResponse } from "models/PurchaseOrderSummary";
 
 import {
   CreateCommentReq,

@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import styled from "styled-components";
 
-import { ColoredButton } from "@crstl/components/atoms/buttons";
+import { ColoredButton } from "components/atoms/buttons";
 
 interface ButtonGroupStyle {
   marginRight: string;

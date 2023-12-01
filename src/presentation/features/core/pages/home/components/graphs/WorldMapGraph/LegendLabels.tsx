@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import styled from "styled-components";
-import { Paragraph } from "@crstl/components/atoms/typography";
+import { Paragraph } from "components/atoms/typography";
 
 const Circle = styled.div`
   background-color: ${({ color }) => color};

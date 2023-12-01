@@ -1,5 +1,5 @@
 import { ReactElement, ReactNode, useState } from "react";
-import { CustomHeaderWithIcons } from "@crstl/components/molecules/headers";
+import { CustomHeaderWithIcons } from "components/molecules/headers";
 import { Layout } from "antd";
 import styled from "styled-components";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";

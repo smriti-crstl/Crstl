@@ -1,7 +1,7 @@
 import { Timeline } from "antd";
 import { ReactElement, ReactNode } from "react";
 
-import { AvatarWithBackground } from "@crstl/components/atoms/avatar";
+import { AvatarWithBackground } from "components/atoms/avatar";
 
 type Props = {
   children: ReactNode;

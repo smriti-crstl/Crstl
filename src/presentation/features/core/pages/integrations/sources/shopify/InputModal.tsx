@@ -1,9 +1,9 @@
 import { Dispatch, ReactElement, SetStateAction, useState } from "react";
 
-import { SimpleInput } from "@crstl/components/atoms/inputs";
-import { PaddedModal } from "@crstl/components/atoms/modal";
-import { GenericHeading } from "@crstl/components/atoms/typography";
-import { SimpleButtonGroup } from "@crstl/components/molecules/button-groups";
+import { SimpleInput } from "components/atoms/inputs";
+import { PaddedModal } from "components/atoms/modal";
+import { GenericHeading } from "components/atoms/typography";
+import { SimpleButtonGroup } from "components/molecules/button-groups";
 
 type Props = {
   isShopNameModalOpen: boolean;

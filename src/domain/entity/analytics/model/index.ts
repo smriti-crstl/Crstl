@@ -1,4 +1,4 @@
-import { CashOnHandDonutChart } from "@crstl/api/src/apis/models/AccountBalance";
+import { CashOnHandDonutChart } from "models/AccountBalance";
 import {
   AvgOrderValueChartResponseModel,
   OrderByCustomerChartResponseModel,
@@ -8,23 +8,23 @@ import {
   RevenueByRetailerChartResponseModel,
   SalesBySkuB2BChartResponseModel,
   SalesBySkuB2CChartResponseModel,
-} from "@crstl/api/src/apis/models/PurchaseOrder";
+} from "models/PurchaseOrder";
 import {
   moneyCalendarResponse,
   PaymentDetailResponseModel,
-} from "@crstl/api/src/apis/models/Invoice";
-import { AlertsResponse } from "@crstl/api/src/apis/models/Alerts";
+} from "models/Invoice";
+import { AlertsResponse } from "models/Alerts";
 import {
   APAgingReportResponse,
   APAgingReportSeries,
-} from "@crstl/api/src/apis/models/APAgingReport";
+} from "models/APAgingReport";
 import {
   ARAgingReportResponse,
   ARAgingReportSeries,
-} from "@crstl/api/src/apis/models/ARAgingReport";
-import { PayoutsResponse } from "@crstl/api/src/apis/models/Payouts";
-import { ShopifyInventorySkuLocationResponse } from "@crstl/api/src/apis/models/v1/inventory/ShopifyInventorySkuLocation";
-import { AmzInventorySkuResponse as AmzInventorySkyRes } from "@crstl/api/src/apis/models/v1/inventory/AmazonInventorySku";
+} from "models/ARAgingReport";
+import { PayoutsResponse } from "models/Payouts";
+import { ShopifyInventorySkuLocationResponse } from "models/v1/inventory/ShopifyInventorySkuLocation";
+import { AmzInventorySkuResponse as AmzInventorySkyRes } from "models/v1/inventory/AmazonInventorySku";
 import { Metadata } from "domain/entity/shared/models/metadata";
 
 export interface TransactionByMerchant {
@@ -79,17 +79,17 @@ export type ActualPaymentDetailResponseModel = {
   data: ActualPaymentDetailResponse;
 };
 export type PayoutsRes = PayoutsResponse & Metadata;
-export type { PayoutData } from "@crstl/api/src/apis/models/Payouts";
+export type { PayoutData } from "models/Payouts";
 export type AccountsPayableAgingResponse = APAgingReportResponse & Metadata;
 export type AccountsPayableAgingSeries = APAgingReportSeries;
 export type AccountsReceivableAgingResponse = ARAgingReportResponse & Metadata;
 export type AccountsReceivableAgingSeries = ARAgingReportSeries;
 export type ShopifyInventorySkuLocationRes = ShopifyInventorySkuLocationResponse &
   Metadata;
-export type { ShopifyInventorySkuLocationSeries } from "@crstl/api/src/apis/models/v1/inventory/ShopifyInventorySkuLocation";
+export type { ShopifyInventorySkuLocationSeries } from "models/v1/inventory/ShopifyInventorySkuLocation";
 
 export type AmzInventorySkuResponse = AmzInventorySkyRes & Metadata;
-export type { AmzInventorySkuSeries } from "@crstl/api/src/apis/models/v1/inventory/AmazonInventorySku";
+export type { AmzInventorySkuSeries } from "models/v1/inventory/AmazonInventorySku";
 
 export type AverageOrderValueB2CRes = {
   data: Array<{

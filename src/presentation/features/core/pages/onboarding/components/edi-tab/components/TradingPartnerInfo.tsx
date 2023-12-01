@@ -25,8 +25,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useQueryClient } from "react-query";
 import { useHistory } from "react-router-dom";
 
-import { Spinner } from "@crstl/components/atoms/loading";
-import { Tabs } from "@crstl/components/atoms/tabs";
+import { Spinner } from "components/atoms/loading";
+import { Tabs } from "components/atoms/tabs";
 
 import { StyledPrimaryButton } from "../../../../edi-edit/EdiEditPage.styles";
 import { clean } from "../../../../edi-edit/helpers";
